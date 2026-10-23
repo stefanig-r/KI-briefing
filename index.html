@@ -79,6 +79,24 @@ footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid va
 .gloss dt{font-weight:600;margin-top:14px}
 .gloss dd{margin:2px 0 0;color:var(--ink)}
 .gloss .none{color:var(--muted)}
+.tabs{overflow-x:auto;scrollbar-width:none}
+.tabs button{white-space:nowrap}
+@media (max-width:420px){.tabs button{padding:8px 10px;font-size:14px}}
+.filter{display:flex;gap:6px;margin:20px 0 4px}
+.filter button{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:4px 12px;cursor:pointer}
+.filter button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+details.recap{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:14px 0;padding:0 20px}
+details.recap summary{cursor:pointer;list-style:none;padding:16px 0}
+details.recap summary::-webkit-details-marker{display:none}
+details.recap .tag{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:4px}
+details.recap .tag.month{color:var(--us)}
+details.recap .rh{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.3;font-weight:700}
+details.recap .chev{float:right;color:var(--muted);transition:transform .2s}
+details.recap[open] .chev{transform:rotate(90deg)}
+details.recap .body{padding-bottom:18px}
+details.recap ol{padding-left:20px}
+details.recap ol li{margin-bottom:12px}
+details.recap h4{margin:18px 0 6px;font-size:15px}
 </style>
 </head>
 <body>
@@ -96,15 +114,18 @@ footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid va
   </header>
   <nav class="tabs" role="tablist">
     <button role="tab" id="tab-briefing" aria-selected="true">Tägliches Briefing</button>
+    <button role="tab" id="tab-recaps" aria-selected="false">Rückblick</button>
     <button role="tab" id="tab-basics" aria-selected="false">Grundwissen</button>
   </nav>
   <main id="main"><div class="empty">Lädt …</div></main>
+  <section id="recaps" class="hidden"></section>
   <section id="basics" class="hidden"></section>
   <footer>Zusammengestellt mit KI aus öffentlichen Quellen. Bitte wichtige Fakten in den verlinkten Originalquellen prüfen.</footer>
 </div>
 
 <script src="editions.js"></script>
 <script src="basics.js"></script>
+<script src="recaps.js"></script>
 <script>
 (function(){
   var eds = (window.KI_BRIEFING_EDITIONS || []).slice().sort(function(a,b){return a.date < b.date ? 1 : -1;});
@@ -237,24 +258,59 @@ footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid va
     sec.innerHTML='<div class="empty">Grundwissen konnte nicht geladen werden.</div>';
   }
 
+  // --- Rückblick ---
+  var rsec=document.getElementById('recaps');
+  var tRecaps=document.getElementById('tab-recaps');
+  var recaps=(window.KI_BRIEFING_RECAPS||[]).slice();
+  var rFilter='all';
+  function srcs(list){
+    if(!list||!list.length) return '';
+    return '<div class="src">Quellen: '+list.map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a><span class="lang">EN</span>';}).join(' · ')+'</div>';
+  }
+  function drawRecaps(){
+    var h='<h1>Rückblick</h1><p class="intro">Das Wichtigste der letzten Wochen und Monate – für alle, die nicht jeden Tag lesen.</p>';
+    h+='<div class="filter" role="group" aria-label="Filter">'+
+      [['all','Alle'],['week','Wochen'],['month','Monate']].map(function(f){return '<button data-f="'+f[0]+'" aria-pressed="'+(rFilter===f[0])+'">'+f[1]+'</button>';}).join('')+'</div>';
+    var list=recaps.filter(function(r){return rFilter==='all'||r.type===rFilter;});
+    if(!list.length){
+      h+='<div class="empty">'+(rFilter==='month'?'Der erste Monatsrückblick erscheint am letzten Werktag des Monats.':'Noch kein Rückblick vorhanden.')+'</div>';
+    }
+    list.forEach(function(r,i){
+      h+='<details class="recap"'+(i===0?' open':'')+'><summary><span class="chev">›</span><span class="tag'+(r.type==='month'?' month':'')+'">'+(r.type==='month'?'Monat':'Woche')+' · '+esc(r.label)+'</span><div class="rh">'+esc(r.headline)+'</div></summary><div class="body">';
+      h+='<p>'+esc(r.summary)+'</p><h4>Die wichtigsten Themen</h4><ol>';
+      (r.top||[]).forEach(function(t){h+='<li><b>'+esc(t.title)+'</b><br>'+esc(t.text)+srcs(t.sources)+'</li>';});
+      h+='</ol>';
+      if(r.trends&&r.trends.length){h+='<h4>Trends</h4><ul>'+r.trends.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>';}
+      if(r.forUs&&r.forUs.length){h+='<div class="forus" style="margin-top:14px"><b>Für uns:</b><ul style="margin:6px 0 0;padding-left:18px">'+r.forUs.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';}
+      h+='</div></details>';
+    });
+    rsec.innerHTML=h;
+    Array.prototype.forEach.call(rsec.querySelectorAll('.filter button'),function(btn){btn.onclick=function(){rFilter=btn.getAttribute('data-f');drawRecaps();};});
+  }
+  drawRecaps();
+
+  // --- Tabs ---
   var lastHash='';
+  var tabs={briefing:{btn:tBrief,el:main},recaps:{btn:tRecaps,el:rsec,hash:'#rueckblick'},basics:{btn:tBasics,el:sec,hash:'#grundwissen'}};
   function show(which){
-    var basics=(which==='basics');
-    sec.classList.toggle('hidden',!basics);
-    main.classList.toggle('hidden',basics);
-    if(nav) nav.style.visibility=basics?'hidden':'visible';
-    tBrief.setAttribute('aria-selected',basics?'false':'true');
-    tBasics.setAttribute('aria-selected',basics?'true':'false');
+    Object.keys(tabs).forEach(function(k){
+      var on=(k===which);
+      tabs[k].el.classList.toggle('hidden',!on);
+      tabs[k].btn.setAttribute('aria-selected',on?'true':'false');
+    });
+    if(nav) nav.style.display=(which==='briefing')?'':'none';
     try{
-      if(basics){ lastHash=location.hash; history.replaceState(null,'','#grundwissen'); }
-      else if(lastHash){ history.replaceState(null,'',lastHash); }
+      if(which==='briefing'){ if(lastHash) history.replaceState(null,'',lastHash); }
+      else { if(!/^#(grundwissen|rueckblick)$/.test(location.hash)) lastHash=location.hash; history.replaceState(null,'',tabs[which].hash); }
     }catch(err){}
     window.scrollTo(0,0);
   }
   window.KI_SHOW_TAB=show;
   tBrief.onclick=function(){show('briefing');};
+  tRecaps.onclick=function(){show('recaps');};
   tBasics.onclick=function(){show('basics');};
-  if((window.KI_INITIAL_HASH||location.hash)==='#grundwissen'){ show('basics'); }
+  var ih=window.KI_INITIAL_HASH||location.hash;
+  if(ih==='#grundwissen'){ show('basics'); } else if(ih==='#rueckblick'){ show('recaps'); }
 })();
 </script>
 </body>
