@@ -9,6 +9,106 @@ window.KI_BRIEFING_BASICS = {
     {"title": "Transparent bleiben", "text": "Wenn Texte oder Analysen mit KI entstanden sind und das für Empfänger relevant ist, offen sagen. Verantwortung für den Inhalt bleibt bei uns."},
     {"title": "Im Zweifel fragen", "text": "Unsicher, ob ein Tool oder eine Nutzung erlaubt ist? Kurz bei Datenschutz oder IT nachfragen, bevor Daten hochgeladen werden."}
   ],
+  "landscape": {
+    "intro": "Das große Bild: wer die wichtigen KI-Werkzeuge anbietet, wie KI vom Chat zur Automatisierung wird, wie sie an andere Systeme angebunden wird – und was Mythos ist.",
+    "asOf": "Oktober 2026",
+    "providers": [
+      {
+        "name": "ChatGPT",
+        "maker": "OpenAI",
+        "origin": "USA",
+        "note": "Bekanntester KI-Assistent, breites Funktionsangebot inkl. Agenten. Modelle gibt es auch über Microsoft Azure, in Kürze zusätzlich über Google Cloud."
+      },
+      {
+        "name": "Claude",
+        "maker": "Anthropic",
+        "origin": "USA",
+        "note": "Stark bei Texten, Analyse und Programmierung; bietet Agenten, geplante Aufgaben und viele Connectors."
+      },
+      {
+        "name": "Gemini",
+        "maker": "Google",
+        "origin": "USA",
+        "note": "In Google Workspace (Gmail, Docs, Drive) integriert; gilt als stark bei Bildern und Video."
+      },
+      {
+        "name": "Microsoft Copilot",
+        "maker": "Microsoft",
+        "origin": "USA",
+        "note": "In Microsoft 365 (Outlook, Teams, Word, Excel) integriert. Für Firmen mit M365 oft der naheliegendste Einstieg."
+      },
+      {
+        "name": "Le Chat",
+        "maker": "Mistral AI",
+        "origin": "Frankreich",
+        "note": "Europäischer Anbieter; relevant für Kunden, die Wert auf EU-Anbieter oder eigenen Betrieb legen."
+      }
+    ],
+    "providerNote": "Für Firmendaten gilt bei allen Anbietern: nur Geschäftskonten nutzen, die intern freigegeben sind und einen Vertrag zur Auftragsverarbeitung haben – private oder kostenlose Konten nicht für Kunden- oder Personendaten verwenden. Welches Modell gerade „das beste“ ist, wechselt fast monatlich.",
+    "stages": [
+      {
+        "name": "Chat",
+        "text": "Man fragt, die KI antwortet. Jede Aufgabe beginnt bei null.",
+        "example": "„Fasse diese Projektanfrage zusammen.“"
+      },
+      {
+        "name": "Agent",
+        "text": "Die KI erledigt mehrere Schritte selbst: recherchieren, Dateien erstellen, in Apps arbeiten – und liefert ein fertiges Ergebnis.",
+        "example": "„Erstelle aus diesen drei Anfragen je ein Anforderungsprofil und eine Shortlist.“"
+      },
+      {
+        "name": "Automatisierung",
+        "text": "Der Agent läuft regelmäßig von allein, ohne dass jemand fragt. Der Mensch prüft und entscheidet.",
+        "example": "Dieses Briefing: entsteht jeden Werktag automatisch."
+      }
+    ],
+    "mcp": {
+      "title": "MCP und Connectors: wie KI an andere Systeme kommt",
+      "text": "Von sich aus kennt eine KI nur, was man ihr in den Chat gibt. Über Connectors bekommt sie Zugriff auf andere Systeme – etwa E-Mail, Kalender, Ablagen, CRM oder Jira. Viele dieser Verbindungen nutzen MCP (Model Context Protocol), einen offenen Standard: eine Art „USB-Anschluss“ für KI, über den ein Assistent mit vielen Tools sprechen kann.",
+      "tools": [
+        "E-Mail",
+        "Kalender",
+        "Dateiablage",
+        "CRM",
+        "Jira / Confluence",
+        "Teams / Slack"
+      ],
+      "why": [
+        "Für uns: Kunden binden KI zunehmend an ihre Systeme an. Erfahrung mit Connectors, MCP und Agenten wird in Projektanfragen für PMs, BAs und REs häufiger auftauchen.",
+        "Für die Sicherheit: Jede Verbindung gibt der KI Rechte. Deshalb nur nötige Zugriffe freigeben und bei heiklen Aktionen (senden, löschen, bezahlen) eine Bestätigung durch den Menschen verlangen."
+      ]
+    },
+    "myths": [
+      {
+        "myth": "KI kennt immer den aktuellen Stand.",
+        "fact": "Ein Modell kennt nur seine Trainingsdaten bis zu einem Stichtag. Aktuelles weiß es nur, wenn es im Web sucht oder man es ihm gibt."
+      },
+      {
+        "myth": "Was KI schreibt, stimmt.",
+        "fact": "KI kann überzeugend falsche Fakten, Zahlen oder Quellen erfinden (Halluzination). Wichtiges immer prüfen."
+      },
+      {
+        "myth": "KI ersetzt Recruiter, PMs oder BAs.",
+        "fact": "KI übernimmt vor allem Aufgaben wie Dokumentieren, Zusammenfassen und Vorsortieren. Urteil, Beziehungen und Verantwortung bleiben beim Menschen – die Rollen verändern sich."
+      },
+      {
+        "myth": "Kostenlose KI-Tools sind für Kundendaten okay.",
+        "fact": "Nein. Kunden- und Personendaten nur in freigegebene Geschäftstools, sonst vorher anonymisieren."
+      },
+      {
+        "myth": "Für gute Ergebnisse braucht man Prompt-Tricks.",
+        "fact": "Wichtiger als Tricks sind Kontext, ein klares Ziel und das gewünschte Format. Siehe Prompt-Formel."
+      },
+      {
+        "myth": "KI-Detektoren erkennen KI-Texte zuverlässig.",
+        "fact": "Solche Tools liegen oft daneben und markieren auch menschliche Texte. Als Beweis taugen sie nicht."
+      },
+      {
+        "myth": "Man muss programmieren können, um KI sinnvoll zu nutzen.",
+        "fact": "Nein. Die meisten Anwendungen – auch Agenten und Automatisierungen – lassen sich heute in normaler Sprache beauftragen."
+      }
+    ]
+  },
   "promptFormula": {
     "intro": "Ein guter Auftrag an die KI hat fünf Bausteine:",
     "parts": [

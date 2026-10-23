@@ -118,6 +118,29 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .panel-title{font-family:Fraunces,Georgia,serif;font-size:22px;margin:14px 0 14px}
 .newtag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:2px}
 .gloss .added{font-size:12px;color:var(--muted)}
+.lsub{font-family:Fraunces,Georgia,serif;font-size:19px;margin:26px 0 10px}
+.prov{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.prov .card{margin:0}
+.prov .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
+.stages{display:grid;gap:8px}
+.stage{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.stage b{color:var(--accent)}
+.stage .ex{font-size:14px;color:var(--muted);font-style:italic;margin-top:4px}
+.arrow{text-align:center;color:var(--muted);font-size:18px;line-height:1}
+.mcpd{display:grid;grid-template-columns:1fr auto 1fr auto 1.4fr;gap:8px;align-items:center;margin:14px 0}
+.mcpd .node{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;font-weight:600;font-size:14px}
+.mcpd .node.hub{background:var(--accent-soft);border-color:var(--accent);color:var(--accent)}
+.mcpd .tools{display:flex;flex-wrap:wrap;gap:6px}
+.mcpd .tools span{font-size:12px;background:var(--us-soft);color:var(--us);border-radius:999px;padding:3px 9px}
+.mcpd .ar{color:var(--muted)}
+@media (max-width:560px){.mcpd{grid-template-columns:1fr}.mcpd .ar{transform:rotate(90deg);text-align:center}}
+.myths{display:grid;gap:10px}
+.myth{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.myth .m{color:var(--muted)}
+.myth .m span{text-decoration:line-through}
+.myth .m::before{content:"Mythos: ";text-decoration:none;font-weight:600}
+.myth .f{margin-top:4px}
+.myth .f::before{content:"Fakt: ";font-weight:600;color:var(--us)}
 </style>
 </head>
 <body>
@@ -268,6 +291,21 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     var secs=[], h;
     h='<div class="rules">'+(b.rules||[]).map(function(r,i){return '<div class="card"><span class="num">Regel '+(i+1)+'</span><h3>'+esc(r.title)+'</h3><p style="margin:0">'+esc(r.text)+'</p></div>';}).join('')+'</div>';
     secs.push({id:'g-rules',label:'Grundregeln',html:h});
+    if(b.landscape){
+      var L=b.landscape;
+      h='<p>'+esc(L.intro)+'</p>';
+      h+='<div class="lsub">Die wichtigsten Anbieter</div><div class="prov">'+(L.providers||[]).map(function(p){return '<div class="card"><h3 style="margin-bottom:2px">'+esc(p.name)+'</h3><div class="meta">'+esc(p.maker)+' · '+esc(p.origin)+'</div><p style="margin:0">'+esc(p.note)+'</p></div>';}).join('')+'</div>';
+      if(L.providerNote) h+='<div class="forus" style="margin-top:12px"><b>Wichtig:</b> '+esc(L.providerNote)+'</div>';
+      h+='<div class="lsub">Vom Chat zur Automatisierung</div><div class="stages">'+(L.stages||[]).map(function(s,i){return (i?'<div class="arrow">↓</div>':'')+'<div class="stage"><b>'+(i+1)+'. '+esc(s.name)+'</b><div>'+esc(s.text)+'</div><div class="ex">'+esc(s.example)+'</div></div>';}).join('')+'</div>';
+      if(L.mcp){
+        h+='<div class="lsub">'+esc(L.mcp.title)+'</div><p>'+esc(L.mcp.text)+'</p>';
+        h+='<div class="mcpd" role="img" aria-label="KI-Assistent verbunden über MCP mit Tools"><div class="node">KI-Assistent</div><div class="ar">⇄</div><div class="node hub">MCP / Connector</div><div class="ar">⇄</div><div class="tools">'+(L.mcp.tools||[]).map(function(t){return '<span>'+esc(t)+'</span>';}).join('')+'</div></div>';
+        h+=ul(L.mcp.why);
+      }
+      h+='<div class="lsub">Mythos oder Fakt?</div><div class="myths">'+(L.myths||[]).map(function(m){return '<div class="myth"><div class="m"><span>'+esc(m.myth)+'</span></div><div class="f">'+esc(m.fact)+'</div></div>';}).join('')+'</div>';
+      h+='<p class="src">Stand: '+esc(L.asOf)+'</p>';
+      secs.push({id:'g-map',label:'KI-Landkarte',html:h});
+    }
     if(b.promptFormula){
       h='<p>'+esc(b.promptFormula.intro)+'</p><div class="formula">'+b.promptFormula.parts.map(function(p){return '<div class="part"><b>'+esc(p.name)+'</b><div>'+esc(p.text)+'<div class="ex">'+esc(p.example)+'</div></div></div>';}).join('')+'</div>';
       secs.push({id:'g-prompt',label:'Prompt-Formel',html:h});
