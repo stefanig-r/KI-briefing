@@ -47,6 +47,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term": "Proaktiver Agent", "def": "Ein KI-Agent, der nicht auf Fragen wartet, sondern verbundene Apps wie E-Mail oder Kalender beobachtet und sich meldet, wenn etwas Aufmerksamkeit braucht. Beispiele: Claude Duet, OpenAI Dots, Meta Muse.", "added": "2026-10-23"},
+    {"term": "Reverse Engineering (KI-gestützt)", "def": "Fertige Software ohne Quellcode analysieren, um zu verstehen, wie sie funktioniert, und sie ggf. nachzubauen. KI-Agenten übernehmen dabei zunehmend die Detailarbeit.", "added": "2026-10-23"},
     {"term": "Agent", "def": "Eine KI, die nicht nur antwortet, sondern selbstständig mehrere Schritte ausführt – etwa recherchieren, Dateien erstellen oder in Apps arbeiten – um ein Ziel zu erreichen."},
     {"term": "Anonymisierung", "def": "Daten so verändern, dass sich keine Person mehr erkennen lässt. Bei Pseudonymisierung werden Namen nur ersetzt, die Zuordnung bleibt mit Zusatzwissen möglich."},
     {"term": "Bias (Verzerrung)", "def": "Systematische Schieflage in KI-Ergebnissen, oft übernommen aus den Trainingsdaten. Besonders heikel bei Bewertungen von Menschen, z. B. im Recruiting."},

@@ -104,6 +104,20 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .role ul{margin:0;padding-left:20px}
 .role .forus{margin-top:12px}
 .role .forus ul{margin-top:4px}
+.sticky{position:sticky;top:0;z-index:10;background:var(--bg);margin:0 -16px;padding:0 16px;box-shadow:0 1px 0 var(--line)}
+.sticky .tabs{margin-top:0;border-bottom:0;padding-top:4px}
+.subtabs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:8px 0 10px}
+.subtabs::-webkit-scrollbar,.tabs::-webkit-scrollbar{display:none}
+.subtabs:empty{display:none}
+.subtabs button{flex:none;font:inherit;font-size:13px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:5px 12px;cursor:pointer;white-space:nowrap}
+.subtabs button[aria-selected="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.subtabs .cnt{opacity:.6;margin-left:4px}
+.panel{padding-top:8px}
+.lead{padding-bottom:4px}
+.lead h1{margin-top:12px}
+.panel-title{font-family:Fraunces,Georgia,serif;font-size:22px;margin:14px 0 14px}
+.newtag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:2px}
+.gloss .added{font-size:12px;color:var(--muted)}
 </style>
 </head>
 <body>
@@ -119,11 +133,14 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
       <button id="newer" title="Neuere Ausgabe">→</button>
     </div>
   </header>
-  <nav class="tabs" role="tablist">
-    <button role="tab" id="tab-briefing" aria-selected="true">Tägliches Briefing</button>
-    <button role="tab" id="tab-recaps" aria-selected="false">Rückblick</button>
-    <button role="tab" id="tab-basics" aria-selected="false">Grundwissen</button>
-  </nav>
+  <div class="sticky">
+    <nav class="tabs" role="tablist">
+      <button role="tab" id="tab-briefing" aria-selected="true">Tägliches Briefing</button>
+      <button role="tab" id="tab-recaps" aria-selected="false">Rückblick</button>
+      <button role="tab" id="tab-basics" aria-selected="false">Grundwissen</button>
+    </nav>
+    <nav class="subtabs" id="subtabs" role="tablist" aria-label="Abschnitte"></nav>
+  </div>
   <main id="main"><div class="empty">Lädt …</div></main>
   <section id="recaps" class="hidden"></section>
   <section id="basics" class="hidden"></section>
@@ -135,214 +152,177 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 <script src="recaps.js"></script>
 <script>
 (function(){
-  var eds = (window.KI_BRIEFING_EDITIONS || []).slice().sort(function(a,b){return a.date < b.date ? 1 : -1;});
-  var main = document.getElementById('main');
-  var picker = document.getElementById('picker');
-  var older = document.getElementById('older');
-  var newer = document.getElementById('newer');
-
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-  function fmt(d){
-    var p=d.split('-'); var dt=new Date(+p[0],+p[1]-1,+p[2]);
-    return dt.toLocaleDateString('de-DE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
-  }
+  function fmt(d){var p=d.split('-');return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString('de-DE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}
+  function fmtShort(d){var p=d.split('-');return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString('de-DE',{day:'numeric',month:'numeric',year:'numeric'});}
   function sources(list){
-    if(!list||!list.length) return '';
-    return '<div class="src">Quellen: '+list.map(function(s){
-      return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a><span class="lang">EN</span>';
-    }).join(' · ')+'</div>';
-  }
-
-  if(!eds.length){ main.innerHTML='<div class="empty">Noch keine Ausgabe vorhanden.</div>'; return; }
-
-  eds.forEach(function(e,i){
-    var o=document.createElement('option'); o.value=i; o.textContent=(i===0?'Heute · ':'')+fmt(e.date); picker.appendChild(o);
-  });
-
-  function render(i){
-    var e=eds[i]; var h='';
-    h+='<div class="date">'+esc(fmt(e.date))+'</div>';
-    h+='<h1>'+esc(e.headline)+'</h1>';
-    h+='<p class="intro">'+esc(e.intro)+'</p>';
-    var hasRoles=!!(e.roles&&e.roles.length), num=0;
-    function sec(id,title){ num++; return '<h2 id="'+id+'"><span class="n">'+num+'</span>'+title+'</h2>'; }
-    h+='<nav class="toc"><a href="#news">Was passiert ist</a>'+(hasRoles?'<a href="#roles">Rollen-Radar</a>':'')+'<a href="#us">Warum es für uns zählt</a>'+(e.skill?'<a href="#skill">Skill des Tages</a>':'')+'<a href="#tools">Tool-Tipps</a></nav>';
-
-    h+=sec('news','Was passiert ist');
-    (e.news||[]).forEach(function(n){
-      h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>';
-      if(n.forUs) h+='<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+'</div>';
-      h+=sources(n.sources)+'</article>';
-    });
-
-    if(hasRoles){
-      h+=sec('roles','Rollen-Radar: PM · BA · RE');
-      h+='<div class="roles">';
-      e.roles.forEach(function(r){
-        h+='<article class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.title)+'</h3><p>'+esc(r.text)+'</p>';
-        if(r.tip) h+='<div class="forus"><b>Für Recruiting & Vertrieb:</b> '+esc(r.tip)+'</div>';
-        h+=sources(r.sources)+'</article>';
-      });
-      h+='</div>';
-    }
-
-    if(e.forUsBox){
-      h+=sec('us','Warum es für uns zählt');
-      h+='<div class="box"><b>'+esc(e.forUsBox.title)+'</b><ul style="margin-top:10px">';
-      (e.forUsBox.points||[]).forEach(function(p){h+='<li>'+esc(p)+'</li>';});
-      h+='</ul>'+sources(e.forUsBox.sources)+'</div>';
-    }
-
-    if(e.skill){
-      var s=e.skill;
-      h+=sec('skill','Skill des Tages');
-      h+='<div class="skill"><div class="meta">⏱ '+esc(s.minutes)+' Minuten Übung</div><h3 style="margin:0 0 8px">'+esc(s.title)+'</h3><p>'+esc(s.why)+'</p><ol>';
-      (s.steps||[]).forEach(function(st){h+='<li>'+esc(st)+'</li>';});
-      h+='</ol>';
-      if(s.prompt) h+='<div class="prompt" id="prompt">'+esc(s.prompt)+'</div><button class="copy" id="copy">Auftrag kopieren</button>';
-      h+='</div>';
-    }
-
-    if(e.tools&&e.tools.length){
-      h+=sec('tools','Tool-Tipps')+'<div class="tools">';
-      e.tools.forEach(function(t){
-        h+='<div class="card tool"><b>'+esc(t.name)+'</b>'+esc(t.tip)+(t.url?'<div><a href="'+esc(t.url)+'" target="_blank" rel="noopener">Mehr erfahren →</a></div>':'')+'</div>';
-      });
-      h+='</div>';
-    }
-
-    main.innerHTML=h;
-    picker.value=i; newer.disabled=(i===0); older.disabled=(i===eds.length-1);
-    var c=document.getElementById('copy');
-    if(c) c.onclick=function(){
-      var t=document.getElementById('prompt').textContent;
-      try{ navigator.clipboard.writeText(t).then(function(){c.textContent='Kopiert ✓';}); }
-      catch(err){ c.textContent='Bitte manuell kopieren'; }
-    };
-    try{ history.replaceState(null,'','#'+e.date); }catch(err){}
-    window.scrollTo(0,0);
-  }
-
-  picker.onchange=function(){render(+picker.value);};
-  older.onclick=function(){render(+picker.value+1);};
-  newer.onclick=function(){render(+picker.value-1);};
-
-  var start=0, hash=(location.hash||'').slice(1);
-  eds.forEach(function(e,i){ if(e.date===hash) start=i; });
-  window.KI_INITIAL_HASH = location.hash;
-  render(start);
-})();
-</script>
-<script>
-(function(){
-  var b = window.KI_BRIEFING_BASICS;
-  var sec = document.getElementById('basics');
-  var main = document.getElementById('main');
-  var nav = document.querySelector('header .nav');
-  var tBrief = document.getElementById('tab-briefing');
-  var tBasics = document.getElementById('tab-basics');
-  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-
-  if(b){
-    var h='<h1>Grundwissen KI</h1><p class="intro">Das Wichtigste auf einen Blick – immer hier, unabhängig von der täglichen Ausgabe.</p>';
-    h+='<nav class="toc"><a href="#g-rules">Grundregeln</a><a href="#g-prompt">Prompt-Formel</a><a href="#g-levels">Reifegrad</a><a href="#g-roles">Rollen im Wandel</a><a href="#g-gloss">Glossar</a></nav>';
-
-    h+='<h2 id="g-rules"><span class="n">1</span>Grundregeln</h2><div class="rules">';
-    (b.rules||[]).forEach(function(r,i){ h+='<div class="card"><span class="num">Regel '+(i+1)+'</span><h3>'+esc(r.title)+'</h3><p style="margin:0">'+esc(r.text)+'</p></div>'; });
-    h+='</div>';
-
-    if(b.promptFormula){
-      h+='<h2 id="g-prompt"><span class="n">2</span>Prompt-Formel</h2><p>'+esc(b.promptFormula.intro)+'</p><div class="formula">';
-      b.promptFormula.parts.forEach(function(p){ h+='<div class="part"><b>'+esc(p.name)+'</b><div>'+esc(p.text)+'<div class="ex">'+esc(p.example)+'</div></div></div>'; });
-      h+='</div>';
-    }
-
-    h+='<h2 id="g-levels"><span class="n">3</span>Reifegrad: Wo stehst du?</h2><div class="levels">';
-    (b.levels||[]).forEach(function(l){ h+='<div class="level"><div class="lv">'+esc(l.n)+'</div><div><b>'+esc(l.name)+'</b><div>'+esc(l.text)+'</div><div class="nx">Nächster Schritt: '+esc(l.next)+'</div></div></div>'; });
-    h+='</div>';
-
-    if(b.roles&&b.roles.length){
-      h+='<h2 id="g-roles"><span class="n">4</span>Rollen im Wandel: PM · BA · RE</h2><p>Was KI in diesen Rollen übernimmt, was beim Menschen bleibt – und was man im Gespräch mit Kandidaten abfragen kann.</p><div class="roles">';
-      b.roles.forEach(function(r){
-        function ul(a){return '<ul>'+(a||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';}
-        h+='<div class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.name)+'</h3>'+
-          '<h4>KI übernimmt zunehmend</h4>'+ul(r.aiTakes)+
-          '<h4>Bleibt beim Menschen</h4>'+ul(r.human)+
-          '<div class="forus"><b>Im Gespräch fragen:</b>'+ul(r.ask)+'</div></div>';
-      });
-      h+='</div>';
-    }
-
-    h+='<h2 id="g-gloss"><span class="n">5</span>Glossar</h2><input class="gsearch" id="gsearch" type="search" placeholder="Begriff suchen …" aria-label="Glossar durchsuchen"><dl class="gloss" id="gloss"></dl>';
-    h+='<p class="src">Stand: '+esc(b.updated)+'</p>';
-    sec.innerHTML=h;
-
-    var terms=(b.glossary||[]).slice().sort(function(x,y){return x.term.localeCompare(y.term,'de');});
-    var dl=document.getElementById('gloss');
-    function drawGloss(q){
-      q=(q||'').toLowerCase();
-      var list=terms.filter(function(t){return !q || t.term.toLowerCase().indexOf(q)>-1 || t.def.toLowerCase().indexOf(q)>-1;});
-      dl.innerHTML=list.length ? list.map(function(t){return '<dt>'+esc(t.term)+'</dt><dd>'+esc(t.def)+'</dd>';}).join('') : '<dd class="none">Kein Begriff gefunden.</dd>';
-    }
-    drawGloss('');
-    document.getElementById('gsearch').oninput=function(e){drawGloss(e.target.value);};
-  } else {
-    sec.innerHTML='<div class="empty">Grundwissen konnte nicht geladen werden.</div>';
-  }
-
-  // --- Rückblick ---
-  var rsec=document.getElementById('recaps');
-  var tRecaps=document.getElementById('tab-recaps');
-  var recaps=(window.KI_BRIEFING_RECAPS||[]).slice();
-  var rFilter='all';
-  function srcs(list){
     if(!list||!list.length) return '';
     return '<div class="src">Quellen: '+list.map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a><span class="lang">EN</span>';}).join(' · ')+'</div>';
   }
-  function drawRecaps(){
-    var h='<h1>Rückblick</h1><p class="intro">Das Wichtigste der letzten Wochen und Monate – für alle, die nicht jeden Tag lesen.</p>';
-    h+='<div class="filter" role="group" aria-label="Filter">'+
-      [['all','Alle'],['week','Wochen'],['month','Monate']].map(function(f){return '<button data-f="'+f[0]+'" aria-pressed="'+(rFilter===f[0])+'">'+f[1]+'</button>';}).join('')+'</div>';
-    var list=recaps.filter(function(r){return rFilter==='all'||r.type===rFilter;});
-    if(!list.length){
-      h+='<div class="empty">'+(rFilter==='month'?'Der erste Monatsrückblick erscheint am letzten Werktag des Monats.':'Noch kein Rückblick vorhanden.')+'</div>';
-    }
-    list.forEach(function(r,i){
-      h+='<details class="recap"'+(i===0?' open':'')+'><summary><span class="chev">›</span><span class="tag'+(r.type==='month'?' month':'')+'">'+(r.type==='month'?'Monat':'Woche')+' · '+esc(r.label)+'</span><div class="rh">'+esc(r.headline)+'</div></summary><div class="body">';
-      h+='<p>'+esc(r.summary)+'</p><h4>Die wichtigsten Themen</h4><ol>';
-      (r.top||[]).forEach(function(t){h+='<li><b>'+esc(t.title)+'</b><br>'+esc(t.text)+srcs(t.sources)+'</li>';});
-      h+='</ol>';
-      if(r.trends&&r.trends.length){h+='<h4>Trends</h4><ul>'+r.trends.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul>';}
-      if(r.forUs&&r.forUs.length){h+='<div class="forus" style="margin-top:14px"><b>Für uns:</b><ul style="margin:6px 0 0;padding-left:18px">'+r.forUs.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>';}
-      h+='</div></details>';
-    });
-    rsec.innerHTML=h;
-    Array.prototype.forEach.call(rsec.querySelectorAll('.filter button'),function(btn){btn.onclick=function(){rFilter=btn.getAttribute('data-f');drawRecaps();};});
-  }
-  drawRecaps();
+  function ul(a){return '<ul>'+(a||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';}
 
-  // --- Tabs ---
-  var lastHash='';
-  var tabs={briefing:{btn:tBrief,el:main},recaps:{btn:tRecaps,el:rsec,hash:'#rueckblick'},basics:{btn:tBasics,el:sec,hash:'#grundwissen'}};
-  function show(which){
-    Object.keys(tabs).forEach(function(k){
-      var on=(k===which);
-      tabs[k].el.classList.toggle('hidden',!on);
-      tabs[k].btn.setAttribute('aria-selected',on?'true':'false');
+  var subnav=document.getElementById('subtabs');
+  var sticky=document.querySelector('.sticky');
+  var main=document.getElementById('main'), rsec=document.getElementById('recaps'), bsec=document.getElementById('basics');
+  var nav=document.querySelector('header .nav');
+  var picker=document.getElementById('picker'), older=document.getElementById('older'), newer=document.getElementById('newer');
+  var current='briefing';
+
+  // Each main tab registers: {el, lead (html), sections:[{id,label,count,html,after}], active}
+  var views={};
+  function mount(key){
+    var v=views[key]; if(!v) return;
+    var h=(v.lead||'');
+    v.sections.forEach(function(s){ h+='<div class="panel'+(s.id===v.active?'':' hidden')+'" data-panel="'+s.id+'">'+s.html+'</div>'; });
+    v.el.innerHTML=h;
+    v.sections.forEach(function(s){ if(s.after) s.after(v.el.querySelector('[data-panel="'+s.id+'"]')); });
+    if(key===current) drawSubnav();
+  }
+  function drawSubnav(){
+    var v=views[current];
+    if(!v||!v.sections.length){ subnav.innerHTML=''; return; }
+    subnav.innerHTML=v.sections.map(function(s){
+      return '<button role="tab" data-sub="'+s.id+'" aria-selected="'+(s.id===v.active)+'">'+esc(s.label)+(s.count!=null?'<span class="cnt">'+s.count+'</span>':'')+'</button>';
+    }).join('');
+    Array.prototype.forEach.call(subnav.querySelectorAll('button'),function(b){ b.onclick=function(){ selectSub(b.getAttribute('data-sub')); }; });
+  }
+  function selectSub(id){
+    var v=views[current]; if(!v) return;
+    v.active=id;
+    Array.prototype.forEach.call(v.el.querySelectorAll('[data-panel]'),function(p){ p.classList.toggle('hidden',p.getAttribute('data-panel')!==id); });
+    Array.prototype.forEach.call(subnav.querySelectorAll('button'),function(b){
+      var on=b.getAttribute('data-sub')===id; b.setAttribute('aria-selected',on);
+      if(on && b.scrollIntoView) try{ b.scrollIntoView({block:'nearest',inline:'nearest'}); }catch(e){}
     });
+    // keep the section start just below the sticky bar
+    var top=v.el.querySelector('[data-panel="'+id+'"]').getBoundingClientRect().top+window.scrollY-sticky.offsetHeight-8;
+    if(window.scrollY>top) window.scrollTo(0,top);
+  }
+
+  // ---------- Tägliches Briefing ----------
+  var eds=(window.KI_BRIEFING_EDITIONS||[]).slice().sort(function(a,b){return a.date<b.date?1:-1;});
+  eds.forEach(function(e,i){ var o=document.createElement('option'); o.value=i; o.textContent=(i===0?'Heute · ':'')+fmt(e.date); picker.appendChild(o); });
+
+  function renderEdition(i){
+    var e=eds[i], keep=views.briefing&&views.briefing.active;
+    var secs=[];
+    var h='';
+    (e.news||[]).forEach(function(n){
+      h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>'+(n.forUs?'<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+'</div>':'')+sources(n.sources)+'</article>';
+    });
+    secs.push({id:'news',label:'Was passiert ist',html:h});
+    if(e.roles&&e.roles.length){
+      h='<div class="roles">';
+      e.roles.forEach(function(r){
+        h+='<article class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.title)+'</h3><p>'+esc(r.text)+'</p>'+(r.tip?'<div class="forus"><b>Für Recruiting & Vertrieb:</b> '+esc(r.tip)+'</div>':'')+sources(r.sources)+'</article>';
+      });
+      secs.push({id:'roles',label:'Rollen-Radar',html:h+'</div>'});
+    }
+    if(e.forUsBox){
+      h='<div class="box"><b>'+esc(e.forUsBox.title)+'</b><ul style="margin-top:10px">'+(e.forUsBox.points||[]).map(function(p){return '<li>'+esc(p)+'</li>';}).join('')+'</ul>'+sources(e.forUsBox.sources)+'</div>';
+      secs.push({id:'us',label:'Warum es für uns zählt',html:h});
+    }
+    if(e.tools&&e.tools.length){
+      h='<div class="tools">'+e.tools.map(function(t){return '<div class="card tool"><b>'+esc(t.name)+'</b>'+esc(t.tip)+(t.url?'<div><a href="'+esc(t.url)+'" target="_blank" rel="noopener">Mehr erfahren →</a></div>':'')+'</div>';}).join('')+'</div>';
+      secs.push({id:'tools',label:'Tool-Tipps',html:h});
+    }
+    var active=secs.some(function(s){return s.id===keep;})?keep:secs[0].id;
+    views.briefing={el:main,lead:'<div class="lead"><div class="date">'+esc(fmt(e.date))+'</div><h1>'+esc(e.headline)+'</h1><p class="intro">'+esc(e.intro)+'</p></div>',sections:secs,active:active};
+    mount('briefing');
+    picker.value=i; newer.disabled=(i===0); older.disabled=(i===eds.length-1);
+    if(current==='briefing'){ try{ history.replaceState(null,'','#'+e.date); }catch(err){} }
+  }
+  if(eds.length){
+    picker.onchange=function(){renderEdition(+picker.value);window.scrollTo(0,0);};
+    older.onclick=function(){renderEdition(+picker.value+1);window.scrollTo(0,0);};
+    newer.onclick=function(){renderEdition(+picker.value-1);window.scrollTo(0,0);};
+  } else {
+    views.briefing={el:main,lead:'<div class="empty">Noch keine Ausgabe vorhanden.</div>',sections:[],active:null};
+  }
+
+  // ---------- Rückblick ----------
+  var recaps=(window.KI_BRIEFING_RECAPS||[]).slice();
+  function recapList(type){
+    var list=recaps.filter(function(r){return type==='all'||r.type===type;});
+    if(!list.length) return '<div class="empty">'+(type==='month'?'Der erste Monatsrückblick erscheint am letzten Werktag des Monats.':'Noch kein Rückblick vorhanden.')+'</div>';
+    return list.map(function(r,i){
+      var h='<details class="recap"'+(i===0?' open':'')+'><summary><span class="chev">›</span><span class="tag'+(r.type==='month'?' month':'')+'">'+(r.type==='month'?'Monat':'Woche')+' · '+esc(r.label)+'</span><div class="rh">'+esc(r.headline)+'</div></summary><div class="body">';
+      h+='<p>'+esc(r.summary)+'</p><h4>Die wichtigsten Themen</h4><ol>';
+      (r.top||[]).forEach(function(t){h+='<li><b>'+esc(t.title)+'</b><br>'+esc(t.text)+sources(t.sources)+'</li>';});
+      h+='</ol>';
+      if(r.trends&&r.trends.length) h+='<h4>Trends</h4>'+ul(r.trends);
+      if(r.forUs&&r.forUs.length) h+='<div class="forus" style="margin-top:14px"><b>Für uns:</b>'+ul(r.forUs)+'</div>';
+      return h+'</div></details>';
+    }).join('');
+  }
+  views.recaps={el:rsec,lead:'<div class="lead"><h1>Rückblick</h1><p class="intro">Das Wichtigste der letzten Wochen und Monate – für alle, die nicht jeden Tag lesen.</p></div>',
+    sections:[
+      {id:'week',label:'Wochen',count:recaps.filter(function(r){return r.type==='week';}).length,html:recapList('week')},
+      {id:'month',label:'Monate',count:recaps.filter(function(r){return r.type==='month';}).length,html:recapList('month')}
+    ],active:'week'};
+  mount('recaps');
+
+  // ---------- Grundwissen ----------
+  var b=window.KI_BRIEFING_BASICS;
+  if(b){
+    var secs=[], h;
+    h='<div class="rules">'+(b.rules||[]).map(function(r,i){return '<div class="card"><span class="num">Regel '+(i+1)+'</span><h3>'+esc(r.title)+'</h3><p style="margin:0">'+esc(r.text)+'</p></div>';}).join('')+'</div>';
+    secs.push({id:'g-rules',label:'Grundregeln',html:h});
+    if(b.promptFormula){
+      h='<p>'+esc(b.promptFormula.intro)+'</p><div class="formula">'+b.promptFormula.parts.map(function(p){return '<div class="part"><b>'+esc(p.name)+'</b><div>'+esc(p.text)+'<div class="ex">'+esc(p.example)+'</div></div></div>';}).join('')+'</div>';
+      secs.push({id:'g-prompt',label:'Prompt-Formel',html:h});
+    }
+    h='<p>Wo stehst du – und was ist dein nächster Schritt?</p><div class="levels">'+(b.levels||[]).map(function(l){return '<div class="level"><div class="lv">'+esc(l.n)+'</div><div><b>'+esc(l.name)+'</b><div>'+esc(l.text)+'</div><div class="nx">Nächster Schritt: '+esc(l.next)+'</div></div></div>';}).join('')+'</div>';
+    secs.push({id:'g-levels',label:'Reifegrad',html:h});
+    if(b.roles&&b.roles.length){
+      h='<p>Was KI in diesen Rollen übernimmt, was beim Menschen bleibt – und was man im Gespräch mit Kandidaten abfragen kann.</p><div class="roles">'+b.roles.map(function(r){
+        return '<div class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.name)+'</h3><h4>KI übernimmt zunehmend</h4>'+ul(r.aiTakes)+'<h4>Bleibt beim Menschen</h4>'+ul(r.human)+'<div class="forus"><b>Im Gespräch fragen:</b>'+ul(r.ask)+'</div></div>';
+      }).join('')+'</div>';
+      secs.push({id:'g-roles',label:'Rollen im Wandel',html:h});
+    }
+    var terms=(b.glossary||[]).slice().sort(function(x,y){return x.term.localeCompare(y.term,'de');});
+    var today=new Date();
+    function isNew(t){ if(!t.added) return false; var p=t.added.split('-'); return (today-new Date(+p[0],+p[1]-1,+p[2]))/864e5<=30; }
+    var newCount=terms.filter(isNew).length;
+    secs.push({id:'g-gloss',label:'Glossar',count:terms.length,
+      html:'<input class="gsearch" type="search" placeholder="Begriff suchen …" aria-label="Glossar durchsuchen">'+(newCount?'<p class="src" style="margin-top:0">'+newCount+' neue Begriffe in den letzten 30 Tagen, markiert mit <span class="newtag" style="margin:0">Neu</span></p>':'')+'<dl class="gloss"></dl><p class="src">Stand: '+esc(b.updated)+'</p>',
+      after:function(panel){
+        var dl=panel.querySelector('.gloss'), inp=panel.querySelector('.gsearch');
+        function draw(q){
+          q=(q||'').toLowerCase();
+          var list=terms.filter(function(t){return !q||t.term.toLowerCase().indexOf(q)>-1||t.def.toLowerCase().indexOf(q)>-1;});
+          // new terms first, then alphabetical
+          list.sort(function(x,y){var a=isNew(x),c=isNew(y); if(a!==c) return a?-1:1; return x.term.localeCompare(y.term,'de');});
+          dl.innerHTML=list.length?list.map(function(t){return '<dt>'+esc(t.term)+(isNew(t)?'<span class="newtag">Neu</span>':'')+'</dt><dd>'+esc(t.def)+(t.added?' <span class="added">· ergänzt am '+esc(fmtShort(t.added))+'</span>':'')+'</dd>';}).join(''):'<dd class="none">Kein Begriff gefunden.</dd>';
+        }
+        draw(''); inp.oninput=function(){draw(inp.value);};
+      }});
+    views.basics={el:bsec,lead:'<div class="lead"><h1>Grundwissen KI</h1><p class="intro">Das Wichtigste auf einen Blick – immer hier, unabhängig von der täglichen Ausgabe.</p></div>',sections:secs,active:'g-rules'};
+  } else {
+    views.basics={el:bsec,lead:'<div class="empty">Grundwissen konnte nicht geladen werden.</div>',sections:[],active:null};
+  }
+  mount('basics');
+
+  // ---------- Haupt-Tabs ----------
+  var tabBtns={briefing:document.getElementById('tab-briefing'),recaps:document.getElementById('tab-recaps'),basics:document.getElementById('tab-basics')};
+  var hashes={recaps:'#rueckblick',basics:'#grundwissen'};
+  function show(which){
+    current=which;
+    Object.keys(views).forEach(function(k){ views[k].el.classList.toggle('hidden',k!==which); tabBtns[k].setAttribute('aria-selected',k===which?'true':'false'); });
     if(nav) nav.style.display=(which==='briefing')?'':'none';
+    drawSubnav();
     try{
-      if(which==='briefing'){ if(lastHash) history.replaceState(null,'',lastHash); }
-      else { if(!/^#(grundwissen|rueckblick)$/.test(location.hash)) lastHash=location.hash; history.replaceState(null,'',tabs[which].hash); }
+      if(which==='briefing'){ if(eds.length) history.replaceState(null,'','#'+eds[+picker.value].date); }
+      else history.replaceState(null,'',hashes[which]);
     }catch(err){}
     window.scrollTo(0,0);
   }
-  window.KI_SHOW_TAB=show;
-  tBrief.onclick=function(){show('briefing');};
-  tRecaps.onclick=function(){show('recaps');};
-  tBasics.onclick=function(){show('basics');};
-  var ih=window.KI_INITIAL_HASH||location.hash;
-  if(ih==='#grundwissen'){ show('basics'); } else if(ih==='#rueckblick'){ show('recaps'); }
+  Object.keys(tabBtns).forEach(function(k){ tabBtns[k].onclick=function(){show(k);}; });
+
+  var hash=(location.hash||'').slice(1), start=0;
+  eds.forEach(function(e,i){ if(e.date===hash) start=i; });
+  if(eds.length) renderEdition(start); else mount('briefing');
+  show(hash==='grundwissen'?'basics':hash==='rueckblick'?'recaps':'briefing');
 })();
 </script>
 </body>
