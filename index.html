@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KI-Briefing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f4ef; --paper:#ffffff; --ink:#1d1d1b; --muted:#6b6a64; --line:#e3dfd5;
+  --accent:#c2410c; --accent-soft:#fdeee5; --us:#0f5f5c; --us-soft:#e4f2f1;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161614; --paper:#1f1f1c; --ink:#ecebe6; --muted:#a3a29a; --line:#33332e;
+    --accent:#fb923c; --accent-soft:#3a2416; --us:#5eead4; --us-soft:#173330;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161614; --paper:#1f1f1c; --ink:#ecebe6; --muted:#a3a29a; --line:#33332e;
+  --accent:#fb923c; --accent-soft:#3a2416; --us:#5eead4; --us-soft:#173330;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
+.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-.5px;line-height:1}
+.brand span{color:var(--accent)}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.nav{display:flex;gap:6px;align-items:center}
+.nav button,.nav select{font:inherit;font-size:14px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
+.nav button:disabled{opacity:.35;cursor:default}
+h1{font-family:Fraunces,Georgia,serif;font-size:30px;line-height:1.2;margin:28px 0 8px;letter-spacing:-.3px}
+.date{color:var(--accent);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-top:24px}
+.intro{color:var(--muted);font-size:17px;margin:0 0 8px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}
+.toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper)}
+h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:40px 0 14px;display:flex;align-items:center;gap:10px}
+h2 .n{font-family:Inter,sans-serif;font-size:12px;background:var(--ink);color:var(--bg);border-radius:6px;padding:2px 7px}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:14px}
+.card h3{margin:0 0 8px;font-size:17px;line-height:1.35}
+.card p{margin:0 0 10px}
+.forus{background:var(--us-soft);border-left:3px solid var(--us);border-radius:6px;padding:10px 12px;font-size:15px}
+.forus b{color:var(--us)}
+.src{margin-top:10px;font-size:13px;color:var(--muted)}
+.src a{color:var(--muted)}
+.src .lang{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:4px}
+.box{background:var(--us-soft);border-radius:12px;padding:18px 20px}
+.box ul{margin:0;padding-left:20px}
+.box li{margin-bottom:8px}
+.skill{background:var(--accent-soft);border-radius:12px;padding:20px}
+.skill .meta{font-size:13px;color:var(--accent);font-weight:600;margin-bottom:6px}
+.skill ol{padding-left:20px}
+.prompt{position:relative;background:var(--paper);border:1px dashed var(--accent);border-radius:8px;padding:12px 14px;font-size:14px;white-space:pre-wrap}
+.copy{margin-top:8px;font:inherit;font-size:13px;background:var(--accent);color:#fff;border:0;border-radius:6px;padding:6px 12px;cursor:pointer}
+.tools{display:grid;gap:12px}
+.tool b{display:block;margin-bottom:4px}
+.tool a{font-size:13px;color:var(--accent)}
+footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
+.empty{padding:40px 0;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand">KI<span>-</span>Briefing</div>
+      <div class="sub">Jeden Werktag um 7:30 · 5 Minuten Lesezeit</div>
+    </div>
+    <div class="nav">
+      <button id="older" title="Ältere Ausgabe">←</button>
+      <select id="picker" aria-label="Ausgabe wählen"></select>
+      <button id="newer" title="Neuere Ausgabe">→</button>
+    </div>
+  </header>
+  <main id="main"><div class="empty">Lädt …</div></main>
+  <footer>Zusammengestellt mit KI aus öffentlichen Quellen. Bitte wichtige Fakten in den verlinkten Originalquellen prüfen.</footer>
+</div>
+
+<script src="editions.js"></script>
+<script>
+(function(){
+  var eds = (window.KI_BRIEFING_EDITIONS || []).slice().sort(function(a,b){return a.date < b.date ? 1 : -1;});
+  var main = document.getElementById('main');
+  var picker = document.getElementById('picker');
+  var older = document.getElementById('older');
+  var newer = document.getElementById('newer');
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function fmt(d){
+    var p=d.split('-'); var dt=new Date(+p[0],+p[1]-1,+p[2]);
+    return dt.toLocaleDateString('de-DE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});
+  }
+  function sources(list){
+    if(!list||!list.length) return '';
+    return '<div class="src">Quellen: '+list.map(function(s){
+      return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a><span class="lang">EN</span>';
+    }).join(' · ')+'</div>';
+  }
+
+  if(!eds.length){ main.innerHTML='<div class="empty">Noch keine Ausgabe vorhanden.</div>'; return; }
+
+  eds.forEach(function(e,i){
+    var o=document.createElement('option'); o.value=i; o.textContent=(i===0?'Heute · ':'')+fmt(e.date); picker.appendChild(o);
+  });
+
+  function render(i){
+    var e=eds[i]; var h='';
+    h+='<div class="date">'+esc(fmt(e.date))+'</div>';
+    h+='<h1>'+esc(e.headline)+'</h1>';
+    h+='<p class="intro">'+esc(e.intro)+'</p>';
+    h+='<nav class="toc"><a href="#news">Was passiert ist</a><a href="#us">Warum es für uns zählt</a><a href="#skill">Skill des Tages</a><a href="#tools">Tool-Tipps</a></nav>';
+
+    h+='<h2 id="news"><span class="n">1</span>Was passiert ist</h2>';
+    (e.news||[]).forEach(function(n){
+      h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>';
+      if(n.forUs) h+='<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+'</div>';
+      h+=sources(n.sources)+'</article>';
+    });
+
+    if(e.forUsBox){
+      h+='<h2 id="us"><span class="n">2</span>Warum es für uns zählt</h2>';
+      h+='<div class="box"><b>'+esc(e.forUsBox.title)+'</b><ul style="margin-top:10px">';
+      (e.forUsBox.points||[]).forEach(function(p){h+='<li>'+esc(p)+'</li>';});
+      h+='</ul>'+sources(e.forUsBox.sources)+'</div>';
+    }
+
+    if(e.skill){
+      var s=e.skill;
+      h+='<h2 id="skill"><span class="n">3</span>Skill des Tages</h2>';
+      h+='<div class="skill"><div class="meta">⏱ '+esc(s.minutes)+' Minuten Übung</div><h3 style="margin:0 0 8px">'+esc(s.title)+'</h3><p>'+esc(s.why)+'</p><ol>';
+      (s.steps||[]).forEach(function(st){h+='<li>'+esc(st)+'</li>';});
+      h+='</ol>';
+      if(s.prompt) h+='<div class="prompt" id="prompt">'+esc(s.prompt)+'</div><button class="copy" id="copy">Auftrag kopieren</button>';
+      h+='</div>';
+    }
+
+    if(e.tools&&e.tools.length){
+      h+='<h2 id="tools"><span class="n">4</span>Tool-Tipps</h2><div class="tools">';
+      e.tools.forEach(function(t){
+        h+='<div class="card tool"><b>'+esc(t.name)+'</b>'+esc(t.tip)+(t.url?'<div><a href="'+esc(t.url)+'" target="_blank" rel="noopener">Mehr erfahren →</a></div>':'')+'</div>';
+      });
+      h+='</div>';
+    }
+
+    main.innerHTML=h;
+    picker.value=i; newer.disabled=(i===0); older.disabled=(i===eds.length-1);
+    var c=document.getElementById('copy');
+    if(c) c.onclick=function(){
+      var t=document.getElementById('prompt').textContent;
+      try{ navigator.clipboard.writeText(t).then(function(){c.textContent='Kopiert ✓';}); }
+      catch(err){ c.textContent='Bitte manuell kopieren'; }
+    };
+    try{ history.replaceState(null,'','#'+e.date); }catch(err){}
+    window.scrollTo(0,0);
+  }
+
+  picker.onchange=function(){render(+picker.value);};
+  older.onclick=function(){render(+picker.value+1);};
+  newer.onclick=function(){render(+picker.value-1);};
+
+  var start=0, hash=(location.hash||'').slice(1);
+  eds.forEach(function(e,i){ if(e.date===hash) start=i; });
+  render(start);
+})();
+</script>
+</body>
+</html>
