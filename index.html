@@ -59,6 +59,26 @@ h2 .n{font-family:Inter,sans-serif;font-size:12px;background:var(--ink);color:va
 .tool a{font-size:13px;color:var(--accent)}
 footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:14px}
 .empty{padding:40px 0;color:var(--muted)}
+.tabs{display:flex;gap:4px;margin-top:16px;border-bottom:1px solid var(--line)}
+.tabs button{font:inherit;font-size:15px;font-weight:600;background:none;border:0;border-bottom:3px solid transparent;color:var(--muted);padding:8px 14px;cursor:pointer;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.hidden{display:none !important}
+.rules{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.rules .card{margin:0}
+.rules .num{display:inline-block;font-size:12px;font-weight:600;color:var(--accent);margin-bottom:4px}
+.formula{display:grid;gap:10px}
+.formula .part{display:grid;grid-template-columns:110px 1fr;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.formula .part b{color:var(--accent)}
+.formula .ex{font-size:14px;color:var(--muted);font-style:italic;margin-top:2px}
+@media (max-width:520px){.formula .part{grid-template-columns:1fr;gap:2px}}
+.levels{display:grid;gap:10px}
+.level{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.level .lv{width:44px;height:44px;border-radius:50%;background:var(--us-soft);color:var(--us);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+.level .nx{font-size:14px;color:var(--us);margin-top:4px}
+.gsearch{width:100%;font:inherit;font-size:15px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink);margin-bottom:12px}
+.gloss dt{font-weight:600;margin-top:14px}
+.gloss dd{margin:2px 0 0;color:var(--ink)}
+.gloss .none{color:var(--muted)}
 </style>
 </head>
 <body>
@@ -74,11 +94,17 @@ footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid va
       <button id="newer" title="Neuere Ausgabe">→</button>
     </div>
   </header>
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-briefing" aria-selected="true">Tägliches Briefing</button>
+    <button role="tab" id="tab-basics" aria-selected="false">Grundwissen</button>
+  </nav>
   <main id="main"><div class="empty">Lädt …</div></main>
+  <section id="basics" class="hidden"></section>
   <footer>Zusammengestellt mit KI aus öffentlichen Quellen. Bitte wichtige Fakten in den verlinkten Originalquellen prüfen.</footer>
 </div>
 
 <script src="editions.js"></script>
+<script src="basics.js"></script>
 <script>
 (function(){
   var eds = (window.KI_BRIEFING_EDITIONS || []).slice().sort(function(a,b){return a.date < b.date ? 1 : -1;});
@@ -162,7 +188,73 @@ footer{margin-top:48px;color:var(--muted);font-size:13px;border-top:1px solid va
 
   var start=0, hash=(location.hash||'').slice(1);
   eds.forEach(function(e,i){ if(e.date===hash) start=i; });
+  window.KI_INITIAL_HASH = location.hash;
   render(start);
+})();
+</script>
+<script>
+(function(){
+  var b = window.KI_BRIEFING_BASICS;
+  var sec = document.getElementById('basics');
+  var main = document.getElementById('main');
+  var nav = document.querySelector('header .nav');
+  var tBrief = document.getElementById('tab-briefing');
+  var tBasics = document.getElementById('tab-basics');
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+  if(b){
+    var h='<h1>Grundwissen KI</h1><p class="intro">Das Wichtigste auf einen Blick – immer hier, unabhängig von der täglichen Ausgabe.</p>';
+    h+='<nav class="toc"><a href="#g-rules">Grundregeln</a><a href="#g-prompt">Prompt-Formel</a><a href="#g-levels">Reifegrad</a><a href="#g-gloss">Glossar</a></nav>';
+
+    h+='<h2 id="g-rules"><span class="n">1</span>Grundregeln</h2><div class="rules">';
+    (b.rules||[]).forEach(function(r,i){ h+='<div class="card"><span class="num">Regel '+(i+1)+'</span><h3>'+esc(r.title)+'</h3><p style="margin:0">'+esc(r.text)+'</p></div>'; });
+    h+='</div>';
+
+    if(b.promptFormula){
+      h+='<h2 id="g-prompt"><span class="n">2</span>Prompt-Formel</h2><p>'+esc(b.promptFormula.intro)+'</p><div class="formula">';
+      b.promptFormula.parts.forEach(function(p){ h+='<div class="part"><b>'+esc(p.name)+'</b><div>'+esc(p.text)+'<div class="ex">'+esc(p.example)+'</div></div></div>'; });
+      h+='</div>';
+    }
+
+    h+='<h2 id="g-levels"><span class="n">3</span>Reifegrad: Wo stehst du?</h2><div class="levels">';
+    (b.levels||[]).forEach(function(l){ h+='<div class="level"><div class="lv">'+esc(l.n)+'</div><div><b>'+esc(l.name)+'</b><div>'+esc(l.text)+'</div><div class="nx">Nächster Schritt: '+esc(l.next)+'</div></div></div>'; });
+    h+='</div>';
+
+    h+='<h2 id="g-gloss"><span class="n">4</span>Glossar</h2><input class="gsearch" id="gsearch" type="search" placeholder="Begriff suchen …" aria-label="Glossar durchsuchen"><dl class="gloss" id="gloss"></dl>';
+    h+='<p class="src">Stand: '+esc(b.updated)+'</p>';
+    sec.innerHTML=h;
+
+    var terms=(b.glossary||[]).slice().sort(function(x,y){return x.term.localeCompare(y.term,'de');});
+    var dl=document.getElementById('gloss');
+    function drawGloss(q){
+      q=(q||'').toLowerCase();
+      var list=terms.filter(function(t){return !q || t.term.toLowerCase().indexOf(q)>-1 || t.def.toLowerCase().indexOf(q)>-1;});
+      dl.innerHTML=list.length ? list.map(function(t){return '<dt>'+esc(t.term)+'</dt><dd>'+esc(t.def)+'</dd>';}).join('') : '<dd class="none">Kein Begriff gefunden.</dd>';
+    }
+    drawGloss('');
+    document.getElementById('gsearch').oninput=function(e){drawGloss(e.target.value);};
+  } else {
+    sec.innerHTML='<div class="empty">Grundwissen konnte nicht geladen werden.</div>';
+  }
+
+  var lastHash='';
+  function show(which){
+    var basics=(which==='basics');
+    sec.classList.toggle('hidden',!basics);
+    main.classList.toggle('hidden',basics);
+    if(nav) nav.style.visibility=basics?'hidden':'visible';
+    tBrief.setAttribute('aria-selected',basics?'false':'true');
+    tBasics.setAttribute('aria-selected',basics?'true':'false');
+    try{
+      if(basics){ lastHash=location.hash; history.replaceState(null,'','#grundwissen'); }
+      else if(lastHash){ history.replaceState(null,'',lastHash); }
+    }catch(err){}
+    window.scrollTo(0,0);
+  }
+  window.KI_SHOW_TAB=show;
+  tBrief.onclick=function(){show('briefing');};
+  tBasics.onclick=function(){show('basics');};
+  if((window.KI_INITIAL_HASH||location.hash)==='#grundwissen'){ show('basics'); }
 })();
 </script>
 </body>
