@@ -166,7 +166,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     h+='<p class="intro">'+esc(e.intro)+'</p>';
     var hasRoles=!!(e.roles&&e.roles.length), num=0;
     function sec(id,title){ num++; return '<h2 id="'+id+'"><span class="n">'+num+'</span>'+title+'</h2>'; }
-    h+='<nav class="toc"><a href="#news">Was passiert ist</a>'+(hasRoles?'<a href="#roles">Rollen-Radar</a>':'')+'<a href="#us">Warum es für uns zählt</a><a href="#skill">Skill des Tages</a><a href="#tools">Tool-Tipps</a></nav>';
+    h+='<nav class="toc"><a href="#news">Was passiert ist</a>'+(hasRoles?'<a href="#roles">Rollen-Radar</a>':'')+'<a href="#us">Warum es für uns zählt</a>'+(e.skill?'<a href="#skill">Skill des Tages</a>':'')+'<a href="#tools">Tool-Tipps</a></nav>';
 
     h+=sec('news','Was passiert ist');
     (e.news||[]).forEach(function(n){

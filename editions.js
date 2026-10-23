@@ -86,18 +86,6 @@ window.KI_BRIEFING_EDITIONS = [
         {"label": "t3n: 9.000 offene KI-Stellen im IT-Sektor", "url": "https://t3n.de/news/?p=1740490"}
       ]
     },
-    "skill": {
-      "title": "Eine ganze Aufgabe delegieren statt nur Fragen stellen",
-      "why": "Der größte Unterschied zwischen Einsteigern und Fortgeschrittenen: Fortgeschrittene geben der KI ein komplettes Arbeitspaket mit Ziel, Material und gewünschtem Ergebnis – und prüfen dann das Resultat.",
-      "minutes": 10,
-      "steps": [
-        "Nimm eine echte Projektanfrage und entferne Kundennamen und personenbezogene Daten (DSGVO!).",
-        "Gib sie einem KI-Assistenten, den eure Firma freigegeben hat, mit dem Auftrag unten.",
-        "Prüfe das Ergebnis kritisch: Was stimmt, was fehlt, was würdest du anders formulieren?",
-        "Verbessere den Auftrag einmal und lass es neu erstellen. Vergleiche beide Versionen."
-      ],
-      "prompt": "Du bist erfahrene Recruiterin für freiberufliche IT-Consultants. Hier ist eine anonymisierte Projektanfrage: [Text]. Erstelle mir: 1) ein Anforderungsprofil mit Muss- und Kann-Kriterien, 2) fünf Screening-Fragen für das Erstgespräch, 3) eine kurze Projektvorstellung (max. 5 Sätze) für passende Kandidaten. Markiere alles, was in der Anfrage unklar ist."
-    },
     "tools": [
       {
         "name": "Geplante KI-Aufgaben",
