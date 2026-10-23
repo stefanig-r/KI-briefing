@@ -97,6 +97,13 @@ details.recap .body{padding-bottom:18px}
 details.recap ol{padding-left:20px}
 details.recap ol li{margin-bottom:12px}
 details.recap h4{margin:18px 0 6px;font-size:15px}
+.roles{display:grid;gap:12px}
+.roles .card{margin:0}
+.rtag{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.05em;background:var(--ink);color:var(--bg);border-radius:6px;padding:2px 8px;margin-bottom:8px}
+.role h4{margin:12px 0 4px;font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.role ul{margin:0;padding-left:20px}
+.role .forus{margin-top:12px}
+.role .forus ul{margin-top:4px}
 </style>
 </head>
 <body>
@@ -157,17 +164,30 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     h+='<div class="date">'+esc(fmt(e.date))+'</div>';
     h+='<h1>'+esc(e.headline)+'</h1>';
     h+='<p class="intro">'+esc(e.intro)+'</p>';
-    h+='<nav class="toc"><a href="#news">Was passiert ist</a><a href="#us">Warum es für uns zählt</a><a href="#skill">Skill des Tages</a><a href="#tools">Tool-Tipps</a></nav>';
+    var hasRoles=!!(e.roles&&e.roles.length), num=0;
+    function sec(id,title){ num++; return '<h2 id="'+id+'"><span class="n">'+num+'</span>'+title+'</h2>'; }
+    h+='<nav class="toc"><a href="#news">Was passiert ist</a>'+(hasRoles?'<a href="#roles">Rollen-Radar</a>':'')+'<a href="#us">Warum es für uns zählt</a><a href="#skill">Skill des Tages</a><a href="#tools">Tool-Tipps</a></nav>';
 
-    h+='<h2 id="news"><span class="n">1</span>Was passiert ist</h2>';
+    h+=sec('news','Was passiert ist');
     (e.news||[]).forEach(function(n){
       h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>';
       if(n.forUs) h+='<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+'</div>';
       h+=sources(n.sources)+'</article>';
     });
 
+    if(hasRoles){
+      h+=sec('roles','Rollen-Radar: PM · BA · RE');
+      h+='<div class="roles">';
+      e.roles.forEach(function(r){
+        h+='<article class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.title)+'</h3><p>'+esc(r.text)+'</p>';
+        if(r.tip) h+='<div class="forus"><b>Für Recruiting & Vertrieb:</b> '+esc(r.tip)+'</div>';
+        h+=sources(r.sources)+'</article>';
+      });
+      h+='</div>';
+    }
+
     if(e.forUsBox){
-      h+='<h2 id="us"><span class="n">2</span>Warum es für uns zählt</h2>';
+      h+=sec('us','Warum es für uns zählt');
       h+='<div class="box"><b>'+esc(e.forUsBox.title)+'</b><ul style="margin-top:10px">';
       (e.forUsBox.points||[]).forEach(function(p){h+='<li>'+esc(p)+'</li>';});
       h+='</ul>'+sources(e.forUsBox.sources)+'</div>';
@@ -175,7 +195,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 
     if(e.skill){
       var s=e.skill;
-      h+='<h2 id="skill"><span class="n">3</span>Skill des Tages</h2>';
+      h+=sec('skill','Skill des Tages');
       h+='<div class="skill"><div class="meta">⏱ '+esc(s.minutes)+' Minuten Übung</div><h3 style="margin:0 0 8px">'+esc(s.title)+'</h3><p>'+esc(s.why)+'</p><ol>';
       (s.steps||[]).forEach(function(st){h+='<li>'+esc(st)+'</li>';});
       h+='</ol>';
@@ -184,7 +204,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     }
 
     if(e.tools&&e.tools.length){
-      h+='<h2 id="tools"><span class="n">4</span>Tool-Tipps</h2><div class="tools">';
+      h+=sec('tools','Tool-Tipps')+'<div class="tools">';
       e.tools.forEach(function(t){
         h+='<div class="card tool"><b>'+esc(t.name)+'</b>'+esc(t.tip)+(t.url?'<div><a href="'+esc(t.url)+'" target="_blank" rel="noopener">Mehr erfahren →</a></div>':'')+'</div>';
       });
@@ -225,7 +245,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 
   if(b){
     var h='<h1>Grundwissen KI</h1><p class="intro">Das Wichtigste auf einen Blick – immer hier, unabhängig von der täglichen Ausgabe.</p>';
-    h+='<nav class="toc"><a href="#g-rules">Grundregeln</a><a href="#g-prompt">Prompt-Formel</a><a href="#g-levels">Reifegrad</a><a href="#g-gloss">Glossar</a></nav>';
+    h+='<nav class="toc"><a href="#g-rules">Grundregeln</a><a href="#g-prompt">Prompt-Formel</a><a href="#g-levels">Reifegrad</a><a href="#g-roles">Rollen im Wandel</a><a href="#g-gloss">Glossar</a></nav>';
 
     h+='<h2 id="g-rules"><span class="n">1</span>Grundregeln</h2><div class="rules">';
     (b.rules||[]).forEach(function(r,i){ h+='<div class="card"><span class="num">Regel '+(i+1)+'</span><h3>'+esc(r.title)+'</h3><p style="margin:0">'+esc(r.text)+'</p></div>'; });
@@ -241,7 +261,19 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     (b.levels||[]).forEach(function(l){ h+='<div class="level"><div class="lv">'+esc(l.n)+'</div><div><b>'+esc(l.name)+'</b><div>'+esc(l.text)+'</div><div class="nx">Nächster Schritt: '+esc(l.next)+'</div></div></div>'; });
     h+='</div>';
 
-    h+='<h2 id="g-gloss"><span class="n">4</span>Glossar</h2><input class="gsearch" id="gsearch" type="search" placeholder="Begriff suchen …" aria-label="Glossar durchsuchen"><dl class="gloss" id="gloss"></dl>';
+    if(b.roles&&b.roles.length){
+      h+='<h2 id="g-roles"><span class="n">4</span>Rollen im Wandel: PM · BA · RE</h2><p>Was KI in diesen Rollen übernimmt, was beim Menschen bleibt – und was man im Gespräch mit Kandidaten abfragen kann.</p><div class="roles">';
+      b.roles.forEach(function(r){
+        function ul(a){return '<ul>'+(a||[]).map(function(x){return '<li>'+esc(x)+'</li>';}).join('')+'</ul>';}
+        h+='<div class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.name)+'</h3>'+
+          '<h4>KI übernimmt zunehmend</h4>'+ul(r.aiTakes)+
+          '<h4>Bleibt beim Menschen</h4>'+ul(r.human)+
+          '<div class="forus"><b>Im Gespräch fragen:</b>'+ul(r.ask)+'</div></div>';
+      });
+      h+='</div>';
+    }
+
+    h+='<h2 id="g-gloss"><span class="n">5</span>Glossar</h2><input class="gsearch" id="gsearch" type="search" placeholder="Begriff suchen …" aria-label="Glossar durchsuchen"><dl class="gloss" id="gloss"></dl>';
     h+='<p class="src">Stand: '+esc(b.updated)+'</p>';
     sec.innerHTML=h;
 

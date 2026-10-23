@@ -26,6 +26,26 @@ window.KI_BRIEFING_BASICS = {
     {"n": 4, "name": "Workflows automatisieren", "text": "Agenten oder geplante Aufgaben erledigen wiederkehrende Arbeit selbstständig.", "next": "Einen ganzen Prozess hinterfragen: Wie sähe er mit KI von Grund auf aus?"},
     {"n": 5, "name": "Prozesse neu denken", "text": "Abläufe werden mit KI grundsätzlich neu gestaltet, Menschen steuern und prüfen.", "next": "Erfahrungen im Team teilen und andere auf ihre nächste Stufe bringen."}
   ],
+  "roles": [
+    {
+      "role": "PM", "name": "Projektmanager",
+      "aiTakes": ["Statusberichte aus Tools (Jira, Git, Kalender) zusammenstellen", "Protokolle und Aufgabenlisten aus Meetings", "Risiken und Verzögerungen früh erkennen", "Umplanung vorschlagen, wenn Ressourcen fehlen"],
+      "human": ["Stakeholder-Kommunikation und Erwartungsmanagement", "Führung, Motivation, Konflikte lösen", "Priorisieren und Verantwortung übernehmen"],
+      "ask": ["Welche Routinearbeit haben Sie im letzten Projekt mit KI automatisiert?", "Wie prüfen Sie KI-generierte Status- oder Risikoeinschätzungen?", "Wie bringen Sie Teams mit, die KI skeptisch sehen?"]
+    },
+    {
+      "role": "BA", "name": "Business Analyst",
+      "aiTakes": ["User Stories und Akzeptanzkriterien entwerfen", "Prozessdokumentation und Diagramme", "Workshops und Interviews zusammenfassen", "Erste Datenauswertungen"],
+      "human": ["Den echten Bedarf hinter dem Wunsch erkennen", "Zwischen Fachbereich und IT übersetzen", "Entscheidungen mit Daten vorbereiten und vertreten"],
+      "ask": ["Wie validieren Sie von KI erstellte User Stories?", "Ein Beispiel, bei dem Sie mit Daten eine Entscheidung beeinflusst haben?", "Welche Ergebnisse (Zeit, Qualität) können Sie aus Ihrem letzten Projekt belegen?"]
+    },
+    {
+      "role": "RE", "name": "Requirements Engineer",
+      "aiTakes": ["Anforderungen formulieren und vereinheitlichen", "Auf Lücken, Widersprüche und Mehrdeutigkeit prüfen", "Klickbare Prototypen in Tagen statt Wochen", "Rückverfolgbarkeit pflegen"],
+      "human": ["Domänenwissen und Kontext", "Design-Entscheidungen und Priorisierung", "Konsistenz und Abnahme verantworten"],
+      "ask": ["Wie setzen Sie KI beim Erheben und Prüfen von Anforderungen ein?", "Wie stellen Sie sicher, dass keine vertraulichen Kundendaten in KI-Tools landen?", "Wie gehen Sie mit KI-Entwürfen um, die plausibel klingen, aber falsch sind?"]
+    }
+  ],
   "glossary": [
     {"term": "Agent", "def": "Eine KI, die nicht nur antwortet, sondern selbstständig mehrere Schritte ausführt – etwa recherchieren, Dateien erstellen oder in Apps arbeiten – um ein Ziel zu erreichen."},
     {"term": "Anonymisierung", "def": "Daten so verändern, dass sich keine Person mehr erkennen lässt. Bei Pseudonymisierung werden Namen nur ersetzt, die Zuordnung bleibt mit Zusatzwissen möglich."},

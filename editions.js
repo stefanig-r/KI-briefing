@@ -51,6 +51,29 @@ window.KI_BRIEFING_EDITIONS = [
         ]
       }
     ],
+    "roles": [
+      {
+        "role": "PM",
+        "title": "Projektmanagement: weniger Statusarbeit, mehr Stakeholder",
+        "text": "Ein Erfahrungsbericht auf dem Stack-Overflow-Blog beschreibt, wie KI-Agenten Statusberichte aus Entwickler-Tools zusammenstellen, Risiken früh melden und Umplanungen vorschlagen. In der beschriebenen Organisation sank der Verwaltungsanteil der PM-Arbeit auf unter 30 %, die gewonnene Zeit fließt in Planung und Abstimmung mit Stakeholdern.",
+        "tip": "Im Erstgespräch fragen: Welche Routinearbeit hat der PM mit KI automatisiert – und wie prüft er KI-generierte Status- oder Risikoeinschätzungen?",
+        "sources": [{"label": "Stack Overflow Blog (Aug 2026)", "url": "https://stackoverflow.blog/2026/08/20/ai-won-t-replace-project-managers-but-it-is-reshaping-how-work-gets-done/"}]
+      },
+      {
+        "role": "BA",
+        "title": "Business Analyse: vom Dokumentieren zum Übersetzen",
+        "text": "User Stories, Prozessdokumentation und Zusammenfassungen entstehen zunehmend mit KI. Laut einer Branchen-Einschätzung zählen deshalb eher Fachverständnis, Produktdenken und Datenkompetenz (z. B. SQL, Dashboards). Hybride Rollen wie Product Analyst oder Technical Product Owner tauchen häufiger in Ausschreibungen auf.",
+        "tip": "Profile, die konkrete Ergebnisse zeigen (eingesparte Zeit, verbesserte Prozesse) und KI-Nutzung belegen, heben sich ab. Bei der Profil-Aufbereitung gezielt danach fragen.",
+        "sources": [{"label": "Karaleise (Einschätzung eines BA-Trainers)", "url": "https://karaleise.com/why-business-analysts-are-struggling-to-get-jobs-in-2026/"}]
+      },
+      {
+        "role": "RE",
+        "title": "Requirements Engineering: Assistenz, nicht Ersatz",
+        "text": "Ein Bitkom-Onepager beschreibt, wie KI Anforderungen schneller formuliert und klickbare Prototypen in wenigen Tagen ermöglicht. Fachlicher Kontext, Design-Entscheidungen, Priorisierung und Konsistenzprüfung bleiben laut Bitkom aber beim Menschen.",
+        "tip": "Gute REs können erklären, wie sie KI-Entwürfe prüfen und wie sie vertrauliche Kundendaten aus KI-Tools heraushalten – beides im Gespräch abfragen.",
+        "sources": [{"label": "Bitkom: KI trifft Requirements Engineering", "url": "https://www.bitkom.org/index%2ephp/Bitkom/Publikationen/KI-trifft-Requirements-Engineering-Assistenz-nicht-Ersatz"}]
+      }
+    ],
     "forUsBox": {
       "title": "Was das für Personaldienstleister heißt",
       "points": [
