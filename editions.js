@@ -2,6 +2,141 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
   {
+    "date": "2026-10-26",
+    "headline": "Welche KI darf ich nutzen? Behörden und Software-Anbieter ziehen Grenzen",
+    "intro": "Zum Wochenstart geht es weniger um neue Modelle als um die Frage, welche KI-Werkzeuge im Arbeitsalltag erlaubt sind und wohin die Daten fließen. Dazu kommt ein Zukauf, der KI-Vorstellungsgespräche in große HR-Software bringt.",
+    "news": [
+      {
+        "title": "Schweden sperrt ChatGPT und Claude in den Regierungsbüros",
+        "summary": "Seit heute können Mitarbeitende der schwedischen Regierungskanzlei – Amt des Ministerpräsidenten und Ministerien – die Browser-Versionen von ChatGPT und Claude auf Dienstrechnern nicht mehr aufrufen. Begründet wird das mit Informationssicherheit: Für die frei zugänglichen Dienste gebe es keine Verträge, zudem habe es mehrere Fälle problematischer Nutzung gegeben. Erlaubt bleibt Microsoft Copilot, das vorher geprüft und abgesichert wurde. Über eine interne Plattform sind Modelle von OpenAI und Anthropic weiterhin nutzbar.",
+        "forUs": "Das Muster kennen wir auch von Kunden: Nicht KI an sich wird verboten, sondern ungeprüfte Tools ohne Vertrag. Consultants sollten im Projekt nur die vom Kunden freigegebenen KI-Werkzeuge nutzen – das am besten schon beim Onboarding klären.",
+        "sources": [
+          {
+            "label": "Notebookcheck: Sweden's government blocks ChatGPT and Claude",
+            "url": "https://www.notebookcheck.net/Sweden-s-government-blocks-ChatGPT-and-Claude-keeps-Copilot.1433522.0.html"
+          },
+          {
+            "label": "CEOWORLD: Sweden's Government Offices block ChatGPT and Claude",
+            "url": "https://ceoworld.biz/2026/10/24/sweden-government-offices-block-chatgpt-claude-copilot/"
+          }
+        ]
+      },
+      {
+        "title": "Dayforce kauft Ribbon AI: Erstgespräche führt die KI",
+        "summary": "Der HR-Softwareanbieter Dayforce will das Start-up Ribbon AI übernehmen und dessen Technik in sein Angebot „Agentic Recruiting“ einbauen. Ribbon führt Vorstellungsgespräche per Stimme oder Video, erstellt Fragen und Bewertungsraster aus der Stellenbeschreibung und wertet die Gesprächsprotokolle aus. Nach Firmenangaben wurden damit über eine Million Interviews geführt; die Einstellungsentscheidung soll beim Menschen bleiben. Kaufpreis und Abschlussdatum wurden nicht genannt.",
+        "forUs": "KI-Vorinterviews werden Standard in großen HR-Systemen – auch Kunden könnten sie für Freelancer-Auswahl einsetzen. Für uns gilt: Solche Systeme fallen im EU AI Act unter Hochrisiko-KI; Transparenz gegenüber Kandidaten und menschliche Prüfung sind Pflicht.",
+        "sources": [
+          {
+            "label": "IT Brief: Dayforce to buy Ribbon AI",
+            "url": "https://itbrief.co.uk/story/dayforce-to-buy-ribbon-ai-for-recruiting-technology"
+          },
+          {
+            "label": "Artiverse: Dayforce's Ribbon AI deal",
+            "url": "https://www.artiverse.ca/dayforces-ribbon-ai-deal-pushes-recruiting-toward-always-on-interviews/"
+          }
+        ]
+      },
+      {
+        "title": "Jira und Confluence: Mehr OpenAI im Atlassian-Assistenten Rovo",
+        "summary": "Atlassian hat seine Partnerschaft mit OpenAI ausgebaut: Rovo, der KI-Assistent in Jira, Confluence und Loom, nutzt künftig auch die neuesten GPT-Modelle und verbindet Tickets mit den zugehörigen Dokumenten. Welches Modell eine Anfrage bearbeitet, entscheidet ein automatischer Router – Administratoren können den Anbieter nicht pro Anfrage wählen. Laut Atlassian-Unterlagen können Daten dabei an externe Anbieter wie OpenAI in den USA gehen, auch wenn für die Jira-Instanz Datenresidenz in der EU vereinbart ist. Ab 3. Dezember wird zusätzliche Rovo-Nutzung standardmäßig über Credits abgerechnet.",
+        "forUs": "Viele Kunden unserer PM-, BA- und RE-Consultants arbeiten mit Jira. Dort werden jetzt Fragen zu Datenschutz, Auftragsverarbeitung und Kosten kommen – Consultants, die das einordnen können, sind im Vorteil.",
+        "sources": [
+          {
+            "label": "Beri: Atlassian's OpenAI deal and data routing",
+            "url": "https://www.beri.net/article/atlassian-openai-partnership-rovo-gpt-6-astra-dynamic-routing-no-provider-choice-atlassian-hosted-llm-cloud-enterprise"
+          },
+          {
+            "label": "Crypto Briefing: Atlassian and OpenAI expand partnership",
+            "url": "https://cryptobriefing.com/atlassian-openai-expand-partnership-gpt-6/"
+          }
+        ]
+      },
+      {
+        "title": "„Skills“ für KI-Agenten werden ein offener Standard",
+        "summary": "Anthropic hat sein Format „Agent Skills“ an die Agentic AI Foundation unter dem Dach der Linux Foundation übergeben. Ein Skill ist eine gebündelte Anleitung – etwa „so bereiten wir ein Beraterprofil auf“ –, die ein KI-Agent bei Bedarf lädt, statt dass man sie jedes Mal neu erklärt. Laut Anthropic unterstützen schon über 70 Plattformen das Format, darunter ChatGPT, GitHub Copilot und Cursor. Künftig pflegen Fachleute mehrerer Firmen den Standard gemeinsam.",
+        "forUs": "Wiederkehrende Abläufe (Profil-Formatierung, Anforderungs-Abgleich, Angebotstexte) lassen sich einmal als Skill beschreiben und dann in verschiedenen KI-Tools nutzen. Das macht eigene Vorlagen weniger abhängig von einem einzigen Anbieter.",
+        "sources": [
+          {
+            "label": "Mixed: Anthropic hands Agent Skills to foundation",
+            "url": "https://mixed-news.com/en/anthropic-agent-skills-agentic-ai-foundation/"
+          }
+        ]
+      }
+    ],
+    "roles": [
+      {
+        "role": "PM",
+        "title": "Projektmanagement: Projektleute wollen KI – die Organisationen hinken hinterher",
+        "text": "Eine GPM-Studie mit 300 Projektfachleuten aus Deutschland zeigt hohe Bereitschaft, KI stärker zu nutzen (6,0 von 7 Punkten), aber deutlich schwächere Voraussetzungen in den Unternehmen (4,3) und mühsame Anwendung (3,8). Den Anteil der Managementaufgaben, den KI übernehmen kann, schätzen die Befragten für 2030 auf rund die Hälfte. Eine klare Mehrheit (59 %) glaubt aber nicht, dass klassische PM-Kompetenzen dadurch an Bedeutung verlieren.",
+        "tip": "Kunden suchen PMs, die KI nicht nur selbst nutzen, sondern im Projekt einführen können. Im Gespräch fragen: Hat der Kandidat schon KI-Werkzeuge im Team eingeführt, inklusive Regeln und Schulung?",
+        "sources": [
+          {
+            "label": "GPM: KI-Studie – Projektmanagement vor dem Rollenwechsel (Sept. 2026)",
+            "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel"
+          }
+        ]
+      },
+      {
+        "role": "BA",
+        "title": "Business Analyse: Aus dem Anforderungsdokument direkt ins Backlog",
+        "text": "Microsoft hat ein Azure-DevOps-Plugin für Microsoft Copilot Cowork vorgestellt. Damit lassen sich Ideen oder ein Anforderungsdokument per Chat in Epics, Features und User Stories mit Akzeptanzkriterien umwandeln, Bugs vorsortieren und Besprechungsnotizen an Arbeitspakete hängen. Ob das Plugin allgemein verfügbar ist, lässt der Beitrag offen; es braucht Zugang zu Copilot Cowork und funktioniert nicht mit der lokalen Azure DevOps Server-Variante.",
+        "tip": "Der Erstentwurf eines Backlogs wird schneller – gefragt ist, wer ihn fachlich prüft und mit Stakeholdern abstimmt. Im Profil hervorheben, wie der BA KI-Entwürfe validiert, nicht nur dass er sie erzeugt.",
+        "sources": [
+          {
+            "label": "Azure DevOps Blog: Azure DevOps available in Microsoft Copilot (Okt. 2026)",
+            "url": "https://devblogs.microsoft.com/devops/azure-devops-available-in-microsoft-copilot"
+          }
+        ]
+      },
+      {
+        "role": "RE",
+        "title": "Requirements Engineering: KI prüft die Qualität von Anforderungen",
+        "text": "Das Azure-DevOps-Add-on Copilot4DevOps (ein Herstellerprodukt) bewertet in Version 11 Anforderungen nach Qualitätskriterien und schlägt Verbesserungen als einzelne Änderungen mit Begründung vor, die man annehmen oder ablehnen kann. Auch der Berufsverband IREB macht KI zum Schwerpunkt: Bis Dezember laufen deutsche Meetups (u. a. München am 29. Oktober) zu KI im RE und eine wöchentliche Online-Reihe „AI & us“.",
+        "tip": "Kunden erwarten zunehmend, dass REs mit KI-Prüfwerkzeugen umgehen können. Gute Frage im Interview: Wie entscheidet der Kandidat, welche KI-Vorschläge er übernimmt – und wo bleibt menschliches Urteil nötig?",
+        "sources": [
+          {
+            "label": "Copilot4DevOps: What's new in Version 11 (Okt. 2026)",
+            "url": "https://copilot4devops.com/whats-new-in-copilot4devops-version-11-ai-powered-slides-smarter-editing-and-more"
+          },
+          {
+            "label": "IREB News & Events",
+            "url": "https://ireb.org/en/news-events"
+          }
+        ]
+      }
+    ],
+    "forUsBox": {
+      "title": "Was das für Personaldienstleister heißt",
+      "points": [
+        "Laut Bitkom fehlen aktuell 79.000 IT-Fachkräfte – weniger als 2023 (149.000), aber 97 % der Unternehmen mit offenen IT-Stellen haben weiter Besetzungsprobleme. 49 % erwarten mehr Nachfrage nach IT-Fachkräften mit KI-Wissen.",
+        "74 % der Unternehmen sehen die Steuerung und Kontrolle von KI wachsen. Die heutigen Beispiele (Schweden, Jira) zeigen, wo das ansetzt: Tool-Freigaben, Datenflüsse, Kosten – ein Feld für PMs und BAs mit Governance-Erfahrung.",
+        "49 % der befragten Unternehmen wünschen sich eine Reform des Statusfeststellungsverfahrens, um Fachkräftebedarf leichter mit Selbstständigen zu decken – ein Argument im Kundengespräch über den Einsatz von Freelancern."
+      ],
+      "sources": [
+        {
+          "label": "Bitkom: IT-Fachkräftemangel halbiert (Sept. 2026)",
+          "url": "https://www.bitkom.org/Presse/Presseinformation/IT-Fachkraeftemangel-in-den-letzten-drei-Jahren-halbiert"
+        },
+        {
+          "label": "Notebookcheck: Sweden blocks ChatGPT and Claude",
+          "url": "https://www.notebookcheck.net/Sweden-s-government-blocks-ChatGPT-and-Claude-keeps-Copilot.1433522.0.html"
+        }
+      ]
+    },
+    "tools": [
+      {
+        "name": "Skills in Claude oder ChatGPT",
+        "tip": "Einen wiederkehrenden Ablauf, z. B. „Beraterprofil im Firmenformat aufbereiten“, einmal als Skill mit Anleitung und Beispiel anlegen. Keine echten Kandidatendaten in private Konten laden – nur in freigegebene Firmen-Tools.",
+        "url": "https://mixed-news.com/en/anthropic-agent-skills-agentic-ai-foundation/"
+      },
+      {
+        "name": "Azure-DevOps-Plugin für Copilot Cowork",
+        "tip": "Wer Kunden mit Azure DevOps betreut: Ausprobieren, wie aus einem Anforderungstext ein Backlog-Entwurf wird – das zeigt, was Kunden künftig von BAs erwarten. Nur nutzbar, wenn der Microsoft-Tenant dafür freigeschaltet ist.",
+        "url": "https://devblogs.microsoft.com/devops/azure-devops-available-in-microsoft-copilot"
+      }
+    ]
+  },
+  {
     "date": "2026-10-23",
     "headline": "KI findet eine Sicherheitslücke im halben Internet – und Agenten werden zu Kollegen",
     "intro": "Diese Woche zeigt zwei Seiten derselben Entwicklung: KI-Agenten arbeiten immer selbstständiger. Das macht Sicherheitsforschung und Software-Nachbau schneller – und bringt erste persönliche Agenten, die den Arbeitstag vorsortieren.",

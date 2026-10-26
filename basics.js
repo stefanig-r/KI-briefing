@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-10-23",
+  "updated": "2026-10-26",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term": "Skill (Agent Skill)", "def": "Eine gespeicherte Anleitung, die ein KI-Agent bei Bedarf lädt, etwa für einen festen Arbeitsablauf mit Vorlagen und Beispielen. So muss man denselben Ablauf nicht in jedem Chat neu erklären.", "added": "2026-10-26"},
+    {"term": "Datenresidenz", "def": "Die Zusage, dass Daten in einer bestimmten Region gespeichert werden, z. B. in der EU. Sie gilt oft nur für die Speicherung – die Verarbeitung durch ein KI-Modell kann trotzdem anderswo stattfinden.", "added": "2026-10-26"},
     {"term": "Proaktiver Agent", "def": "Ein KI-Agent, der nicht auf Fragen wartet, sondern verbundene Apps wie E-Mail oder Kalender beobachtet und sich meldet, wenn etwas Aufmerksamkeit braucht. Beispiele: Claude Duet, OpenAI Dots, Meta Muse.", "added": "2026-10-23"},
     {"term": "Reverse Engineering (KI-gestützt)", "def": "Fertige Software ohne Quellcode analysieren, um zu verstehen, wie sie funktioniert, und sie ggf. nachzubauen. KI-Agenten übernehmen dabei zunehmend die Detailarbeit.", "added": "2026-10-23"},
     {"term": "Agent", "def": "Eine KI, die nicht nur antwortet, sondern selbstständig mehrere Schritte ausführt – etwa recherchieren, Dateien erstellen oder in Apps arbeiten – um ein Ziel zu erreichen."},
