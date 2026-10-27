@@ -118,6 +118,11 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .panel-title{font-family:Fraunces,Georgia,serif;font-size:22px;margin:14px 0 14px}
 .newtag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:2px}
 .gloss .added{font-size:12px;color:var(--muted)}
+.learn{margin-top:10px;padding-top:8px;border-top:1px dashed var(--us);font-size:14px}
+.learn b{color:var(--us)}
+.learn ul{margin:4px 0 0;padding-left:18px}
+.learn a{color:var(--us)}
+.learn .lang{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:4px;color:var(--muted)}
 .lsub{font-family:Fraunces,Georgia,serif;font-size:19px;margin:26px 0 10px}
 .prov{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .prov .card{margin:0}
@@ -178,6 +183,10 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function fmt(d){var p=d.split('-');return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString('de-DE',{weekday:'long',day:'numeric',month:'long',year:'numeric'});}
   function fmtShort(d){var p=d.split('-');return new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString('de-DE',{day:'numeric',month:'numeric',year:'numeric'});}
+  function learn(list){
+    if(!list||!list.length) return '';
+    return '<div class="learn"><b>Hier informieren:</b><ul>'+list.map(function(l){return '<li><a href="'+esc(l.url)+'" target="_blank" rel="noopener">'+esc(l.label)+'</a>'+(l.lang?'<span class="lang">'+esc(l.lang)+'</span>':'')+'</li>';}).join('')+'</ul></div>';
+  }
   function sources(list){
     if(!list||!list.length) return '';
     return '<div class="src">Quellen: '+list.map(function(s){return '<a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a><span class="lang">EN</span>';}).join(' · ')+'</div>';
@@ -231,13 +240,13 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
     var secs=[];
     var h='';
     (e.news||[]).forEach(function(n){
-      h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>'+(n.forUs?'<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+'</div>':'')+sources(n.sources)+'</article>';
+      h+='<article class="card"><h3>'+esc(n.title)+'</h3><p>'+esc(n.summary)+'</p>'+(n.forUs?'<div class="forus"><b>Für uns:</b> '+esc(n.forUs)+learn(n.learn)+'</div>':learn(n.learn))+sources(n.sources)+'</article>';
     });
     secs.push({id:'news',label:'Was passiert ist',html:h});
     if(e.roles&&e.roles.length){
       h='<div class="roles">';
       e.roles.forEach(function(r){
-        h+='<article class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.title)+'</h3><p>'+esc(r.text)+'</p>'+(r.tip?'<div class="forus"><b>Für Recruiting & Vertrieb:</b> '+esc(r.tip)+'</div>':'')+sources(r.sources)+'</article>';
+        h+='<article class="card role"><span class="rtag">'+esc(r.role)+'</span><h3>'+esc(r.title)+'</h3><p>'+esc(r.text)+'</p>'+(r.tip?'<div class="forus"><b>Für Recruiting & Vertrieb:</b> '+esc(r.tip)+learn(r.learn)+'</div>':learn(r.learn))+sources(r.sources)+'</article>';
       });
       secs.push({id:'roles',label:'Rollen-Radar',html:h+'</div>'});
     }
