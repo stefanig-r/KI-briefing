@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Computer Use (Computer-Nutzung)","def":"Fähigkeit eines KI-Modells, Programme über die Bildschirmoberfläche zu bedienen – also zu klicken, zu tippen und zwischen Fenstern zu wechseln wie ein Mensch. So kann die KI Aufgaben auch in Systemen erledigen, die keine technische Schnittstelle haben.","added":"2026-10-27"},
+    {"term":"Prompt Injection","def":"Angriff, bei dem versteckte Anweisungen in Texten, Webseiten oder Dateien eine KI dazu bringen, etwas anderes zu tun als vom Nutzer gewollt – etwa Daten preiszugeben. Besonders riskant bei KI-Agenten, die selbstständig Inhalte lesen und handeln.","added":"2026-10-27"},
     {"term": "Skill (Agent Skill)", "def": "Eine gespeicherte Anleitung, die ein KI-Agent bei Bedarf lädt, etwa für einen festen Arbeitsablauf mit Vorlagen und Beispielen. So muss man denselben Ablauf nicht in jedem Chat neu erklären.", "added": "2026-10-26"},
     {"term": "Datenresidenz", "def": "Die Zusage, dass Daten in einer bestimmten Region gespeichert werden, z. B. in der EU. Sie gilt oft nur für die Speicherung – die Verarbeitung durch ein KI-Modell kann trotzdem anderswo stattfinden.", "added": "2026-10-26"},
     {"term": "Proaktiver Agent", "def": "Ein KI-Agent, der nicht auf Fragen wartet, sondern verbundene Apps wie E-Mail oder Kalender beobachtet und sich meldet, wenn etwas Aufmerksamkeit braucht. Beispiele: Claude Duet, OpenAI Dots, Meta Muse.", "added": "2026-10-23"},
