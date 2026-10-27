@@ -5,38 +5,38 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>KI-Briefing</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#f6f4ef; --paper:#ffffff; --ink:#1d1d1b; --muted:#6b6a64; --line:#e3dfd5;
-  --accent:#c2410c; --accent-soft:#fdeee5; --us:#0f5f5c; --us-soft:#e4f2f1;
+  --bg:#f4f6f9; --paper:#ffffff; --ink:#0b0d12; --muted:#5a6270; --line:#dde2ea;
+  --accent:#0057b8; --accent-soft:#e8f0fb; --us:#0b3d7a; --us-soft:#edf3fb;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#161614; --paper:#1f1f1c; --ink:#ecebe6; --muted:#a3a29a; --line:#33332e;
-    --accent:#fb923c; --accent-soft:#3a2416; --us:#5eead4; --us-soft:#173330;
+    --bg:#0a0d12; --paper:#121722; --ink:#f2f4f8; --muted:#9aa4b5; --line:#262e3b;
+    --accent:#5aa2ff; --accent-soft:#132640; --us:#8cbcff; --us-soft:#14233a;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#161614; --paper:#1f1f1c; --ink:#ecebe6; --muted:#a3a29a; --line:#33332e;
-  --accent:#fb923c; --accent-soft:#3a2416; --us:#5eead4; --us-soft:#173330;
+  --bg:#0a0d12; --paper:#121722; --ink:#f2f4f8; --muted:#9aa4b5; --line:#262e3b;
+  --accent:#5aa2ff; --accent-soft:#132640; --us:#8cbcff; --us-soft:#14233a;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,sans-serif}
 .wrap{max-width:760px;margin:0 auto;padding:28px 16px 64px}
-header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:12px}
-.brand{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:30px;letter-spacing:-.5px;line-height:1}
+header{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;border-bottom:3px solid var(--accent);padding-bottom:12px}
+.brand{font-family:Inter,system-ui,sans-serif;font-weight:800;font-size:28px;letter-spacing:-.8px;line-height:1;text-transform:uppercase}
 .brand span{color:var(--accent)}
 .sub{color:var(--muted);font-size:13px;margin-top:4px}
 .nav{display:flex;gap:6px;align-items:center}
 .nav button,.nav select{font:inherit;font-size:14px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 10px;cursor:pointer}
 .nav button:disabled{opacity:.35;cursor:default}
-h1{font-family:Fraunces,Georgia,serif;font-size:30px;line-height:1.2;margin:28px 0 8px;letter-spacing:-.3px}
+h1{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:30px;line-height:1.2;margin:28px 0 8px;letter-spacing:-.3px}
 .date{color:var(--accent);font-weight:600;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin-top:24px}
 .intro{color:var(--muted);font-size:17px;margin:0 0 8px}
 .toc{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 8px}
 .toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:4px 12px;background:var(--paper)}
-h2{font-family:Fraunces,Georgia,serif;font-size:22px;margin:40px 0 14px;display:flex;align-items:center;gap:10px}
+h2{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:22px;margin:40px 0 14px;display:flex;align-items:center;gap:10px}
 h2 .n{font-family:Inter,sans-serif;font-size:12px;background:var(--ink);color:var(--bg);border-radius:6px;padding:2px 7px}
 .card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:14px}
 .card h3{margin:0 0 8px;font-size:17px;line-height:1.35}
@@ -90,7 +90,7 @@ details.recap summary{cursor:pointer;list-style:none;padding:16px 0}
 details.recap summary::-webkit-details-marker{display:none}
 details.recap .tag{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-bottom:4px}
 details.recap .tag.month{color:var(--us)}
-details.recap .rh{font-family:Fraunces,Georgia,serif;font-size:19px;line-height:1.3;font-weight:700}
+details.recap .rh{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:19px;line-height:1.3;font-weight:700}
 details.recap .chev{float:right;color:var(--muted);transition:transform .2s}
 details.recap[open] .chev{transform:rotate(90deg)}
 details.recap .body{padding-bottom:18px}
@@ -115,7 +115,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .panel{padding-top:8px}
 .lead{padding-bottom:4px}
 .lead h1{margin-top:12px}
-.panel-title{font-family:Fraunces,Georgia,serif;font-size:22px;margin:14px 0 14px}
+.panel-title{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:22px;margin:14px 0 14px}
 .newtag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:2px}
 .gloss .added{font-size:12px;color:var(--muted)}
 .topic .ttags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;align-items:center}
@@ -132,7 +132,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .learn ul{margin:4px 0 0;padding-left:18px}
 .learn a{color:var(--us)}
 .learn .lang{font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 4px;margin-left:4px;color:var(--muted)}
-.lsub{font-family:Fraunces,Georgia,serif;font-size:19px;margin:26px 0 10px}
+.lsub{font-family:Inter,system-ui,sans-serif;font-weight:700;font-size:19px;margin:26px 0 10px}
 .prov{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
 .prov .card{margin:0}
 .prov .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
