@@ -118,6 +118,15 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 .panel-title{font-family:Fraunces,Georgia,serif;font-size:22px;margin:14px 0 14px}
 .newtag{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;background:var(--accent);color:#fff;border-radius:4px;padding:1px 6px;margin-left:8px;vertical-align:2px}
 .gloss .added{font-size:12px;color:var(--muted)}
+.topic .ttags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;align-items:center}
+.topic .aud{font-size:11px;font-weight:600;background:var(--us-soft);color:var(--us);border-radius:999px;padding:2px 8px}
+.topic .lvl{font-size:12px;color:var(--muted);margin-left:auto}
+.topic h4{margin:10px 0 4px;font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.topic ul{margin:0;padding-left:20px}
+.topic .trig{margin-top:10px;font-size:13px;color:var(--muted)}
+.topic .trig a{color:var(--muted)}
+.newtag.upd{background:var(--us)}
+@media (max-width:480px){.tabs .long{display:none}.tabs button{padding:8px 9px}}
 .learn{margin-top:10px;padding-top:8px;border-top:1px dashed var(--us);font-size:14px}
 .learn b{color:var(--us)}
 .learn ul{margin:4px 0 0;padding-left:18px}
@@ -163,14 +172,16 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
   </header>
   <div class="sticky">
     <nav class="tabs" role="tablist">
-      <button role="tab" id="tab-briefing" aria-selected="true">Tägliches Briefing</button>
+      <button role="tab" id="tab-briefing" aria-selected="true"><span class="long">Tägliches </span>Briefing</button>
       <button role="tab" id="tab-recaps" aria-selected="false">Rückblick</button>
+      <button role="tab" id="tab-learn" aria-selected="false">Lernen</button>
       <button role="tab" id="tab-basics" aria-selected="false">Grundwissen</button>
     </nav>
     <nav class="subtabs" id="subtabs" role="tablist" aria-label="Abschnitte"></nav>
   </div>
   <main id="main"><div class="empty">Lädt …</div></main>
   <section id="recaps" class="hidden"></section>
+  <section id="learn" class="hidden"></section>
   <section id="basics" class="hidden"></section>
   <footer>Zusammengestellt mit KI aus öffentlichen Quellen. Bitte wichtige Fakten in den verlinkten Originalquellen prüfen.</footer>
 </div>
@@ -178,6 +189,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
 <script src="editions.js"></script>
 <script src="basics.js"></script>
 <script src="recaps.js"></script>
+<script src="learning.js"></script>
 <script>
 (function(){
   function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
@@ -350,9 +362,55 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
   }
   mount('basics');
 
+  // ---------- Lernen ----------
+  var lsec=document.getElementById('learn');
+  var topics=(window.KI_BRIEFING_LEARNING||[]).slice();
+  var audNames={alle:'Für alle',recruiting:'Recruiting & Vertrieb',PM:'PM',BA:'BA',RE:'RE'};
+  var todayL=new Date();
+  function daysSince(d){var p=(d||'').split('-');return p.length<3?999:(todayL-new Date(+p[0],+p[1]-1,+p[2]))/864e5;}
+  function lastTrig(t){return (t.triggers&&t.triggers.length)?t.triggers.map(function(x){return x.date;}).sort().pop():t.added;}
+  function badge(t){
+    if(daysSince(t.added)<=14) return '<span class="newtag">Neu</span>';
+    if(daysSince(lastTrig(t))<=7) return '<span class="newtag upd">Wieder aktuell</span>';
+    return '';
+  }
+  function topicCard(t){
+    var h='<article class="card topic"><div class="ttags">'+(t.audience||[]).map(function(a){return '<span class="aud">'+esc(audNames[a]||a)+'</span>';}).join('')+'<span class="lvl">'+esc(t.level)+' · '+esc(t.effort)+'</span></div>';
+    h+='<h3>'+esc(t.title)+badge(t)+'</h3><p>'+esc(t.why)+'</p>';
+    if(t.goals&&t.goals.length) h+='<h4>Danach kannst du</h4>'+ul(t.goals);
+    h+=learn(t.resources);
+    if(t.triggers&&t.triggers.length){
+      h+='<div class="trig"><b>Anlass im Briefing:</b> '+t.triggers.slice(0,4).map(function(x){return '<a href="#'+esc(x.date)+'" data-ed="'+esc(x.date)+'">'+esc(fmtShort(x.date))+': '+esc(x.title)+'</a>';}).join(' · ')+'</div>';
+    }
+    return h+'</article>';
+  }
+  function topicList(aud){
+    var list=topics.filter(function(t){return aud==='all'||(t.audience||[]).indexOf(aud)>-1;});
+    list.sort(function(a,b){
+      var an=daysSince(a.added)<=14||daysSince(lastTrig(a))<=7, bn=daysSince(b.added)<=14||daysSince(lastTrig(b))<=7;
+      if((a.priority||9)!==(b.priority||9)) return (a.priority||9)-(b.priority||9);
+      if(an!==bn) return an?-1:1;
+      return lastTrig(a)<lastTrig(b)?1:-1;
+    });
+    if(!list.length) return '<div class="empty">Noch keine Themen für diese Gruppe.</div>';
+    return list.map(topicCard).join('');
+  }
+  function bindTriggers(panel){
+    Array.prototype.forEach.call(panel.querySelectorAll('a[data-ed]'),function(a){
+      a.onclick=function(ev){ev.preventDefault(); var d=a.getAttribute('data-ed'); var idx=-1; eds.forEach(function(e,i){if(e.date===d) idx=i;}); if(idx>-1){ renderEdition(idx); show('briefing'); }};
+    });
+  }
+  var lsecs=[{id:'all',label:'Alle Themen',count:topics.length,html:topicList('all'),after:bindTriggers}];
+  ['alle','recruiting','PM','BA','RE'].forEach(function(a){
+    var n=topics.filter(function(t){return (t.audience||[]).indexOf(a)>-1;}).length;
+    if(n) lsecs.push({id:'aud-'+a,label:audNames[a],count:n,html:topicList(a),after:bindTriggers});
+  });
+  views.learn={el:lsec,lead:'<div class="lead"><h1>Lernen</h1><p class="intro">Was wir als Team lernen sollten – abgeleitet aus dem, was in den Ausgaben passiert. Neue Themen kommen automatisch dazu, wiederkehrende rücken nach oben.</p></div>',sections:lsecs,active:'all'};
+  mount('learn');
+
   // ---------- Haupt-Tabs ----------
-  var tabBtns={briefing:document.getElementById('tab-briefing'),recaps:document.getElementById('tab-recaps'),basics:document.getElementById('tab-basics')};
-  var hashes={recaps:'#rueckblick',basics:'#grundwissen'};
+  var tabBtns={briefing:document.getElementById('tab-briefing'),recaps:document.getElementById('tab-recaps'),learn:document.getElementById('tab-learn'),basics:document.getElementById('tab-basics')};
+  var hashes={recaps:'#rueckblick',learn:'#lernen',basics:'#grundwissen'};
   function show(which){
     current=which;
     Object.keys(views).forEach(function(k){ views[k].el.classList.toggle('hidden',k!==which); tabBtns[k].setAttribute('aria-selected',k===which?'true':'false'); });
@@ -369,7 +427,7 @@ details.recap h4{margin:18px 0 6px;font-size:15px}
   var hash=(location.hash||'').slice(1), start=0;
   eds.forEach(function(e,i){ if(e.date===hash) start=i; });
   if(eds.length) renderEdition(start); else mount('briefing');
-  show(hash==='grundwissen'?'basics':hash==='rueckblick'?'recaps':'briefing');
+  show(hash==='grundwissen'?'basics':hash==='rueckblick'?'recaps':hash==='lernen'?'learn':'briefing');
 })();
 </script>
 </body>
