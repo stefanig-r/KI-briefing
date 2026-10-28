@@ -2,6 +2,166 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
   {
+    "date": "2026-10-28",
+    "headline": "ERP-Riesen setzen auf Agenten – und im Recruiting wächst die Schatten-KI",
+    "intro": "Oracle und SAP haben am selben Tag gezeigt, wie KI-Agenten tief in Unternehmenssoftware für Finanzen, Personal und Lieferketten einziehen sollen. Gleichzeitig zeigen zwei Erhebungen, wo es im Alltag hakt: ungeprüfte KI im Recruiting und vergessene Agenten mit offenen Zugängen.",
+    "news": [
+      {
+        "title": "Oracle macht ChatGPT zur Bedienoberfläche für seine Geschäftssoftware",
+        "summary": "Oracle und OpenAI haben am 27. Oktober auf der Konferenz Oracle AI World ihre Partnerschaft auf Software ausgeweitet. Mit „Oracle AI Workspace“ sollen Beschäftigte direkt aus ChatGPT heraus Informationen aus Oracle Fusion Applications und NetSuite abrufen, freigegebene Abläufe starten und Aktionen auslösen; Berechtigungen und Prüfprotokolle sollen dabei erhalten bleiben. Dazu kommen ein Sicherheitsdienst auf Basis von OpenAI-Modellen und ein Baukasten, mit dem auch Menschen ohne Programmierkenntnisse per Codex eigene Anwendungen erstellen. Termine für die allgemeine Verfügbarkeit nannten die Firmen nicht.",
+        "forUs": "Bei Kunden mit Oracle-ERP verschiebt sich die Arbeit vom Klicken in Masken hin zum Steuern von Agenten – gefragt sind Consultants, die Prozesse, Rechte und Freigaben sauber definieren. Für den Wettbewerb mit SAP-Projekten lohnt ein Blick, welche Kunden beide Welten betreiben.",
+        "sources": [
+          {
+            "label": "Techzine: Oracle makes ChatGPT the central hub for applications",
+            "url": "https://www.techzine.eu/news/applications/145324/oracle-makes-chatgpt-the-central-hub-for-applications/"
+          },
+          {
+            "label": "AI Weekly: AI News Today",
+            "url": "https://aiweekly.co/ai-news-today"
+          }
+        ],
+        "learn": [
+          {
+            "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+            "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+            "lang": "DE"
+          }
+        ]
+      },
+      {
+        "title": "SAP TechEd: Joule-Agenten sollen zusammenarbeiten – über eine kontrollierte Tür",
+        "summary": "Auf der Entwicklerkonferenz SAP TechEd in Berlin hat SAP am 27. Oktober neue Funktionen für seinen KI-Assistenten Joule vorgestellt. Agenten sollen über offene Standards wie MCP und A2A mit anderen Systemen und Agenten zusammenarbeiten, der Zugriff läuft aber über ein zentrales, überwachtes Gateway. Über Joule Studio können Agenten künftig feste Automatisierungsabläufe (n8n) anstoßen – sinnvoll für Schritte, die aus Compliance-Gründen immer gleich laufen müssen. Ausgewählte Kunden können eigene Agenten bis Ende Dezember 2026 kostenlos auf SAPs Plattform betreiben; Termine für die breite Verfügbarkeit fehlen noch.",
+        "forUs": "SAP-Projekte bekommen eine neue Agenten-Ebene: Neben klassischem Modul-Know-how werden Erfahrung mit Joule, Integration und Agenten-Governance zum Unterscheidungsmerkmal in SAP-Profilen. Bei Kandidaten gezielt nachfragen, ob sie Joule schon im Projekt eingesetzt oder konfiguriert haben.",
+        "sources": [
+          {
+            "label": "SiliconANGLE: SAP advances its autonomous enterprise push with governed Joule agents",
+            "url": "https://siliconangle.com/2026/10/27/sap-advances-its-autonomous-enterprise-push-with-smarter-governed-joule-agents/"
+          },
+          {
+            "label": "EuropaWire: SAP expands enterprise AI agent development and governance at TechEd 2026",
+            "url": "https://news.europawire.eu/sap-expands-enterprise-ai-agent-development-and-governance-at-teched-2026-reveals-new-tabular-models-and-space-deployment/eu-press-release/2026/10/27/13/57/08/184635"
+          }
+        ],
+        "learn": [
+          {
+            "label": "SAP Learning: Getting Started with Joule for Business Users (kostenloser Kurs)",
+            "url": "https://learning.sap.com/de/courses/getting-started-with-joule-for-business-users",
+            "lang": "EN"
+          }
+        ]
+      },
+      {
+        "title": "Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft",
+        "summary": "Eine von Indeed beauftragte Befragung von 300 HR-Entscheidern in Deutschland (Censuswide, Ende September) zeigt Lücken beim KI-Einsatz in der Bewerbervorauswahl. 28 Prozent der Recruiting-Verantwortlichen berichten, dass es kein offizielles Tool gibt und Beschäftigte deshalb eigenständig Chatbots wie ChatGPT nutzen; in Firmen mit 250 bis 500 Mitarbeitenden sind es sogar 48 Prozent. Von denen, die Software oder KI zur Vorauswahl einsetzen, lassen 11 Prozent automatische Absagen gar nicht mehr von einem Menschen prüfen, nur knapp die Hälfte prüft jeden Fall. 63 Prozent fürchten, dass so passende Talente durchs Raster fallen.",
+        "forUs": "Kandidatendaten in privaten Chatbot-Konten sind ein Datenschutzrisiko, und KI-Vorauswahl ohne menschliche Prüfung kollidiert mit den Regeln für Hochrisiko-KI im Beschäftigungsbereich. Für uns heißt das: nur freigegebene Tools nutzen und bei jeder KI-gestützten Absage einen Menschen draufschauen lassen – das ist auch ein gutes Argument gegenüber Kunden.",
+        "sources": [
+          {
+            "label": "Personalwirtschaft: Umfrage – HR nutzt Schatten-KI (14.10.2026)",
+            "url": "https://www.personalwirtschaft.de/news/recruiting/umfrage-hr-nutzt-schatten-ki-und-kontrolliert-von-ki-aussortierte-bewerbungen-nicht-210158/"
+          }
+        ],
+        "learn": [
+          {
+            "label": "EU AI Act Service Desk: Hochrisiko-KI im Bereich Beschäftigung (mit Beispielen)",
+            "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464",
+            "lang": "EN"
+          },
+          {
+            "label": "Bundesnetzagentur: KI-Service Desk mit Compliance-Kompass",
+            "url": "https://www.bundesnetzagentur.de/ki",
+            "lang": "DE"
+          }
+        ]
+      },
+      {
+        "title": "Vergessene KI-Agenten behalten ihre Zugänge",
+        "summary": "Der Sicherheitsanbieter Arrakis hat Betriebsdaten von mehreren tausend KI-Agenten bei seinen Kunden über zwölf Wochen ausgewertet. Demnach waren 76 Prozent der eingerichteten Agenten seit 60 Tagen nicht mehr gelaufen, ihre Zugangsdaten funktionierten aber weiter; 44 Prozent waren sogar seit 180 Tagen inaktiv. 70 Prozent der Agenten konnten auf sensible Systeme wie Cloud-Speicher zugreifen, fast immer ohne nachgewiesenen Schutz vor Datenabfluss. Der Bericht stammt von einem Anbieter, der dafür Lösungen verkauft – die Richtung deckt sich aber mit anderen Warnungen.",
+        "forUs": "Wer einen Agenten einrichtet, muss auch sein Ende planen: Zuständigkeit, Rechte und Abschaltung gehören in jedes Agenten-Projekt. Consultants, die Agenten-Governance und Berechtigungskonzepte mitdenken, sind für Kunden besonders wertvoll.",
+        "sources": [
+          {
+            "label": "Hackread: Arrakis report finds 76% of AI agents are dormant (21.10.2026)",
+            "url": "https://hackread.com/arrakis-security-report-finds-76-of-ai-agents-are-dormant-but-keep-their-credentials-and-connections/"
+          }
+        ],
+        "learn": [
+          {
+            "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (2026)",
+            "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+            "lang": "EN"
+          }
+        ]
+      }
+    ],
+    "roles": [
+      {
+        "role": "PM",
+        "title": "Projektmanagement: Der PMI-Standard für KI in Projekten",
+        "text": "Das Project Management Institute (PMI) hat im Juni 2026 einen eigenen Standard für den Einsatz von KI im Portfolio-, Programm- und Projektmanagement veröffentlicht – keine Tagesneuigkeit, aber die aktuell maßgebliche Referenz des Verbands. Er beschreibt acht Leitprinzipien, fünf Leistungsbereiche und einen Lebenszyklus für KI-Vorhaben, mit menschlicher Kontrolle in jeder Phase. Behandelt werden unter anderem Business Case, Tool-Auswahl, KI-spezifisches Risikomanagement sowie die Ausrichtung an EU AI Act und ISO 42001. Für PMI-Mitglieder ist die digitale Fassung kostenlos.",
+        "tip": "Bei PM-Kandidaten fragen, ob sie KI-Vorhaben schon mit eigenem Risiko- und Governance-Rahmen gesteuert haben. Kenntnis des PMI-Standards oder von ISO 42001 ist ein konkretes Plus im Profil für Kunden mit KI-Programmen.",
+        "sources": [
+          {
+            "label": "PMI: World's first global standard for AI in project work (Juni 2026)",
+            "url": "https://www.pmi.org/about/press-media/2026/pmi-publishes-worlds-first-global-standard-for-ai-in-project-work"
+          }
+        ]
+      },
+      {
+        "role": "BA",
+        "title": "Business Analyse: Nur wenige Firmen sehen echten KI-Nutzen",
+        "text": "In einer Gartner-Umfrage unter 2.002 CIOs (veröffentlicht am 19. Oktober) sagen nur 13 Prozent, ihr Unternehmen habe mit KI bereits deutlichen Nutzen erzielt; etwa jeder fünfte Anwendungsfall gilt als Erfolg. Nur 31 Prozent haben Regeln, wann ein Pilot in den Betrieb geht, und nur 17 Prozent Regeln, wann wenig nützliche KI wieder abgeschaltet wird. Gartner empfiehlt, Nutzen und Abbruchkriterien vor der Investition festzulegen.",
+        "tip": "Genau hier liegt BA-Arbeit: messbaren Nutzen definieren und Erfolgskriterien für KI-Anwendungsfälle aufstellen. Im Profil hervorheben, wenn ein BA Business Cases oder Nutzenbewertungen für KI-Projekte erstellt hat.",
+        "sources": [
+          {
+            "label": "Gartner: Only 13% of CIOs say their enterprise has realized significant AI value (19.10.2026)",
+            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-19-gartner-survey-finds-only-13-percent-of-cios-say-their-enterprise-has-realized-significant-or-transformational-value-from-ai"
+          }
+        ]
+      },
+      {
+        "role": "RE",
+        "title": "Requirements Engineering: Die Spezifikation wird zum Bauplan für Agenten",
+        "text": "Ein am 12. Oktober frei zugänglich erschienener Fachartikel in der Zeitschrift „Requirements Engineering“ (Überblicksbeitrag, keine eigene empirische Studie) argumentiert: Wenn KI-Agenten das Programmieren billiger machen, verlagert sich die Arbeit hin zum präzisen Formulieren von Anforderungen, zum Bereitstellen von Kontext und zum Prüfen der Ergebnisse. Spezifikationen werden beim „spec-driven development“ direkt zur Eingabe für Coding-Agenten. Als Grenzen nennen die Autoren unter anderem fehlendes implizites Fachwissen, Halluzinationen und Folgefehler in mehrstufigen Abläufen.",
+        "tip": "REs, die präzise, prüfbare Anforderungen schreiben, gewinnen an Wert – gerade bei Kunden mit Coding-Agenten. Interviewfrage: Wie formulieren Sie Anforderungen, damit ein KI-Agent sie korrekt umsetzt, und wie prüfen Sie das Ergebnis?",
+        "sources": [
+          {
+            "label": "Requirements Engineering (Springer): The impact of GenAI on the future of requirements engineering",
+            "url": "https://link.springer.com/article/10.1007/s00766-026-00477-6"
+          }
+        ]
+      }
+    ],
+    "forUsBox": {
+      "title": "Was das für Personaldienstleister bedeutet",
+      "points": [
+        "ERP wird agentisch: Oracle und SAP bauen Agenten direkt in Finanz-, Personal- und Lieferkettenprozesse ein. SAP- und ERP-Profile mit Erfahrung in KI-Integration und Governance werden gefragter.",
+        "Nutzen statt Hype: Laut Gartner sehen nur 13 Prozent der CIOs deutlichen KI-Nutzen. Kunden suchen Consultants, die Business Cases, Erfolgskriterien und Abbruchregeln aufstellen können.",
+        "Ordnung im eigenen Haus: Schatten-KI und ungeprüfte KI-Absagen sind im Recruiting verbreitet. Wer freigegebene Tools nutzt und jede KI-gestützte Entscheidung menschlich prüft, ist auf der sicheren Seite – und glaubwürdiger beim Kunden."
+      ],
+      "sources": [
+        {
+          "label": "Gartner: CIO survey on AI value (19.10.2026)",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2026-10-19-gartner-survey-finds-only-13-percent-of-cios-say-their-enterprise-has-realized-significant-or-transformational-value-from-ai"
+        },
+        {
+          "label": "Personalwirtschaft: Umfrage – HR nutzt Schatten-KI",
+          "url": "https://www.personalwirtschaft.de/news/recruiting/umfrage-hr-nutzt-schatten-ki-und-kontrolliert-von-ki-aussortierte-bewerbungen-nicht-210158/"
+        }
+      ]
+    },
+    "tools": [
+      {
+        "name": "SAP-Kurs „Getting Started with Joule for Business Users“",
+        "tip": "Kostenloser Einsteigerkurs auf SAP Learning: zeigt, wie man mit Joule in SAP-Systemen per Sprache Informationen abruft und Aufgaben erledigt. Gut, um in Gesprächen mit SAP-Kandidaten mitreden zu können. Kursinhalt auf Englisch.",
+        "url": "https://learning.sap.com/de/courses/getting-started-with-joule-for-business-users"
+      },
+      {
+        "name": "Miro Sidekicks und Flows",
+        "tip": "KI-Helfer in Miro, die aus einer Zielbeschreibung Boards, Diagramme oder Kanban-Tafeln entwerfen und wiederkehrende Termine wie Kick-offs oder Sprint-Reviews vorbereiten. Praktisch für Workshops; vorher klären, ob die KI-Funktionen im Firmenkonto freigegeben sind und welche Inhalte hineindürfen.",
+        "url": "https://itbrief.com.au/story/miro-adds-ai-agents-integrations-for-team-workspaces"
+      }
+    ]
+  },
+  {
     "date": "2026-10-27",
     "headline": "Anthropic will an die Börse – und KI-Sicherheit wird zur Chefsache",
     "intro": "Anthropic hat seinen Börsenprospekt veröffentlicht und darin auch eigene Sicherheitsvorfälle offengelegt. Gleichzeitig zeigen mehrere Berichte, dass KI-Modelle und KI-Agenten neue Einfallstore schaffen – und ein Arbeitgeber prüft die KI-Kompetenz seiner Belegschaft in neuen Gesprächen.",

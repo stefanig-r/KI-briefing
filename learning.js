@@ -3,6 +3,41 @@
 // triggers: Ausgaben, die das Thema ausgelöst oder wieder aufgegriffen haben (neueste zuerst).
 window.KI_BRIEFING_LEARNING = [
   {
+    "id": "sap-joule-agents",
+    "title": "KI-Agenten in SAP verstehen: Was Joule kann",
+    "audience": [
+      "recruiting",
+      "BA"
+    ],
+    "level": "Einstieg",
+    "effort": "ca. 45 Min.",
+    "priority": 2,
+    "why": "SAP und Oracle bauen KI-Agenten direkt in ERP-Prozesse ein, und Kunden fragen bei SAP-Projekten zunehmend nach Joule-Erfahrung. Wer SAP-Spezialisten vermittelt, muss einschätzen können, was hinter solchen Angaben im Profil steckt.",
+    "goals": [
+      "Danach kannst du erklären, was Joule ist und wofür es in SAP-Systemen genutzt wird",
+      "Danach kannst du Joule-Erfahrung im Kandidatenprofil gezielt hinterfragen (genutzt, konfiguriert, eigene Agenten gebaut)",
+      "Danach kannst du einordnen, warum Governance bei Agenten in ERP-Systemen wichtig ist"
+    ],
+    "resources": [
+      {
+        "label": "SAP Learning: Getting Started with Joule for Business Users (kostenlos)",
+        "url": "https://learning.sap.com/de/courses/getting-started-with-joule-for-business-users",
+        "lang": "EN"
+      }
+    ],
+    "triggers": [
+      {
+        "date": "2026-10-28",
+        "title": "SAP TechEd: Joule-Agenten sollen zusammenarbeiten – über eine kontrollierte Tür"
+      },
+      {
+        "date": "2026-10-28",
+        "title": "Oracle macht ChatGPT zur Bedienoberfläche für seine Geschäftssoftware"
+      }
+    ],
+    "added": "2026-10-28"
+  },
+  {
     "id": "ai-act-recruiting",
     "title": "EU AI Act im Recruiting: Was ist Hochrisiko-KI?",
     "audience": ["alle", "recruiting"],
@@ -19,7 +54,7 @@ window.KI_BRIEFING_LEARNING = [
       {"label": "EU AI Act Service Desk: Hochrisiko-KI im Bereich Beschäftigung (mit Beispielen)", "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464", "lang": "EN"},
       {"label": "Bundesnetzagentur: KI-Service Desk mit Compliance-Kompass", "url": "https://www.bundesnetzagentur.de/ki", "lang": "DE"}
     ],
-    "triggers": [{"date": "2026-10-26", "title": "Dayforce kauft Ribbon AI: Erstgespräche führt die KI"}],
+    "triggers": [{"date":"2026-10-28","title":"Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft"}, {"date": "2026-10-26", "title": "Dayforce kauft Ribbon AI: Erstgespräche führt die KI"}],
     "added": "2026-10-27"
   },
   {
@@ -38,7 +73,7 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)", "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf", "lang": "DE"}
     ],
-    "triggers": [
+    "triggers": [{"date":"2026-10-28","title":"Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft"}, 
       {"date": "2026-10-27", "title": "Offenes KI-Modell versuchte unaufgefordert Daten nach China zu senden"},
       {"date": "2026-10-26", "title": "Schweden sperrt ChatGPT und Claude in den Regierungsbüros"}
     ],
@@ -77,9 +112,10 @@ window.KI_BRIEFING_LEARNING = [
       "Typische Schutzmaßnahmen (Rechte begrenzen, Bestätigung durch Menschen) benennen"
     ],
     "resources": [
-      {"label": "OWASP Top 10 für LLM-Anwendungen", "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/", "lang": "EN"}
+      {"label": "OWASP Top 10 für LLM-Anwendungen", "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/", "lang": "EN"},
+      {"label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)", "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/", "lang": "EN"}
     ],
-    "triggers": [
+    "triggers": [{"date":"2026-10-28","title":"Vergessene KI-Agenten behalten ihre Zugänge"}, 
       {"date": "2026-10-27", "title": "Präparierte Anleitungsdatei kapert KI-Programmierhelfer"},
       {"date": "2026-10-23", "title": "Agenten brauchen Leitplanken"}
     ],
@@ -119,7 +155,7 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "GPM-Blog: Projektmanagement vor dem Rollenwechsel", "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel", "lang": "DE"}
     ],
-    "triggers": [
+    "triggers": [{"date":"2026-10-28","title":"Projektmanagement: Der PMI-Standard für KI in Projekten"}, 
       {"date": "2026-10-27", "title": "Projektmanagement: Der Planner-Agent wird erwachsener"},
       {"date": "2026-10-26", "title": "Projektmanagement: Projektleute wollen KI – die Organisationen hinken hinterher"}
     ],
@@ -140,7 +176,7 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "IIBA: Global State of Business Analysis Report 2026", "url": "https://www.iiba.org/business-analysis-blogs/insight-enables-confidence-the-2026-global-state-of-business-analysis-report/", "lang": "EN"}
     ],
-    "triggers": [{"date": "2026-10-27", "title": "Business Analyse: Positive Sicht auf KI – aber mit leichtem Dämpfer"}],
+    "triggers": [{"date":"2026-10-28","title":"Business Analyse: Nur wenige Firmen sehen echten KI-Nutzen"}, {"date": "2026-10-27", "title": "Business Analyse: Positive Sicht auf KI – aber mit leichtem Dämpfer"}],
     "added": "2026-10-27"
   },
   {
@@ -160,7 +196,7 @@ window.KI_BRIEFING_LEARNING = [
       {"label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz", "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/", "lang": "DE"},
       {"label": "Bitkom: KI trifft Requirements Engineering – Assistenz, nicht Ersatz", "url": "https://www.bitkom.org/index%2ephp/Bitkom/Publikationen/KI-trifft-Requirements-Engineering-Assistenz-nicht-Ersatz", "lang": "DE"}
     ],
-    "triggers": [
+    "triggers": [{"date":"2026-10-28","title":"Requirements Engineering: Die Spezifikation wird zum Bauplan für Agenten"}, 
       {"date": "2026-10-27", "title": "Requirements Engineering: KI füllt Lücken – oft mit falschen Annahmen"},
       {"date": "2026-10-23", "title": "Requirements Engineering: Assistenz, nicht Ersatz"}
     ],

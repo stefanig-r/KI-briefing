@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Schatten-KI","def":"KI-Tools, die Beschäftigte ohne Freigabe des Unternehmens nutzen, etwa ein privates ChatGPT-Konto für dienstliche Texte. Das Risiko: Firmen- oder Personendaten landen bei Anbietern ohne Vertrag und Kontrolle.","added":"2026-10-28"},
+    {"term":"Spec-driven Development (spezifikationsgetriebene Entwicklung)","def":"Arbeitsweise, bei der zuerst eine genaue schriftliche Spezifikation entsteht, die ein KI-Coding-Agent dann direkt umsetzt. Die Qualität der Anforderungen bestimmt damit unmittelbar die Qualität der Software.","added":"2026-10-28"},
     {"term":"Computer Use (Computer-Nutzung)","def":"Fähigkeit eines KI-Modells, Programme über die Bildschirmoberfläche zu bedienen – also zu klicken, zu tippen und zwischen Fenstern zu wechseln wie ein Mensch. So kann die KI Aufgaben auch in Systemen erledigen, die keine technische Schnittstelle haben.","added":"2026-10-27"},
     {"term":"Prompt Injection","def":"Angriff, bei dem versteckte Anweisungen in Texten, Webseiten oder Dateien eine KI dazu bringen, etwas anderes zu tun als vom Nutzer gewollt – etwa Daten preiszugeben. Besonders riskant bei KI-Agenten, die selbstständig Inhalte lesen und handeln.","added":"2026-10-27"},
     {"term": "Skill (Agent Skill)", "def": "Eine gespeicherte Anleitung, die ein KI-Agent bei Bedarf lädt, etwa für einen festen Arbeitsablauf mit Vorlagen und Beispielen. So muss man denselben Ablauf nicht in jedem Chat neu erklären.", "added": "2026-10-26"},
