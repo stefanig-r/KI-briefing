@@ -73,7 +73,9 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)", "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf", "lang": "DE"}
     ],
-    "triggers": [{"date":"2026-10-28","title":"Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft"}, 
+    "triggers": [
+      {"date": "2026-10-29", "title": "Microsoft 365 Copilot: Neue Modelle in Word und Excel – Claude nur nach Freischaltung"},
+      {"date": "2026-10-29", "title": "Cloudflare: KI-Dienst gab Antworten an fremde Kunden aus"},{"date":"2026-10-28","title":"Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft"}, 
       {"date": "2026-10-27", "title": "Offenes KI-Modell versuchte unaufgefordert Daten nach China zu senden"},
       {"date": "2026-10-26", "title": "Schweden sperrt ChatGPT und Claude in den Regierungsbüros"}
     ],
@@ -95,7 +97,8 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "Bundesnetzagentur: KI-Service Desk – KI-Kompetenz und kostenlose Schulungsangebote", "url": "https://www.bundesnetzagentur.de/ki", "lang": "DE"}
     ],
-    "triggers": [{"date": "2026-10-27", "title": "Proton führt mit Beschäftigten „KI-Gespräche“ zur Weiterbeschäftigung"}],
+    "triggers": [
+      {"date": "2026-10-29", "title": "Niederlande wollen 25.000 Stellen im Staatsdienst abbauen – mit KI als Hebel"},{"date": "2026-10-27", "title": "Proton führt mit Beschäftigten „KI-Gespräche“ zur Weiterbeschäftigung"}],
     "added": "2026-10-27"
   },
   {
@@ -115,7 +118,8 @@ window.KI_BRIEFING_LEARNING = [
       {"label": "OWASP Top 10 für LLM-Anwendungen", "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/", "lang": "EN"},
       {"label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)", "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/", "lang": "EN"}
     ],
-    "triggers": [{"date":"2026-10-28","title":"Vergessene KI-Agenten behalten ihre Zugänge"}, 
+    "triggers": [
+      {"date": "2026-10-29", "title": "Claude holte sich ohne Auftrag Zugang zu Wahldaten in Georgia"},{"date":"2026-10-28","title":"Vergessene KI-Agenten behalten ihre Zugänge"}, 
       {"date": "2026-10-27", "title": "Präparierte Anleitungsdatei kapert KI-Programmierhelfer"},
       {"date": "2026-10-23", "title": "Agenten brauchen Leitplanken"}
     ],
@@ -155,7 +159,8 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "GPM-Blog: Projektmanagement vor dem Rollenwechsel", "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel", "lang": "DE"}
     ],
-    "triggers": [{"date":"2026-10-28","title":"Projektmanagement: Der PMI-Standard für KI in Projekten"}, 
+    "triggers": [
+      {"date": "2026-10-29", "title": "Projektmanagement: Neues Prüfungsmaterial für die PMI-KI-Zertifizierung"},{"date":"2026-10-28","title":"Projektmanagement: Der PMI-Standard für KI in Projekten"}, 
       {"date": "2026-10-27", "title": "Projektmanagement: Der Planner-Agent wird erwachsener"},
       {"date": "2026-10-26", "title": "Projektmanagement: Projektleute wollen KI – die Organisationen hinken hinterher"}
     ],
@@ -176,7 +181,8 @@ window.KI_BRIEFING_LEARNING = [
     "resources": [
       {"label": "IIBA: Global State of Business Analysis Report 2026", "url": "https://www.iiba.org/business-analysis-blogs/insight-enables-confidence-the-2026-global-state-of-business-analysis-report/", "lang": "EN"}
     ],
-    "triggers": [{"date":"2026-10-28","title":"Business Analyse: Nur wenige Firmen sehen echten KI-Nutzen"}, {"date": "2026-10-27", "title": "Business Analyse: Positive Sicht auf KI – aber mit leichtem Dämpfer"}],
+    "triggers": [
+      {"date": "2026-10-29", "title": "Business Analyse: Excel zeigt, was Copilot verändert hat"},{"date":"2026-10-28","title":"Business Analyse: Nur wenige Firmen sehen echten KI-Nutzen"}, {"date": "2026-10-27", "title": "Business Analyse: Positive Sicht auf KI – aber mit leichtem Dämpfer"}],
     "added": "2026-10-27"
   },
   {
@@ -196,7 +202,8 @@ window.KI_BRIEFING_LEARNING = [
       {"label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz", "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/", "lang": "DE"},
       {"label": "Bitkom: KI trifft Requirements Engineering – Assistenz, nicht Ersatz", "url": "https://www.bitkom.org/index%2ephp/Bitkom/Publikationen/KI-trifft-Requirements-Engineering-Assistenz-nicht-Ersatz", "lang": "DE"}
     ],
-    "triggers": [{"date":"2026-10-28","title":"Requirements Engineering: Die Spezifikation wird zum Bauplan für Agenten"}, 
+    "triggers": [
+      {"date": "2026-10-29", "title": "Requirements Engineering: Polarion-Anforderungen per KI-Assistent abfragen"},{"date":"2026-10-28","title":"Requirements Engineering: Die Spezifikation wird zum Bauplan für Agenten"}, 
       {"date": "2026-10-27", "title": "Requirements Engineering: KI füllt Lücken – oft mit falschen Annahmen"},
       {"date": "2026-10-23", "title": "Requirements Engineering: Assistenz, nicht Ersatz"}
     ],
