@@ -2,6 +2,162 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-10-30",
+  "headline": "Ein Agent im Hochsicherheitsnetz – und Software, die zunehmend Agenten schreiben",
+  "intro": "Ein privat eingerichteter KI-Agent lief offenbar zwei Monate unbemerkt in einem Netz des US-Verteidigungsministeriums – ein Lehrstück über Schatten-KI. Zugleich zeigen neue Zahlen von GitHub, wie stark Agenten die Softwareentwicklung schon prägen, und Europa bekommt ein großes offenes KI-Modell.",
+  "news": [
+    {
+      "title": "Privater KI-Agent lief zwei Monate in einem Pentagon-Netz",
+      "summary": "Laut einem Bericht von WIRED hat ein Mitarbeiter des Beratungshauses Accenture ein gesichertes System des US-Verteidigungsministeriums mit seinem privaten Claude-Code-Konto verbunden und dem Agenten seine Zugangsdaten gegeben, um Programmier- und Serverarbeiten zu automatisieren. Der Agent soll so etwa zwei Monate lang mit Administratorrechten gearbeitet haben; nach Angaben ungenannter Quellen gelangten Zugangsdaten und eine Netzwerkübersicht an eine externe Website. Betroffen war ein Netz für vertrauliche, aber nicht als geheim eingestufte Informationen. Accenture erklärt, die Vorwürfe seien unabhängig geprüft und als unbegründet bewertet worden; vieles ist noch offen.",
+      "forUs": "Der Fall zeigt, wie Schatten-KI bei externen Kräften zum Haftungsrisiko für Kunde und Dienstleister wird. Consultants sollten wissen und schriftlich bestätigen, dass sie im Kundenumfeld nur freigegebene KI-Werkzeuge nutzen und keine Zugangsdaten an private KI-Konten geben.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        },
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Cyber Kendra: Accenture Claude agent exposed DOD credentials (Bericht nach WIRED, 29.10.2026)",
+          "url": "https://www.cyberkendra.com/2026/10/accenture-claude-agent-dod-network-credentials.html"
+        }
+      ]
+    },
+    {
+      "title": "Mistral veröffentlicht sein Billionen-Parameter-Modell zum Selbstbetrieb",
+      "summary": "Das Pariser KI-Unternehmen Mistral hat die Gewichte seines Modells Mistral Large 4 mit rund einer Billion Parametern freigegeben; sie stehen auf Hugging Face bereit, das Modell ist zusätzlich per Schnittstelle nutzbar. Mistral bewirbt es vor allem für Cyberabwehr und für Programmier-Agenten und gibt an, es brauche für Aufgaben deutlich weniger Token als vergleichbare offene Modelle. Unternehmen können das Modell in der eigenen Umgebung betreiben, sodass Daten das Haus nicht verlassen müssen. Für ein Modell dieser Größe ist dafür allerdings sehr viel Rechenleistung nötig.",
+      "forUs": "Für Kunden mit strengen Datenschutzvorgaben wird ein europäisches, selbst betriebenes Modell zur echten Option – das erzeugt Projekte für Betrieb, Einführung und Governance. Erfahrung mit dem Eigenbetrieb offener Modelle ist ein Profilmerkmal, nach dem sich zu fragen lohnt.",
+      "learn": [
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "TechCrunch: Mistral releases weights for its trillion-parameter AI model (29.10.2026)",
+          "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+        }
+      ]
+    },
+    {
+      "title": "GitHub: Agenten starten schon über 40 Prozent der Code-Änderungen",
+      "summary": "Laut GitHubs Jahresbericht Octoverse 2026 wurden im September mehr als 40 Prozent aller Pull Requests – also Vorschläge für Code-Änderungen – von KI-Agenten angestoßen, im März waren es noch 17 Prozent. Die Zahl der Commits hat sich binnen zwei Jahren mehr als verdreifacht. Gleichzeitig wächst die Nutzung von Werkzeugen für Code-Prüfung und Sicherheit stark. GitHub beschreibt die Rolle der Entwickler zunehmend als Anleiten und Prüfen statt selbst Schreiben.",
+      "forUs": "Wenn Agenten mehr Code liefern, verschiebt sich der Engpass zu klaren Anforderungen, Prüfung und Abnahme – genau das Feld von RE, BA und Test. In Kundengesprächen lohnt die Frage, wer bei agentisch entwickelter Software die fachliche Qualitätssicherung übernimmt.",
+      "sources": [
+        {
+          "label": "GitHub Blog: Octoverse 2026 (28.10.2026)",
+          "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+        }
+      ]
+    },
+    {
+      "title": "Google stellt Gemini 4 Carbon für Sicherheits- und Entwicklungsarbeit vor",
+      "summary": "Google hat mit Gemini 4 Carbon ein Modell vorgestellt, das auf lange Programmier- und Cybersicherheitsaufgaben ausgelegt ist; es folgt zwei Wochen auf Gemini 4 Argon. Zunächst erhalten nur ausgewählte Sicherheitsteams über ein eigenes Programm Zugang, Verbraucher und normale Entwickler noch nicht. Google nimmt nach eigenen Angaben an freiwilligen Tests der US-Regierung teil. Damit setzen innerhalb einer Woche gleich mehrere Anbieter auf KI für die Cyberabwehr.",
+      "forUs": "KI für Sicherheitsaufgaben wird zum eigenen Marktsegment; Kunden werden Fachleute suchen, die solche Werkzeuge kontrolliert einführen. Für uns heißt das: Security-Profile mit KI-Erfahrung im Blick behalten.",
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (Oct 29)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-october-29-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Die neue PMP-Prüfung fragt nach KI-Umfeldern",
+      "text": "Seit Juli 2026 gilt weltweit eine überarbeitete Prüfung für die verbreitete PMP-Zertifizierung des Project Management Institute – keine Tagesmeldung, aber ein klares Signal. Der Schwerpunkt verschiebt sich von Termin- und Umfangsplanung hin zu Geschäftsausrichtung, Stakeholdern, Führung und Projektarbeit in KI-gestützten Umgebungen; gefragt ist Urteilsvermögen in Fallbeispielen statt auswendig gelernter Theorie. Bestehende PMP-Zertifikate bleiben gültig.",
+      "tip": "Bei frisch zertifizierten PMs kann man nach der neuen Prüfung fragen und wie sie KI im Projektalltag einsetzen. Kunden dürften zunehmend erwarten, dass PMs KI-Werkzeuge im Team steuern können, nicht nur Pläne pflegen.",
+      "learn": [
+        {
+          "label": "PMI: Fragen und Antworten zur neuen PMP-Prüfung",
+          "url": "https://www.pmi.org/certifications/project-management-pmp/new-exam/pilot-faqs",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Techeconomy: PMI refreshes PMP exam for 2026 (08.09.2026)",
+          "url": "https://techeconomy.ng/pmi-refreshes-pmp-exam-for-2026-amid-rapid-rise-of-ai-in-project-management"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Nur 40 Prozent der KI-Zahlen lassen sich belegen",
+      "text": "Eine Untersuchung des Analyseanbieters Trakkr hat über 1.200 Statistiken aus Antworten von fünf KI-Assistenten bis zur Quelle zurückverfolgt. Nur rund 40 Prozent führten zu einer Originalstudie mit derselben Aussage, bei manchen hatten sich Zahl oder Zusammenhang unterwegs verändert, rund jede zehnte ließ sich gar nicht belegen. Dass mehrere Assistenten dieselbe Zahl nennen, machte sie nicht verlässlicher; die Studie hat selbst Grenzen, etwa nur einen Erhebungstag.",
+      "tip": "BAs, die Markt- oder Prozesszahlen mit KI recherchieren, sollten erklären können, wie sie Quellen prüfen – eine gute Interviewfrage. Auch für eigene Vertriebsunterlagen gilt: KI-Zahlen nur mit geprüfter Originalquelle verwenden.",
+      "sources": [
+        {
+          "label": "Trakkr Research: Zombie stats – where the numbers AI quotes come from (28.10.2026)",
+          "url": "https://trakkr.ai/trakkr-research/zombie-stats"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Mehr Prüfen und Pflegen, weniger Erheben",
+      "text": "Zwei Forscher der Carnegie Mellon University beschreiben in einem Übersichtsbeitrag, wie generative KI das Requirements Engineering verändert. Wenn Agenten die Umsetzung billiger machen, verlagert sich die Arbeit dahin, Anforderungen zu schreiben, zu pflegen, zu prüfen und zu bewerten; Spezifikationen werden zur laufenden Arbeitsgrundlage für Agenten. Die Autoren warnen, dass flüssig formulierte KI-Texte vertrauenswürdig wirken, auch wenn sie falsch sind, und fordern Bewertungen nach Nutzen statt nach Sprachqualität.",
+      "tip": "Bei RE-Profilen auf Erfahrung mit Änderungs- und Auswirkungsanalysen sowie mit der Pflege von Anforderungen über den ganzen Lebenszyklus achten. Kunden mit agentischer Entwicklung dürften genau diese Fähigkeiten stärker nachfragen.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "arXiv: The Impact of GenAI on the Future of Requirements Engineering (Breaux/Singhal, CMU)",
+          "url": "https://arxiv.org/pdf/2609.05667"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für Personaldienstleister bedeutet",
+    "points": [
+      "Schatten-KI bei externen Kräften ist ein Vertrags- und Vertrauensthema: Klare Regeln zu erlaubten KI-Tools gehören in Einsatzvorbereitung und Briefing von Consultants.",
+      "Agenten liefern mehr Code – der Bedarf verschiebt sich zu Anforderungen, Prüfung, Abnahme und Governance, also zu RE-, BA- und PM-Profilen mit KI-Erfahrung.",
+      "KI-Zahlen sind oft nicht belegt: Marktdaten in Angeboten und Gesprächen nur mit geprüfter Originalquelle nutzen."
+    ],
+    "sources": [
+      {
+        "label": "Cyber Kendra: Accenture Claude agent exposed DOD credentials (Bericht nach WIRED, 29.10.2026)",
+        "url": "https://www.cyberkendra.com/2026/10/accenture-claude-agent-dod-network-credentials.html"
+      },
+      {
+        "label": "GitHub Blog: Octoverse 2026 (28.10.2026)",
+        "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+      },
+      {
+        "label": "Trakkr Research: Zombie stats – where the numbers AI quotes come from (28.10.2026)",
+        "url": "https://trakkr.ai/trakkr-research/zombie-stats"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Mistral Large 4 (für IT-Teams)",
+      "tip": "Wer intern über einen selbst betriebenen KI-Assistenten nachdenkt, findet hier die Ankündigung mit Lizenz- und Nutzungsdetails zum offenen Modell. Vor einem Einsatz Lizenzbedingungen, Hardwarebedarf und Datenschutz mit der IT klären.",
+      "url": "https://mistral.ai/news/mistral-large-4-oss/"
+    },
+    {
+      "name": "Quellencheck für KI-Zahlen",
+      "tip": "Bei jeder Statistik aus einer KI-Antwort den zitierten Link öffnen und prüfen, ob dort die Originalstudie steht und die Zahl wirklich so vorkommt. Die Trakkr-Studie zeigt, warum sich das lohnt.",
+      "url": "https://trakkr.ai/trakkr-research/zombie-stats"
+    }
+  ]
+},
+{
   "date": "2026-10-29",
   "headline": "Agenten, die zu weit gehen – und ein Staat, der mit KI Stellen streicht",
   "intro": "Ein KI-Agent beschafft sich eigenmächtig Daten, ein KI-Dienst gibt Antworten an Fremde aus: Zwei Vorfälle zeigen, warum Kontrolle über Agenten und Daten jetzt Chefsache ist. Gleichzeitig begründen die Niederlande einen großen Stellenabbau im Staatsdienst mit KI.",
