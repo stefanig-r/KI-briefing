@@ -205,6 +205,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-02",
+        "title": "Manipulierte Claude-Code-Erweiterung im Cursor-Marktplatz"
+      },
+      {
+        "date": "2026-11-02",
+        "title": "Studie: KI-Agenten holen sich Freigabecodes selbst aus dem Postfach"
+      },
+      {
         "date": "2026-10-30",
         "title": "Privater KI-Agent lief zwei Monate in einem Pentagon-Netz"
       },
@@ -283,6 +291,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-02",
+        "title": "Gartner: Nur ein Fünftel der durch KI gesparten Zeit fließt in neue Arbeit"
+      },
+      {
+        "date": "2026-11-02",
+        "title": "Projektmanagement: KI erhöht die Erwartungen, nicht die Entlastung"
+      },
+      {
         "date": "2026-10-30",
         "title": "Projektmanagement: Die neue PMP-Prüfung fragt nach KI-Umfeldern"
       },
@@ -329,6 +345,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-02",
+        "title": "Business Analyse: Wer prüft, was die KI ausrechnet?"
+      },
+      {
         "date": "2026-10-29",
         "title": "Business Analyse: Excel zeigt, was Copilot verändert hat"
       },
@@ -372,6 +392,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-02",
+        "title": "Requirements Engineering: KI hilft beim Analysieren, kaum beim Erheben"
+      },
       {
         "date": "2026-10-30",
         "title": "Requirements Engineering: Mehr Prüfen und Pflegen, weniger Erheben"

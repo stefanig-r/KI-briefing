@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-10-30",
+  "updated": "2026-11-02",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Lieferkettenangriff (Supply-Chain-Angriff)","def":"Angriff, bei dem nicht das Ziel selbst, sondern ein Zulieferteil manipuliert wird – etwa eine Erweiterung oder ein Software-Paket, das viele Nutzer installieren. Wer es arglos einspielt, holt sich den Schadcode selbst ins Haus.","added":"2026-11-02"},
+    {"term":"Human in the Loop (Mensch in der Schleife)","def":"Ein Mensch muss wichtige Schritte eines KI-Systems prüfen oder freigeben, bevor sie wirksam werden. Das schützt nur, wenn die KI diese Freigabe nicht selbst erteilen oder umgehen kann.","added":"2026-11-02"},
         {"term":"Pull Request","def":"Ein Vorschlag, Änderungen an einem Software-Code zu übernehmen. Andere prüfen den Vorschlag, bevor er eingebaut wird – zunehmend stammen solche Vorschläge von KI-Agenten.","added":"2026-10-30"},
 {"term": "Unterauftragsverarbeiter (Subprozessor)", "def": "Ein weiteres Unternehmen, das im Auftrag eines Dienstleisters Daten verarbeitet – etwa ein KI-Modellanbieter hinter einer Office-Software. Ob Daten an ihn gehen dürfen, muss das nutzende Unternehmen nach DSGVO prüfen und oft ausdrücklich freigeben.", "added": "2026-10-29"},
     {"term":"Schatten-KI","def":"KI-Tools, die Beschäftigte ohne Freigabe des Unternehmens nutzen, etwa ein privates ChatGPT-Konto für dienstliche Texte. Das Risiko: Firmen- oder Personendaten landen bei Anbietern ohne Vertrag und Kontrolle.","added":"2026-10-28"},
