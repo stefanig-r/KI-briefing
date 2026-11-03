@@ -3,6 +3,42 @@
 // triggers: Ausgaben, die das Thema ausgelöst oder wieder aufgegriffen haben (neueste zuerst).
 window.KI_BRIEFING_LEARNING = [
   {
+    "id": "fake-candidates",
+    "title": "Gefälschte Kandidaten erkennen: Identität bei Remote-Bewerbungen prüfen",
+    "audience": [
+      "alle",
+      "recruiting"
+    ],
+    "level": "Einstieg",
+    "effort": "ca. 30 Min.",
+    "priority": 1,
+    "why": "Betrügerische Gruppen nutzen KI, um Lebensläufe passgenau zuzuschneiden, Ausweisfotos zu fälschen und im Video-Interview die Stimme zu verstellen. Wer Remote-Freelancer an Kunden vermittelt, haftet mit seinem Ruf dafür, dass Person und Werdegang echt sind.",
+    "goals": [
+      "Danach kannst du typische Warnsignale gefälschter Bewerbungen und Deepfakes im Video-Interview benennen.",
+      "Danach kannst du einschätzen, welche Prüfschritte (Ausweisabgleich, Referenzen, persönliches Treffen) vor einer Vermittlung sinnvoll sind.",
+      "Danach kannst du Kunden erklären, wie Kandidaten bei uns verifiziert werden."
+    ],
+    "resources": [
+      {
+        "label": "BSI-Experte erklärt: Was Deepfakes sind und wie man sie erkennt (Video)",
+        "url": "https://www.bsi.bund.de/SharedDocs/Videos/DE/BSI/VerbraucherInnen/deep-fake-statement.html",
+        "lang": "DE"
+      },
+      {
+        "label": "BSI: Themenseite Künstliche Intelligenz für Unternehmen",
+        "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+        "lang": "DE"
+      }
+    ],
+    "triggers": [
+      {
+        "date": "2026-11-03",
+        "title": "Gefälschte IT-Fachkräfte: Nordkoreanische Gruppen setzen auf KI"
+      }
+    ],
+    "added": "2026-11-03"
+  },
+  {
     "id": "sap-joule-agents",
     "title": "KI-Agenten in SAP verstehen: Was Joule kann",
     "audience": [
@@ -67,6 +103,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-03",
+        "title": "AI Act: Nächste Frist am 2. Dezember – Hochrisiko-Pflichten erst Ende 2027"
+      },
+      {
         "date": "2026-10-28",
         "title": "Umfrage: Schatten-KI im Recruiting, KI-Absagen oft ungeprüft"
       },
@@ -104,6 +144,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-03",
+        "title": "Goldman Sachs: KI-Programmierhelfer nur noch für Entwickler"
+      },
       {
         "date": "2026-10-30",
         "title": "Mistral veröffentlicht sein Billionen-Parameter-Modell zum Selbstbetrieb"
@@ -291,6 +335,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-03",
+        "title": "Projektmanagement: Neun von zehn PMOs testen oder nutzen KI"
+      },
+      {
         "date": "2026-11-02",
         "title": "Gartner: Nur ein Fünftel der durch KI gesparten Zeit fließt in neue Arbeit"
       },
@@ -345,6 +393,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-03",
+        "title": "Business Analyse: Wann man der KI-Empfehlung nicht folgen sollte"
+      },
+      {
         "date": "2026-11-02",
         "title": "Business Analyse: Wer prüft, was die KI ausrechnet?"
       },
@@ -392,6 +444,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-03",
+        "title": "Requirements Engineering: KI-Anforderungen werden geprüft, aber selten dokumentiert"
+      },
       {
         "date": "2026-11-02",
         "title": "Requirements Engineering: KI hilft beim Analysieren, kaum beim Erheben"

@@ -2,6 +2,171 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-03",
+  "headline": "Goldman zieht KI-Programmierwerkzeuge ein – und gefälschte IT-Bewerber nutzen KI",
+  "intro": "Eine Großbank beendet das Experiment, Fachabteilungen mit KI selbst programmieren zu lassen, und beschränkt die Werkzeuge auf Entwickler. Zugleich zeigt ein Microsoft-Bericht, wie staatlich gesteuerte Gruppen KI nutzen, um sich mit falschen Identitäten in IT-Jobs einzuschleusen.",
+  "news": [
+    {
+      "title": "Goldman Sachs: KI-Programmierhelfer nur noch für Entwickler",
+      "summary": "Laut einem Bloomberg-Bericht vom 2. November hat Goldman Sachs mit internen Richtlinien aus dem Oktober den Zugang zu Claude Code und GitHub Copilot für Händler und Banker gesperrt; nur Entwickler dürfen die Werkzeuge weiter nutzen. Fachkräfte hatten damit monatelang etwa Handelsströme überwacht und Inhalte erstellt, im Sommer hatte die IT-Leitung das Programmieren durch Nicht-Techniker noch ausdrücklich gelobt. Die Bank nennt Produktivität und Risikomanagement als Gründe, die Experimentierphase sei vorbei. Zahlen zu Kosten oder Risiken wurden nicht genannt; intern soll die Entscheidung für Unmut sorgen.",
+      "forUs": "Kunden ziehen nach der Testphase klarere Grenzen, wer welche KI-Werkzeuge nutzen darf – das kann auch externe Consultants betreffen. Vor Projektstart sollte geklärt werden, welche KI-Tools Freelancer beim Kunden verwenden dürfen, und Profile sollten KI-Erfahrung in kontrollierten Umgebungen hervorheben statt nur „Vibe Coding“.",
+      "learn": [
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Decoder: Goldman Sachs pulls AI coding tools from traders and bankers (02.11.2026)",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+        },
+        {
+          "label": "Quartz: Goldman Sachs is restricting traders and bankers from using AI coding tools",
+          "url": "https://qz.com/goldman-sachs-restricts-ai-coding-tools-traders-bankers-110226"
+        }
+      ]
+    },
+    {
+      "title": "Gefälschte IT-Fachkräfte: Nordkoreanische Gruppen setzen auf KI",
+      "summary": "Microsoft beschreibt, wie nordkoreanische Gruppen KI über den gesamten Ablauf ihrer Angriffe einsetzen – auch, um sich als Remote-IT-Kräfte bei westlichen Firmen anstellen zu lassen. Sie lassen Stellenanzeigen von KI auswerten, um Profile passgenau auf gefragte Fähigkeiten zuzuschneiden, montieren Gesichter per Gesichtstausch-App in gestohlene Ausweise und verstellen im Interview ihre Stimme. Nach der Einstellung helfen KI-Werkzeuge beim Beantworten technischer Fragen und beim Programmieren, sodass die Täuschung lange unentdeckt bleibt. Weil diese Nutzung dem normalen KI-Alltag vieler Beschäftigter ähnelt, ist sie schwer als auffällig zu erkennen.",
+      "forUs": "Für einen Personaldienstleister, der Remote-Freelancer vermittelt, ist das ein direktes Risiko: Identität und Werdegang sollten vor der Vermittlung belastbar geprüft werden, etwa per Ausweisabgleich, Referenzen und – wo möglich – einem persönlichen Treffen. Kunden werden zunehmend fragen, wie wir Kandidaten verifizieren.",
+      "learn": [
+        {
+          "label": "BSI-Experte erklärt: Was Deepfakes sind und wie man sie erkennt (Video)",
+          "url": "https://www.bsi.bund.de/SharedDocs/Videos/DE/BSI/VerbraucherInnen/deep-fake-statement.html",
+          "lang": "DE"
+        },
+        {
+          "label": "BSI: Themenseite Künstliche Intelligenz für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Let's Data Science: Microsoft Details How North Korean Groups Use AI in Attacks (29.10.2026)",
+          "url": "https://letsdatascience.com/news/microsoft-details-how-north-korean-groups-use-ai-in-attacks-9c39b454"
+        },
+        {
+          "label": "CyberScoop: Microsoft on North Korea's AI operations",
+          "url": "https://cyberscoop.com/microsoft-north-korea-ai-operations"
+        }
+      ]
+    },
+    {
+      "title": "ChatGPT und Codex sollen sich ab Dezember ein Kontingent teilen",
+      "summary": "Ein Hinweis im Bestellprozess von ChatGPT kündigt an, dass ab Dezember die Nutzung von ChatGPT und dem Programmier-Agenten Codex aus einem gemeinsamen Kontingent gespeist wird. Aufwendige Agenten-Aufgaben könnten damit das verbleibende Budget für normale Chats schmälern. Wie groß das gemeinsame Limit ist und welche Tarife genau betroffen sind, nennt der Hinweis nicht. Kurz zuvor hatte OpenAI die Grenzen für Agenten-Aufgaben in einigen teuren Tarifen verdoppelt.",
+      "forUs": "Wer ChatGPT-Lizenzen im Team nutzt, sollte nach der Umstellung beobachten, ob einzelne intensive Agenten-Nutzer das Kontingent für alle anderen aufbrauchen. Für Consultants beim Kunden gilt: KI-Budgets und Nutzungsregeln werden zum Planungsthema in Projekten.",
+      "sources": [
+        {
+          "label": "All-AI.de: ChatGPT und Codex fallen zusammen (30.10.2026)",
+          "url": "https://www.all-ai.de/news/news26/chatgpt-codes-nutzungslimit"
+        }
+      ]
+    },
+    {
+      "title": "AI Act: Nächste Frist am 2. Dezember – Hochrisiko-Pflichten erst Ende 2027",
+      "summary": "Seit dem 27. Juli gilt das sogenannte Digital-Omnibus-Paket, das die Fristen des EU AI Act neu ordnet. Am 2. Dezember 2026 greifen Kennzeichnungspflichten für KI-erzeugte Inhalte nun auch für Systeme, die schon vor August 2026 auf dem Markt waren. Die Hauptpflichten für eigenständige Hochrisiko-Systeme nach Anhang III – dazu zählt KI im Personalbereich wie Bewerberauswahl – gelten erst ab dem 2. Dezember 2027. Transparenzpflichten gegenüber Personen, die mit KI interagieren, gelten bereits seit August 2026.",
+      "forUs": "Die Verschiebung der Hochrisiko-Pflichten ist kein Freibrief: Kandidaten müssen schon heute erfahren, wenn sie mit KI-Systemen zu tun haben, und KI-Kompetenz bleibt Pflicht. Die gewonnene Zeit sollte genutzt werden, um eingesetzte Recruiting-Tools zu inventarisieren und mit Anbietern über deren Pflichten zu sprechen.",
+      "learn": [
+        {
+          "label": "EU AI Act Service Desk: Hochrisiko-KI im Bereich Beschäftigung (mit Beispielen)",
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464",
+          "lang": "EN"
+        },
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk mit Compliance-Kompass",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Hunton: EU Digital Omnibus on AI Enters into Force (28.07.2026)",
+          "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Neun von zehn PMOs testen oder nutzen KI",
+      "text": "Ein Bericht des Software-Anbieters Tempo zum Stand von KI im Portfoliomanagement 2026 stützt sich auf Angaben von über 300 PMO- und Projektverantwortlichen. Demnach erproben oder nutzen 91 Prozent bereits KI. Ein genaues Erscheinungsdatum nennt der Bericht nicht, und als Herstellerumfrage ist er nicht unabhängig.",
+      "tip": "Bei PM-Kandidaten lohnt die Frage, wie KI im letzten Projekt oder PMO konkret eingesetzt wurde und wer die Regeln dafür festgelegt hat. Kunden erwarten zunehmend, dass PMs KI-Nutzung im Projekt nicht nur anwenden, sondern auch steuern.",
+      "sources": [
+        {
+          "label": "Tempo: 2026 State of AI in Portfolio Management",
+          "url": "https://www.tempo.io/guides/2026-state-of-ai-in-portfolio-management"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Wann man der KI-Empfehlung nicht folgen sollte",
+      "text": "Der Verband IIBA nennt in seinem Trend-Ausblick für 2026 (vom Januar, also keine Neuigkeit) KI als „strategischen Entscheidungspartner“ an erster Stelle. Business Analysts sollen dafür sorgen, dass KI zu den Unternehmenszielen passt, Risikoprüfungen vor dem Einsatz moderieren und Führungskräften helfen zu erkennen, wann sie einer Modell-Empfehlung nicht folgen sollten. Auch Governance und verantwortungsvolle Einführung zählen zu den sechs Trends.",
+      "tip": "BA-Profile gewinnen, wenn sie Erfahrung mit KI-Risikobewertungen, Nutzenmessung oder Governance-Workshops zeigen. Im Gespräch kann man fragen, wie der Kandidat geprüft hat, ob eine KI-Auswertung belastbar war.",
+      "sources": [
+        {
+          "label": "IIBA: Top 6 Business Analysis Trends to Monitor in 2026 (08.01.2026)",
+          "url": "https://www.iiba.org/business-analysis-blogs/top-6-business-analysis-trends-to-monitor-in-2026/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI-Anforderungen werden geprüft, aber selten dokumentiert",
+      "text": "Eine Umfrage der Chalmers-Universität unter 55 Software-Fachleuten (aus 2025, kleine Stichprobe) zeigt: 58 Prozent nutzen KI im Requirements Engineering, meist in Zusammenarbeit mit dem Menschen, kaum vollautomatisch. 81 Prozent der Nutzer lassen KI-Vorschläge von Menschen prüfen und freigeben. Nur gut ein Drittel bewertet aber KI-Risiken oder hält fest, welche Anforderungen von der KI stammen.",
+      "tip": "Bei RE-Kandidaten nachfragen, ob und wie sie kennzeichnen, welche Anforderungen KI-generiert sind – Nachvollziehbarkeit wird für Kunden in regulierten Branchen wichtiger. Wer das sauber beherrscht, sollte es im Profil nennen.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "arXiv: AI for Requirements Engineering: Industry Adoption and Practitioner Perspectives",
+          "url": "https://arxiv.org/html/2511.01324v3"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Kunden regeln nach der Testphase strenger, wer welche KI-Werkzeuge nutzen darf – die erlaubten Tools sollten vor jedem Einsatz geklärt und im Briefing festgehalten werden.",
+      "Gefälschte Bewerber mit KI-Unterstützung sind ein reales Risiko bei Remote-Vermittlungen; belastbare Identitätsprüfung wird zum Qualitätsmerkmal gegenüber Kunden.",
+      "Die AI-Act-Hochrisikopflichten für Personal-KI kommen erst Ende 2027, Transparenz und KI-Kompetenz gelten aber schon jetzt."
+    ],
+    "sources": [
+      {
+        "label": "The Decoder: Goldman Sachs pulls AI coding tools from traders and bankers",
+        "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+      },
+      {
+        "label": "Hunton: EU Digital Omnibus on AI Enters into Force",
+        "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "IREB-Schulung „AI for Requirements Engineering“ (AI4RE)",
+      "tip": "Zweitägiges Online-Seminar (deutsch) zu KI entlang der RE-Tätigkeiten, mit optionaler Prüfung für die IREB-Micro-Credential; nächster Termin laut Anbieter am 23. November. Für RE-Freelancer ein sichtbarer Nachweis, der sich im Profil nennen lässt.",
+      "url": "https://www.microtool.de/en/seminars/ireb-ai4re/"
+    },
+    {
+      "name": "BSI-Video: Deepfakes erkennen",
+      "tip": "Kurze Einführung des BSI, worauf man bei manipulierten Videos und Stimmen achten kann – nützlich als Auffrischung vor Video-Interviews mit unbekannten Remote-Kandidaten.",
+      "url": "https://www.bsi.bund.de/SharedDocs/Videos/DE/BSI/VerbraucherInnen/deep-fake-statement.html"
+    }
+  ]
+},
+{
   "date": "2026-11-02",
   "headline": "Manipulierte KI-Erweiterung, eigenmächtige Agenten – und Firmen, die für KI auf Freelancer setzen",
   "intro": "Über einen Erweiterungs-Marktplatz gelangte eine präparierte Version eines beliebten KI-Programmierhelfers auf tausende Rechner, und ein Forschungsteam zeigt, wie leicht Agenten menschliche Freigaben umgehen. Gleichzeitig bestätigen neue Studien: KI-Fachwissen wird oft flexibel eingekauft – und der versprochene Nutzen kommt längst nicht überall an.",
