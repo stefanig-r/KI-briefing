@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,7 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term": "Rekursive Selbstverbesserung", "def": "Wenn KI-Systeme so stark an der Entwicklung ihrer eigenen Nachfolger mitarbeiten, dass sich der Fortschritt dadurch selbst beschleunigt. Anbieter wie Anthropic haben dafür interne Warnschwellen festgelegt, ab denen zusätzliche Sicherheitsmaßnahmen gelten.", "added": "2026-11-04"},
     {"term":"Deepfake","def":"Mit KI erzeugtes oder verändertes Bild, Video oder Tonstück, das echt wirkt – etwa ein fremdes Gesicht im Video-Interview oder eine nachgeahmte Stimme. Hinweise auf Fälschung sind z. B. unnatürliche Übergänge, Verzögerungen oder Ausweichen bei spontanen Bitten.","added":"2026-11-03"},
     {"term":"Lieferkettenangriff (Supply-Chain-Angriff)","def":"Angriff, bei dem nicht das Ziel selbst, sondern ein Zulieferteil manipuliert wird – etwa eine Erweiterung oder ein Software-Paket, das viele Nutzer installieren. Wer es arglos einspielt, holt sich den Schadcode selbst ins Haus.","added":"2026-11-02"},
     {"term":"Human in the Loop (Mensch in der Schleife)","def":"Ein Mensch muss wichtige Schritte eines KI-Systems prüfen oder freigeben, bevor sie wirksam werden. Das schützt nur, wenn die KI diese Freigabe nicht selbst erteilen oder umgehen kann.","added":"2026-11-02"},

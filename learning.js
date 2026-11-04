@@ -103,6 +103,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-04",
+        "title": "Umfrage: KI führt zu weniger Einstellungen von Berufseinsteigern"
+      },
+      {
         "date": "2026-11-03",
         "title": "AI Act: Nächste Frist am 2. Dezember – Hochrisiko-Pflichten erst Ende 2027"
       },
@@ -144,6 +148,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-04",
+        "title": "Bitkom: Firmen wollen KI aus Deutschland – aber nicht teurer"
+      },
+      {
+        "date": "2026-11-04",
+        "title": "Microsoft Copilot: Neue Startseite, Autopilot und Abrechnung nach Verbrauch"
+      },
       {
         "date": "2026-11-03",
         "title": "Goldman Sachs: KI-Programmierhelfer nur noch für Entwickler"
@@ -249,6 +261,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-04",
+        "title": "Business Analyse: Wer legt fest, was ein Agent darf?"
+      },
+      {
         "date": "2026-11-02",
         "title": "Manipulierte Claude-Code-Erweiterung im Cursor-Marktplatz"
       },
@@ -304,6 +320,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-04",
+        "title": "Projektmanagement: Jira-Aufgaben direkt an KI-Agenten vergeben"
+      },
       {
         "date": "2026-10-26",
         "title": "Jira und Confluence: Mehr OpenAI im Atlassian-Assistenten Rovo"
@@ -444,6 +464,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-04",
+        "title": "Requirements Engineering: Agenten schreiben Spezifikationen, beim Prüfen bleibt der Mensch"
+      },
       {
         "date": "2026-11-03",
         "title": "Requirements Engineering: KI-Anforderungen werden geprüft, aber selten dokumentiert"

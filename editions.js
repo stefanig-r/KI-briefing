@@ -2,6 +2,167 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-04",
+  "headline": "Anthropic warnt vor sich selbst beschleunigender KI – und KI verändert, wer eingestellt wird",
+  "intro": "Anthropic schreibt in seinen Börsenunterlagen, man könne bald eine selbst gesetzte Schwelle für stark KI-beschleunigte Forschung erreichen. Zugleich zeigen zwei Umfragen, dass deutsche Firmen KI aus Deutschland bevorzugen, aber nicht mehr zahlen wollen, und dass KI bei Einstellungen vor allem Einsteiger trifft.",
+  "news": [
+    {
+      "title": "Anthropic: Schwelle zur „sich selbst verbessernden“ KI könnte bald erreicht sein",
+      "summary": "In einer überarbeiteten Fassung seines Börsenprospekts (S-1A) schreibt Anthropic, dass der wachsende Einsatz von KI in der eigenen Forschung bald eine interne Schwelle erreichen könnte: deutlich beschleunigter Fortschritt, der auf KI selbst zurückgeht. Kein aktuelles Modell sei bisher als oberhalb dieser Schwelle eingestuft, die Daten würden noch ausgewertet. Das Unternehmen betont, es erwarte nicht, Claude künftige Modellgenerationen sicher eigenständig entwickeln lassen zu können, solange Menschen nicht maßgeblich beteiligt und informiert bleiben. Geprüft werden deshalb Anpassungen der eigenen Sicherheitsrichtlinie (Responsible Scaling Policy).",
+      "forUs": "Für den Arbeitsalltag ändert sich kurzfristig nichts, aber das Tempo neuer Modelle dürfte hoch bleiben – Tool-Wissen veraltet schneller. Bei Kunden wächst damit der Bedarf an Leuten, die KI-Einführung steuern und Aufsicht organisieren können, nicht nur bedienen.",
+      "learn": [
+        {
+          "label": "Anthropic: Responsible Scaling Policy und ihre Aktualisierungen (Original)",
+          "url": "https://www.anthropic.com/rsp-updates",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Dataconomy: Anthropic says it may soon reach recursive self-improvement (03.11.2026)",
+          "url": "https://dataconomy.com/2026/11/03/anthropic-says-it-may-soon-reach-recursive-self-improvement/"
+        }
+      ]
+    },
+    {
+      "title": "Bitkom: Firmen wollen KI aus Deutschland – aber nicht teurer",
+      "summary": "Zum Digital-Gipfel der Bundesregierung hat der Bitkom am 2. November Umfragen unter jeweils rund 600 Unternehmen ab 20 Beschäftigten vorgestellt. 96 Prozent würden am liebsten KI deutscher Anbieter nutzen, 87 Prozent ist das Herkunftsland des Anbieters bei der Auswahl wichtig. Zugleich wollen 64 Prozent dafür keine Abstriche machen, etwa bei Preis oder Funktionsumfang. US-Anbieter verlieren deutlich an Zuspruch (41 statt 51 Prozent), französische legen zu.",
+      "forUs": "Kunden achten stärker darauf, wo KI-Anbieter sitzen und Daten verarbeiten – das betrifft auch die Tools, die Consultants im Projekt mitbringen. Erfahrung mit europäischen oder selbst betriebenen Modellen und mit Datenschutzfragen bei der Tool-Auswahl wird zum Pluspunkt im Profil.",
+      "learn": [
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Bitkom: Zum Digital-Gipfel – Fast alle Unternehmen wollen KI aus Deutschland (02.11.2026)",
+          "url": "https://www.bitkom.org/Presse/Presseinformation/Digital-Gipfel-Unternehmen-wollen-KI-aus-Deutschland"
+        }
+      ]
+    },
+    {
+      "title": "Umfrage: KI führt zu weniger Einstellungen von Berufseinsteigern",
+      "summary": "Die Northeastern University hat 8.174 Personen befragt, die über Einstellungen mitentscheiden; etwa die Hälfte sagt, KI beeinflusse ihre Personalentscheidungen. Von diesen stellen 26 Prozent weniger Einsteiger ein, nur 7 Prozent mehr, und 28 Prozent erwarten von Einsteigern anspruchsvollere Arbeit. 54 Prozent nutzen KI zum Vorsortieren von Lebensläufen, in der Tech-Branche 83 Prozent. KI-Erfahrung ist bei fast der Hälfte noch kein ausdrückliches Einstellungskriterium, in IT und Finanzen aber häufiger gefragt.",
+      "forUs": "Die Studie stammt aus den USA, der Trend ist aber auch hier spürbar: Kunden erwarten mehr Erfahrung pro Person, Junior-Profile haben es schwerer. Wenn Kunden Profile per KI vorsortieren, sollten unsere Profile klar strukturiert sein und konkrete Ergebnisse und KI-Erfahrung benennen; KI-gestützte Auswahl im Recruiting kann unter den AI Act fallen.",
+      "learn": [
+        {
+          "label": "EU AI Act Service Desk: Hochrisiko-KI im Bereich Beschäftigung (mit Beispielen)",
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Northeastern Global News: AI is changing what's in store for new hires and managers alike (02.11.2026)",
+          "url": "https://news.northeastern.edu/2026/11/02/ai-hiring-entry-level-jobs/"
+        }
+      ]
+    },
+    {
+      "title": "Microsoft Copilot: Neue Startseite, Autopilot und Abrechnung nach Verbrauch",
+      "summary": "Microsoft baut die Copilot-App um: Eine neue Startseite „Home“ bündelt Chat und den Arbeits-Agenten Cowork, dazu kommen ein Bereich zum Erstellen kleiner Apps und Dashboards per Sprache sowie Word-, Excel- und PowerPoint-Bearbeitung direkt in Copilot. Laut Microsoft-Mitteilung an Administratoren erhalten Kunden mit verzögertem Update-Kanal die neue Oberfläche im November. Der dauerhaft mitlaufende Agent „Autopilot“ und Cowork setzen neben der Lizenz eine Ausgabenrichtlinie voraus, weil sie nach Verbrauch abgerechnet werden. Ohne diese sehen Nutzer nur einen Hinweis „Zugriff anfordern“.",
+      "forUs": "Bei vielen Kunden sieht Copilot in diesen Wochen anders aus, und nicht jede Funktion ist für jeden freigeschaltet. Consultants sollten vor Projektstart klären, welche Copilot-Funktionen beim Kunden genutzt werden dürfen – und dass verbrauchsabhängige Agenten Kosten erzeugen.",
+      "learn": [
+        {
+          "label": "Microsoft Learn: Release Notes für Microsoft 365 Copilot (offizielle Änderungsliste)",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft 365 Message Center MC1479277 (Archiv): New ways to work across Microsoft Copilot and Microsoft 365",
+          "url": "https://mc.merill.net/message/MC1479277"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Jira-Aufgaben direkt an KI-Agenten vergeben",
+      "text": "Atlassian hat auf seiner Konferenz Team '26 „Agents in Jira“ allgemein verfügbar gemacht: Aufgaben lassen sich wie an Teammitglieder an KI-Agenten zuweisen, die sie vorbereiten oder selbst abarbeiten. Grundlage ist eine Verknüpfung von Aufgaben, Dokumenten, Personen und Systemen, über die Agenten Abhängigkeiten erkennen sollen. Zusätzlich können Videoanleitungen aus Loom in strukturierte Jira-Tickets umgewandelt werden.",
+      "tip": "Bei PM-Kandidaten nachfragen, ob sie schon Boards mit gemischten Teams aus Menschen und Agenten geführt haben und wie sie Verantwortung und Abnahme solcher Aufgaben regeln. Kunden mit Atlassian Cloud erwarten das zunehmend.",
+      "learn": [
+        {
+          "label": "Atlassian AI Trust Center (Datenverarbeitung, Modelle, Admin-Einstellungen)",
+          "url": "https://www.atlassian.com/trust/ai",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "heise: Jira-Tickets für KI – Atlassian lässt Agenten übernehmen",
+          "url": "https://heise.de/-11287380"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Wer legt fest, was ein Agent darf?",
+      "text": "Ein Fachartikel im Mitgliederbereich des IIBA (März 2026) beschreibt Business Analysts als diejenigen, die für KI-Agenten Ziele, Grenzen, Entscheidungsrechte, Eskalationswege und Protokollierung festlegen. Weil Agenten selbst handeln statt nur Texte zu liefern, müsse der Grad an Eigenständigkeit zur Risikobereitschaft des Unternehmens passen. Es handelt sich um einen Meinungsbeitrag, nicht um eine Studie, er greift aber eine Aufgabe auf, die in Projekten gerade entsteht.",
+      "tip": "In BA-Profilen hervorheben, wenn jemand Regeln, Freigaben oder Abnahmekriterien für Automatisierungen oder Agenten definiert hat. Im Gespräch fragen: „Wie würden Sie festlegen, wann ein Agent an einen Menschen übergibt?“",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "IIBA: Agentic AI and the Business Analyst – How to Shape, Govern, and Deliver AI Agents That Work (27.03.2026)",
+          "url": "https://www.iiba.org/iiba-business-analysis-member-articles/agentic-ai-and-the-business-analyst-how-to-shape-govern-and-deliver-ai-agents-that-work/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Agenten schreiben Spezifikationen, beim Prüfen bleibt der Mensch",
+      "text": "Eine im Oktober 2026 erschienene Literaturübersicht wertet 50 Studien zu KI-Agenten im Requirements Engineering aus. Am häufigsten automatisieren die Systeme ganze Anforderungsketten oder das Spezifizieren, etwa User Stories; zum Erheben und Validieren gibt es nur je zwei bis drei Arbeiten. Fast alle Ansätze brauchen für die abschließende Bewertung weiterhin Menschen, Halluzinationen werden reduziert, aber nicht beseitigt.",
+      "tip": "Für Kunden, die Anforderungen per KI erzeugen lassen, sind REs gefragt, die Ergebnisse validieren und rückverfolgbar machen. Im Profil Erfahrung mit Reviews, Abnahmen und Traceability betonen.",
+      "sources": [
+        {
+          "label": "MDPI Automation: Requirements Engineering with Generative AI – A Systematic Literature Review (Okt. 2026)",
+          "url": "https://www.mdpi.com/2673-4052/7/5/169"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Kunden fragen stärker nach Herkunft und Datenverarbeitung von KI-Tools – Consultants sollten wissen, welche Tools beim Kunden erlaubt sind und was sie kosten.",
+      "Weniger Einstiegsstellen, höhere Erwartungen: Erfahrene Freelancer mit nachweisbarer KI-Praxis sind gefragt, Junior-Profile brauchen klare Belege.",
+      "Agenten werden in Jira, Copilot und Co. zu Teammitgliedern – PM, BA und RE, die Regeln, Abnahme und Aufsicht dafür gestalten, sind gefragt."
+    ],
+    "sources": [
+      {
+        "label": "Bitkom (02.11.2026)",
+        "url": "https://www.bitkom.org/Presse/Presseinformation/Digital-Gipfel-Unternehmen-wollen-KI-aus-Deutschland"
+      },
+      {
+        "label": "Northeastern Global News (02.11.2026)",
+        "url": "https://news.northeastern.edu/2026/11/02/ai-hiring-entry-level-jobs/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Copilot Home (Microsoft 365)",
+      "tip": "Falls bei euch freigeschaltet: Chat und Cowork liegen jetzt zusammen auf der Startseite. Vor Nutzung von Cowork oder Autopilot klären, ob sie intern erlaubt sind, da sie nach Verbrauch abgerechnet werden.",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+    },
+    {
+      "name": "Xmind Agent",
+      "tip": "Mindmaps mit KI recherchieren und ergänzen, z. B. für Projektstrukturen oder Stakeholder-Übersichten. Keine Kunden- oder Kandidatendaten hochladen, solange die Datenverarbeitung nicht geprüft ist.",
+      "url": "https://www.producthunt.com/products/xmind"
+    }
+  ]
+},
+{
   "date": "2026-11-03",
   "headline": "Goldman zieht KI-Programmierwerkzeuge ein – und gefälschte IT-Bewerber nutzen KI",
   "intro": "Eine Großbank beendet das Experiment, Fachabteilungen mit KI selbst programmieren zu lassen, und beschränkt die Werkzeuge auf Entwickler. Zugleich zeigt ein Microsoft-Bericht, wie staatlich gesteuerte Gruppen KI nutzen, um sich mit falschen Identitäten in IT-Jobs einzuschleusen.",
