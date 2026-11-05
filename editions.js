@@ -2,6 +2,165 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-05",
+  "headline": "KI findet Hunderte Sicherheitslücken – und die Frage, wie man Agenten wieder abschaltet",
+  "intro": "OpenAI zeigt, wie ein KI-System in großem Stil Schwachstellen im Linux-Kern aufspürt, während Apple, CrowdStrike und ein US-Thinktank sich mit Agenten beschäftigen, die aus dem Ruder laufen. Dazu: Anthropic kennzeichnet KI-Texte unsichtbar, und ein EU-Gutachten stellt KI-Zusammenfassungen von Presseartikeln in Frage.",
+  "news": [
+    {
+      "title": "OpenAI: KI-Pipeline findet 948 Wege zu Administratorrechten in Linux",
+      "summary": "OpenAI hat einen Prototyp vorgestellt, der mit einem noch unveröffentlichten Sicherheitsmodell rund 2,8 Millionen Codezeilen eines Linux-Kerns durchsucht hat. Heraus kamen funktionierende Nachweise und Korrekturvorschläge für 948 Lücken, über die sich lokale Nutzer Administratorrechte verschaffen könnten. Die API-Kosten lagen bei rund 1,2 Millionen US-Dollar – nach OpenAIs Rechnung ein Bruchteil dessen, was dafür bisher über Bug-Bounty-Programme gezahlt worden wäre. Die Veröffentlichung wird mit den Linux-Maintainern abgestimmt.",
+      "forUs": "Das Finden von Sicherheitslücken wird billiger und schneller – für Verteidiger wie Angreifer. Kunden werden mehr Patch- und Sicherheitsprojekte aufsetzen; PMs mit Erfahrung in Schwachstellen- und Release-Management sind dafür gefragt.",
+      "learn": [
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "OpenAI: A thousand fewer paths to root (04.11.2026)",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+        },
+        {
+          "label": "AI Weekly: OpenAI pipeline validates 948 Linux local privilege escalation exploits",
+          "url": "https://aiweekly.co/alerts/openai-pipeline-validates-948-linux-local-privilege-escalation-exploits-for-12m"
+        }
+      ]
+    },
+    {
+      "title": "Not-Aus für KI-Agenten: Apple warnt, CrowdStrike liefert, Thinktank mahnt",
+      "summary": "Apple nennt in seinem Jahresbericht erstmals ausdrücklich Risiken durch KI-Agenten, etwa ungewollte Transaktionen oder schwer rückgängig zu machende Handlungen – während es Siri gleichzeitig mehr Aktionen in fremden Apps erlaubt. Der Sicherheitsanbieter CrowdStrike hat einen „Kill Switch“ vorgestellt, mit dem Administratoren auffällige Agenten stoppen, Neustarts verhindern und Netzwerkzugriffe sperren können. Der US-Thinktank CNAS warnt in einem neuen Bericht vor Agenten, die sich selbst vervielfältigen und Abschaltungen umgehen, und empfiehlt unter anderem Kontrollpunkte bei Identitäten und Zahlungen.",
+      "forUs": "Agenten werden bei Kunden Alltag, und damit die Frage, wer sie überwacht und notfalls stoppt. Consultants, die Freigaben, Rechte und Notfallabläufe für Agenten planen können, haben ein starkes Argument im Profil.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Euronews: 'Sovereign AI agents' could evade every kill switch, report warns (04.11.2026)",
+          "url": "https://www.euronews.com/2026/11/04/sovereign-ai-agents-could-evade-every-kill-switch-and-threaten-national-security-report-wa"
+        },
+        {
+          "label": "CNBC: CrowdStrike's new kill switch can stop rogue AI agents (03.11.2026)",
+          "url": "https://www.cnbc.com/2026/11/03/crowdstrikes-new-kill-switch-can-stop-rogue-ai-agents-in-their-tracks-ceo-says.html"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic markiert KI-Texte unsichtbar und forscht an überprüfbarer Modellherkunft",
+      "summary": "Anthropic versieht Texte von vier älteren Claude-Modellen seit dem 3. November mit einem unsichtbaren Wasserzeichen; normale Nutzer können das nicht abschalten. Prüfen dürfen die Markierung nur ausgewählte Stellen wie von der EU anerkannte Aufsichtsbehörden, Strafverfolgung, Journalisten und Forschende, und bei kurzen Texten ist die Erkennung laut Anthropic unsicher. Parallel stellte das Unternehmen das Forschungsprojekt FlashProve vor, mit dem sich kryptografisch belegen lassen soll, von welchem Modell eine Antwort tatsächlich stammt.",
+      "forUs": "KI-Texte werden zunehmend nachweisbar – auch in Bewerbungen, Profilen oder Angeboten. Wichtig ist deshalb ein offener Umgang: KI als Hilfe ist in Ordnung, Inhalte müssen aber stimmen und von Menschen geprüft sein.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk zum AI Act (inkl. Transparenzpflichten)",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Yahoo Finance UK: Anthropic's Claude will now leave a trail",
+          "url": "https://uk.finance.yahoo.com/news/anthropic-claude-now-leave-trail-151343512.html"
+        },
+        {
+          "label": "Anthropic Research: Provable inference (FlashProve)",
+          "url": "https://www.anthropic.com/research/provable-inference"
+        }
+      ]
+    },
+    {
+      "title": "EU-Generalanwalt: Gemini kann Rechte von Presseverlagen verletzen",
+      "summary": "Im Verfahren C-250/25 (Like Company gegen Google Ireland) hat Generalanwalt Szpunar dem Europäischen Gerichtshof seine Einschätzung vorgelegt. Danach kann Googles KI-Assistent Gemini Leistungsschutzrechte von Verlagen verletzen, wenn er Bezahlschranken umgeht oder Artikel in ihrer Formulierung zu eng wiedergibt. Das Gutachten ist nicht bindend, der Gerichtshof folgt solchen Einschätzungen aber häufig.",
+      "forUs": "Wer KI-Zusammenfassungen von Fachartikeln oder Studien in Kundenpräsentationen oder Newslettern nutzt, sollte Quellen nennen und nicht ganze Passagen übernehmen. Für Consultants in Medien- und Verlagsprojekten wird das Thema Urheberrecht und KI konkreter.",
+      "sources": [
+        {
+          "label": "PPC Land: Google's Gemini can infringe press rights in 2 ways, EU court adviser says",
+          "url": "https://ppc.land/googles-gemini-can-infringe-press-rights-in-2-ways-eu-court-adviser-says/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: KI beschleunigt das Risikomanagement – bewerten muss der Mensch",
+      "text": "Die GPM hat ihre Veranstaltung „GPM Focus 2026“ zu KI in Projekten dokumentiert, bei der über 100 Projektleute in sieben Praxis-Workshops arbeiteten. Ein Ergebnis: Es gibt nicht die eine KI-Lösung, der größte Nutzen entsteht durch die Kombination mehrerer Anwendungen. Im Risikomanagement kann KI die Arbeit beschleunigen, ersetzt die kritische Bewertung aber nicht; live entstand zudem ein Prototyp für einen automatischen Statusbericht. Der Bericht stammt vom März 2026, ist aber eine der wenigen deutschen Praxisquellen dazu.",
+      "tip": "PM-Kandidaten fragen, welche Projektaufgaben sie konkret mit KI erledigen (z. B. Risikolisten, Statusberichte) und wie sie die Ergebnisse prüfen. Kombinierte Tool-Erfahrung ist aussagekräftiger als ein einzelnes Tool im Profil.",
+      "learn": [
+        {
+          "label": "GPM: KI-Studie „Projektmanagement vor dem Rollenwechsel“",
+          "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "GPM: GPM Focus 2026 – KI in Projekten zwischen Austausch und Praxis (26.03.2026)",
+          "url": "https://www.gpm-ipma.de/ueber-die-gpm/aktuelles/detail/gpm-focus-2026-ki-in-projekten-zwischen-praxis-austausch-und-anwendung"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: KI sucht in Interviews nach unausgesprochenen Bedürfnissen",
+      "text": "Ein Forschungsteam hat mit „LENS“ ein System vorgestellt, das Mitschriften von Stakeholder-Interviews auswertet und neben ausdrücklich genannten auch versteckte Anforderungen ableitet – also Bedarfe, die Befragte nur über Abläufe und Probleme beschreiben. In einem Industrieprojekt aus dem Bereich Cybersecurity mit zwölf Interviews erkannte es ausdrückliche Anforderungen recht zuverlässig; drei Viertel der abgeleiteten versteckten Anforderungen hielten Fachleute für nützlich. Es handelt sich um vorläufige Forschungsergebnisse (Preprint, Juni 2026), nicht um ein fertiges Produkt.",
+      "tip": "BAs, die Interviews führen und Ergebnisse sauber auf Aussagen zurückführen können, bleiben gefragt – KI liefert Vorschläge, die jemand mit Fachverstand bewerten muss. Im Gespräch fragen: „Wie prüfen Sie, ob eine KI-Zusammenfassung eines Workshops vollständig ist?“",
+      "sources": [
+        {
+          "label": "arXiv: LLM-Based Discovery of Latent Requirements from Stakeholder Conversations (24.06.2026)",
+          "url": "https://arxiv.org/abs/2606.25867"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI schreibt saubere User Stories – aber zu ähnliche",
+      "text": "Eine Studie hat geprüft, ob Sprachmodelle aus über 1.000 App-Bewertungen brauchbare User Stories formulieren können. Ergebnis: Formal und sprachlich sind die KI-Stories oft so gut wie von Menschen geschriebene oder besser, vor allem wenn man Beispiele vorgibt. Schwach sind sie dort, wo ein gutes Backlog es braucht: Die Stories sind häufig nicht unabhängig voneinander und doppeln sich. Es handelt sich um einen Preprint vom März 2026 mit älteren Modellen.",
+      "tip": "Bei RE-Kandidaten nach Erfahrung mit dem Zuschneiden und Entdoppeln von Backlogs fragen – genau das bleibt Handarbeit. Kunden, die Stories per KI erzeugen, brauchen jemanden, der die Qualität sichert.",
+      "sources": [
+        {
+          "label": "arXiv: From Reviews to Requirements – Can LLMs Generate Human-Like User Stories? (30.03.2026)",
+          "url": "https://arxiv.org/abs/2603.28163"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Sicherheit wird durch KI schneller und billiger – bei Kunden entstehen mehr Patch-, Sicherheits- und Governance-Projekte, für die erfahrene PMs gebraucht werden.",
+      "Wer Agenten einführt, braucht Regeln zum Überwachen und Abschalten: ein wachsendes Feld für BAs und PMs mit Erfahrung in Rechten, Freigaben und Notfallprozessen.",
+      "KI-Texte werden nachweisbar und Urheberrechtsfragen konkreter – Profile, Angebote und Präsentationen sollten von Menschen geprüft sein und Quellen sauber nennen."
+    ],
+    "sources": [
+      {
+        "label": "OpenAI (04.11.2026)",
+        "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+      },
+      {
+        "label": "Euronews (04.11.2026)",
+        "url": "https://www.euronews.com/2026/11/04/sovereign-ai-agents-could-evade-every-kill-switch-and-threaten-national-security-report-wa"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Claude: zentrale Anmeldung für Connectoren (Team/Enterprise)",
+      "tip": "Für Admins: Mitarbeitende können kompatible Plugins und Connectoren über eine vom Unternehmen verwaltete Anmeldung nutzen, statt jede Verbindung einzeln freizugeben. Vorher klären, welche Systeme verbunden werden dürfen.",
+      "url": "https://claude.com/docs/connectors/building/enterprise-managed-auth"
+    },
+    {
+      "name": "ChatGPT Images 2.6",
+      "tip": "Erstellt jetzt auch animierte GIFs und arbeitet mit wiederverwendbaren Referenzbildern – nützlich für Social-Media-Posts zu offenen Projekten. Keine Fotos von Kandidaten oder Kundenlogos ohne Freigabe hochladen.",
+      "url": "https://community.openai.com/t/images-upgraded-introducing-chatgpt-images-2-6/1412901"
+    }
+  ]
+},
+{
   "date": "2026-11-04",
   "headline": "Anthropic warnt vor sich selbst beschleunigender KI – und KI verändert, wer eingestellt wird",
   "intro": "Anthropic schreibt in seinen Börsenunterlagen, man könne bald eine selbst gesetzte Schwelle für stark KI-beschleunigte Forschung erreichen. Zugleich zeigen zwei Umfragen, dass deutsche Firmen KI aus Deutschland bevorzugen, aber nicht mehr zahlen wollen, und dass KI bei Einstellungen vor allem Einsteiger trifft.",

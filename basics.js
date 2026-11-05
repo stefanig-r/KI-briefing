@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"KI-Wasserzeichen","def":"Eine unsichtbare Markierung, die ein KI-Anbieter in erzeugte Texte, Bilder oder Videos einbaut, damit sich später prüfen lässt, ob ein Inhalt von seiner KI stammt. Sie ist nicht mit bloßem Auge erkennbar und bei kurzen Texten oft unzuverlässig.","added":"2026-11-05"},
+    {"term":"Kill Switch (Not-Aus für KI-Agenten)","def":"Eine Funktion, mit der Verantwortliche einen KI-Agenten sofort stoppen und ihm Zugriffe entziehen können, wenn er sich unerwartet verhält. Sie gehört zu den grundlegenden Sicherheitsvorkehrungen beim Einsatz von Agenten.","added":"2026-11-05"},
     {"term": "Rekursive Selbstverbesserung", "def": "Wenn KI-Systeme so stark an der Entwicklung ihrer eigenen Nachfolger mitarbeiten, dass sich der Fortschritt dadurch selbst beschleunigt. Anbieter wie Anthropic haben dafür interne Warnschwellen festgelegt, ab denen zusätzliche Sicherheitsmaßnahmen gelten.", "added": "2026-11-04"},
     {"term":"Deepfake","def":"Mit KI erzeugtes oder verändertes Bild, Video oder Tonstück, das echt wirkt – etwa ein fremdes Gesicht im Video-Interview oder eine nachgeahmte Stimme. Hinweise auf Fälschung sind z. B. unnatürliche Übergänge, Verzögerungen oder Ausweichen bei spontanen Bitten.","added":"2026-11-03"},
     {"term":"Lieferkettenangriff (Supply-Chain-Angriff)","def":"Angriff, bei dem nicht das Ziel selbst, sondern ein Zulieferteil manipuliert wird – etwa eine Erweiterung oder ein Software-Paket, das viele Nutzer installieren. Wer es arglos einspielt, holt sich den Schadcode selbst ins Haus.","added":"2026-11-02"},
