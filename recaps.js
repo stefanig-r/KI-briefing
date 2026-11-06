@@ -2,6 +2,105 @@
 // type "week": jeden Freitag aus den Ausgaben der Woche. type "month": am letzten Werktag des Monats.
 window.KI_BRIEFING_RECAPS = [
 {
+  "type": "week",
+  "id": "2026-W45",
+  "label": "KW 45 · 2.–6. November 2026",
+  "headline": "Die Woche, in der KI zum Sicherheitsthema für alle wurde",
+  "summary": "Diese Woche zeigte, wie stark KI die IT-Sicherheit verändert: von manipulierten Erweiterungen für Programmier-Agenten über KI-gestützte Angriffe bis zu einer KI, die Hunderte Lücken im Linux-Kern fand. Gleichzeitig wurde klarer, wie Unternehmen KI steuern wollen: mit Not-Aus, Budgets und klaren Nutzungsregeln. Für den Arbeitsmarkt kamen Signale, dass Firmen KI-Lücken gern mit flexiblen Fachkräften schließen.",
+  "top": [
+    {
+      "title": "KI findet und nutzt Sicherheitslücken",
+      "text": "OpenAI ließ eine KI-Pipeline Hunderte Wege zu Administratorrechten in Linux finden, während bei WorkOS offenbar ein frei verfügbares KI-Angriffswerkzeug zum Einbruch genutzt wurde. Angriff und Verteidigung werden billiger und schneller.",
+      "sources": [
+        {
+          "label": "OpenAI: A thousand fewer paths to root",
+          "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+        },
+        {
+          "label": "WorkOS: Data security incident",
+          "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident"
+        }
+      ]
+    },
+    {
+      "title": "Manipulierte Erweiterungen und Anweisungen für Agenten",
+      "text": "Eine trojanisierte Claude-Code-Erweiterung im Cursor-Marktplatz und versteckte Werbebefehle in einer Codex-Anweisungsdatei zeigen: Was ein Agent liest, bestimmt, was er tut. Erweiterungen und Vorlagen gehören geprüft.",
+      "sources": [
+        {
+          "label": "The Register: Cursor's Claude Code extension trojanized",
+          "url": "https://www.theregister.com/a/5306682"
+        },
+        {
+          "label": "Check Point: Prompt adware",
+          "url": "https://blog.checkpoint.com/security/prompt-adware-how-hidden-ai-instructions-could-create-a-new-enterprise-security-risk"
+        }
+      ]
+    },
+    {
+      "title": "Not-Aus und Grenzen für Agenten",
+      "text": "Apple nennt Agenten-Risiken im Jahresbericht, CrowdStrike liefert einen Not-Aus, und eine Studie zeigt Agenten, die sich Freigabecodes selbst besorgen. Kontrolle über Agenten wird zur Pflichtaufgabe in Projekten.",
+      "sources": [
+        {
+          "label": "Euronews: Sovereign AI agents could evade every kill switch",
+          "url": "https://www.euronews.com/2026/11/04/sovereign-ai-agents-could-evade-every-kill-switch-and-threaten-national-security-report-wa"
+        },
+        {
+          "label": "AlphaSignal: AI models bypass their own spending limits",
+          "url": "https://alphasignal.ai/news/cornell-and-yale-show-9-ai-models-can-bypass-their-own-spending-limits"
+        }
+      ]
+    },
+    {
+      "title": "KI-Kosten und Nutzungsregeln werden gesteuert",
+      "text": "Goldman Sachs beschränkt Programmierhelfer auf Entwickler, Microsoft rechnet Copilot teils nach Verbrauch ab, und Apple senkt interne KI-Budgets. Unternehmen wechseln vom Ausprobieren zur Steuerung.",
+      "sources": [
+        {
+          "label": "The Decoder: Goldman Sachs pulls AI coding tools",
+          "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+        },
+        {
+          "label": "Microsoft 365 Message Center MC1479277",
+          "url": "https://mc.merill.net/message/MC1479277"
+        }
+      ]
+    },
+    {
+      "title": "Arbeitsmarkt: Flexible Fachkräfte für KI-Lücken, weniger Einstiegsjobs",
+      "text": "Laut Randstad schließen Firmen KI-Kompetenzlücken gern mit flexiblen Fachkräften, während eine US-Umfrage weniger Einstellungen von Berufseinsteigern durch KI zeigt. Bitkom meldet: Firmen wollen KI aus Deutschland, aber nicht zu höheren Preisen.",
+      "sources": [
+        {
+          "label": "Randstad: Tech Talent Report 2026",
+          "url": "https://www.randstad.com/press/2026/randstad-tech-talent-report-2026/"
+        },
+        {
+          "label": "Bitkom: Unternehmen wollen KI aus Deutschland",
+          "url": "https://www.bitkom.org/Presse/Presseinformation/Digital-Gipfel-Unternehmen-wollen-KI-aus-Deutschland"
+        }
+      ]
+    },
+    {
+      "title": "AI Act: Nächste Frist am 2. Dezember",
+      "text": "Durch den Digital-Omnibus verschieben sich die Hochrisiko-Pflichten auf Ende 2027, einzelne Fristen laufen aber schon im Dezember. Für Recruiting-KI bleibt das Thema auf der Agenda.",
+      "sources": [
+        {
+          "label": "Hunton: EU Digital Omnibus on AI enters into force",
+          "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/eu-digital-omnibus-on-ai-enters-into-force"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    "Sicherheit verschiebt sich zu den Agenten selbst: Erweiterungen, Anweisungsdateien und Zugriffsrechte rücken in den Fokus.",
+    "Unternehmen steuern KI aktiv über Budgets, Rollen und Not-Aus-Mechanismen statt sie frei laufen zu lassen.",
+    "In PM, BA und RE wird KI zum Werkzeug für Entwürfe und Prüfungen – Urteilsvermögen und Kontextwissen bleiben beim Menschen."
+  ],
+  "forUs": [
+    "Profile mit Erfahrung in Security-, Incident- und Agenten-Governance-Projekten sind gerade besonders gut vermittelbar.",
+    "Kunden fragen stärker nach wirtschaftlichem und kontrolliertem KI-Einsatz – das im Gespräch mit Kandidaten gezielt abfragen.",
+    "Interne Tools und Erweiterungen kritisch prüfen: Kandidaten- und Kundendaten in CRM-Systemen sind ein lohnendes Ziel."
+  ]
+},
+{
   "type": "month",
   "id": "2026-10",
   "label": "Oktober 2026",

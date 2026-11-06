@@ -2,6 +2,164 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-06",
+  "headline": "KI als Einbruchswerkzeug, Werbung im Agenten – und Agenten, die kaum jemand nutzt",
+  "intro": "Ein Software-Anbieter meldet einen Einbruch, bei dem ein frei verfügbares KI-Angriffswerkzeug im Spiel war, und Sicherheitsforscher finden versteckte Werbebefehle in einer Anleitungsdatei für einen Programmier-Agenten. Dazu zwei Realitätschecks: Uber zählt kaum Buchungen durch KI-Agenten, und Apple deckelt intern die KI-Ausgaben seiner Beschäftigten.",
+  "news": [
+    {
+      "title": "Einbruch bei WorkOS: Angreifer nutzten offenbar ein KI-Angriffswerkzeug",
+      "summary": "Der Anbieter von Anmelde- und Zugangsdiensten WorkOS meldet, dass ein Angreifer am 30. Oktober in eine interne Vertriebsanwendung gelangt ist. Betroffen waren nach Firmenangaben geschäftliche Kontaktdaten und Zusammenfassungen von Kundenkommunikation, nicht aber Produktivsysteme oder Kundendaten der Anwendungen. Der Gründer führt den Angriff auf ARTEX zurück, ein frei verfügbares KI-Werkzeug für Penetrationstests. Das Sicherheitsunternehmen Wiz berichtet zudem, dass eine Angreifergruppe ARTEX gezielt gegen IT- und Softwareanbieter einsetzt.",
+      "forUs": "Auch Vertriebs- und CRM-Systeme sind Ziel – genau dort liegen bei Personaldienstleistern Kunden- und Kandidatendaten. Für Kunden steigt der Bedarf an Security- und Incident-Projekten, in denen PMs und BAs mit Sicherheitserfahrung gefragt sind.",
+      "learn": [
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        },
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "WorkOS: October 30th, 2026 data security incident",
+          "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident"
+        },
+        {
+          "label": "Wiz: ARTEX in the Wild – Storm-0940 expands targeting of IT and software vendors",
+          "url": "https://wiz.io/blog/artex-in-the-wild-storm-0940-expands-targeting-of-it-and-software-vendors"
+        }
+      ]
+    },
+    {
+      "title": "„Prompt-Adware“: Versteckte Werbebefehle in einer Datei für den Codex-Agenten",
+      "summary": "Check Point Research hat ein auf GitHub verbreitetes Paket untersucht, das den Programmier-Agenten Codex von OpenAI „freischalten“ soll. Es überschreibt die allgemeinen Anweisungen des Agenten so, dass schon eine einfache Begrüßung Werbung für einen fremden KI-Dienst auslöst. Hinweise auf Datendiebstahl fanden die Forscher nicht; das Projekt hatte aber Hunderte Sterne und Dutzende Kopien. Die Forscher sehen darin eine neue Art von Risiko: Wer die Anweisungsdateien eines Agenten kontrolliert, steuert sein Verhalten.",
+      "forUs": "Anweisungs- und Konfigurationsdateien von Agenten sind ein Einfallstor, ähnlich wie fremde Browser-Erweiterungen. Consultants sollten nur geprüfte Vorlagen und Erweiterungen verwenden – das gilt auch für eigene Rechner im Kundeneinsatz.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Check Point: Prompt adware – how hidden AI instructions could create a new enterprise security risk",
+          "url": "https://blog.checkpoint.com/security/prompt-adware-how-hidden-ai-instructions-could-create-a-new-enterprise-security-risk"
+        },
+        {
+          "label": "The Hacker News: Researchers uncover prompt adware",
+          "url": "https://thehackernews.com/2026/11/researchers-uncover-prompt-adware.html"
+        }
+      ]
+    },
+    {
+      "title": "Realitätscheck: Uber zählt im Quartal nur vier Fahrten, die KI-Agenten gebucht haben",
+      "summary": "Bei der Vorlage der Quartalszahlen sagte Ubers Finanzchef, dass im Fahrdienst nur vier Fahrten über KI-Agenten anderer Anbieter gebucht wurden. Beim Lieferdienst Uber Eats waren es in der Halloween-Woche rund 500 Bestellungen – bei etwa 320 Millionen Fahrten und Bestellungen pro Woche. Die Aussage dämpft die Erwartung, dass Agenten schon bald im großen Stil für Verbraucher einkaufen und buchen.",
+      "forUs": "Zwischen Ankündigung und Alltag liegt bei Agenten oft noch ein weiter Weg. Im Kundengespräch lohnt der Blick auf konkrete, messbare Einsatzfälle statt auf Schlagworte – genau das können erfahrene BAs und PMs liefern.",
+      "sources": [
+        {
+          "label": "TechCrunch: Almost no one uses AI agents to book their Uber, company says (04.11.2026)",
+          "url": "https://techcrunch.com/2026/11/04/almost-no-one-uses-ai-agents-to-book-their-uber-company-says/"
+        },
+        {
+          "label": "The Verge: Uber AI agents and Q3 earnings",
+          "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+        }
+      ]
+    },
+    {
+      "title": "Apple deckelt intern die täglichen KI-Budgets seiner Beschäftigten",
+      "summary": "Laut Bloomberg hat Apple die täglichen Budgets für KI-Werkzeuge bei einem Teil der Entwickler von 300 auf 200 US-Dollar gesenkt; eine weitere Senkung auf 100 Dollar wird demnach geprüft. Für Teams außerhalb der Entwicklung könnten die Grenzen auf 25 Dollar fallen, Ausnahmen lassen sich beantragen. Apple empfiehlt günstigere Modelle und KI direkt auf dem Gerät. Bereits Anfang der Woche hatte Microsoft für Copilot eine Abrechnung nach Verbrauch angekündigt.",
+      "forUs": "KI-Nutzung wird zum Kostenposten, den Unternehmen aktiv steuern. Kunden werden fragen, ob Freelancer KI wirtschaftlich einsetzen – Erfahrung mit Lizenz- und Kostensteuerung von KI-Werkzeugen wird zum Pluspunkt, etwa im PMO.",
+      "sources": [
+        {
+          "label": "Bloomberg: Apple cuts internal AI usage budgets (04.11.2026)",
+          "url": "https://www.bloomberg.com/news/articles/2026-11-04/apple-cuts-internal-ai-usage-budgets-in-move-to-reduce-spending"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (05.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-5-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Urteilsvermögen und Datenkompetenz gelten als wichtigste Zukunftsskills",
+      "text": "Eine Umfrage der britischen Association for Project Management (APM) unter 1.000 Projektfachleuten aus dem Frühjahr zeigt: 27 Prozent sagen, KI sei fest in ihre Arbeit eingebunden, etwa für Prognosen, Entscheidungshilfe und Risikovorhersagen. Als wichtigste Fähigkeiten für die Zukunft nennen jeweils rund ein Drittel ethische Entscheidungen und professionelles Urteilsvermögen sowie Datenkompetenz. Die Studie ist nicht neu, passt aber zur aktuellen Debatte über Agenten und Kontrolle.",
+      "tip": "Im Interview fragen: Wo hat der Kandidat eine KI-Empfehlung bewusst überstimmt – und warum? Im Profil sichtbar machen, wenn KI für Prognosen oder Risikoanalysen genutzt und das Ergebnis geprüft wurde.",
+      "sources": [
+        {
+          "label": "City AM: AI becomes increasingly embedded in project delivery, new APM research reveals (01.04.2026)",
+          "url": "https://www.cityam.com/ai-becomes-increasingly-embedded-in-project-delivery-across-key-industries-new-apm-research-reveals/"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: KI funktioniert am besten mit Geschäftslogik aus dem Fachbereich",
+      "text": "In einer Studie des Analytics-Anbieters Alteryx vom Mai sagen 65 Prozent der befragten Analysten, KI arbeite am besten, wenn die zugrunde liegende Geschäftslogik nah am Fachbereich gepflegt wird. Der Bericht betont zudem die menschliche Kontrolle über KI-Ergebnisse. Es handelt sich um eine Herstellerstudie, die Richtung deckt sich aber mit anderen Branchenberichten.",
+      "tip": "BAs, die Geschäftsregeln, Kennzahlen-Definitionen und Datenmodelle sauber dokumentieren können, liefern genau das, was KI-Projekte brauchen. Diese Erfahrung im Profil konkret benennen.",
+      "sources": [
+        {
+          "label": "Alteryx: 65% of analysts say AI works best when the logic is managed at the business level",
+          "url": "https://www.alteryx.com/about-us/newsroom/press-release/65-of-analysts-say-ai-works-best-when-the-logic-is-managed-at-the-business-level-alteryx-research-finds"
+        },
+        {
+          "label": "Intelligent CIO: Alteryx research finds analysts want AI managed closer to the business (20.05.2026)",
+          "url": "https://www.intelligentcio.com/eu/2026/05/20/alteryx-research-finds-analysts-want-ai-managed-closer-to-the-business/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI prüft Form schnell, Fachleute bleiben beim Inhalt unverzichtbar",
+      "text": "Eine Forschungsarbeit aus dem April hat KI-Werkzeuge mit erfahrenen Systemingenieuren verglichen: Beide bewerteten Anforderungen nach den INCOSE-Kriterien für gute Anforderungen, etwa Eindeutigkeit, Vollständigkeit und Testbarkeit. Die KI lieferte schnell und gleichbleibend erste Einschätzungen, vor allem zu Formulierung und Struktur. Bei Kontext, Mehrdeutigkeiten und Abwägungen blieben die Fachleute klar überlegen.",
+      "tip": "Kandidaten fragen, wie sie KI als ersten Qualitätscheck für Anforderungen nutzen und was sie danach selbst prüfen. Kenntnisse in Qualitätskriterien (z. B. IREB, INCOSE) bleiben ein starkes Argument.",
+      "sources": [
+        {
+          "label": "arXiv: AI-Assisted Requirements Engineering – An Empirical Evaluation Relative to Expert Judgment (16.04.2026)",
+          "url": "https://arxiv.org/abs/2604.15222"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Sicherheit rund um KI-Agenten wird konkret: Angriffswerkzeuge mit KI und manipulierte Agenten-Anweisungen treffen auch Vertriebs- und CRM-Systeme. Eigene Tools und Erweiterungen prüfen.",
+      "Kunden achten stärker auf Kosten und messbaren Nutzen von KI. Consultants, die Einsatzfälle bewerten und KI-Ausgaben steuern können, haben Vorteile.",
+      "Bei PM, BA und RE zählt weiterhin das Urteilsvermögen: KI liefert schnelle Entwürfe und Checks, Kontext und Abwägung bleiben Aufgabe der Fachleute."
+    ],
+    "sources": [
+      {
+        "label": "WorkOS: Data security incident",
+        "url": "https://workos.com/security/bulletins/october-30th-2026-data-security-incident"
+      },
+      {
+        "label": "arXiv 2604.15222",
+        "url": "https://arxiv.org/abs/2604.15222"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "OWASP Top 10 für agentische KI-Anwendungen",
+      "tip": "Kostenlose Übersicht der häufigsten Risiken bei KI-Agenten – gut als Checkliste, bevor ein Agent Zugriff auf Postfach, CRM oder Dateien bekommt.",
+      "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/"
+    },
+    {
+      "name": "ChatGPT Images 2.6",
+      "tip": "Neue Bildfunktion in ChatGPT erzeugt jetzt auch kurze Animationen (GIFs), etwa für Stellenanzeigen oder Social Posts. Keine Fotos von Kandidaten oder Kunden hochladen.",
+      "url": "https://openai.com/index/introducing-images-2-6/"
+    }
+  ]
+},
+{
   "date": "2026-11-05",
   "headline": "KI findet Hunderte Sicherheitslücken – und die Frage, wie man Agenten wieder abschaltet",
   "intro": "OpenAI zeigt, wie ein KI-System in großem Stil Schwachstellen im Linux-Kern aufspürt, während Apple, CrowdStrike und ein US-Thinktank sich mit Agenten beschäftigen, die aus dem Ruder laufen. Dazu: Anthropic kennzeichnet KI-Texte unsichtbar, und ein EU-Gutachten stellt KI-Zusammenfassungen von Presseartikeln in Frage.",

@@ -215,7 +215,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-05","title":"Anthropic markiert KI-Texte unsichtbar und forscht an überprüfbarer Modellherkunft"},
+      {
+        "date": "2026-11-05",
+        "title": "Anthropic markiert KI-Texte unsichtbar und forscht an überprüfbarer Modellherkunft"
+      },
       {
         "date": "2026-10-30",
         "title": "Business Analyse: Nur 40 Prozent der KI-Zahlen lassen sich belegen"
@@ -261,7 +264,18 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-05","title":"Not-Aus für KI-Agenten: Apple warnt, CrowdStrike liefert, Thinktank mahnt"},
+      {
+        "date": "2026-11-06",
+        "title": "Einbruch bei WorkOS: Angreifer nutzten offenbar ein KI-Angriffswerkzeug"
+      },
+      {
+        "date": "2026-11-06",
+        "title": "„Prompt-Adware“: Versteckte Werbebefehle in einer Datei für den Codex-Agenten"
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Not-Aus für KI-Agenten: Apple warnt, CrowdStrike liefert, Thinktank mahnt"
+      },
       {
         "date": "2026-11-04",
         "title": "Business Analyse: Wer legt fest, was ein Agent darf?"
@@ -356,7 +370,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-05","title":"Projektmanagement: KI beschleunigt das Risikomanagement – bewerten muss der Mensch"},
+      {
+        "date": "2026-11-06",
+        "title": "Projektmanagement: Urteilsvermögen und Datenkompetenz gelten als wichtigste Zukunftsskills"
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Projektmanagement: KI beschleunigt das Risikomanagement – bewerten muss der Mensch"
+      },
       {
         "date": "2026-11-03",
         "title": "Projektmanagement: Neun von zehn PMOs testen oder nutzen KI"
@@ -415,7 +436,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-05","title":"Business Analyse: KI sucht in Interviews nach unausgesprochenen Bedürfnissen"},
+      {
+        "date": "2026-11-06",
+        "title": "Business Analyse: KI funktioniert am besten mit Geschäftslogik aus dem Fachbereich"
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Business Analyse: KI sucht in Interviews nach unausgesprochenen Bedürfnissen"
+      },
       {
         "date": "2026-11-03",
         "title": "Business Analyse: Wann man der KI-Empfehlung nicht folgen sollte"
@@ -468,7 +496,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-05","title":"Requirements Engineering: KI schreibt saubere User Stories – aber zu ähnliche"},
+      {
+        "date": "2026-11-06",
+        "title": "Requirements Engineering: KI prüft Form schnell, Fachleute bleiben beim Inhalt unverzichtbar"
+      },
+      {
+        "date": "2026-11-05",
+        "title": "Requirements Engineering: KI schreibt saubere User Stories – aber zu ähnliche"
+      },
       {
         "date": "2026-11-04",
         "title": "Requirements Engineering: Agenten schreiben Spezifikationen, beim Prüfen bleibt der Mensch"
