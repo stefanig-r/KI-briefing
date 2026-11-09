@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-06",
+  "updated": "2026-11-09",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"AI Slop (KI-Ausschuss)","def":"Umgangssprachlich für schnell erzeugte, aber oberflächliche oder fehlerhafte KI-Inhalte, die gut aussehen, aber nachgearbeitet werden müssen. Der Begriff erinnert daran, dass Menge nicht gleich Qualität ist.","added":"2026-11-09"},
+    {"term":"Trilog","def":"Die abschließenden Verhandlungen zwischen EU-Parlament, Rat der Mitgliedstaaten und EU-Kommission über ein neues Gesetz. Erst wenn sich alle drei einigen, wird eine Regel verbindlich.","added":"2026-11-09"},
     {"term":"Penetrationstest (Pentest)","def":"Ein beauftragter, kontrollierter Angriff auf die eigenen Systeme, um Schwachstellen zu finden, bevor echte Angreifer es tun. KI-Werkzeuge können solche Tests heute teilweise automatisieren – und werden auch von Angreifern missbraucht.","added":"2026-11-06"},
     {"term":"Jailbreak","def":"Ein Versuch, die eingebauten Regeln oder Schutzmechanismen eines KI-Modells zu umgehen, etwa durch geschickte Anweisungen. Solche Pakete aus dem Internet können selbst versteckte, unerwünschte Befehle enthalten.","added":"2026-11-06"},
     {"term":"KI-Wasserzeichen","def":"Eine unsichtbare Markierung, die ein KI-Anbieter in erzeugte Texte, Bilder oder Videos einbaut, damit sich später prüfen lässt, ob ein Inhalt von seiner KI stammt. Sie ist nicht mit bloßem Auge erkennbar und bei kurzen Texten oft unzuverlässig.","added":"2026-11-05"},

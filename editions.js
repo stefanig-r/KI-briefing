@@ -2,6 +2,183 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-09",
+  "headline": "Agenten als Teammitglieder, Firmen holen Personal zurück – und die Frage nach der Qualität",
+  "intro": "Perplexity schickt dauerhaft arbeitende KI-Agenten in Slack-Kanäle, während einige Unternehmen nach KI-bedingtem Stellenabbau Fachleute zurückholen. Eine große Umfrage zeigt zudem: KI macht Einzelne schneller, aber nicht automatisch die Arbeit besser – und Brüssel setzt auf KI-Kompetenz und neue Datenregeln.",
+  "news": [
+    {
+      "title": "Perplexity „Teammates“: KI-Agenten übernehmen dauerhaft Aufgaben im Team",
+      "summary": "Perplexity hat am 5. November „Teammates“ vorgestellt: KI-Agenten, die nicht nur eine Frage beantworten, sondern laufende Aufgaben wie Marktrecherchen, Kampagnen oder die Sortierung von Fehlermeldungen dauerhaft betreuen. Jeder Agent hat eine eigene Browser-Umgebung und ein Gedächtnis, kann in einen Slack-Kanal aufgenommen werden, nimmt dort Aufträge von Kolleginnen und Kollegen an und fragt nur bei Freigaben nach. Das Angebot ist zunächst auf das Max-Abo (rund 200 US-Dollar im Monat) und die Web-Version beschränkt. Ähnliche Ansätze verfolgen auch OpenAI, Microsoft und Anthropic.",
+      "forUs": "Agenten werden wie Teammitglieder mit eigenen Zugängen behandelt – damit stellen sich Fragen nach Rechten, Freigaben und Datenschutz. Bei Kunden entstehen Rollen, die solche Agenten einführen und steuern; PMs und BAs mit dieser Erfahrung werden gefragter.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        },
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Let's Data Science: Perplexity launches Teammates, persistent AI agents for Max subscribers (05.11.2026)",
+          "url": "https://letsdatascience.com/news/perplexity-launches-teammates-persistent-ai-agents-for-max-s-704b7a36"
+        }
+      ]
+    },
+    {
+      "title": "„KI-Bumerang“: Firmen holen nach Stellenabbau Fachleute zurück",
+      "summary": "Laut einem Bericht der Nachrichtenagentur AP stellen manche Unternehmen, die Stellen mit Verweis auf KI gestrichen haben, einen Teil der Leute wieder ein. Der Personaldienstleister Robert Half berichtet von Führungskräften, die zuvor gestrichene Rollen neu besetzen – vor allem, weil KI mehr menschliche Kontrolle braucht und internes Wissen nicht ersetzen kann. Als Beispiele nennt der Bericht Klarna im Kundenservice und Ford bei der Qualitätskontrolle. Wie verbreitet solche Kehrtwenden sind, ist laut AP unklar.",
+      "forUs": "Wo KI-Projekte hinter den Erwartungen bleiben, entsteht kurzfristig Bedarf an erfahrenen Fachleuten – ein typischer Fall für Freelancer. Im Vertrieb lohnt die Frage, wo Kunden nach Automatisierungsschritten Lücken bei Wissen und Kontrolle sehen.",
+      "sources": [
+        {
+          "label": "Carrier Management / AP: What to consider if a company that made AI-related job cuts wants you back (05.11.2026)",
+          "url": "https://www.carriermanagement.com/news/2026/11/05/293252.htm"
+        }
+      ]
+    },
+    {
+      "title": "Miro-Umfrage: KI macht Einzelne schneller, aber Teams kaum besser",
+      "summary": "Für eine Studie des Whiteboard-Anbieters Miro wurden im September und Oktober über 9.500 Führungskräfte und Beschäftigte in Nordamerika, Europa und Asien-Pazifik befragt. 83 Prozent sagen, KI habe ihre eigene Produktivität erhöht, aber nur 56 Prozent sehen bessere Qualität der Ergebnisse. Mehr als die Hälfte sieht keine besseren Entscheidungen und keine bessere Zusammenarbeit; 55 Prozent berichten von mehr minderwertigen KI-Inhalten („AI Slop“), die nachgearbeitet werden müssen. Es handelt sich um eine Herstellerstudie, die Richtung deckt sich aber mit anderen Erhebungen.",
+      "forUs": "Kunden merken, dass Tempo allein nicht reicht – gefragt sind Leute, die KI-Ergebnisse prüfen und in Teamprozesse einbetten. Genau diese Fähigkeit sollten Profile von PMs, BAs und REs konkret zeigen.",
+      "learn": [
+        {
+          "label": "EU-Kommission: Fragen und Antworten zur KI-Kompetenz nach Art. 4 AI Act",
+          "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Business Wire via BNN Bloomberg: Individual AI productivity soars, but organizational impact stalls (03.11.2026)",
+          "url": "https://www.bnnbloomberg.ca/press-releases/2026/11/03/individual-ai-productivity-soars-but-organizational-impact-stalls/"
+        }
+      ]
+    },
+    {
+      "title": "EU plant ein Zertifikat für KI-Kompetenz – schon für Schüler",
+      "summary": "Die EU-Kommission arbeitet an einem Zertifikat für KI-Kompetenz für 15-Jährige, das ab dem Schuljahr 2027/2028 angeboten werden soll. Es soll vermitteln, wie KI funktioniert, wie man ihre Ergebnisse prüft, Manipulation erkennt und wann man sie besser abschaltet. Das Vorhaben ist Teil eines Bildungspakets, das die Kommission am 5. November vorgestellt hat; über Lehrpläne entscheiden weiterhin die Mitgliedstaaten. Für Unternehmen gilt die Pflicht zur KI-Kompetenz der Beschäftigten bereits seit Februar 2025.",
+      "forUs": "KI-Kompetenz wird in Europa zur Grundqualifikation, die man nachweisen kann. Auch Kunden werden zunehmend fragen, wie Consultants im Umgang mit KI geschult sind – Schulungsnachweise gehören ins Profil.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk – KI-Kompetenz und kostenlose Schulungsangebote",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        },
+        {
+          "label": "EU-Kommission: Überblick zu KI-Talenten, Fähigkeiten und KI-Kompetenz",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/ai-talent-skills-and-literacy",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Euronews: EU plans to deliver AI literacy certificates to students (05.11.2026)",
+          "url": "https://www.euronews.com/2026/11/05/eu-plans-to-deliver-ai-literacy-certificates-to-students"
+        }
+      ]
+    },
+    {
+      "title": "DSGVO-Umbau: EU-Staaten wollen Datennutzung für KI erleichtern",
+      "summary": "Die EU-Mitgliedstaaten haben im Rahmen des „Digital Omnibus“ ihre Position zur Änderung der DSGVO festgelegt. Ein neuer Artikel soll die Verarbeitung personenbezogener Daten für KI auf das „berechtigte Interesse“ von Unternehmen stützen können. Die Datenschutzorganisation noyb kritisiert, dass damit faktisch keine Einwilligung mehr nötig wäre; Juristen lesen den Ratstext teils enger, etwa weil die KI-Entwicklung allein noch kein berechtigtes Interesse sei. Beschlossen ist nichts: Das EU-Parlament hat noch keine Position, als Nächstes folgen die Verhandlungen zwischen Rat, Parlament und Kommission (Trilog).",
+      "forUs": "Für den Umgang mit Kandidaten- und Kundendaten in KI-Tools ändert sich vorerst nichts – die heutige DSGVO gilt weiter. Das Thema bleibt aber auf der Agenda, und bei Kunden entstehen Compliance-Projekte, in denen BAs mit Datenschutzwissen gefragt sind.",
+      "learn": [
+        {
+          "label": "Datenschutzkonferenz: Orientierungshilfe zu Datenschutz bei Entwicklung und Einsatz von KI-Systemen (PDF)",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "All About Security: DSGVO-Änderung – EU-Staaten wollen Datennutzung für KI erleichtern (04.11.2026)",
+          "url": "https://www.all-about-security.de/dsgvo-aenderung-eu-staaten-wollen-datennutzung-fuer-ki-erleichtern/"
+        },
+        {
+          "label": "Cuatrecasas: Digital Omnibus – EU Council establishes position (27.10.2026)",
+          "url": "https://www.cuatrecasas.com/en/latam/intellectual-property/art/digital-omnibus-eu-council-establishes-position"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Smartsheet bringt Agenten für Pläne und Datenqualität",
+      "text": "Der Projektmanagement-Anbieter Smartsheet hat auf seiner Konferenz ENGAGE am 4. November neue KI-Agenten vorgestellt, darunter einen Agenten, der Pläne und Arbeitsbereiche aus einer Beschreibung erstellt, und einen, der Datenqualität prüft. Dazu kommen agentische Workflows, Anbindungen etwa an ServiceNow und Workday sowie eine Zertifizierung nach ISO/IEC 42001 für KI-Managementsysteme. Es handelt sich um eine Herstellermitteilung ohne unabhängige Ergebnisse.",
+      "tip": "Kandidaten fragen, ob sie Projektpläne schon mit KI-Agenten erstellt oder bereinigt haben und wie sie die Ergebnisse kontrolliert haben. Bei Kunden mit Smartsheet lohnt der Hinweis auf solche Erfahrung im Profil.",
+      "sources": [
+        {
+          "label": "Smartsheet: New AI agents, integrations and security advancements at ENGAGE 2026 (04.11.2026)",
+          "url": "https://www.smartsheet.com/content-center/news/smartsheet-adds-new-ai-agents-integrations-and-security-advancements-engage"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Analyse-Agenten verbreiten sich – die Verantwortung ist oft ungeklärt",
+      "text": "Eine Umfrage von 451 Research (S&P Global) vom Oktober zeigt: Rund ein Drittel der Organisationen nutzt bereits unterstützende KI-Agenten für BI und Datenanalyse, 22 Prozent planen innerhalb eines Jahres eigenständige, mehrstufige Abläufe. Größtes Hindernis sind Datenschutz- und Sicherheitsrisiken. 15 Prozent haben keine Regel, wer verantwortlich ist, wenn ein autonomer Agent einen Fehler macht.",
+      "tip": "BAs, die Kennzahlen, Datenquellen und Verantwortlichkeiten für KI-Auswertungen sauber festlegen, schließen genau diese Lücke. Im Interview fragen, wie der Kandidat Ergebnisse von Analyse-Agenten nachvollziehbar gemacht hat.",
+      "sources": [
+        {
+          "label": "451 Alliance: Assistive agents drive AI adoption in data science and analytics, but roadblocks remain (27.10.2026)",
+          "url": "https://blog.451alliance.com/assistive-agents-drive-ai-adoption-in-data-science-and-analytics-but-roadblocks-remain/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Agenten arbeiten im Anforderungsportal – jede Änderung braucht Freigabe",
+      "text": "Altium hat Mitte Oktober KI-Agenten für sein Requirements-Portal vorgestellt, das vor allem in der Hardware- und Elektronikentwicklung genutzt wird. Ein Assistent arbeitet direkt mit den Anforderungsdaten, ein KI-gestützter Import übernimmt bestehende Dokumente, Hintergrund-Agenten sollen folgen. Jede von der KI vorgeschlagene Änderung muss ein Mensch bestätigen; es handelt sich um eine Herstellerankündigung ohne unabhängige Messwerte.",
+      "tip": "Für RE-Profile in Embedded- und Hardware-Projekten wird Erfahrung mit KI-gestütztem Import und Prüfen von Anforderungen interessant. Kandidaten fragen, wie sie Freigabe- und Änderungsprozesse bei KI-Vorschlägen organisieren.",
+      "sources": [
+        {
+          "label": "Altium: Introducing agentic requirements engineering (14.10.2026)",
+          "url": "https://resources.altium.com/p/introducing-agentic-requirements-engineering"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "KI-Agenten rücken als „Kollegen“ in Teams ein. Wer sie einführt, steuert und absichert, wird bei Kunden gebraucht – ein Profilmerkmal für PMs und BAs.",
+      "Wo Automatisierung zu weit ging, holen Firmen Erfahrung zurück. Für Personaldienstleister ist das eine Chance: schnelle Verfügbarkeit von Fachleuten mit Prozesswissen.",
+      "Qualität und Kompetenz werden zum Maßstab: Kunden achten zunehmend darauf, ob Consultants KI-Ergebnisse prüfen können und im Umgang mit KI geschult sind."
+    ],
+    "sources": [
+      {
+        "label": "Business Wire via BNN Bloomberg: Miro research (03.11.2026)",
+        "url": "https://www.bnnbloomberg.ca/press-releases/2026/11/03/individual-ai-productivity-soars-but-organizational-impact-stalls/"
+      },
+      {
+        "label": "Carrier Management / AP (05.11.2026)",
+        "url": "https://www.carriermanagement.com/news/2026/11/05/293252.htm"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "EU-FAQ zur KI-Kompetenz",
+      "tip": "Die offiziellen Fragen und Antworten der EU-Kommission erklären, was die Pflicht zur KI-Kompetenz für Unternehmen bedeutet – gute Grundlage für interne Schulungen und Kundengespräche.",
+      "url": "https://digital-strategy.ec.europa.eu/en/faqs/ai-literacy-questions-answers"
+    },
+    {
+      "name": "DSK-Orientierungshilfe KI-Systeme",
+      "tip": "Die deutschen Datenschutzbehörden fassen zusammen, worauf beim Einsatz von KI-Systemen zu achten ist. Nützlich als Checkliste, bevor ein neues KI-Tool mit Personendaten genutzt wird.",
+      "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf"
+    },
+    {
+      "name": "Smartsheet KI-Agenten",
+      "tip": "Neue Agenten erstellen Pläne aus Beschreibungen und prüfen die Datenqualität in Sheets. Vor dem Einsatz mit Kundendaten klären, ob die KI-Funktionen intern freigegeben sind.",
+      "url": "https://www.smartsheet.com/content-center/news/smartsheet-adds-new-ai-agents-integrations-and-security-advancements-engage"
+    }
+  ]
+},
+{
   "date": "2026-11-06",
   "headline": "KI als Einbruchswerkzeug, Werbung im Agenten – und Agenten, die kaum jemand nutzt",
   "intro": "Ein Software-Anbieter meldet einen Einbruch, bei dem ein frei verfügbares KI-Angriffswerkzeug im Spiel war, und Sicherheitsforscher finden versteckte Werbebefehle in einer Anleitungsdatei für einen Programmier-Agenten. Dazu zwei Realitätschecks: Uber zählt kaum Buchungen durch KI-Agenten, und Apple deckelt intern die KI-Ausgaben seiner Beschäftigten.",

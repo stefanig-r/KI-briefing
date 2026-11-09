@@ -149,6 +149,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-09",
+        "title": "DSGVO-Umbau: EU-Staaten wollen Datennutzung für KI erleichtern"
+      },
+      {
         "date": "2026-11-04",
         "title": "Bitkom: Firmen wollen KI aus Deutschland – aber nicht teurer"
       },
@@ -216,6 +220,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-09",
+        "title": "EU plant ein Zertifikat für KI-Kompetenz – schon für Schüler"
+      },
+      {
+        "date": "2026-11-09",
+        "title": "Miro-Umfrage: KI macht Einzelne schneller, aber Teams kaum besser"
+      },
+      {
         "date": "2026-11-05",
         "title": "Anthropic markiert KI-Texte unsichtbar und forscht an überprüfbarer Modellherkunft"
       },
@@ -264,6 +276,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-09",
+        "title": "Perplexity „Teammates“: KI-Agenten übernehmen dauerhaft Aufgaben im Team"
+      },
       {
         "date": "2026-11-06",
         "title": "Einbruch bei WorkOS: Angreifer nutzten offenbar ein KI-Angriffswerkzeug"
@@ -371,6 +387,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-09",
+        "title": "Projektmanagement: Smartsheet bringt Agenten für Pläne und Datenqualität"
+      },
+      {
         "date": "2026-11-06",
         "title": "Projektmanagement: Urteilsvermögen und Datenkompetenz gelten als wichtigste Zukunftsskills"
       },
@@ -437,6 +457,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-09",
+        "title": "Business Analyse: Analyse-Agenten verbreiten sich – die Verantwortung ist oft ungeklärt"
+      },
+      {
         "date": "2026-11-06",
         "title": "Business Analyse: KI funktioniert am besten mit Geschäftslogik aus dem Fachbereich"
       },
@@ -496,6 +520,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-09",
+        "title": "Requirements Engineering: Agenten arbeiten im Anforderungsportal – jede Änderung braucht Freigabe"
+      },
       {
         "date": "2026-11-06",
         "title": "Requirements Engineering: KI prüft Form schnell, Fachleute bleiben beim Inhalt unverzichtbar"
