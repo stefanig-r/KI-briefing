@@ -103,6 +103,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-10",
+        "title": "Personaldienstleister setzt KI-Interviewerin im Erstgespräch ein"
+      },
+      {
         "date": "2026-11-04",
         "title": "Umfrage: KI führt zu weniger Einstellungen von Berufseinsteigern"
       },
@@ -277,6 +281,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-10",
+        "title": "Claude Code: „Nicht mehr fragen“ legte Tausende Zugangsschlüssel offen"
+      },
+      {
+        "date": "2026-11-10",
+        "title": "OpenAI lässt Schnittstellen zu Drittanbietern gezielt angreifen"
+      },
+      {
         "date": "2026-11-09",
         "title": "Perplexity „Teammates“: KI-Agenten übernehmen dauerhaft Aufgaben im Team"
       },
@@ -387,6 +399,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-10",
+        "title": "Projektmanagement: Planner-Agent verteilt bald Aufgaben und fasst zusammen"
+      },
+      {
         "date": "2026-11-09",
         "title": "Projektmanagement: Smartsheet bringt Agenten für Pläne und Datenqualität"
       },
@@ -457,6 +473,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-10",
+        "title": "Business Analyse: Unumkehrbare Agenten-Aktionen früh erkennen"
+      },
+      {
         "date": "2026-11-09",
         "title": "Business Analyse: Analyse-Agenten verbreiten sich – die Verantwortung ist oft ungeklärt"
       },
@@ -520,6 +540,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-10",
+        "title": "Praxistest: Coding-Agenten erledigen nur jede vierte echte Aufgabe vollständig"
+      },
+      {
+        "date": "2026-11-10",
+        "title": "Requirements Engineering: Agent bewertet, ob Tickets „reif“ für die Umsetzung sind"
+      },
       {
         "date": "2026-11-09",
         "title": "Requirements Engineering: Agenten arbeiten im Anforderungsportal – jede Änderung braucht Freigabe"

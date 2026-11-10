@@ -2,6 +2,145 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-10",
+  "headline": "Geheimnisse in Agenten-Dateien, KI im Bewerbergespräch – und Coding-Agenten mit viel Nacharbeit",
+  "intro": "Eine Komfortfunktion von Claude Code hat Tausende Zugangsschlüssel öffentlich gemacht, und OpenAI lässt seine Schnittstellen zu Drittanbietern gezielt angreifen. Im Recruiting führt ein Personaldienstleister eine KI-Interviewerin fest ein, während ein Praxistest zeigt, wie oft Coding-Agenten noch Hilfe brauchen.",
+  "news": [
+    {
+      "title": "Claude Code: „Nicht mehr fragen“ legte Tausende Zugangsschlüssel offen",
+      "summary": "Wer in Claude Code einen Befehl mit „Ja, nicht mehr fragen“ freigibt, speichert ihn unter Umständen wörtlich in einer Einstellungsdatei – samt darin enthaltenem Passwort oder Schlüssel. Die Sicherheitsfirma Apiiro fand in öffentlichen GitHub-Projekten rund 2.500 solcher Geheimnisse in knapp 2.000 Repositories; mindestens ein betroffener Schlüssel war nachweislich noch gültig. Ältere Fehlermeldungen dazu wurden laut Bericht automatisch geschlossen, eine Stellungnahme von Anthropic nennt der Artikel nicht. Die Forscher raten, betroffene Schlüssel auszutauschen und Agenten-Ordner wie „.claude“ in die Geheimnis-Prüfung aufzunehmen.",
+      "forUs": "Auch Komfortfunktionen von KI-Werkzeugen können vertrauliche Daten nach außen tragen. Bei Kunden mit Entwicklungsteams steigt der Bedarf an Leuten, die Regeln für den sicheren Einsatz von Agenten aufstellen und durchsetzen.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        },
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Hacker News: Claude Code's 'Don't Ask Again' file leaks secrets (07.11.2026)",
+          "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI lässt Schnittstellen zu Drittanbietern gezielt angreifen",
+      "summary": "OpenAI arbeitet mit der Sicherheitsfirma Hacktron zusammen, die die Systeme des KI-Anbieters in kontrollierten Angriffen („Red Teaming“) testet. Im Fokus stehen die Übergänge zwischen OpenAI-Produkten und externen Diensten – also Anmeldesysteme, Integrationen und die darunterliegende Infrastruktur. Hacktron hatte zuvor über das Bug-Bounty-Programm eine Angriffskette gemeldet, die über eine fremde Anwendung und eine Schwäche beim Single Sign-on bis zu ChatGPT, Codex und einer GitHub-Anbindung reichte. Vertragsdetails und Umfang der Tests hat OpenAI nicht veröffentlicht.",
+      "forUs": "Je mehr KI-Assistenten mit anderen Programmen verbunden sind, desto wichtiger werden die Schnittstellen als Schwachstelle. Für Kunden sind Projektleiter und Analysten gefragt, die beim Anbinden von KI-Diensten Sicherheitsfragen von Anfang an mitdenken.",
+      "learn": [
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BornCity: OpenAI und Hacktron – Red-Team-Tests prüfen Schnittstellen zu Drittanbietern (07.11.2026)",
+          "url": "https://borncity.com/news/openai-und-hacktron-red-team-tests-pruefen-schnittstellen-zu-drittanbietern/"
+        }
+      ]
+    },
+    {
+      "title": "Personaldienstleister setzt KI-Interviewerin im Erstgespräch ein",
+      "summary": "Der österreichische Personaldienstleister easystaff hat seine KI-Interviewerin „Lizzy“ nach einem halbjährigen Test in den Regelbetrieb übernommen. Bewerberinnen und Bewerber können das Erstgespräch jederzeit ohne Termin führen; die KI folgt demselben Leitfaden wie das HR-Team und erfasst Erfahrung, Interessen, Wunschbereiche und Verfügbarkeit. Über die Aufnahme in den Pool und die Zuordnung zu Qualifikationen entscheiden weiterhin Recruiter. Persönliche Gespräche bleiben laut Unternehmen möglich.",
+      "forUs": "KI-Erstgespräche kommen in unserer Branche an – mit Zeitgewinn, aber auch mit Pflichten: Systeme, die bei der Auswahl von Bewerbern mitwirken, können nach dem AI Act als Hochrisiko-KI gelten. Wer so etwas prüft, sollte menschliche Entscheidung, Transparenz gegenüber Kandidaten und Datenschutz klar regeln.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk – Fragen zum AI Act und Einstufung von KI-Systemen",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Leadersnet: easystaff setzt bei Bewerbungsgesprächen auf Lizzy (05.11.2026)",
+          "url": "https://www.leadersnet.at/news/105399,easystaff-setzt-bei-bewerbungsgespraechen-auf-lizzy.html"
+        }
+      ]
+    },
+    {
+      "title": "Praxistest: Coding-Agenten erledigen nur jede vierte echte Aufgabe vollständig",
+      "summary": "Ein neuer Test namens Co-Design Bench prüft KI-Programmierhelfer mit 273 Aufgaben, die aus über 26.000 echten Nutzersitzungen stammen und an verdeckten Abnahmekriterien von Fachleuten gemessen werden. Der beste von zehn getesteten Agenten erfüllte zwar knapp 70 Prozent der einzelnen Kriterien, schloss aber nur 26,4 Prozent der Aufgaben vollständig ab. Je mehr unterschiedliche Änderungen eine Aufgabe verlangte, desto schlechter schnitten die Agenten ab. Es handelt sich um eine Forschungsarbeit; welche Modelle getestet wurden, nennt die Zusammenfassung nicht.",
+      "forUs": "Für Kunden heißt das: Agenten liefern viel, aber selten fertig – Abnahme und Nacharbeit bleiben Menschenarbeit. Klare Abnahmekriterien zu formulieren, ist genau die Stärke von REs und BAs und ein gutes Argument im Vertrieb."
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Planner-Agent verteilt bald Aufgaben und fasst zusammen",
+      "text": "Microsoft erweitert den Planner-Agenten in Copilot Chat: Er soll Aufgaben in gemeinsamen Plänen zuweisen, regelmäßig zusammenfassen, was sich getan hat, und sich über das Copilot-Gedächtnis an Vorlieben erinnern. Die weltweite Einführung ist laut Microsoft-Ankündigung vom 5. November für Anfang Dezember geplant, standardmäßig eingeschaltet; Premium-Pläne werden nicht unterstützt. Die bisherige Grenze von 30 Aufgaben pro Plan entfällt.",
+      "tip": "Bei PM-Kandidaten nachfragen, ob sie Planner oder ähnliche Werkzeuge schon mit KI-Unterstützung nutzen – und wie sie prüfen, ob Zuweisungen und Zusammenfassungen stimmen. Kunden mit Microsoft 365 werden diese Funktion bald im Alltag sehen.",
+      "sources": [
+        {
+          "label": "Microsoft 365 Message Center MC1539002: Planner Agent task assignment, catch-up, and Copilot memory (05.11.2026)",
+          "url": "https://mc.merill.net/message/MC1539002"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Unumkehrbare Agenten-Aktionen früh erkennen",
+      "text": "Ein Praxisartikel auf Modern Analyst (August, also keine Neuigkeit) schlägt fünf Werkzeuge vor, mit denen BAs Anforderungen an KI-Agenten beschreiben – etwa eine Übersicht der Autonomiegrenzen, Verträge für jedes Werkzeug des Agenten und eine Eskalationsmatrix. Im Fallbeispiel zeigte die Prüfung, dass drei von elf geplanten Agenten-Werkzeugen nicht rückgängig zu machende Aktionen auslösen konnten; zwei wurden so umgebaut, dass sie zunächst in einen Zwischenbereich schreiben.",
+      "tip": "Im Gespräch mit BA-Kandidaten fragen, wie sie festlegen würden, was ein Agent selbst tun darf und wann ein Mensch freigeben muss. Erfahrung mit solchen Freigabe- und Eskalationsregeln gehört sichtbar ins Profil.",
+      "sources": [
+        {
+          "label": "Modern Analyst: The Business Analyst's Guide to Agentic AI Requirements (23.08.2026)",
+          "url": "https://modernanalyst.com/Resources/Articles/tabid/115/ID/7213/The-Business-Analysts-Guide-to-Agentic-AI-Requirements.aspx"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Agent bewertet, ob Tickets „reif“ für die Umsetzung sind",
+      "text": "Der Anbieter Allstacks hat bereits im März einen „Spec Readiness Agent“ vorgestellt, der Epics, Sprints und Tickets in Jira, Azure DevOps oder Linear auf Vollständigkeit prüft, einen Reifegrad vergibt und Verbesserungsvorschläge formuliert. Begründung des Herstellers: Unvollständige Spezifikationen verlängern Review und Test deutlich – erst recht, wenn KI-Agenten den Code schreiben. Es ist ein Herstellerangebot, keine unabhängige Studie, passt aber zum heutigen Praxistest.",
+      "tip": "REs, die Anforderungen so schreiben, dass auch KI-Agenten damit arbeiten können, sind ein Verkaufsargument. In Profilen konkrete Beispiele für prüfbare Abnahmekriterien hervorheben.",
+      "sources": [
+        {
+          "label": "SD Times: Allstacks launches agent to close the spec gap limiting AI-assisted development (10.03.2026)",
+          "url": "https://sdtimes.com/agentic/allstacks-launches-agent-to-close-the-spec-gap-limiting-ai-assisted-development/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Personaldienstleister: KI-Erstgespräche werden in der Branche Realität – wer sie einführt, braucht klare Regeln zu menschlicher Entscheidung, Transparenz und AI-Act-Einstufung.",
+      "Consultants: Sicherer Umgang mit KI-Werkzeugen (keine Passwörter in Freigaben, Prüfung von Schnittstellen) und klare Abnahmekriterien werden zu sichtbaren Qualitätsmerkmalen.",
+      "Kunden: Agenten liefern schnell, aber selten fertig – gefragt sind PMs, BAs und REs, die Grenzen, Freigaben und Abnahme von KI-Arbeit organisieren."
+    ],
+    "sources": [
+      {
+        "label": "The Hacker News (07.11.2026)",
+        "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+      },
+      {
+        "label": "Leadersnet (05.11.2026)",
+        "url": "https://www.leadersnet.at/news/105399,easystaff-setzt-bei-bewerbungsgespraechen-auf-lizzy.html"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Planner-Agent in Microsoft 365 Copilot Chat",
+      "tip": "Ab Anfang Dezember Aufgaben per Chat zuweisen und Zusammenfassungen abrufen lassen. Ergebnisse prüfen und keine vertraulichen Kandidatendaten in Aufgabentexte schreiben.",
+      "url": "https://mc.merill.net/message/MC1539002"
+    },
+    {
+      "name": "easeRequirements AI (Beta) für Jira",
+      "tip": "Für RE-Teams beim Kunden interessant: Fragen zu Anforderungen in natürlicher Sprache, Lücken in der Rückverfolgbarkeit und Änderungsfolgen erkennen. Beta auf Anfrage; vorher klären, welcher KI-Assistent auf welche Daten zugreift.",
+      "url": "https://www.easesolutions.com/easerequirements-ai-beta-requirements-management-jira"
+    }
+  ]
+},
+{
   "date": "2026-11-09",
   "headline": "Agenten als Teammitglieder, Firmen holen Personal zurück – und die Frage nach der Qualität",
   "intro": "Perplexity schickt dauerhaft arbeitende KI-Agenten in Slack-Kanäle, während einige Unternehmen nach KI-bedingtem Stellenabbau Fachleute zurückholen. Eine große Umfrage zeigt zudem: KI macht Einzelne schneller, aber nicht automatisch die Arbeit besser – und Brüssel setzt auf KI-Kompetenz und neue Datenregeln.",
