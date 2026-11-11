@@ -153,6 +153,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-11",
+        "title": "Britische Datenschutzaufsicht nimmt KI-Agenten ins Visier"
+      },
+      {
         "date": "2026-11-09",
         "title": "DSGVO-Umbau: EU-Staaten wollen Datennutzung für KI erleichtern"
       },
@@ -399,6 +403,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-11",
+        "title": "Projektmanagement: KI-Einführung ist auch eine Arbeitsrechtsfrage"
+      },
+      {
         "date": "2026-11-10",
         "title": "Projektmanagement: Planner-Agent verteilt bald Aufgaben und fasst zusammen"
       },
@@ -541,6 +549,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-11",
+        "title": "Requirements Engineering: Klickbare Prototypen in Minuten"
+      },
+      {
         "date": "2026-11-10",
         "title": "Praxistest: Coding-Agenten erledigen nur jede vierte echte Aufgabe vollständig"
       },
@@ -618,6 +630,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-11",
+        "title": "Anthropic, Google und Cloudflare veröffentlichen fertige „Skills“ für KI-Agenten"
+      },
       {
         "date": "2026-10-26",
         "title": "„Skills“ für KI-Agenten werden ein offener Standard"

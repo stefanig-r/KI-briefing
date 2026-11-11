@@ -2,6 +2,185 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-11",
+  "headline": "Office-Agenten verschwinden in Copilot, Anbieter teilen „Skills“ – und Warnungen vor KI-gestützten Angriffen",
+  "intro": "Microsoft baut die Dokumentenarbeit in Copilot um, und mehrere große Anbieter stellen fertige Arbeitsanleitungen für KI-Agenten frei ins Netz. Gleichzeitig warnt ein bekannter Sicherheitschef vor einer schwierigen Phase für die IT-Sicherheit, und die britische Datenschutzaufsicht sammelt Hinweise zu Risiken von KI-Agenten.",
+  "news": [
+    {
+      "title": "Microsoft Copilot: Eigene Agenten für Word, Excel und PowerPoint fallen weg",
+      "summary": "Laut einer Mitteilung im Microsoft-365-Nachrichtencenter ersetzt Microsoft die separaten Word-, Excel- und PowerPoint-Agenten in Microsoft 365 Copilot. Dokumente werden künftig direkt im Copilot-Chat erstellt und bearbeitet; die bisherigen Agenten verschwinden aus der Seitenleiste und lassen sich nicht mehr aufrufen oder anheften. Die weltweite Umstellung soll Mitte November beginnen und bis Ende Dezember 2026 abgeschlossen sein. Bestehende Dateien bleiben in OneDrive und SharePoint erhalten, alte Unterhaltungen sind lesbar, lassen sich aber nicht fortsetzen.",
+      "forUs": "Schulungsunterlagen und Anleitungen, die auf die alten Agenten verweisen, sind bald veraltet. Consultants in Microsoft-365-Einführungsprojekten sollten die Änderung kennen und Kunden aktiv darauf hinweisen.",
+      "learn": [
+        {
+          "label": "Microsoft Learn: Offizielle Versionshinweise zu Microsoft 365 Copilot",
+          "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Microsoft 365 Message Center (via merill.net): MC1536062 – Changes to Word, Excel, and PowerPoint agents in Microsoft Copilot (03.11.2026)",
+          "url": "https://mc.merill.net/message/MC1536062"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic, Google und Cloudflare veröffentlichen fertige „Skills“ für KI-Agenten",
+      "summary": "Mehrere große Anbieter stellen auf GitHub Sammlungen sogenannter Skills bereit – das sind beschriebene Arbeitsabläufe, die ein KI-Agent bei Bedarf lädt und befolgt. Anthropic hat ein offizielles Skills-Repository passend zum offenen Agent-Skills-Standard veröffentlicht, Google eine Sammlung für die Arbeit mit seinen eigenen Produkten. Cloudflare bietet einen Skill an, der Coding-Agenten in mehreren Schritten Sicherheitsprüfungen durchführen lässt. Damit wird das Format zu einer Art gemeinsamer Sprache, über die Firmen ihr Prozesswissen an Agenten weitergeben.",
+      "forUs": "Wer Abläufe sauber beschreiben kann, kann sie künftig an Agenten übergeben – eine Stärke von Business Analysten und Requirements Engineers. Gleichzeitig gilt: Skills aus fremden Quellen sind wie Software zu behandeln und vor dem Einsatz zu prüfen.",
+      "learn": [
+        {
+          "label": "Agent Skills: Überblick und Quickstart zum offenen Standard",
+          "url": "https://agentskills.io/",
+          "lang": "EN"
+        },
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (u. a. manipulierte Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "GitHub: anthropics/skills",
+          "url": "https://github.com/anthropics/skills"
+        },
+        {
+          "label": "AIToolly: Google releases official agent skills repository on GitHub (09.11.2026)",
+          "url": "https://aitoolly.com/de/ai-news/article/2026-11-09-google-releases-official-agent-skills-repository-on-github-to-empower-ai-agents-across-ecosystem-too"
+        }
+      ]
+    },
+    {
+      "title": "Sicherheitschef warnt: Offene KI-Modelle bringen ein „dunkles Zeitalter“ für die IT-Sicherheit",
+      "summary": "Alex Stamos, seit Kurzem Sicherheitschef beim KI-Unternehmen Cognition, hat im Podcast „Decoder“ von The Verge vor einer mehrjährigen schwierigen Phase gewarnt. Frei verfügbare KI-Modelle könnten inzwischen große Teile eines Angriffs automatisieren, vom Aufspüren von Lücken bis zum Ausnutzen. Die nächste Angriffswelle erwartet er nicht von den großen Anbietern, sondern über offene Modelle – und gezielt gegen mittelgroße Organisationen wie kleinere Versicherer, Zulieferer oder Schulbehörden. Es handelt sich um eine Einschätzung, nicht um eine Studie.",
+      "forUs": "Gerade Mittelständler unter unseren Kunden dürften mehr in Sicherheit investieren – auch in Projektleitung und Analyse für Sicherheitsvorhaben. Für uns selbst heißt das: Phishing und gefälschte Anfragen werden glaubwürdiger, Vorsicht im Alltag bleibt wichtig.",
+      "learn": [
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI – Chancen und Risiken kompakt für Führungskräfte",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        },
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "AI Weekly: Stamos – Open-weight models push cybersecurity into 'dark age' (09.11.2026)",
+          "url": "https://aiweekly.co/alerts/stamos-open-weight-models-push-cybersecurity-into-dark-age"
+        },
+        {
+          "label": "The Verge (Decoder): Alex Stamos on AI and cybersecurity",
+          "url": "https://www.theverge.com/podcast/1029038/ai-cybersecurity-hackers-data-breach-dark-age-alex-stamos"
+        }
+      ]
+    },
+    {
+      "title": "Britische Datenschutzaufsicht nimmt KI-Agenten ins Visier",
+      "summary": "Das britische Information Commissioner's Office (ICO) prüft die Datenschutzrisiken autonomer KI-Agenten genauer und hat dazu Auskunftsersuchen an OpenAI, Anthropic, Meta und das britische AI Security Institute geschickt. Eine öffentliche Konsultation läuft noch bis zum 20. November 2026; sie umfasst unter anderem Datensicherheit, Transparenz, Verantwortlichkeit und automatisierte Entscheidungen. Die Ergebnisse sollen in Leitlinien und einen verbindlichen Verhaltenskodex zu automatisierten Entscheidungen einfließen. Für Deutschland gilt das nicht direkt, zeigt aber, worauf Aufsichtsbehörden bei Agenten achten.",
+      "forUs": "Wenn KI-Agenten selbstständig mit Personendaten arbeiten – etwa bei Bewerbungen –, rücken Fragen nach Zweck, Kontrolle und Nachvollziehbarkeit in den Vordergrund. Kunden werden bei solchen Projekten zunehmend Leute suchen, die Datenschutzanforderungen früh in Anforderungen und Projektpläne übersetzen.",
+      "learn": [
+        {
+          "label": "Datenschutzkonferenz: Orientierungshilfe zu Datenschutz bei Entwicklung und Einsatz von KI-Systemen (PDF)",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BornCity: KI-Agenten – Britische Datenschutzbehörde prüft Risiken und fordert Antworten (09.10.2026)",
+          "url": "https://borncity.com/news/ki-agenten-britische-datenschutzbehoerde-prueft-risiken-und-fordert-antworten/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: KI-Einführung ist auch eine Arbeitsrechtsfrage",
+      "text": "Eine Kurzübersicht des Branchenverbands Bitkom zu KI im Projektmanagement (erschienen 2025, im Juli 2026 aktualisiert) beschreibt neben Effizienzgewinnen auch Risiken und offene Fragen. Ein eigener Teil widmet sich arbeitsrechtlichen Aspekten, wenn KI-Werkzeuge im Projekt eingesetzt werden; außerdem fließen Ergebnisse einer GPM-Studie ein. Es ist ein Überblickspapier, keine neue Erhebung.",
+      "tip": "Fragen Sie Projektleiter, ob sie schon KI-Werkzeuge eingeführt und dabei Betriebsrat, Datenschutz und Spielregeln fürs Team berücksichtigt haben. Diese Erfahrung lohnt sich im Profil konkret zu benennen.",
+      "learn": [
+        {
+          "label": "GPM: KI-Studie „Projektmanagement vor dem Rollenwechsel“",
+          "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Bitkom: Künstliche Intelligenz im Projektmanagement – Hype oder sinnvolles Werkzeug?",
+          "url": "https://www.bitkom.org/Bitkom/Publikationen/Kuenstliche-Intelligenz-im-Projektmanagement-Hype-oder-sinnvolles-Werkzeug"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Agenten lesen und beschreiben Miro-Boards",
+      "text": "Miro hat sein Whiteboard für KI-Agenten geöffnet: Über das Protokoll MCP können externe Agenten Boards, Rahmen, Kommentare und Diagramme anlegen. Der eingebaute Assistent „Sidekicks“ soll komplexe Ziele zerlegen und ganze Boards aus einer Anweisung füllen, automatisierte Abläufe („Flows“) erhalten Freigabeschritte durch Menschen. Die Ankündigung stammt von der Miro-Konferenz Canvas 26 im Mai 2026; Preise und Verfügbarkeit nannte der Bericht nicht.",
+      "tip": "Für Workshop-starke BAs lohnt die Frage, wie sie KI-erzeugte Prozesslandkarten oder Boards mit Fachbereichen prüfen und nachschärfen. Kunden mit Miro im Einsatz erwarten zunehmend, dass Analysten solche Funktionen sicher bedienen.",
+      "sources": [
+        {
+          "label": "Digital Reviews Network: Miro unveils agentic AI upgrades and prototype tools at Canvas 26 (22.05.2026)",
+          "url": "https://www.digitalreviews.net/news/industry-news/miro-agentic-ai-canvas-26-prototypes/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Klickbare Prototypen in Minuten",
+      "text": "Mit „Miro Prototypes“ lassen sich Prototypen aus Screenshots, Figma-Entwürfen oder Code aus Claude Code übernehmen, im Firmendesign gestalten und in mehreren Varianten erzeugen. Die Ergebnisse können an Coding-Agenten oder Figma weitergegeben werden. Damit verschiebt sich die Arbeit im RE: Ein erster Entwurf ist schnell da, das Prüfen mit Stakeholdern und das saubere Festhalten der Anforderungen bleiben menschliche Aufgabe.",
+      "tip": "Fragen Sie Requirements Engineers, ob sie Anforderungen schon mit Prototypen validiert haben und wie sie daraus prüfbare Anforderungen ableiten. Kunden erwarten zunehmend, dass früh etwas Klickbares auf dem Tisch liegt.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Digital Reviews Network: Miro unveils agentic AI upgrades and prototype tools at Canvas 26 (22.05.2026)",
+          "url": "https://www.digitalreviews.net/news/industry-news/miro-agentic-ai-canvas-26-prototypes/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Office-Werkzeuge ändern sich im Wochentakt: Consultants in Microsoft-365-Projekten müssen Schulungen und Anleitungen laufend anpassen – aktuelles Produktwissen ist ein Verkaufsargument.",
+      "Prozesswissen wird zur Anleitung für Agenten: Wer Abläufe klar beschreiben und prüfen kann (BA, RE), wird beim Einsatz von „Skills“ und Agenten gebraucht.",
+      "Sicherheit und Datenschutz bei Agenten rücken in den Fokus von Aufsicht und Angreifern – Projekte dazu dürften gerade im Mittelstand zunehmen."
+    ],
+    "sources": [
+      {
+        "label": "Microsoft 365 Message Center (via merill.net): MC1536062",
+        "url": "https://mc.merill.net/message/MC1536062"
+      },
+      {
+        "label": "BornCity: KI-Agenten – Britische Datenschutzbehörde prüft Risiken",
+        "url": "https://borncity.com/news/ki-agenten-britische-datenschutzbehoerde-prueft-risiken-und-fordert-antworten/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Microsoft 365 Copilot Chat: Dokumente direkt im Chat erstellen",
+      "tip": "Wer Copilot nutzt, kann Entwürfe für Word, Excel und PowerPoint jetzt direkt im Chat anstoßen statt über eigene Agenten. Nur mit der Firmenlizenz und für freigegebene Daten verwenden.",
+      "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/release-notes"
+    },
+    {
+      "name": "Anthropic Skills (GitHub)",
+      "tip": "Beispiele, wie man wiederkehrende Abläufe als Anleitung für einen KI-Agenten beschreibt – gut zum Verstehen des Formats. Fremde Skills vor dem Einsatz immer prüfen und nur mit Freigabe der IT installieren.",
+      "url": "https://github.com/anthropics/skills"
+    }
+  ]
+},
+{
   "date": "2026-11-10",
   "headline": "Geheimnisse in Agenten-Dateien, KI im Bewerbergespräch – und Coding-Agenten mit viel Nacharbeit",
   "intro": "Eine Komfortfunktion von Claude Code hat Tausende Zugangsschlüssel öffentlich gemacht, und OpenAI lässt seine Schnittstellen zu Drittanbietern gezielt angreifen. Im Recruiting führt ein Personaldienstleister eine KI-Interviewerin fest ein, während ein Praxistest zeigt, wie oft Coding-Agenten noch Hilfe brauchen.",
