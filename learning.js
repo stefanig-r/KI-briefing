@@ -152,6 +152,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-12", "title": "Claude Meetings: KI nimmt als Teilnehmer an Videocalls teil"},
       {
         "date": "2026-11-11",
         "title": "Britische Datenschutzaufsicht nimmt KI-Agenten ins Visier"
@@ -284,6 +285,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-12", "title": "Einbruch bei Railway: Gestohlene Zugangsdaten führten zu 740.000 Dollar KI-Kosten"},
       {
         "date": "2026-11-10",
         "title": "Claude Code: „Nicht mehr fragen“ legte Tausende Zugangsschlüssel offen"
@@ -402,6 +404,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-12", "title": "Projektmanagement: PMI bietet Kurs zum Bau eines eigenen KI-Agenten"},
       {
         "date": "2026-11-11",
         "title": "Projektmanagement: KI-Einführung ist auch eine Arbeitsrechtsfrage"
@@ -480,6 +483,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-12", "title": "Business Analyse: Tabellen und Dashboards per Auftrag an die KI"},
       {
         "date": "2026-11-10",
         "title": "Business Analyse: Unumkehrbare Agenten-Aktionen früh erkennen"
@@ -548,6 +552,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-12", "title": "Requirements Engineering: KI prüft Anforderungen gegen den SAP-Standard"},
       {
         "date": "2026-11-11",
         "title": "Requirements Engineering: Klickbare Prototypen in Minuten"

@@ -2,6 +2,158 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-12",
+  "headline": "Claude sitzt mit im Meeting, gestohlene Zugangsdaten werden zur KI-Rechnung – und Staaten bauen Aufsicht für KI-Agenten auf",
+  "intro": "Anthropic schickt seinen Assistenten als sichtbaren Teilnehmer in Videocalls und bringt dazu gemeinsame Whiteboards und Tabellen. Gleichzeitig zeigt ein Sicherheitsvorfall, wie teuer gestohlene Zugangsschlüssel durch KI-Nutzung werden können, und Australien sowie New York ziehen Konsequenzen aus Vorfällen mit KI-Agenten.",
+  "news": [
+    {
+      "title": "Claude Meetings: KI nimmt als Teilnehmer an Videocalls teil",
+      "summary": "Anthropic hat am 10. November „Claude Meetings“ als Beta für Team- und Enterprise-Kunden vorgestellt. Claude tritt dabei als erkennbarer Teilnehmer einem Call bei, entwirft während des Gesprächs Pläne, beantwortet Fragen im Meeting-Chat und holt Informationen aus angebundenen Arbeitsanwendungen; danach liegen Notizen und Aufgaben in Claude bereit. Claude kündigt sich im Chat an, nimmt ohne Freigabe eines Administrators nicht an Calls mit externen Gästen teil und verlässt den Call, sobald ein externer Gast dazukommt. Zum Start funktioniert das nur mit Google Meet; parallel erschienen gemeinsame Whiteboards und Tabellen (Sheets) als Beta.",
+      "forUs": "KI-Teilnehmer in Meetings dürften bei Kunden schnell zum Thema werden – mit Fragen zu Einwilligung, Betriebsrat und Umgang mit Gesprächsinhalten. Consultants sollten vor dem ersten Kundentermin klären, ob solche Assistenten erlaubt sind; bei Gesprächen mit Kandidaten gilt das genauso.",
+      "learn": [
+        {
+          "label": "Datenschutzkonferenz: Orientierungshilfe zu Datenschutz bei Entwicklung und Einsatz von KI-Systemen (PDF)",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "TechCrunch: Anthropic launches Claude Meetings to turn workplace discussions into plans and tasks (10.11.2026)",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "label": "Unite.AI: Anthropic launches Claude Whiteboards and Sheets in beta (10.11.2026)",
+          "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+        }
+      ]
+    },
+    {
+      "title": "Einbruch bei Railway: Gestohlene Zugangsdaten führten zu 740.000 Dollar KI-Kosten",
+      "summary": "Beim Cloud-Hosting-Anbieter Railway haben Angreifer gespeicherte Zugangsdaten von Kunden erbeutet. Nach Berichten könnten im ungünstigsten Fall bis zu 100.000 Arbeitsbereiche betroffen sein – das ist eine Obergrenze, keine bestätigte Opferzahl. Mit den gestohlenen Schlüsseln wurden KI-Dienste auf fremde Rechnung genutzt, insgesamt rund 740.000 US-Dollar. Der Fall zeigt, dass KI-Zugänge für Angreifer inzwischen ein lohnendes Ziel sind.",
+      "forUs": "Wer KI-Dienste mit eigenen Schlüsseln nutzt, sollte Ausgabenlimits und Benachrichtigungen setzen und Schlüssel nie in Dokumenten oder Chats weitergeben. Bei Kunden steigt der Bedarf an Projektleitung für Sicherheits- und Cloud-Härtungsprojekte.",
+      "learn": [
+        {
+          "label": "BSI: Künstliche Intelligenz – Einordnung, Risiken und Empfehlungen für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (11.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/"
+        },
+        {
+          "label": "BleepingComputer: Railway breach leads to $740,000 in fraudulent AI charges",
+          "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+        }
+      ]
+    },
+    {
+      "title": "Australien plant KI-Aufsicht, New York verpflichtet große KI-Entwickler",
+      "summary": "Australien will eine eigene Aufsichtsbehörde für KI-Sicherheit und eine Meldepflicht für Vorfälle einführen. Auslöser war ein KI-Agent von OpenAI, der auf ein Statistikportal der staatlichen Krankenversicherung Medicare zugegriffen hatte; die Regierung hat 18 Empfehlungen einer Überprüfung angenommen, ein Gesetz gibt es aber noch nicht. Im US-Bundesstaat New York ist zudem die Registrierung nach dem RAISE Act gestartet: Große Entwickler von Frontier-Modellen müssen sich bis 1. Januar 2027 eintragen, Sicherheitskonzepte veröffentlichen und kritische Vorfälle binnen 72 Stunden melden.",
+      "forUs": "Weltweit entstehen Regeln speziell für Vorfälle mit KI-Agenten – in der EU greift parallel der AI Act. Kunden werden zunehmend Fachleute suchen, die Meldewege, Freigaben und Verantwortlichkeiten für KI-Systeme in Prozesse übersetzen.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk – Informationen und Hilfen zur KI-Verordnung",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (11.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-11-2026/"
+        },
+        {
+          "label": "Sam on AI: AI Brief – November 11, 2026",
+          "url": "https://samonai.substack.com/p/ai-brief-november-11-2026"
+        }
+      ]
+    },
+    {
+      "title": "IW-Studie: KI-nahe Berufe haben bisher kein höheres Jobrisiko",
+      "summary": "Das Institut der deutschen Wirtschaft hat untersucht, wie sich Beschäftigung in Berufen mit großer Nähe zu KI-Anwendungen entwickelt. Ende 2025 übten rund 12,4 Millionen sozialversicherungspflichtig Beschäftigte solche Tätigkeiten aus, gut 8 Prozent mehr als Ende 2019. Arbeitslos wurden sie nicht häufiger als andere, sie wechselten aber etwas öfter den Arbeitgeber; bei Experten-Tätigkeiten liegt der Anteil KI-naher Jobs bei 88 Prozent. Die Autorin weist darauf hin, dass der Indikator auf dem Technikstand von 2021 beruht und generative KI nur teilweise erfasst.",
+      "forUs": "Für hochqualifizierte Rollen wie PM, BA und RE spricht die Studie eher für Wandel als für Wegfall – und für mehr Wechselbereitschaft, was den Freelance-Markt stützen kann. Für Gespräche mit Kunden ist das eine sachliche Gegenstimme zu pauschalen Abbau-Prognosen.",
+      "sources": [
+        {
+          "label": "IW Köln: KI-Nähe des Berufs bisher kein Nachteil auf dem Arbeitsmarkt (IW-Kurzbericht 70, 13.10.2026)",
+          "url": "https://www.iwkoeln.de/studien/stefanie-seele-ki-naehe-des-berufs-bisher-kein-nachteil-auf-dem-arbeitsmarkt.html"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: PMI bietet Kurs zum Bau eines eigenen KI-Agenten",
+      "text": "Der Projektmanagement-Verband PMI hat auf seinem Global Summit im Oktober einen E-Learning-Kurs „Agentic AI for Project Professionals“ vorgestellt, in dem Teilnehmende ohne Programmierkenntnisse einen eigenen Agenten bauen, etwa mit Claude oder Microsoft Copilot Studio. Dazu kommt eine neue Zertifizierung „Advanced Project Leader“ für erfahrene Projektleiter. Nach PMI-Daten nutzen Projektfachleute KI vor allem für Recherche (77 Prozent) und Dokumentation (69 Prozent); nur 19 Prozent fürchten, durch KI ersetzt zu werden.",
+      "tip": "Fragen Sie Projektleiter, ob sie schon selbst einen KI-Agenten aufgesetzt oder einen Kurs dazu belegt haben – das wird für Kunden zum Unterscheidungsmerkmal. Neue PMI-Abschlüsse gehören sichtbar ins Profil.",
+      "sources": [
+        {
+          "label": "PMI via Business Wire: AI Fluency Plus Human Judgment (22.10.2026)",
+          "url": "https://www.financialcontent.com/article/bizwire-2026-10-22-ai-fluency-plus-human-judgment-project-management-institute-helps-a-growing-profession-deliver-greater-value"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Tabellen und Dashboards per Auftrag an die KI",
+      "text": "Mit „Claude Sheets“ erstellt die KI auf Zuruf funktionierende Tabellen mit Formeln, Reitern und Auswahllisten und zeigt an, welche Zellen sie geändert hat; die Funktion ist noch Beta und bewusst einfach gehalten. Die bisherigen KI-Dashboards heißen nun „Claude Data“ und sind allgemein verfügbar; sie verbinden sich laut Bericht unter anderem mit Snowflake, BigQuery, Databricks und Salesforce. Für Enterprise-Kunden soll Data ab 19. November standardmäßig eingeschaltet sein.",
+      "tip": "Fragen Sie Business Analysten, wie sie KI-erzeugte Auswertungen prüfen, bevor Zahlen in Entscheidungen fließen. Kunden werden erwarten, dass BAs solche Werkzeuge kennen und Datenzugriffe sauber abgrenzen können.",
+      "sources": [
+        {
+          "label": "Unite.AI: Anthropic launches Claude Whiteboards and Sheets in beta (10.11.2026)",
+          "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI prüft Anforderungen gegen den SAP-Standard",
+      "text": "Ein deutsches Beratungshaus bietet mit „RequireAi“ ein KI-gestütztes Anforderungsmanagement für SAP-S/4HANA-Projekte an: Anforderungen werden per Text oder Sprache erfasst, einem SAP-Modul zugeordnet und mit Abnahmekriterien versehen. Außerdem prüft das Werkzeug, ob der SAP-Standard reicht oder Anpassungen nötig sind, und verknüpft Anforderungen mit User Stories und Testfällen. Es handelt sich um Herstellerangaben (Seite von Juni, zuletzt im September aktualisiert); die genannten Zeitersparnisse sind nicht unabhängig belegt.",
+      "tip": "Bei SAP-Requirements-Engineers lohnt die Frage, ob sie Fit-Gap-Analysen schon mit KI-Unterstützung gemacht haben und wie sie die Ergebnisse geprüft haben. Nachvollziehbarkeit von der Anforderung bis zum Test bleibt ein starkes Profilargument.",
+      "sources": [
+        {
+          "label": "W+W Consulting: RequireAi – KI-natives Anforderungsmanagement für SAP S/4HANA",
+          "url": "https://www.ww-cs.de/requireai-ki-anforderungsmanagement-sap-s4hana/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "KI-Assistenten wandern in Meetings, Whiteboards und Tabellen – also mitten in die Arbeit von PM, BA und RE. Erfahrung mit solchen Werkzeugen und mit den Spielregeln dafür wird zum Profilmerkmal.",
+      "Sicherheit und Aufsicht rund um KI-Agenten wachsen weltweit; das schafft Projekte für Leute, die Prozesse, Freigaben und Meldewege gestalten können.",
+      "Die Datenlage in Deutschland zeigt bei hochqualifizierten Rollen bisher Wandel statt Abbau – ein sachliches Argument im Gespräch mit Kunden und Consultants."
+    ],
+    "sources": [
+      {
+        "label": "TechCrunch: Claude Meetings (10.11.2026)",
+        "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+      },
+      {
+        "label": "IW Köln: KI-Nähe des Berufs bisher kein Nachteil auf dem Arbeitsmarkt",
+        "url": "https://www.iwkoeln.de/studien/stefanie-seele-ki-naehe-des-berufs-bisher-kein-nachteil-auf-dem-arbeitsmarkt.html"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Claude Whiteboards (Beta)",
+      "tip": "Gemeinsames Board, auf dem Claude Ideen sortiert, Retro-Notizen nach Themen gruppiert und daraus einen Zeitplan oder ein Dokument macht. Achtung: Keine Kunden- oder Kandidatendaten eintragen, solange das Tool intern nicht freigegeben ist.",
+      "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+    },
+    {
+      "name": "Claude Sheets (Beta)",
+      "tip": "Einfache Tabellen per Auftrag erstellen, etwa eine Übersicht offener Projektanfragen; Änderungen der KI werden angezeigt. Formeln und Zahlen vor der Weitergabe immer prüfen, Personendaten nur in freigegebenen Tools.",
+      "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+    }
+  ]
+},
+{
   "date": "2026-11-11",
   "headline": "Office-Agenten verschwinden in Copilot, Anbieter teilen „Skills“ – und Warnungen vor KI-gestützten Angriffen",
   "intro": "Microsoft baut die Dokumentenarbeit in Copilot um, und mehrere große Anbieter stellen fertige Arbeitsanleitungen für KI-Agenten frei ins Netz. Gleichzeitig warnt ein bekannter Sicherheitschef vor einer schwierigen Phase für die IT-Sicherheit, und die britische Datenschutzaufsicht sammelt Hinweise zu Risiken von KI-Agenten.",
