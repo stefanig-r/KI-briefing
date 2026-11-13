@@ -103,6 +103,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-13",
+        "title": "Google „Gemini Decisions“: KI für schnelle Ja-Nein- und Bewertungsentscheidungen"
+      },
+      {
         "date": "2026-11-10",
         "title": "Personaldienstleister setzt KI-Interviewerin im Erstgespräch ein"
       },
@@ -152,7 +156,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date": "2026-11-12", "title": "Claude Meetings: KI nimmt als Teilnehmer an Videocalls teil"},
+      {
+        "date": "2026-11-12",
+        "title": "Claude Meetings: KI nimmt als Teilnehmer an Videocalls teil"
+      },
       {
         "date": "2026-11-11",
         "title": "Britische Datenschutzaufsicht nimmt KI-Agenten ins Visier"
@@ -285,7 +292,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date": "2026-11-12", "title": "Einbruch bei Railway: Gestohlene Zugangsdaten führten zu 740.000 Dollar KI-Kosten"},
+      {
+        "date": "2026-11-13",
+        "title": "United Airlines lässt KI-Agenten keine Flüge buchen"
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Einbruch bei Railway: Gestohlene Zugangsdaten führten zu 740.000 Dollar KI-Kosten"
+      },
       {
         "date": "2026-11-10",
         "title": "Claude Code: „Nicht mehr fragen“ legte Tausende Zugangsschlüssel offen"
@@ -371,6 +385,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-13",
+        "title": "Projektmanagement: Rovo-Nutzung in Jira wird ab Dezember nach Verbrauch abgerechnet"
+      },
+      {
         "date": "2026-11-04",
         "title": "Projektmanagement: Jira-Aufgaben direkt an KI-Agenten vergeben"
       },
@@ -404,7 +422,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date": "2026-11-12", "title": "Projektmanagement: PMI bietet Kurs zum Bau eines eigenen KI-Agenten"},
+      {
+        "date": "2026-11-12",
+        "title": "Projektmanagement: PMI bietet Kurs zum Bau eines eigenen KI-Agenten"
+      },
       {
         "date": "2026-11-11",
         "title": "Projektmanagement: KI-Einführung ist auch eine Arbeitsrechtsfrage"
@@ -483,7 +504,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date": "2026-11-12", "title": "Business Analyse: Tabellen und Dashboards per Auftrag an die KI"},
+      {
+        "date": "2026-11-13",
+        "title": "Business Analyse: Datenassistent arbeitet dauerhaft im Hintergrund"
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Business Analyse: Tabellen und Dashboards per Auftrag an die KI"
+      },
       {
         "date": "2026-11-10",
         "title": "Business Analyse: Unumkehrbare Agenten-Aktionen früh erkennen"
@@ -552,7 +580,18 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date": "2026-11-12", "title": "Requirements Engineering: KI prüft Anforderungen gegen den SAP-Standard"},
+      {
+        "date": "2026-11-13",
+        "title": "Requirements Engineering: Praxis-Umfrage mit IREB zeigt Einsatz, Bedenken und Schulungsbedarf"
+      },
+      {
+        "date": "2026-11-13",
+        "title": "AWS-Emulator: Software komplett von KI-Agenten geschrieben – ohne menschliche Code-Prüfung"
+      },
+      {
+        "date": "2026-11-12",
+        "title": "Requirements Engineering: KI prüft Anforderungen gegen den SAP-Standard"
+      },
       {
         "date": "2026-11-11",
         "title": "Requirements Engineering: Klickbare Prototypen in Minuten"

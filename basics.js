@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,7 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Scoring (automatische Bewertung)","def":"Eine KI vergibt automatisch Punkte, Ränge oder Ja-Nein-Urteile, etwa für Lebensläufe oder Bewerbungen. Im Recruiting gilt das nach dem EU AI Act als Hochrisiko-Einsatz, der menschliche Aufsicht und Dokumentation verlangt.","added":"2026-11-13"},
     {"term": "Frontier-Modell", "def": "Bezeichnung für die leistungsfähigsten KI-Modelle an der Spitze der Entwicklung, etwa von OpenAI, Anthropic oder Google. Für sie gelten in manchen Regelwerken strengere Pflichten.", "added": "2026-11-12"},
     {"term":"Red Teaming","def":"Gezielte, beauftragte Angriffe auf ein eigenes System oder KI-Modell, um Schwachstellen und Fehlverhalten zu finden, bevor andere es ausnutzen. Das Prüfteam spielt dabei bewusst die Rolle des Angreifers.","added":"2026-11-10"},
     {"term":"Secret (Zugangsschlüssel)","def":"Ein geheimer Wert wie Passwort, API-Schlüssel oder Token, mit dem sich Programme bei anderen Diensten anmelden. Gelangt er in falsche Hände, kann ein Fremder im Namen des Besitzers auf Daten oder Systeme zugreifen.","added":"2026-11-10"},

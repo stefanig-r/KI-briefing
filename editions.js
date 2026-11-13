@@ -2,6 +2,204 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-13",
+  "headline": "Firmenprofile in ChatGPT, KI für Ja-Nein-Entscheidungen – und Agenten, die sich gegenseitig im Weg stehen",
+  "intro": "OpenAI lässt Unternehmen ihr Profil in ChatGPT selbst pflegen, Google bringt eine Schnittstelle für schnelle Bewertungs- und Ja-Nein-Entscheidungen. Gleichzeitig zeigen Forschung und Praxis, wo Agenten an Grenzen stoßen: im Zusammenspiel untereinander und beim Buchen im Namen von Kunden.",
+  "news": [
+    {
+      "title": "„Businesses in ChatGPT“: Firmen pflegen ihr eigenes Profil in ChatGPT",
+      "summary": "OpenAI testet als Beta, dass Unternehmen ihr Profil in ChatGPT beanspruchen und mit einem Prüfhaken versehen lassen können. Über ein „Business Hub“ lassen sich Angaben wie Leistungen und Preise pflegen; zudem zeigt es, wie oft ChatGPT das Unternehmen erwähnt und um welche Themen es in den Gesprächen geht – die Chats selbst sollen nicht an die Firmen gehen. Berechtigte US-Unternehmen können außerdem einen eigenen Agenten starten, der Kundenfragen beantwortet und als von ChatGPTs eigenen Antworten getrennt gekennzeichnet ist. Für Europa gibt es noch keine Angaben.",
+      "forUs": "Wie ein Personaldienstleister in KI-Antworten auftaucht, wird zu einem eigenen Thema neben Website und Jobbörsen – Kunden und Freelancer fragen zunehmend erst einen Chatbot. Es lohnt sich, regelmäßig zu prüfen, was ChatGPT und andere Assistenten über das eigene Leistungsangebot sagen, und öffentliche Angaben aktuell zu halten.",
+      "sources": [
+        {
+          "label": "AI Weekly: OpenAI puts verified business profiles and agents in ChatGPT (10./11.11.2026)",
+          "url": "https://aiweekly.co/alerts/openai-puts-verified-business-profiles-and-agents-in-chatgpt"
+        },
+        {
+          "label": "The Next Web: OpenAI Businesses in ChatGPT – business agents",
+          "url": "https://thenextweb.com/news/openai-businesses-in-chatgpt-business-agents"
+        }
+      ]
+    },
+    {
+      "title": "Google „Gemini Decisions“: KI für schnelle Ja-Nein- und Bewertungsentscheidungen",
+      "summary": "Google hat eine Schnittstelle für Entwickler vorgestellt, die keine langen Texte erzeugt, sondern kurze Entscheidungen trifft: Ja oder Nein, Auswahl aus mehreren Optionen oder eine Bewertung auf einer Skala. Pro Anfrage lassen sich bis zu 1.000 Fragen stellen, auch zu Bildern oder anderen Medien, und das Modell liefert einen Wert für seine Sicherheit mit. Laut Google ist es sehr schnell und günstig; die Leistungsvergleiche stammen aus Googles eigenen Tests.",
+      "forUs": "Solche Bausteine machen es leicht, Lebensläufe oder Bewerbungen massenhaft automatisch zu bewerten. Genau das gilt nach dem AI Act als Hochrisiko-Einsatz im Bereich Beschäftigung – wer Matching-Tools mit Scoring nutzt oder einkauft, muss Pflichten wie menschliche Aufsicht und Dokumentation kennen.",
+      "learn": [
+        {
+          "label": "EU AI Act Service Desk: Hochrisiko-KI im Bereich Beschäftigung (mit Beispielen)",
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464",
+          "lang": "DE"
+        },
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk mit Compliance-Kompass",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google: Gemini Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (12.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic-Studie: Jeder mit eigenem Agenten – und das Team schneidet schlechter ab",
+      "summary": "Das Alignment-Team von Anthropic hat KI-Modelle mehrerer Anbieter in vier Szenarien getestet, in denen mehrere Menschen gemeinsam ein Ergebnis erreichen müssen. In allen Fällen war das Gesamtergebnis schlechter, wenn jede Person einen eigenen, persönlichen Agenten für sich verhandeln ließ, als wenn ein gemeinsamer Agent für alle arbeitete. Drei der Testumgebungen veröffentlicht Anthropic zum Nachprüfen. Es handelt sich um Forschung in Testumgebungen, nicht um Messungen aus echten Firmen.",
+      "forUs": "Wenn in Kundenprojekten künftig jede Rolle „ihren“ Agenten mitbringt, entstehen neue Abstimmungsprobleme statt automatischer Effizienz. Das stärkt Profile, die Zusammenarbeit, Zielkonflikte und Regeln für Agenten im Team organisieren können – klassische PM- und BA-Arbeit.",
+      "sources": [
+        {
+          "label": "Anthropic Alignment: Worse Together",
+          "url": "https://alignment.anthropic.com/2026/worse-together"
+        },
+        {
+          "label": "AI Weekly: AI News for November 12, 2026",
+          "url": "https://aiweekly.co/ai-news-today/edition/2026-11-12"
+        }
+      ]
+    },
+    {
+      "title": "AWS-Emulator: Software komplett von KI-Agenten geschrieben – ohne menschliche Code-Prüfung",
+      "summary": "Amazon Web Services hat einen kostenlosen Emulator veröffentlicht, der über 200 AWS-Dienste lokal nachbildet, damit Entwickler ohne Cloud-Kosten testen können. Nach Angaben von AWS haben KI-Agenten den gesamten Code geschrieben und pflegen ihn weiter; Ingenieure prüfen den Code nicht manuell. Getrennte Agenten-Teams schreiben Tests, finden Fehler und beheben sie; Beiträge von außen werden nicht angenommen, Fehler können nur gemeldet werden.",
+      "forUs": "Große Anbieter erproben Softwareentwicklung, bei der Qualität über Tests und Prozesse statt über menschliche Code-Reviews gesichert wird. Bei Kunden steigt damit der Bedarf an Rollen, die Anforderungen, Abnahmekriterien und Testkonzepte präzise festlegen.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "GeekWire: AWS gives developers a free local stand-in for its cloud, built from scratch by AI agents",
+          "url": "https://www.geekwire.com/2026/aws-gives-developers-a-free-local-stand-in-for-its-cloud-built-from-scratch-by-ai-agents"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (12.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    },
+    {
+      "title": "United Airlines lässt KI-Agenten keine Flüge buchen",
+      "summary": "United Airlines erlaubt KI-Assistenten zwar, Flugangebote anzuzeigen, den Kauf müssen Kundinnen und Kunden aber selbst abschließen. Die Airline begründet das mit persönlichen Daten, versehentlichen Buchungen und luftfahrtrechtlichen Vorgaben und will ihre Buchungsregeln entsprechend anpassen. Sie schließt nicht aus, die Haltung zu ändern, wenn die Technik reifer ist.",
+      "forUs": "Nicht jedes Unternehmen will Agenten als Zwischenhändler zulassen – auch Kunden im DACH-Raum legen zunehmend fest, was Agenten in ihren Systemen dürfen. Consultants sollten solche Regeln früh im Projekt erfragen, statt von „alles automatisierbar“ auszugehen.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (2026)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Verge: United blocks unauthorized AI agents",
+          "url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (12.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Rovo-Nutzung in Jira wird ab Dezember nach Verbrauch abgerechnet",
+      "text": "Atlassian hat auf der Team '26 Europe angekündigt, dass Nutzung des KI-Assistenten Rovo über das enthaltene Kontingent hinaus ab dem 3. Dezember 2026 zusätzlich abgerechnet wird, zum Listenpreis von 0,01 US-Dollar pro Credit. Laut einer Analyse ist die Mehrnutzung standardmäßig eingeschaltet. Atlassian selbst zitiert eine Studie, nach der 94 Prozent der Engineering-Leitungen KI nutzen, aber nur 6 Prozent Strukturen haben, um sie gesteuert auszuweiten.",
+      "tip": "In PM-Profilen ist Erfahrung mit Steuerung von KI-Nutzung und -Kosten (Budgets, Admin-Einstellungen, Nutzungsregeln) ein gutes Argument. Im Interview fragen: „Wie haben Sie KI-Werkzeuge im Projekt eingeführt und deren Kosten im Blick behalten?“",
+      "learn": [
+        {
+          "label": "Atlassian AI Trust Center (Datenverarbeitung, Modelle, Admin-Einstellungen)",
+          "url": "https://www.atlassian.com/trust/ai",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "NAND Research: Atlassian Team '26 Europe announcements (08.10.2026)",
+          "url": "https://nand-research.com/atlassian-team-26-europe-announcements-context-governance-at-the-center-of-agentic-work/"
+        },
+        {
+          "label": "Atlassian: Team '26 Europe – Teamwork Collection",
+          "url": "https://www.atlassian.com/blog/company-news/team26-europe-teamwork-collection"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Datenassistent arbeitet dauerhaft im Hintergrund",
+      "text": "Databricks erweitert seinen Analyse-Assistenten Genie: Er kann künftig im Hintergrund laufen, Unternehmensdaten abrufen und längere Analyseaufträge übernehmen. Eine neue „Ontology“-Funktion bildet ab, wie Mitarbeitende, Projekte und Unternehmensdaten zusammenhängen. Die Dauer-Variante startet zunächst als Vorschau bzw. Beta.",
+      "tip": "Für BA-Profile mit Datenbezug werden Begriffs- und Datenmodelle (welche Kennzahl bedeutet was, wie hängen Objekte zusammen) wichtiger, weil Agenten genau darauf aufbauen. Kandidaten fragen, ob sie schon Fachbegriffe und Datenbeziehungen für Analysewerkzeuge definiert haben.",
+      "sources": [
+        {
+          "label": "TechCrunch: Databricks' new AI agent (11.11.2026)",
+          "url": "https://techcrunch.com/2026/11/11/databricks-new-ai-agent-tells-ceo-ali-ghodsi-the-unvarnished-truth/"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (12.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-12-2026/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Praxis-Umfrage mit IREB zeigt Einsatz, Bedenken und Schulungsbedarf",
+      "text": "Eine Forschergruppe um Anne Hess und Andreas Vogelsang hat zusammen mit der IREB-Interessengruppe für KI und RE Fachleute aus der Praxis befragt, wie sie generative KI im Requirements Engineering nutzen. Die Arbeit beschreibt Einsatzszenarien vom Erheben bis zum Verwalten von Anforderungen, Bedenken, gute und schlechte Erfahrungen sowie den Schulungsbedarf. Es ist eine wissenschaftliche Veröffentlichung vom Frühjahr 2026, keine neue Nachricht – aber eine der ersten Erhebungen direkt aus der RE-Praxis.",
+      "tip": "Bei RE-Kandidaten nicht nur „nutzt KI“ abfragen, sondern in welcher Phase (Erhebung, Spezifikation, Prüfung) und wie Ergebnisse kontrolliert werden. Eine KI-Weiterbildung wie der IREB-Nachweis AI4RE ist im Profil ein konkretes Plus.",
+      "learn": [
+        {
+          "label": "IREB: Interessengruppe KI im Requirements Engineering (Prompt-Leitfaden, AI4RE-Nachweis)",
+          "url": "https://ireb.org/en/community/special-interest-group/sig-aireb",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "arXiv: Opportunities and Limitations of GenAI in RE – Viewpoints from Practice",
+          "url": "https://arxiv.org/abs/2603.25905"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für Personaldienstleister, Consultants und Kunden bedeutet",
+    "points": [
+      "Sichtbarkeit verschiebt sich: Neben Website und Jobbörsen zählt zunehmend, wie KI-Assistenten über einen Dienstleister und sein Angebot antworten.",
+      "Automatisches Bewerten wird technisch trivial – rechtlich bleibt es im Recruiting Hochrisiko-KI mit Pflichten zu Aufsicht und Dokumentation.",
+      "Agenten brauchen Regeln, Abstimmung und klare Abnahmekriterien; das stärkt PM-, BA- und RE-Profile, die genau das organisieren können."
+    ],
+    "sources": [
+      {
+        "label": "AI Weekly: OpenAI puts verified business profiles and agents in ChatGPT",
+        "url": "https://aiweekly.co/alerts/openai-puts-verified-business-profiles-and-agents-in-chatgpt"
+      },
+      {
+        "label": "Anthropic Alignment: Worse Together",
+        "url": "https://alignment.anthropic.com/2026/worse-together"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Selbsttest: Was sagt ChatGPT über uns?",
+      "tip": "Einfach fragen, welche Personaldienstleister für IT-Freelancer in PM, BA oder RE empfohlen werden und was über das eigene Unternehmen gesagt wird. Falsche oder veraltete Angaben zeigen, wo öffentliche Informationen nachgeschärft werden sollten. Keine Kunden- oder Kandidatendaten eingeben.",
+      "url": "https://chatgpt.com/"
+    },
+    {
+      "name": "Atlassian Rovo: Verbrauchseinstellungen prüfen",
+      "tip": "Wer Jira oder Confluence mit Rovo nutzt, sollte vor dem 3. Dezember mit der Administration klären, ob zusätzliche Nutzung abgerechnet werden soll und welche Limits gelten. Das Trust Center erklärt zudem, wie Daten verarbeitet werden.",
+      "url": "https://www.atlassian.com/trust/ai"
+    }
+  ]
+},
+{
   "date": "2026-11-12",
   "headline": "Claude sitzt mit im Meeting, gestohlene Zugangsdaten werden zur KI-Rechnung – und Staaten bauen Aufsicht für KI-Agenten auf",
   "intro": "Anthropic schickt seinen Assistenten als sichtbaren Teilnehmer in Videocalls und bringt dazu gemeinsame Whiteboards und Tabellen. Gleichzeitig zeigt ein Sicherheitsvorfall, wie teuer gestohlene Zugangsschlüssel durch KI-Nutzung werden können, und Australien sowie New York ziehen Konsequenzen aus Vorfällen mit KI-Agenten.",

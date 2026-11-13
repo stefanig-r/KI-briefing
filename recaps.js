@@ -3,6 +3,93 @@
 window.KI_BRIEFING_RECAPS = [
 {
   "type": "week",
+  "id": "2026-W46",
+  "label": "KW 46 · 9.–13. November 2026",
+  "headline": "Die Woche, in der KI-Agenten ins Team einzogen – und Regeln für sie nachrückten",
+  "summary": "KI-Agenten wurden diese Woche sichtbar Teil der Arbeit: als Teilnehmer in Videocalls, als dauerhafte „Teammates“ und in Planungs- und Anforderungswerkzeugen. Gleichzeitig zeigten Sicherheitsvorfälle mit Zugangsschlüsseln und erste staatliche Aufsichtspläne, dass Kontrolle und Verantwortung nachziehen müssen. Für den Arbeitsmarkt kamen eher Signale für Wandel als für Wegfall qualifizierter Rollen.",
+  "top": [
+    {
+      "title": "Agenten werden zu Teammitgliedern",
+      "text": "Perplexity stellte dauerhaft arbeitende „Teammates“ vor, Anthropic schickt Claude als Teilnehmer in Videocalls, und Microsoft bringt einen Planner-Agenten. Eine Anthropic-Studie warnt zugleich: Wenn jede Person ihren eigenen Agenten einsetzt, kann das Team schlechter abschneiden.",
+      "sources": [
+        {
+          "label": "TechCrunch: Anthropic launches Claude Meetings",
+          "url": "https://techcrunch.com/2026/11/10/anthropic-launches-claude-meetings-to-turn-workplace-discussions-into-plans-and-tasks/"
+        },
+        {
+          "label": "Anthropic Alignment: Worse Together",
+          "url": "https://alignment.anthropic.com/2026/worse-together"
+        }
+      ]
+    },
+    {
+      "title": "Zugangsschlüssel als Schwachstelle",
+      "text": "Bei Claude Code lagen durch eine Komfortfunktion Tausende Zugangsschlüssel offen, beim Hoster Railway führten gestohlene Zugangsdaten zu rund 740.000 US-Dollar KI-Kosten. Wer KI-Dienste nutzt, braucht Ausgabenlimits und einen sorgfältigen Umgang mit Schlüsseln.",
+      "sources": [
+        {
+          "label": "BleepingComputer: Railway breach leads to $740,000 in fraudulent AI charges",
+          "url": "https://www.bleepingcomputer.com/news/apple/railway-breach-leads-to-740-000-in-fraudulent-ai-charges/"
+        }
+      ]
+    },
+    {
+      "title": "Office-Werkzeuge bauen um",
+      "text": "Microsoft streicht eigene Agenten für Word, Excel und PowerPoint zugunsten des zentralen Copilot-Chats, Anthropic bringt gemeinsame Whiteboards und Tabellen. Mehrere Anbieter veröffentlichen fertige „Skills“, mit denen Agenten wiederkehrende Abläufe lernen.",
+      "sources": [
+        {
+          "label": "Unite.AI: Anthropic launches Claude Whiteboards and Sheets in beta",
+          "url": "https://www.unite.ai/anthropic-launches-claude-whiteboards-and-sheets-in-beta/"
+        }
+      ]
+    },
+    {
+      "title": "Staaten bauen Aufsicht für Agenten auf",
+      "text": "Australien plant eine Aufsichtsbehörde und Meldepflichten für KI-Vorfälle, New York verpflichtet große KI-Entwickler zur Registrierung, und die britische Datenschutzaufsicht nimmt Agenten in den Blick. In der EU wird parallel über Erleichterungen bei DSGVO und KI-Kompetenz diskutiert.",
+      "sources": [
+        {
+          "label": "Sam on AI: AI Brief – November 11, 2026",
+          "url": "https://samonai.substack.com/p/ai-brief-november-11-2026"
+        }
+      ]
+    },
+    {
+      "title": "Arbeitsmarkt: Wandel statt Wegfall",
+      "text": "Eine IW-Studie findet für KI-nahe Berufe bisher kein höheres Arbeitslosigkeitsrisiko, wohl aber mehr Jobwechsel. Gleichzeitig holen Firmen nach KI-bedingtem Abbau teils Fachleute zurück, und ein Personaldienstleister setzt eine KI-Interviewerin im Erstgespräch ein.",
+      "sources": [
+        {
+          "label": "IW Köln: KI-Nähe des Berufs bisher kein Nachteil auf dem Arbeitsmarkt (IW-Kurzbericht 70, 13.10.2026)",
+          "url": "https://www.iwkoeln.de/studien/stefanie-seele-ki-naehe-des-berufs-bisher-kein-nachteil-auf-dem-arbeitsmarkt.html"
+        }
+      ]
+    },
+    {
+      "title": "Sichtbarkeit und Entscheidungen per KI",
+      "text": "OpenAI lässt Firmen ihr Profil in ChatGPT pflegen und zeigt, wie oft sie erwähnt werden; Google bringt eine Schnittstelle für schnelle Ja-Nein- und Bewertungsentscheidungen. Im Recruiting bleibt automatisches Bewerten nach dem AI Act Hochrisiko-KI.",
+      "sources": [
+        {
+          "label": "AI Weekly: OpenAI puts verified business profiles and agents in ChatGPT",
+          "url": "https://aiweekly.co/alerts/openai-puts-verified-business-profiles-and-agents-in-chatgpt"
+        },
+        {
+          "label": "Google: Gemini Decisions API",
+          "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    "KI wandert von einzelnen Assistenten zu Agenten, die im Team, in Meetings und in Planungswerkzeugen dauerhaft mitarbeiten.",
+    "Kosten und Zugänge rücken in den Fokus: Verbrauchsabrechnung, Ausgabenlimits und der Schutz von Zugangsschlüsseln werden Pflichtthemen.",
+    "Regulierung reagiert auf konkrete Vorfälle mit Agenten – mit Meldepflichten, Registrierungen und Aufsichtsbehörden."
+  ],
+  "forUs": [
+    "PM-, BA- und RE-Profile mit Erfahrung in Agenten-Einführung, Freigaben und Abnahmekriterien werden gefragter.",
+    "Vor Kundeneinsätzen klären, welche KI-Assistenten (etwa in Meetings) erlaubt sind – das gilt auch für eigene Gespräche mit Kandidaten.",
+    "Eigene KI-Nutzung absichern: keine Schlüssel oder Kandidatendaten in Chats, Kosten im Blick, Scoring-Tools nur mit menschlicher Prüfung."
+  ]
+},
+{
+  "type": "week",
   "id": "2026-W45",
   "label": "KW 45 · 2.–6. November 2026",
   "headline": "Die Woche, in der KI zum Sicherheitsthema für alle wurde",
