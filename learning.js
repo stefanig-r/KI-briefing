@@ -32,6 +32,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-16",
+        "title": "Deepfake-Anrufe: US-Behörden legen nordkoreanische Betrugsmasche lahm"
+      },
+      {
         "date": "2026-11-03",
         "title": "Gefälschte IT-Fachkräfte: Nordkoreanische Gruppen setzen auf KI"
       }
@@ -156,6 +160,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-16",
+        "title": "Mit KI gebaute Apps: Zehntausende Datenbanken ohne Zugangsschutz"
+      },
       {
         "date": "2026-11-12",
         "title": "Claude Meetings: KI nimmt als Teilnehmer an Videocalls teil"
@@ -293,6 +301,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-16",
+        "title": "FBI warnt: KI-Angriffswerkzeug ARTEX wird gezielt missbraucht"
+      },
+      {
         "date": "2026-11-13",
         "title": "United Airlines lässt KI-Agenten keine Flüge buchen"
       },
@@ -385,6 +397,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-16",
+        "title": "Business Analyse: Anforderungs-Agenten mit mehrstufiger Freigabe in Jira und Azure DevOps"
+      },
+      {
         "date": "2026-11-13",
         "title": "Projektmanagement: Rovo-Nutzung in Jira wird ab Dezember nach Verbrauch abgerechnet"
       },
@@ -422,6 +438,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-16",
+        "title": "Projektmanagement: Landesweiter Flugstopp kurz nach Ausrollen eines KI-Tools"
+      },
       {
         "date": "2026-11-12",
         "title": "Projektmanagement: PMI bietet Kurs zum Bau eines eigenen KI-Agenten"
@@ -580,6 +600,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-16",
+        "title": "Requirements Engineering: KI findet weniger als die Hälfte der Qualitätsmängel"
+      },
       {
         "date": "2026-11-13",
         "title": "Requirements Engineering: Praxis-Umfrage mit IREB zeigt Einsatz, Bedenken und Schulungsbedarf"

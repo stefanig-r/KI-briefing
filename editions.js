@@ -2,6 +2,200 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-16",
+  "headline": "Offene Datenbanken aus KI-Apps, FBI-Warnung vor KI-Angriffswerkzeug – und Agenten mit eigener Geldbörse",
+  "intro": "Eine Untersuchung zeigt, dass Tausende mit KI gebaute Web-Apps private Daten ungeschützt im Netz lassen, und das FBI warnt vor einem missbrauchten KI-Werkzeug für Angriffe. Gleichzeitig dürfen KI-Agenten bei OpenAI erstmals selbst einkaufen, und Google lässt mehrere Agenten gemeinsam an großen Aufgaben arbeiten.",
+  "news": [
+    {
+      "title": "Mit KI gebaute Apps: Zehntausende Datenbanken ohne Zugangsschutz",
+      "summary": "Sicherheitsforscher haben gemeinsam mit dem Handelsblatt rund 159.000 Projekte untersucht, die mit dem KI-App-Baukasten Lovable erstellt wurden. Bei gut 24.600 davon war die angebundene Datenbank ohne Anmeldung lesbar. Betroffen waren unter anderem mehr als 200.000 private Chatnachrichten und über 1.000 Ausweisdaten. Ursache ist meist, dass die Zugriffsregeln der Datenbank nicht eingerichtet wurden – die KI baut die App, kümmert sich aber nicht automatisch um den Schutz.",
+      "forUs": "Auch in Fachbereichen entstehen gerade viele kleine KI-gebaute Tools, etwa für Kandidatenlisten oder Formulare. Bevor darin echte Bewerber- oder Kundendaten landen, muss jemand mit Sicherheitswissen den Zugriffsschutz prüfen – das ist eine Aufgabe, für die Kunden zunehmend Fachleute suchen.",
+      "learn": [
+        {
+          "label": "BSI: Management-Blitzlicht Generative KI (Risiken und Maßnahmen kompakt)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        },
+        {
+          "label": "Datenschutzkonferenz: Orientierungshilfe zu Datenschutz bei Entwicklung und Einsatz von KI-Systemen (PDF)",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Crissy Field: Lovable research",
+          "url": "https://www.crissyfield.de/research/lovable-en/"
+        },
+        {
+          "label": "AI Weekly: AI News Today (16.11.2026)",
+          "url": "https://aiweekly.co/alerts"
+        }
+      ]
+    },
+    {
+      "title": "FBI warnt: KI-Angriffswerkzeug ARTEX wird gezielt missbraucht",
+      "summary": "Das FBI hat am 13. November eine Warnung veröffentlicht, dass Angreifer das frei verfügbare, autonom arbeitende Pentest-Werkzeug ARTEX für Einbrüche nutzen. In einigen Fällen erlangten die Angreifer damit in weniger als drei Stunden weitreichende Administratorrechte. ARTEX war bereits Anfang November im Zusammenhang mit einem Einbruch bei einem Softwareanbieter aufgefallen; jetzt bestätigt eine Behörde die Gefahr offiziell.",
+      "forUs": "Angriffe werden schneller und brauchen weniger Fachwissen – das erhöht bei Kunden den Bedarf an Security-, Incident-Response- und Cloud-Fachleuten. Intern heißt es: Zugänge zu Kunden- und Kandidatendaten konsequent mit zweitem Faktor schützen und Warnmeldungen ernst nehmen.",
+      "learn": [
+        {
+          "label": "BSI: Themenseite Künstliche Intelligenz für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "GBHackers: FBI warns of ARTEX AI framework",
+          "url": "https://gbhackers.com/fbi-warns-artex-ai-framework/"
+        },
+        {
+          "label": "AI Weekly: AI News Today (16.11.2026)",
+          "url": "https://aiweekly.co/alerts"
+        }
+      ]
+    },
+    {
+      "title": "ChatGPT Wallet: KI-Agenten dürfen selbst einkaufen",
+      "summary": "OpenAI hat am 13. November „ChatGPT Wallet“ gestartet. Nutzer hinterlegen einmal ihre Karte, danach können die „Dots“-Agenten von ChatGPT Einkäufe erledigen – jede einzelne Zahlung muss aber bestätigt werden. Zunächst steht die Funktion nur volljährigen Pro-Abonnenten in den USA zur Verfügung; Pläne für Europa sind nicht bekannt.",
+      "forUs": "Agenten, die im Namen von Menschen bezahlen oder bestellen, sind ein neues Feld für Freigabeprozesse, Haftung und Betrugsschutz. In Kundenprojekten rund um Einkauf, E-Commerce und Zahlungsverkehr werden PM und BA gesucht, die solche Freigabestufen sauber definieren können.",
+      "sources": [
+        {
+          "label": "CNBC: OpenAI ChatGPT Wallet",
+          "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html"
+        },
+        {
+          "label": "AI Weekly: OpenAI's ChatGPT Wallet lets Dots agents buy for US Pro users",
+          "url": "https://aiweekly.co/alerts/openais-chatgpt-wallet-lets-dots-agents-buy-for-us-pro-users"
+        }
+      ]
+    },
+    {
+      "title": "Deepfake-Anrufe: US-Behörden legen nordkoreanische Betrugsmasche lahm",
+      "summary": "US-Behörden haben die Cloud-Infrastruktur hinter einer Kampagne namens „FaceStealer“ beschlagnahmt. Die Angreifer, die einer nordkoreanischen Gruppe zugeordnet werden, nutzten gefälschte Videoanrufe mit KI-Gesichtern und erbeuteten so über 400 Millionen Dollar in Kryptowährung. Die Masche zielte darauf, Opfer in vermeintlich echten Gesprächen zur Installation von Schadsoftware oder zu Zahlungen zu bewegen.",
+      "forUs": "Videocalls sind im Recruiting Alltag – genau dort setzen solche Täuschungen an, auch bei gefälschten IT-Bewerbern. Identität bei Remote-Kandidaten mehrstufig prüfen und auffällige Gespräche (Bildfehler, ausweichende Antworten) dokumentieren.",
+      "learn": [
+        {
+          "label": "BSI-Experte erklärt: Was Deepfakes sind und wie man sie erkennt (Video)",
+          "url": "https://www.bsi.bund.de/SharedDocs/Videos/DE/BSI/VerbraucherInnen/deep-fake-statement.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BleepingComputer: US disrupts North Korean campaign behind $400 million crypto theft",
+          "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/"
+        },
+        {
+          "label": "AI Weekly: DOJ disrupts FaceStealer deepfake-call scheme",
+          "url": "https://aiweekly.co/alerts/doj-disrupts-north-koreas-facestealer-deepfake-call-scheme-after-400m-crypto"
+        }
+      ]
+    },
+    {
+      "title": "Google „/teamwork“: Mehrere KI-Agenten arbeiten gemeinsam an Großprojekten",
+      "summary": "Google Research hat in seiner Entwicklungsplattform Antigravity eine Funktion namens „/teamwork“ vorgestellt, bei der mehrere Agenten eine große Aufgabe untereinander aufteilen. Als Beispiele nennt Google eine umfangreiche mathematische Formalisierung und die Übertragung einer Video-Bibliothek in eine andere Programmiersprache, die danach 20 bis 30 Prozent schneller laufen soll. Die Ergebnisse stammen von Google selbst und sind noch nicht unabhängig überprüft.",
+      "forUs": "Wenn Agenten-Teams ganze Arbeitspakete übernehmen, verschiebt sich die Arbeit von Menschen hin zu Planung, Aufteilung und Abnahme. Für PM- und RE-Profile werden Erfahrungen mit der Steuerung und Qualitätsprüfung von Agenten-Arbeit ein Pluspunkt.",
+      "sources": [
+        {
+          "label": "Google Research: Advancing science & engineering with Antigravity's teamwork feature",
+          "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/"
+        },
+        {
+          "label": "AI Weekly: Google's Antigravity /teamwork multi-agent system",
+          "url": "https://aiweekly.co/alerts/googles-antigravity-teamwork-multi-agent-system-formalizes-weil-hilberts-10th"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Landesweiter Flugstopp kurz nach Ausrollen eines KI-Tools",
+      "text": "Die US-Flugaufsicht FAA hat am 13. November erstmals seit 2023 alle Flüge landesweit gestoppt – wenige Tage nachdem sie ein KI-Werkzeug zur Flugverkehrssteuerung landesweit ausgeweitet hatte. Der Hersteller bestreitet einen Zusammenhang, eine Bundesbehörde prüft das Tool dennoch. Ob die KI Ursache war, ist offen; der Fall zeigt aber, wie schnell ein Rollout unter Verdacht gerät, wenn Rückfallpläne und Nachweise fehlen.",
+      "tip": "Bei PM-Kandidaten für KI-Einführungen gezielt nach gestuftem Rollout, Rückfallplan und Monitoring fragen. Kunden in kritischen Bereichen erwarten, dass Projektleitungen diese Punkte von sich aus ansprechen.",
+      "sources": [
+        {
+          "label": "Futurism: US airspace shuts down after FAA rolled out AI",
+          "url": "https://futurism.com/artificial-intelligence/us-airspace-shuts-down-faa-rolled-out-ai"
+        },
+        {
+          "label": "AI Weekly: FAA grounds US flights days after SMART AI tool went nationwide",
+          "url": "https://aiweekly.co/alerts/faa-grounds-us-flights-days-after-smart-ai-tool-went-nationwide"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Anforderungs-Agenten mit mehrstufiger Freigabe in Jira und Azure DevOps",
+      "text": "Ein Beratungsunternehmen beschreibt in einem (im Oktober aktualisierten) Fachbeitrag „Requirement Agents“, die in Jira, Confluence und Azure DevOps User Stories, Akzeptanzkriterien, Schätzungen und Priorisierungen vorschlagen. Jeder Entwurf durchläuft eine feste Kette: KI-Entwurf, Prüfung durch die Business Analyse, Freigabe durch Product Owner und technische Leitung. Die genannten Effizienzgewinne sind Angaben des Anbieters und nicht unabhängig geprüft.",
+      "tip": "BA-Profile gewinnen, wenn sie zeigen, dass jemand KI-Entwürfe nicht nur nutzt, sondern als Prüfinstanz in einem Freigabeprozess verantwortet. Fragen Sie nach Erfahrung mit Priorisierungsmethoden wie MoSCoW oder RICE im Zusammenspiel mit KI-Vorschlägen.",
+      "learn": [
+        {
+          "label": "Atlassian AI Trust Center (Datenverarbeitung, Modelle, Admin-Einstellungen)",
+          "url": "https://www.atlassian.com/trust/ai",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Xebia: Einbindung von Anforderungsagenten in Jira, Confluence und agile Arbeitsabläufe",
+          "url": "https://xebia.com/de/blog/anforderungen-an-die-einbindung-von-agenten-in-jira-confluence-und-unternehmensweite-agile-arbeitsablaufe/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI findet weniger als die Hälfte der Qualitätsmängel",
+      "text": "Eine wissenschaftliche Studie (September 2026, Vorabveröffentlichung) hat zehn Sprachmodelle von OpenAI und Anthropic darauf getestet, Qualitätsmängel in Anforderungen nach INCOSE-Kriterien zu erkennen. Selbst das beste Modell fand im Mittel nur 47 Prozent der Mängel, die Fachleute identifiziert hatten, und meldete zugleich 11 Prozent Fehlalarme. Ob eine Anforderung überhaupt notwendig oder inhaltlich richtig ist, übersahen die Modelle fast immer.",
+      "tip": "RE-Kandidaten danach fragen, wie sie KI-Prüfungen von Anforderungen gegenprüfen – „die KI hat es gecheckt“ reicht nicht. Bei Kunden lohnt der Hinweis, dass fachliche Prüfung durch Menschen weiterhin eingeplant werden muss.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Emergent Mind: Benchmarking Off-the-Shelf LLMs for Requirements Quality Assessment (arXiv 2609.03230)",
+          "url": "https://www.emergentmind.com/papers/2609.03230"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für Personaldienstleister, Consultants und Kunden heißt",
+    "points": [
+      "Sicherheit wird zum Engpass: KI-gebaute Apps mit offenen Datenbanken und automatisierte Angriffe treiben die Nachfrage nach Security- und Datenschutz-Know-how in Projekten.",
+      "Videocalls allein reichen zur Identitätsprüfung nicht mehr – Deepfake-Betrug ist organisiert und lukrativ, Recruiting-Prozesse brauchen zusätzliche Prüfschritte.",
+      "Agenten übernehmen Einkäufe und ganze Arbeitspakete; gefragt sind Consultants, die Freigaben, Rückfallpläne und Qualitätsprüfung für Agenten-Arbeit gestalten."
+    ],
+    "sources": [
+      {
+        "label": "Crissy Field: Lovable research",
+        "url": "https://www.crissyfield.de/research/lovable-en/"
+      },
+      {
+        "label": "BleepingComputer: US disrupts North Korean campaign",
+        "url": "https://www.bleepingcomputer.com/news/security/us-disrupts-north-korean-campaign-behind-400-million-crypto-theft/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Selbstcheck für KI-gebaute Apps",
+      "tip": "Wer intern mit Lovable oder ähnlichen Baukästen kleine Tools gebaut hat: Die Untersuchung beschreibt, woran man offene Datenbanken erkennt. Vor Einsatz echter Personendaten immer von IT oder Datenschutz prüfen lassen.",
+      "url": "https://www.crissyfield.de/research/lovable-en/"
+    },
+    {
+      "name": "IBM Granite 4.1 LLMON (Vorschau)",
+      "tip": "Offene Modelle von IBM, die laut Hersteller deutlich seltener auf versteckte Befehle in Dokumenten hereinfallen. Eher für IT-Teams zum Testen; IBM betont selbst, dass der Schutz gelernt und nicht garantiert ist.",
+      "url": "https://huggingface.co/ibm-granite/granite-4.1-3b-llmon-preview"
+    }
+  ]
+},
+{
   "date": "2026-11-13",
   "headline": "Firmenprofile in ChatGPT, KI für Ja-Nein-Entscheidungen – und Agenten, die sich gegenseitig im Weg stehen",
   "intro": "OpenAI lässt Unternehmen ihr Profil in ChatGPT selbst pflegen, Google bringt eine Schnittstelle für schnelle Bewertungs- und Ja-Nein-Entscheidungen. Gleichzeitig zeigen Forschung und Praxis, wo Agenten an Grenzen stoßen: im Zusammenspiel untereinander und beim Buchen im Namen von Kunden.",
