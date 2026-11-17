@@ -31,6 +31,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "Südkorea kontrolliert bei Prüfungen jede Brille – wegen KI-Betrugs"},
       {
         "date": "2026-11-16",
         "title": "Deepfake-Anrufe: US-Behörden legen nordkoreanische Betrugsmasche lahm"
@@ -160,6 +161,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "ElevenAI: Kostenlose Testphase für KI-Meeting-Notizen"},
       {
         "date": "2026-11-16",
         "title": "Mit KI gebaute Apps: Zehntausende Datenbanken ohne Zugangsschutz"
@@ -300,6 +302,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "Fehlerbericht bei OpenAI: Freigegebene Agenten-Aktion läuft doppelt"},
       {
         "date": "2026-11-16",
         "title": "FBI warnt: KI-Angriffswerkzeug ARTEX wird gezielt missbraucht"
@@ -396,6 +399,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "Business Analyse: Jira zeigt, wie viel Arbeit Agenten übernehmen"},
       {
         "date": "2026-11-16",
         "title": "Business Analyse: Anforderungs-Agenten mit mehrstufiger Freigabe in Jira und Azure DevOps"
@@ -438,6 +442,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "Projektmanagement: AT&T betreibt knapp 500 Agenten-Abläufe – mit Mensch bis zur Zielgenauigkeit"},
       {
         "date": "2026-11-16",
         "title": "Projektmanagement: Landesweiter Flugstopp kurz nach Ausrollen eines KI-Tools"
@@ -600,6 +605,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date": "2026-11-17", "title": "Requirements Engineering: Neue Anforderungen mit früheren Bewertungen abgleichen"},
       {
         "date": "2026-11-16",
         "title": "Requirements Engineering: KI findet weniger als die Hälfte der Qualitätsmängel"

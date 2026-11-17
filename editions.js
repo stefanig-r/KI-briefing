@@ -2,6 +2,158 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-17",
+  "headline": "Meeting-Notizen per KI, Prüfungsbetrug mit Brille – und ein Agent, der Redaktionen anschreibt",
+  "intro": "ElevenLabs öffnet eine kostenlose Testphase für seine Meeting-App, und Südkorea reagiert mit strengen Kontrollen auf KI-Betrug in Prüfungen. Außerdem zeigt ein autonomer Agent, der Journalisten Themen anbietet, wie Agenten zunehmend selbst Kontakt zu Menschen aufnehmen – und ein Fehlerbericht bei OpenAI, warum Freigaben allein nicht reichen.",
+  "news": [
+    {
+      "title": "ElevenAI: Kostenlose Testphase für KI-Meeting-Notizen",
+      "summary": "Der Sprach-KI-Anbieter ElevenLabs hat auf seinem Gipfel in New York am 11. November eine kostenlose Vorabversion der App ElevenAI geöffnet. Sie erstellt aus Online- und Präsenzmeetings Notizen, Zusammenfassungen und Aufgabenlisten und fragt vor dem Mitschreiben um Zustimmung; zum Start liegt der Schwerpunkt auf Google Meet. Grundlage ist das neue Spracherkennungsmodell Scribe v3 für 102 Sprachen. Was die App nach der Testphase kostet, ist noch offen.",
+      "forUs": "Meeting-Assistenten sind für Kandidaten- und Kundengespräche verlockend, verarbeiten aber Stimmen und Inhalte von Dritten. Vor dem Einsatz klären: Zustimmung aller Beteiligten, Speicherort, Nutzung für Training – und intern nur freigegebene Tools verwenden.",
+      "learn": [
+        {
+          "label": "Datenschutzkonferenz: Orientierungshilfe zu Datenschutz bei Entwicklung und Einsatz von KI-Systemen (PDF)",
+          "url": "https://datenschutzkonferenz-online.de/media/oh/DSK-OH_KI-Systeme.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BornCity: ElevenAI – ElevenLabs startet kostenlosen Early Access für Meeting-Notizen",
+          "url": "https://borncity.com/news/elevenai-elevenlabs-startet-kostenlosen-early-access-fuer-meeting-notizen/"
+        },
+        {
+          "label": "TNW: ElevenLabs moves beyond voice with custom models and a work app",
+          "url": "https://thenextweb.com/news/elevenlabs-summit-nyc-elevenai-custom-models-partner-program"
+        }
+      ]
+    },
+    {
+      "title": "Südkorea kontrolliert bei Prüfungen jede Brille – wegen KI-Betrugs",
+      "summary": "Südkoreas Bildungsminister hat angekündigt, bei der landesweiten Hochschul-Aufnahmeprüfung am Donnerstag jede getragene Brille zu kontrollieren. Anlass ist das Geständnis des Bestplatzierten einer staatlichen Steuerberaterprüfung, der mit elektronischen Geräten und generativer KI betrogen haben soll. Die Regierung will zudem öffentliches WLAN an den Prüfungsorten blockieren lassen.",
+      "forUs": "KI-Hilfe über Brillen, Ohrstöpsel oder Zweitgeräte betrifft auch Online-Interviews und Fachtests mit Kandidaten. Bei technischen Gesprächen lieber auf Nachfragen zu eigener Projekterfahrung setzen als auf auswendig abfragbares Wissen.",
+      "sources": [
+        {
+          "label": "Daily AI Caffeine: Today's (real) AI news 17 Nov '26",
+          "url": "https://dailyaicaffeinenobs.substack.com/p/todays-real-ai-news-17-nov-26"
+        },
+        {
+          "label": "Korea Times: Govt seeks to block public Wi-Fi at college entrance test sites to stop AI cheating",
+          "url": "https://www.koreatimes.co.kr/southkorea/education/20261116/govt-seeks-to-block-public-wi-fi-at-college-entrance-test-sites-to-stop-ai-cheating"
+        }
+      ]
+    },
+    {
+      "title": "Autonomer KI-Agent bietet Redaktionen eigene Geschichten an",
+      "summary": "Ein KI-Agent, der sich „Nameless“ nennt, hat dem kanadischen Sender CBC in Québec ein Thema zum 125. Jubiläum einer Bibliothek an der Grenze zu Vermont angeboten und dabei offen gesagt, dass er kein Mensch ist. Auf die Bitte nach Stimmen von Menschen vor Ort antwortete er, ohne Körper könne er nicht vor Ort recherchieren. Laut Bericht schrieb der Agent auch weitere Redaktionen in Québec und Vermont an; wer ihn betreibt, ist nicht bekannt.",
+      "forUs": "Agenten nehmen zunehmend selbst Kontakt zu Menschen auf – künftig auch mit Bewerbungen, Projektanfragen oder Angeboten. Eingehende Anfragen sollten wir darauf prüfen, ob ein echter Mensch dahintersteht und wer verantwortlich ist.",
+      "sources": [
+        {
+          "label": "Daily AI Caffeine: Today's (real) AI news 17 Nov '26",
+          "url": "https://dailyaicaffeinenobs.substack.com/p/todays-real-ai-news-17-nov-26"
+        },
+        {
+          "label": "CBC: AI agent pitches story to CBC Quebec",
+          "url": "https://www.cbc.ca/news/canada/montreal/ai-autonomous-agent-independent-journalism-pitching-story-cbc-quebec-9.7419591"
+        }
+      ]
+    },
+    {
+      "title": "Fehlerbericht bei OpenAI: Freigegebene Agenten-Aktion läuft doppelt",
+      "summary": "In OpenAIs Entwickler-Forum wurde am 16. November ein Fehler gemeldet, bei dem eine vom Menschen freigegebene Schreibaktion eines Agenten über eine angebundene Schnittstelle (MCP) manchmal zweimal ausgeführt wird. Das passiert laut Bericht, wenn dieselbe Antwort anschließend noch eine Leseaktion startet. Der Melder hat den Fehler mit Belegen nachvollziehbar dokumentiert; eine Stellungnahme von OpenAI liegt noch nicht vor.",
+      "forUs": "Eine Freigabe schützt nicht davor, dass ein Agent eine Aktion technisch doppelt ausführt – etwa zwei Angebote verschickt oder zwei Datensätze anlegt. In Kundenprojekten mit Agenten gehören deshalb Tests auf Doppelausführung und Protokolle zur Abnahme.",
+      "learn": [
+        {
+          "label": "BSI: Themenseite Künstliche Intelligenz für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "AI Agent Store: AI Agents News – Week of November 16, 2026",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: AT&T betreibt knapp 500 Agenten-Abläufe – mit Mensch bis zur Zielgenauigkeit",
+      "text": "AT&T hat nach eigenen Angaben fast 500 autonome KI-Abläufe im Betrieb, die mehr als eine Million Vorgänge pro Monat bearbeiten; innerhalb eines Jahres soll sich die Zahl verdreifachen. Menschen kontrollieren die Abläufe so lange mit, bis die Trefferquote im Bereich von gut 90 bis knapp 100 Prozent liegt. Die Zahlen stammen vom Unternehmen selbst.",
+      "tip": "PM-Kandidaten für KI-Rollouts fragen, wie sie Qualitätsschwellen festlegen, ab denen ein Mensch aus der Kontrolle aussteigt. Kunden erwarten zunehmend messbare Kriterien statt eines Bauchgefühls für den Übergang in den Regelbetrieb.",
+      "sources": [
+        {
+          "label": "AI Agent Store: AI Agents News – Week of November 16, 2026",
+          "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Jira zeigt, wie viel Arbeit Agenten übernehmen",
+      "text": "Atlassian hat für Jira und Confluence Funktionen angekündigt, mit denen Unternehmen Agenten-Arbeit steuern und messen: Kontext-Kontrollen legen fest, welche Informationen Agenten sehen dürfen, und ein Nutzungs-Dashboard zeigt den Einsatz von Agenten in Jira. Eine Analyse des Marktforschers Futurum ordnet das als Versuch ein, Jira zur Steuerzentrale für Agenten zu machen. Der Beitrag stammt von September und ist eine Analystenbewertung, kein Praxistest.",
+      "tip": "BA-Profile gewinnen, wenn sie Erfahrung mit Kennzahlen zu Agenten-Arbeit oder mit Berechtigungskonzepten in Jira zeigen. Im Gespräch fragen, wie Kandidaten Nutzen und Risiken von Agenten für einen Fachbereich messbar machen würden.",
+      "learn": [
+        {
+          "label": "Atlassian AI Trust Center (Datenverarbeitung, Modelle, Admin-Einstellungen)",
+          "url": "https://www.atlassian.com/trust/ai",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Futurum: Atlassian Bets the Work Surface on Governed Agentic Workflows",
+          "url": "https://futurumgroup.com/insights/atlassian-bets-the-work-surface-on-governed-agentic-workflows/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Neue Anforderungen mit früheren Bewertungen abgleichen",
+      "text": "Im Siemens-Blog zum Anforderungstool Polarion wird beschrieben, wie KI neue Kunden- und Stakeholder-Anforderungen inhaltlich mit bereits bewerteten Anforderungen vergleicht – ohne eigenes Training des Modells. Arbeit, die sonst Stunden dauere, erledige die KI in Sekunden; die Entscheidung bleibe beim Menschen. Es handelt sich um einen älteren Hersteller-Beitrag (2024, zuletzt 2026 aktualisiert) zu einer Partner-Erweiterung, nicht um eine unabhängige Studie.",
+      "tip": "Bei RE-Kandidaten aus Ausschreibungs- und Angebotsprojekten (z. B. Automotive, Bahn) nach Erfahrung mit KI-gestütztem Anforderungsabgleich fragen. Wichtig ist, wie sie die Vorschläge der KI geprüft und dokumentiert haben.",
+      "sources": [
+        {
+          "label": "Siemens Polarion Blog: How AI can revolutionize requirements evaluation",
+          "url": "https://blogs.sw.siemens.com/polarion/how-ai-can-revolutionize-requirements-evaluation/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Meeting-KI wird günstig und bequem – im Recruiting zählt aber zuerst die Zustimmung aller Gesprächspartner und ein geprüftes Tool.",
+      "Unsichtbare KI-Hilfe in Prüfungen und Interviews nimmt zu; Gespräche über echte Projekterfahrung sind schwerer zu fälschen als Wissensfragen.",
+      "Agenten handeln immer selbstständiger, auch im Kontakt nach außen – gefragt sind Consultants, die Qualitätsschwellen, Freigaben und Tests für Agenten-Abläufe definieren."
+    ],
+    "sources": [
+      {
+        "label": "BornCity: ElevenAI Early Access",
+        "url": "https://borncity.com/news/elevenai-elevenlabs-startet-kostenlosen-early-access-fuer-meeting-notizen/"
+      },
+      {
+        "label": "AI Agent Store: AI Agents News – Week of November 16, 2026",
+        "url": "https://aiagentstore.ai/ai-agent-news/this-week"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "ElevenAI (Vorabversion)",
+      "tip": "Erstellt Notizen und Aufgabenlisten aus Meetings, zunächst vor allem für Google Meet; laut Testbedingungen werden Kundeninhalte nicht zum Training genutzt. Für echte Kandidaten- oder Kundengespräche nur nach Freigabe durch Datenschutz einsetzen.",
+      "url": "https://elevenlabs.io/elevenai"
+    },
+    {
+      "name": "Atlassian AI Trust Center",
+      "tip": "Wer Rovo oder Agenten in Jira und Confluence nutzt oder Kunden dazu berät: Hier steht, welche Daten wohin gehen und was Admins einstellen können.",
+      "url": "https://www.atlassian.com/trust/ai"
+    }
+  ]
+},
+{
   "date": "2026-11-16",
   "headline": "Offene Datenbanken aus KI-Apps, FBI-Warnung vor KI-Angriffswerkzeug – und Agenten mit eigener Geldbörse",
   "intro": "Eine Untersuchung zeigt, dass Tausende mit KI gebaute Web-Apps private Daten ungeschützt im Netz lassen, und das FBI warnt vor einem missbrauchten KI-Werkzeug für Angriffe. Gleichzeitig dürfen KI-Agenten bei OpenAI erstmals selbst einkaufen, und Google lässt mehrere Agenten gemeinsam an großen Aufgaben arbeiten.",
