@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-16",
+  "updated": "2026-11-18",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Automatisierte Einzelentscheidung (Art. 22 DSGVO)","def":"Eine Entscheidung über einen Menschen, die ausschließlich eine Maschine trifft, etwa das automatische Aussortieren einer Bewerbung. Die DSGVO erlaubt das nur in engen Ausnahmen; Betroffene haben Anspruch auf menschliche Prüfung und Auskunft über die Logik.","added":"2026-11-18"},
+    {"term":"Semantisches Modell","def":"Eine Beschreibung, wie Unternehmensdaten zusammenhängen und was Kennzahlen wie „Umsatz“ oder „aktiver Kunde“ genau bedeuten, etwa in Power BI. KI-Assistenten nutzen es, um Fragen zu Zahlen richtig zu beantworten.","added":"2026-11-18"},
     {"term":"Multi-Agenten-System","def":"Mehrere KI-Agenten teilen sich eine größere Aufgabe auf und arbeiten parallel oder nacheinander daran, oft koordiniert von einem steuernden Agenten. Das kann schneller sein, macht die Kontrolle der Ergebnisse aber aufwendiger.","added":"2026-11-16"},
     {"term":"Agentic Commerce (Einkauf durch KI-Agenten)","def":"KI-Agenten suchen Produkte aus und bezahlen sie im Auftrag eines Menschen. Wichtig sind dabei klare Freigaben, etwa eine Bestätigung vor jeder Zahlung.","added":"2026-11-16"},
     {"term":"Scoring (automatische Bewertung)","def":"Eine KI vergibt automatisch Punkte, Ränge oder Ja-Nein-Urteile, etwa für Lebensläufe oder Bewerbungen. Im Recruiting gilt das nach dem EU AI Act als Hochrisiko-Einsatz, der menschliche Aufsicht und Dokumentation verlangt.","added":"2026-11-13"},
