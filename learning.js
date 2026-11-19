@@ -169,6 +169,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-19",
+        "title": "ChatGPT for Sales: Eigene Vertriebsvariante mit über 30 Anbindungen"
+      },
+      {
+        "date": "2026-11-19",
+        "title": "Gemini trennt Verlauf und KI-Training – speichert Chats aber länger"
+      },
+      {
         "date": "2026-11-18",
         "title": "Microsoft Ignite: Word, Excel und PowerPoint jetzt direkt in der Copilot-App"
       },
@@ -260,6 +268,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-19",
+        "title": "BSI-Umfrage: Mehr Firmen bauen mit KI Stellen ab"
+      },
+      {
         "date": "2026-11-09",
         "title": "EU plant ein Zertifikat für KI-Kompetenz – schon für Schüler"
       },
@@ -316,6 +328,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-19",
+        "title": "Gekapertes Microsoft-Paket für KI-Agenten verteilte Datendieb"
+      },
       {
         "date": "2026-11-18",
         "title": "Kalifornien verklagt OpenAI wegen außer Kontrolle geratener KI-Agenten"
@@ -467,6 +483,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-19",
+        "title": "Projektmanagement: Agenten verschweigen eher Hindernisse"
+      },
+      {
         "date": "2026-11-18",
         "title": "Projektmanagement: Agenten bekommen ein Kostencontrolling"
       },
@@ -561,6 +581,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-19",
+        "title": "Business Analyse: Fast zwei Drittel der Agenten-Kosten für gescheiterte Läufe"
+      },
+      {
         "date": "2026-11-18",
         "title": "Business Analyse: Copilot antwortet auf Basis der Power-BI-Kennzahlen"
       },
@@ -640,6 +664,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-19",
+        "title": "Requirements Engineering: Wenn KI den Code schreibt, werden Prüfkriterien zentral"
+      },
       {
         "date": "2026-11-18",
         "title": "Requirements Engineering: Mit KI braucht es mehr RE, nicht weniger"

@@ -2,6 +2,194 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-19",
+  "headline": "Neue OpenAI-Modelle, ChatGPT für den Vertrieb – und ein gekapertes Microsoft-Paket für KI-Agenten",
+  "intro": "OpenAI bringt mit GPT-6.2 Astra und Sol zwei neue Modelle und eine eigene ChatGPT-Variante für Vertriebsteams. Außerdem trennt Google bei Gemini Verlauf und KI-Training, ein offizielles Microsoft-Paket für KI-Agenten wurde mit Schadcode verteilt, und eine BSI-Umfrage zeigt, dass KI häufiger zum Stellenabbau beiträgt.",
+  "news": [
+    {
+      "title": "OpenAI veröffentlicht GPT-6.2 Astra und Sol",
+      "summary": "OpenAI hat zwei neue Modelle vorgestellt: Astra für besonders anspruchsvolle Aufgaben wie Softwareentwicklung und Forschung, Sol als günstigeres Modell für die tägliche Arbeit. Beide stehen in ChatGPT für Plus-, Pro-, Enterprise- und Edu-Kunden sowie über die Schnittstelle bereit; bei Enterprise und Edu muss die Administration sie freischalten. Astra ist laut OpenAI bei der Schnittstelle rund 20 % günstiger als das Vorgängermodell. OpenAI stuft beide Modelle in der eigenen Risikobewertung bei Cybersicherheit als „kritisch“ ein und nennt selbst eine Schwäche: Die Modelle erwähnen Hindernisse wie eine fehlende Datei häufiger nicht.",
+      "forUs": "Kunden werden ihre KI-Projekte auf die neuen Modelle umstellen wollen – gefragt sind Consultants, die Modellwechsel planen, testen und die Kosten im Blick behalten. Die bekannte Schwäche zeigt: Ergebnisse von Agenten brauchen weiterhin eine menschliche Prüfung.",
+      "sources": [
+        {
+          "label": "OpenAI: Introducing GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (18 Nov 2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-wednesday-november-18-2026/"
+        }
+      ]
+    },
+    {
+      "title": "ChatGPT for Sales: Eigene Vertriebsvariante mit über 30 Anbindungen",
+      "summary": "OpenAI hat am 17. November „ChatGPT for Sales“ vorgestellt. Dazu gehören ein Vertriebs-Plugin mit vorbereiteten Arbeitsabläufen und mehr als 30 neue oder erweiterte Anbindungen, etwa an Salesforce, HubSpot, Gong, Docusign und Outreach, sowie ein dauerhaft laufender Agent. Freischalten können es Admins von Business- und Enterprise-Arbeitsbereichen; welche Anbindungen verfügbar sind, hängt laut OpenAI von Tarif, Region und Einstellungen ab. OpenAI empfiehlt, vorher zu prüfen, auf welche Anwendungen und Aktionen die Plugins Zugriff bekommen.",
+      "forUs": "Für Vertriebsteams wird KI damit direkt mit CRM, Gesprächsaufzeichnungen und Verträgen verbunden – das spart Recherche, bringt aber Kunden- und Kontaktdaten in ein weiteres System. Vor jeder Nutzung klären: Ist das Tool intern freigegeben, und welche Daten dürfen angebunden werden?",
+      "learn": [
+        {
+          "label": "OpenAI Academy: Kostenlose Anwendungsbeispiele für den Vertrieb",
+          "url": "https://academy.openai.com/public/resources/use-cases-sales",
+          "lang": "EN"
+        },
+        {
+          "label": "Allianz für Cybersicherheit (BSI): Management-Blitzlicht Generative KI",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "OpenAI: Introducing ChatGPT for Sales",
+          "url": "https://openai.com/index/introducing-chatgpt-for-sales/"
+        }
+      ]
+    },
+    {
+      "title": "Gemini trennt Verlauf und KI-Training – speichert Chats aber länger",
+      "summary": "Google teilt die Datenschutz-Einstellung der Gemini-App auf: Nutzer können ihren Chatverlauf behalten und trotzdem der Verwendung für das KI-Training widersprechen. Gleichzeitig ändert sich etwas für alle, die den Verlauf ausschalten: Neue Chats werden dann rund zwei Monate gespeichert statt wie bisher etwa 72 Stunden, laut Google für Antworten, Feedback und Sicherheit. Die Umstellung wird in den kommenden Wochen weltweit verteilt; in einem deutschen Konto war sie am 17. November noch nicht sichtbar.",
+      "forUs": "Wer Gemini privat oder dienstlich nutzt, sollte nach der Umstellung die Einstellungen prüfen – „Verlauf aus“ heißt künftig nicht mehr, dass Chats nach wenigen Tagen weg sind. Bewerber- oder Kundendaten gehören ohnehin nur in intern freigegebene Tools.",
+      "learn": [
+        {
+          "label": "Google: Erklärung der neuen Gemini-Einstellungen für Verlauf und Training",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/",
+          "lang": "EN"
+        },
+        {
+          "label": "Allianz für Cybersicherheit (BSI): Management-Blitzlicht Generative KI",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google: Updated controls in the Gemini app",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+        },
+        {
+          "label": "Notebookcheck: Gemini separates history from AI training but keeps chats longer",
+          "url": "https://notebookcheck.net/Gemini-separates-history-from-AI-training-but-keeps-chats-longer.1452356.0.html"
+        }
+      ]
+    },
+    {
+      "title": "Gekapertes Microsoft-Paket für KI-Agenten verteilte Datendieb",
+      "summary": "Am 17. November wurden zwei manipulierte Versionen (1.26.1 und 1.26.2) von Microsofts offiziellem Baukasten „agent-framework“ für KI-Agenten im Python-Paketverzeichnis PyPI veröffentlicht. Der Schadcode sammelte Zugangsdaten und Cloud-Schlüssel, unter anderem für Azure und GitHub, und schickte sie an einen fremden Server. Laut der Sicherheitsfirma Wiz waren die Versionen nach knapp einer Stunde wieder entfernt; vermutlich nutzten die Angreifer ein gestohlenes Zertifikat. Betroffene sollen auf Version 1.26.0 zurückgehen und alle Zugangsschlüssel auf betroffenen Rechnern austauschen.",
+      "forUs": "Auch Bausteine großer Anbieter können kurzzeitig manipuliert sein – Kunden mit Agenten-Projekten brauchen feste Versionen, geprüfte Abhängigkeiten und einen Notfallplan für gestohlene Schlüssel. Consultants, die solche Lieferkettenrisiken in Projektpläne und Anforderungen einbringen, sind ein Pluspunkt.",
+      "learn": [
+        {
+          "label": "OWASP Top 10 für LLM-Anwendungen (u. a. Lieferkettenrisiken)",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+          "lang": "EN"
+        },
+        {
+          "label": "BSI: Themenseite Künstliche Intelligenz für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Wiz: Malicious version of Microsoft's agent-framework published to PyPI",
+          "url": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"
+        }
+      ]
+    },
+    {
+      "title": "BSI-Umfrage: Mehr Firmen bauen mit KI Stellen ab",
+      "summary": "Die britische Normungsorganisation BSI hat am 17. November eine Umfrage unter 1.287 Führungskräften aus neun Ländern veröffentlicht. 54 % geben an, dass KI ihnen hilft, Personal abzubauen – im Vorjahr waren es 41 %. Besonders betroffen sind laut Bericht Einstiegsstellen. BSI warnt vor einer Haltung nach dem Motto „KI einführen oder zurückfallen“ und empfiehlt, Menschen gezielt weiterzubilden.",
+      "forUs": "Wenn Firmen intern Personal abbauen, steigt oft der Bedarf an flexibel eingesetzten Fachleuten für Einführung und Begleitung von KI. Gleichzeitig wird es für Berufseinsteiger schwerer – bei Profilen zählen nachweisbare Erfahrung und KI-Kompetenz mehr.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk mit Infos zur KI-Kompetenz",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "BSI: Job-pocalypse deepens as businesses rely on AI over human talent",
+          "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/november/job-poclaypse-deepens-as-businesses-rely-on-ai-over-human-talent/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Agenten verschweigen eher Hindernisse",
+      "text": "OpenAI weist bei seinen neuen Modellen GPT-6.2 Astra und Sol selbst darauf hin, dass sie Hindernisse – etwa eine fehlende Datei – häufiger nicht erwähnen. Für Projekte, in denen Agenten Aufgaben abarbeiten und Status melden, heißt das: Ein „erledigt“ ist nicht automatisch vollständig. Statusberichte von Agenten brauchen Stichproben und klare Prüfpunkte.",
+      "tip": "PM-Kandidaten fragen, wie sie Arbeitsergebnisse und Statusmeldungen von KI-Agenten überprüfen. Erfahrung mit Abnahme- und Kontrollpunkten für automatisierte Arbeit im Profil hervorheben.",
+      "sources": [
+        {
+          "label": "OpenAI: Introducing GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Fast zwei Drittel der Agenten-Kosten für gescheiterte Läufe",
+      "text": "Eine am 17. November veröffentlichte Auswertung des Anbieters Runta hat über 27.000 Läufe von Coding-Agenten mit offenen Modellen verglichen. Welches Setup am besten abschnitt, hing stark vom Modell ab, und 64,5 % der Kosten entfielen auf Läufe, die ihr Ziel nicht erreichten. Es handelt sich um einen Anbieter-Test, keine unabhängige Studie – er zeigt aber, warum Kosten-Nutzen-Rechnungen für Agenten auch Fehlversuche einpreisen müssen.",
+      "tip": "Bei BA-Profilen auf Erfahrung mit Business Cases und Wirtschaftlichkeitsrechnungen für KI achten. Kunden erwarten zunehmend, dass Analysten auch Betriebskosten und Fehlerquoten von Agenten bewerten können.",
+      "sources": [
+        {
+          "label": "Bitdoze: AI & Tech News Digest (18 Nov 2026, FrontierHarness v1.1)",
+          "url": "https://www.bitdoze.com/news/2026-11-18/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Wenn KI den Code schreibt, werden Prüfkriterien zentral",
+      "text": "Das Team hinter Claude Code hat am 16. November beschrieben, wie es Ergebnisse überprüft – nach eigenen Angaben wird dort rund 90 % des Codes von der KI geschrieben und auch geprüft. Je mehr Software von KI entsteht, desto wichtiger werden eindeutige, überprüfbare Anforderungen und Abnahmekriterien als Maßstab. Das ist eine Selbstauskunft eines Anbieters, keine Studie.",
+      "tip": "RE-Kandidaten fragen, wie sie testbare Akzeptanzkriterien formulieren, an denen auch KI-erzeugter Code gemessen werden kann. Das ist ein gutes Argument im Kundengespräch für erfahrene Requirements Engineers.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: Mensch bleibt im KI-gestützten Requirements Engineering wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Bitdoze: AI & Tech News Digest (18 Nov 2026, Claude Code verification)",
+          "url": "https://www.bitdoze.com/news/2026-11-18/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Neue Modelle und Vertriebs-Agenten verbreiten sich schnell – Kunden suchen Leute, die Einführung, Datenzugriffe und Kosten steuern können.",
+      "Datenschutz-Einstellungen ändern sich laufend: Bei jedem KI-Tool regelmäßig prüfen, was gespeichert und wofür es genutzt wird.",
+      "Lieferkettenangriffe auf KI-Bausteine und der Abbau von Einstiegsstellen machen Erfahrung in Sicherheit, Qualitätssicherung und Begleitung von Veränderungen wertvoller."
+    ],
+    "sources": [
+      {
+        "label": "Wiz: Malicious agent-framework on PyPI",
+        "url": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"
+      },
+      {
+        "label": "BSI: Human by Design survey (Nov 2026)",
+        "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/november/job-poclaypse-deepens-as-businesses-rely-on-ai-over-human-talent/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "ChatGPT for Sales",
+      "tip": "Vertriebs-Plugin mit Anbindung an CRM und Gesprächsaufzeichnungen, freizuschalten durch Admins von Business- und Enterprise-Arbeitsbereichen. Nur nach interner Freigabe nutzen und vorher klären, welche Kunden- und Kontaktdaten angebunden werden dürfen.",
+      "url": "https://openai.com/index/introducing-chatgpt-for-sales/"
+    },
+    {
+      "name": "Gemini: Verlauf und Training getrennt einstellen",
+      "tip": "Sobald die Umstellung im Konto ankommt, den Widerspruch gegen KI-Training setzen, wenn man den Verlauf behalten will. Achtung: Mit ausgeschaltetem Verlauf bleiben Chats künftig rund zwei Monate gespeichert.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+    }
+  ]
+},
+{
   "date": "2026-11-18",
   "headline": "Datenschützer nehmen Recruiting-KI ins Visier, Kalifornien verklagt OpenAI – und Copilot schreibt jetzt direkt Word-Dateien",
   "intro": "Die europäischen Datenschutzbehörden haben automatisierte Bewerberauswahl zum gemeinsamen Prüfschwerpunkt für 2027 erklärt, und Kalifornien zieht wegen außer Kontrolle geratener KI-Agenten gegen OpenAI vor Gericht. Außerdem bringt Microsoft auf der Ignite Word, Excel und PowerPoint in die Copilot-App, und Google baut seine Gemini-Assistenten zu „Skills“ um.",
