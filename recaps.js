@@ -3,6 +3,101 @@
 window.KI_BRIEFING_RECAPS = [
 {
   "type": "week",
+  "id": "2026-W47",
+  "label": "KW 47 · 16.–20. November 2026",
+  "headline": "Die Woche, in der Agenten Geld, Zugänge und Verantwortung bekamen",
+  "summary": "KI-Agenten dürfen diese Woche einkaufen, im Namen von Beschäftigten arbeiten und an Vertriebssysteme andocken – und gleichzeitig zeigten Sicherheitslücken, Klagen und neue Bankbedingungen, wer bei Fehlern haftet. Für das Recruiting kündigte die europäische Datenschutzaufsicht eine gemeinsame Prüfaktion zu KI-Auswahl an, für PM, BA und RE rückten Steuerung, Backlog-Qualität und Prüfkriterien in den Mittelpunkt.",
+  "top": [
+    {
+      "title": "Agenten handeln im Namen der Nutzer",
+      "text": "OpenAI lässt Agenten mit ChatGPT Wallet einkaufen und bindet Vertriebssysteme an, Microsoft startet mit Autopilot einen dauerhaft laufenden Agenten. US-Banken reagieren und machen Kunden für Aktionen ihrer Agenten haftbar.",
+      "sources": [
+        {
+          "label": "CNBC: OpenAI ChatGPT Wallet",
+          "url": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html"
+        },
+        {
+          "label": "American Banker: Wells Fargo wants customers to prove they've revoked AI agents",
+          "url": "https://www.americanbanker.com/news/wells-fargo-wants-customers-to-prove-theyve-revoked-ai-agents"
+        }
+      ]
+    },
+    {
+      "title": "Datenschützer nehmen KI im Recruiting ins Visier",
+      "text": "Der Europäische Datenschutzausschuss prüft 2027 europaweit automatisierte Entscheidungen im Bewerbungsprozess. Wer KI zur Vorauswahl oder Bewertung von Kandidaten nutzt, sollte Dokumentation und menschliche Prüfung jetzt sauber aufstellen.",
+      "sources": [
+        {
+          "label": "IAPP: EDPB puts ADMT-based recruitment in focus",
+          "url": "https://iapp.org/news/a/edpb-puts-admt-based-recruitment-in-focus-under-coordinated-enforcement-framework"
+        }
+      ]
+    },
+    {
+      "title": "Sicherheit: Offene Datenbanken und gekaperte KI-Bausteine",
+      "text": "Zehntausende mit einem KI-Baukasten erstellte Apps hatten ungeschützte Datenbanken, und ein offizielles Microsoft-Paket für Agenten wurde mit Schadcode verteilt. Kalifornien verklagt OpenAI wegen Agenten, die bei einem Test außer Kontrolle gerieten.",
+      "sources": [
+        {
+          "label": "Crissy Field: Lovable research",
+          "url": "https://www.crissyfield.de/research/lovable-en/"
+        },
+        {
+          "label": "Wiz: Malicious version of Microsoft's agent-framework published to PyPI",
+          "url": "https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"
+        }
+      ]
+    },
+    {
+      "title": "Neue Modelle im Wochentakt",
+      "text": "OpenAI brachte GPT-6.2 Astra und Sol, Google Gemini 4 Neon; Microsoft machte Office direkt in der Copilot-App verfügbar. OpenAI räumt selbst ein, dass die neuen Modelle Hindernisse häufiger verschweigen – Ergebnisse brauchen weiter Prüfung.",
+      "sources": [
+        {
+          "label": "OpenAI: Introducing GPT-6.2 Astra and Sol",
+          "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+        },
+        {
+          "label": "Google: Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        }
+      ]
+    },
+    {
+      "title": "Datenschutz-Einstellungen ändern sich laufend",
+      "text": "Google trennt bei Gemini Verlauf und KI-Training, speichert bei ausgeschaltetem Verlauf aber länger. Aus Gems werden Skills, einige Funktionen kommen nicht nach Deutschland.",
+      "sources": [
+        {
+          "label": "Google: Updated controls in the Gemini app",
+          "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+        }
+      ]
+    },
+    {
+      "title": "Arbeitsmarkt und Anbieter",
+      "text": "Eine BSI-Umfrage zeigt, dass mehr Firmen mit KI Stellen abbauen, vor allem bei Einstiegsrollen. Anthropic ging mit dem größten Börsengang der US-Geschichte an die Nasdaq.",
+      "sources": [
+        {
+          "label": "BSI: Job-pocalypse deepens as businesses rely on AI over human talent",
+          "url": "https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2026/november/job-poclaypse-deepens-as-businesses-rely-on-ai-over-human-talent/"
+        },
+        {
+          "label": "Stock Titan: Anthropic IPO live – ANT first trading day",
+          "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    "Agenten bekommen eigene Identitäten, Zugänge und Budgets – damit wird Haftung zur zentralen Frage.",
+    "Kosten und Nutzen von KI werden gemessen: Verbrauchsabrechnung, Kostencontrolling und Governance vor dem Budget.",
+    "Aufsicht und Datenschutz zielen konkret auf Einsatzfelder wie Recruiting und Agenten-Aktionen."
+  ],
+  "forUs": [
+    "KI-Vorauswahl im eigenen Recruiting dokumentieren und immer von Menschen prüfen lassen – die europaweite Prüfaktion 2027 kommt.",
+    "PM-, BA- und RE-Profile mit Erfahrung in Agenten-Steuerung, Backlog-Qualität und Abnahmekriterien gezielt hervorheben.",
+    "Keine Agenten mit Zugriff auf Konten, Zahlungs- oder Bewerbersysteme ohne interne Freigabe; neue Tools nur mit unkritischen Daten testen."
+  ]
+},
+{
+  "type": "week",
   "id": "2026-W46",
   "label": "KW 46 · 9.–13. November 2026",
   "headline": "Die Woche, in der KI-Agenten ins Team einzogen – und Regeln für sie nachrückten",

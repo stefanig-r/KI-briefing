@@ -2,6 +2,174 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-20",
+  "headline": "Microsofts Dauer-Agent startet, Banken schieben die Haftung für KI-Agenten ab – und Anthropic ist an der Börse",
+  "intro": "Microsoft verteilt mit „Autopilot“ einen Agenten, der rund um die Uhr im Hintergrund für einzelne Beschäftigte arbeitet, und Google bringt mit Gemini 4 Neon ein neues Mittelklasse-Modell. Gleichzeitig machen US-Banken klar, dass Kunden für Schäden durch ihre KI-Agenten selbst haften, und Anthropic hat den bisher größten Börsengang der USA hingelegt.",
+  "news": [
+    {
+      "title": "Microsoft startet „Autopilot“: Ein Agent, der dauerhaft im Hintergrund arbeitet",
+      "summary": "Microsoft verteilt seit dem 17. November den Agenten Autopilot als Vorschau an ausgewählte Kunden seines Frühzugangsprogramms. Jede Instanz bekommt eine eigene Identität, ein Gedächtnis und einen Arbeitsbereich in der Cloud und arbeitet weiter, wenn der Laptop zu ist; sie kann etwa Folgeaufgaben aus Mails und Teams übernehmen oder Antwortentwürfe vorbereiten, die erst nach Freigabe verschickt werden. Voraussetzung sind eine Copilot-Lizenz und Abrechnung nach Verbrauch; Unternehmen können den Agenten über Microsofts Verwaltungswerkzeug Agent 365 begrenzen, überwachen oder sperren. Angaben zur Verfügbarkeit in der EU macht Microsoft bisher nicht.",
+      "forUs": "Bei Kunden mit Microsoft 365 werden bald Agenten im Namen einzelner Beschäftigter handeln – gefragt sind Consultants, die Rechte, Freigaben und Kosten dafür regeln können. Intern gilt: Solche Agenten erst nach Freigabe durch die IT nutzen, besonders wenn sie Zugriff auf Mails mit Bewerber- oder Kundendaten hätten.",
+      "learn": [
+        {
+          "label": "Microsoft Learn: Was Agent 365 zur Verwaltung und Kontrolle von KI-Agenten bietet",
+          "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/overview",
+          "lang": "EN"
+        },
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "TestingCatalog: Microsoft launches Autopilot, a personal agent for Copilot",
+          "url": "https://www.testingcatalog.com/microsoft-launches-autopilot-a-personal-agent-for-copilot/"
+        },
+        {
+          "label": "Microsoft: Copilot at Microsoft Ignite",
+          "url": "https://microsoft.com/en-us/copilot/blog/2026/11/17/copilot-at-microsoft-ignite-expanding-whats-possible-with-intelligence-built-for-work"
+        }
+      ]
+    },
+    {
+      "title": "US-Banken: Wer KI-Agenten aufs Konto lässt, haftet selbst",
+      "summary": "Mehrere große US-Banken haben ihre Kundenbedingungen angepasst: Handelt ein KI-Agent eines Drittanbieters mit Zugriff auf das Konto, behandeln sie dessen Aufträge wie Aufträge des Kunden – auch wenn etwas schiefgeht. Wells Fargo geht ab dem 24. November noch weiter: Wer einem Agenten den Zugriff entzieht, bleibt haftbar, bis er den Widerruf nachweisen kann. Andere Banken blockieren fremde Agenten ganz oder erlauben nur Lesezugriffe. Rechtlich ist die Frage für KI-Agenten noch nicht vor Gericht geklärt.",
+      "forUs": "Das Muster dürfte sich auf andere Bereiche übertragen: Wer einem Agenten Zugänge gibt, trägt das Risiko. Firmenkonten, Zahlungs- und Personalsysteme gehören deshalb nicht in Hände von Agenten, die nicht ausdrücklich freigegeben sind – und Zahlungen sollte immer ein Mensch bestätigen.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Identitäten, Werkzeuge)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "American Banker: Wells Fargo wants customers to prove they've revoked AI agents",
+          "url": "https://www.americanbanker.com/news/wells-fargo-wants-customers-to-prove-theyve-revoked-ai-agents"
+        },
+        {
+          "label": "AI Policy Desk: Unauthorized AI agents in bank accounts – who is liable?",
+          "url": "https://www.aipolicydesk.com/blog/unauthorized-ai-agents-bank-accounts-liability-2026"
+        }
+      ]
+    },
+    {
+      "title": "Google bringt Gemini 4 Neon – ein Mittelklasse-Modell für Code und Büroarbeit",
+      "summary": "Google hat am 18. November Gemini 4 Neon vorgestellt, das zwischen dem großen Modell Carbon und dem schnellen Hydrogen angesiedelt ist. Es soll Programmierung, längere Agenten-Aufgaben und Büroarbeit mit Tabellen, PDFs und Diagrammen gut beherrschen und kann sehr lange Dokumente auf einmal verarbeiten. Verfügbar ist es über die Schnittstelle sowie in der Gemini-App für zahlende Pro- und Ultra-Abonnenten; die Testergebnisse stammen von Google selbst bzw. von Google ausgewählten Ranglisten. Es ist laut Berichten bereits Googles viertes neues Modell innerhalb eines Monats.",
+      "forUs": "Die Modellwechsel kommen inzwischen im Wochentakt – Kunden brauchen Leute, die neue Modelle strukturiert testen und vergleichen, statt jedem Update hinterherzulaufen. Für die eigene Arbeit gilt: Neue Modelle in privaten Konten nicht mit Bewerber- oder Kundendaten ausprobieren.",
+      "sources": [
+        {
+          "label": "Google: Introducing Gemini 4 Neon",
+          "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (19 Nov 2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic an der Börse: Größter Börsengang der US-Geschichte",
+      "summary": "Anthropic, der Anbieter von Claude, ist seit dem 19. November an der Nasdaq notiert. Die Aktien wurden zu 83 US-Dollar ausgegeben, über der angepeilten Spanne, und brachten rund 81 Milliarden Dollar ein; zusammen mit einem Zusatzverkauf an Großinvestoren fließen dem Unternehmen gut 100 Milliarden Dollar zu. Am ersten Handelstag schloss die Aktie rund 17 % über dem Ausgabepreis. Die Gründer behalten über eine Sonderaktie die Stimmenmehrheit.",
+      "forUs": "Der Wettbewerb zwischen den großen KI-Anbietern wird noch kapitalstärker geführt – mit schnellen Produktwechseln und Druck, Umsätze zu steigern. Kunden sollten Preis- und Nutzungsbedingungen ihrer KI-Verträge regelmäßig prüfen; das ist auch ein Thema für Einkaufs- und Vertragsprojekte.",
+      "sources": [
+        {
+          "label": "Stock Titan: Anthropic IPO live – ANT first trading day",
+          "url": "https://www.stocktitan.net/articles/anthropic-ipo-live-ant-first-trading-day-2026"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (19 Nov 2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-thursday-november-19-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: KI-Budgets scheitern an fehlender Projektsteuerung",
+      "text": "Ein PMI-Blogbeitrag vom 4. November argumentiert, dass KI-Programme meist nicht an der Technik scheitern, sondern an Kostenkontrolle, Nutzendefinition und Phasenfreigaben. Er verweist auf PMIs Studie „Pulse of the Profession 2026“: 31 % der komplexen Projekte erreichen ihren geplanten Nutzen nicht voll, 2024 waren es 12 %. Vor jedem KI-Budget sollen ein verantwortlicher Sponsor, Autonomiestufen mit Abbruchkriterien und die spätere Verankerung im Betrieb feststehen.",
+      "tip": "PM-Kandidaten fragen, wie sie Nutzen, Stop-Kriterien und Phasenfreigaben für KI-Vorhaben festlegen. Erfahrung mit PMO-Arbeit und Benefits Tracking ist bei KI-Programmen ein starkes Verkaufsargument.",
+      "learn": [
+        {
+          "label": "PMI: Themenseite und Lernangebote zu KI im Projektmanagement",
+          "url": "https://www.pmi.org/learning/ai-in-project-management",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "PMI Blog: Your 2027 AI budget has a governance problem",
+          "url": "https://www.pmi.org/blog/ai-budget-governance"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: In Azure DevOps arbeiten Agenten das Backlog ab",
+      "text": "Microsoft hat am 17. November für Azure DevOps neue Agenten-Funktionen angekündigt: Copilot kann die wichtigsten offenen Arbeitspakete finden, aus der Beschreibung eines Work Items einen Agenten starten und Code, Status und Kommentare automatisch wieder mit dem Arbeitspaket verknüpfen. Die automatische Code-Prüfung durch Copilot ist allgemein verfügbar und wird pro Prüfung abgerechnet. Damit hängt mehr Arbeit direkt an der Qualität und Priorisierung des Backlogs.",
+      "tip": "BA-Profile mit sauberer Backlog-Pflege, Priorisierung und Nachverfolgbarkeit in Azure DevOps hervorheben. Kunden fragen zunehmend, ob Analysten Arbeitspakete so schreiben können, dass auch Agenten sie umsetzen.",
+      "sources": [
+        {
+          "label": "Azure DevOps Blog: Start your agentic journey where you are",
+          "url": "https://devblogs.microsoft.com/devops/azure-devops-and-github-start-your-agentic-journey-where-you-are/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Rollenbasierte KI-Assistenten statt Allzweck-Chatbot",
+      "text": "Ein Praxisbeitrag in der Fachzeitschrift „Softwaretechnik-Trends“ der Gesellschaft für Informatik beschreibt feste KI-Assistenten für einzelne RE-Aufgaben: Anforderungen auf Klarheit und Testbarkeit prüfen, Widersprüche finden, User Stories und Akzeptanzkriterien ableiten und in Jira übertragen – die Entscheidung bleibt beim Menschen. Laut einer internen Auswertung des IT-Dienstleisters des Autors über 130 Projekte nutzt etwa die Hälfte der Befragten solche Werkzeuge, mit 8 bis 16 % Effizienzgewinn und dem größten Effekt im RE. Es handelt sich um einen Erfahrungsbericht, keine unabhängige Studie.",
+      "tip": "RE-Kandidaten fragen, ob sie mit vorbereiteten Prompt-Vorlagen oder Assistenten für Anforderungsprüfungen arbeiten und wie sie die Ergebnisse kontrollieren. Realistische Erwartungen an Kunden kommunizieren: eher zweistellige Prozent-Gewinne als Verdopplung.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: KI im Requirements Engineering – der Mensch bleibt wichtigste Instanz",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "GI Softwaretechnik-Trends: Rollenbasierte KI-Agenten im Requirements Engineering (PDF)",
+          "url": "https://fb-swt.gi.de/fileadmin/FB/SWT/Softwaretechnik-Trends/Verzeichnis/Band_46_Heft_1/Rollenbasierte_KI-Agenten_im_Requirements_Engineering.pdf"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Agenten handeln zunehmend im Namen einzelner Personen – Kunden brauchen Consultants, die Identitäten, Rechte, Freigaben und Kosten solcher Agenten planen.",
+      "Die Haftung für Agenten-Fehler landet beim Nutzer: Zugänge zu Konten, Zahlungs- und Personalsystemen nur für ausdrücklich freigegebene Agenten, Zahlungen immer mit menschlicher Bestätigung.",
+      "Bei PM-, BA- und RE-Profilen zählen Steuerungs- und Prüfkompetenz: Nutzen messen, Backlogs agententauglich schreiben, KI-Ergebnisse kontrollieren."
+    ],
+    "sources": [
+      {
+        "label": "American Banker: Wells Fargo wants customers to prove they've revoked AI agents",
+        "url": "https://www.americanbanker.com/news/wells-fargo-wants-customers-to-prove-theyve-revoked-ai-agents"
+      },
+      {
+        "label": "PMI Blog: Your 2027 AI budget has a governance problem",
+        "url": "https://www.pmi.org/blog/ai-budget-governance"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Gemini 4 Neon (Gemini-App, Pro/Ultra)",
+      "tip": "Neues Modell für Tabellen, PDFs und längere Dokumente, in der Modellauswahl der Gemini-App für zahlende Abonnenten. Nur mit unkritischen Inhalten testen – keine Bewerber- oder Kundendaten in private Konten.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+    },
+    {
+      "name": "Microsoft Agent 365 (Übersicht)",
+      "tip": "Für alle, die bei Kunden Microsoft-Agenten einführen: Die Doku zeigt, wie Agenten registriert, mit Rechten versehen, überwacht und gesperrt werden. Gut als Gesprächsgrundlage mit IT und Datenschutz.",
+      "url": "https://learn.microsoft.com/en-us/microsoft-agent-365/overview"
+    }
+  ]
+},
+{
   "date": "2026-11-19",
   "headline": "Neue OpenAI-Modelle, ChatGPT für den Vertrieb – und ein gekapertes Microsoft-Paket für KI-Agenten",
   "intro": "OpenAI bringt mit GPT-6.2 Astra und Sol zwei neue Modelle und eine eigene ChatGPT-Variante für Vertriebsteams. Außerdem trennt Google bei Gemini Verlauf und KI-Training, ein offizielles Microsoft-Paket für KI-Agenten wurde mit Schadcode verteilt, und eine BSI-Umfrage zeigt, dass KI häufiger zum Stellenabbau beiträgt.",

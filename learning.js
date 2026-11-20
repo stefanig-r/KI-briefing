@@ -328,6 +328,8 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-20","title":"US-Banken: Wer KI-Agenten aufs Konto lässt, haftet selbst"},
+      {"date":"2026-11-20","title":"Microsoft startet „Autopilot“: Ein Agent, der dauerhaft im Hintergrund arbeitet"},
       {
         "date": "2026-11-19",
         "title": "Gekapertes Microsoft-Paket für KI-Agenten verteilte Datendieb"
@@ -482,6 +484,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-20","title":"Projektmanagement: KI-Budgets scheitern an fehlender Projektsteuerung"},
       {
         "date": "2026-11-19",
         "title": "Projektmanagement: Agenten verschweigen eher Hindernisse"
@@ -580,6 +583,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-20","title":"Business Analyse: In Azure DevOps arbeiten Agenten das Backlog ab"},
       {
         "date": "2026-11-19",
         "title": "Business Analyse: Fast zwei Drittel der Agenten-Kosten für gescheiterte Läufe"
@@ -664,6 +668,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-20","title":"Requirements Engineering: Rollenbasierte KI-Assistenten statt Allzweck-Chatbot"},
       {
         "date": "2026-11-19",
         "title": "Requirements Engineering: Wenn KI den Code schreibt, werden Prüfkriterien zentral"
