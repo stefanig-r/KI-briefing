@@ -111,6 +111,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-23",
+        "title": "Studie: KI-Modelle bewerten Akzente in Interviews unterschiedlich"
+      },
+      {
         "date": "2026-11-18",
         "title": "Datenschützer prüfen 2027 europaweit KI-Auswahl im Recruiting"
       },
@@ -168,6 +172,18 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-23",
+        "title": "Undichte KI-Lieferkette: Geheimnisse aus Prompts landen bei Angreifern"
+      },
+      {
+        "date": "2026-11-23",
+        "title": "Signal sperrt Bildschirmzugriff für KI-Assistenten"
+      },
+      {
+        "date": "2026-11-23",
+        "title": "ChatGPT „Space“ jetzt auch für Plus-Nutzer"
+      },
       {
         "date": "2026-11-19",
         "title": "ChatGPT for Sales: Eigene Vertriebsvariante mit über 30 Anbindungen"
@@ -328,8 +344,18 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-20","title":"US-Banken: Wer KI-Agenten aufs Konto lässt, haftet selbst"},
-      {"date":"2026-11-20","title":"Microsoft startet „Autopilot“: Ein Agent, der dauerhaft im Hintergrund arbeitet"},
+      {
+        "date": "2026-11-23",
+        "title": "Claude darf in Firmenkonten Desktop-Programme bedienen"
+      },
+      {
+        "date": "2026-11-20",
+        "title": "US-Banken: Wer KI-Agenten aufs Konto lässt, haftet selbst"
+      },
+      {
+        "date": "2026-11-20",
+        "title": "Microsoft startet „Autopilot“: Ein Agent, der dauerhaft im Hintergrund arbeitet"
+      },
       {
         "date": "2026-11-19",
         "title": "Gekapertes Microsoft-Paket für KI-Agenten verteilte Datendieb"
@@ -439,6 +465,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-23",
+        "title": "Projektmanagement: Agenten erscheinen als eigene Teammitglieder auf dem Jira-Board"
+      },
+      {
         "date": "2026-11-17",
         "title": "Business Analyse: Jira zeigt, wie viel Arbeit Agenten übernehmen"
       },
@@ -484,7 +514,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-20","title":"Projektmanagement: KI-Budgets scheitern an fehlender Projektsteuerung"},
+      {
+        "date": "2026-11-20",
+        "title": "Projektmanagement: KI-Budgets scheitern an fehlender Projektsteuerung"
+      },
       {
         "date": "2026-11-19",
         "title": "Projektmanagement: Agenten verschweigen eher Hindernisse"
@@ -583,7 +616,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-20","title":"Business Analyse: In Azure DevOps arbeiten Agenten das Backlog ab"},
+      {
+        "date": "2026-11-23",
+        "title": "Business Analyse: KI ordnet Anforderungen aus Ausschreibungen zu"
+      },
+      {
+        "date": "2026-11-20",
+        "title": "Business Analyse: In Azure DevOps arbeiten Agenten das Backlog ab"
+      },
       {
         "date": "2026-11-19",
         "title": "Business Analyse: Fast zwei Drittel der Agenten-Kosten für gescheiterte Läufe"
@@ -668,7 +708,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
-      {"date":"2026-11-20","title":"Requirements Engineering: Rollenbasierte KI-Assistenten statt Allzweck-Chatbot"},
+      {
+        "date": "2026-11-23",
+        "title": "Requirements Engineering: KI sucht Widersprüche entlang der Verknüpfungen"
+      },
+      {
+        "date": "2026-11-20",
+        "title": "Requirements Engineering: Rollenbasierte KI-Assistenten statt Allzweck-Chatbot"
+      },
       {
         "date": "2026-11-19",
         "title": "Requirements Engineering: Wenn KI den Code schreibt, werden Prüfkriterien zentral"

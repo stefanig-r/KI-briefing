@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-20",
+  "updated": "2026-11-23",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,7 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term": "Zero Data Retention (keine Datenspeicherung)", "def": "Zusage eines KI-Anbieters, Eingaben und Antworten nach der Verarbeitung nicht zu speichern. Ob das eingehalten wird, lässt sich von außen kaum prüfen – vertrauliche Daten bleiben deshalb trotzdem tabu.", "added": "2026-11-23"},
     {"term":"Agenten-Identität","def":"Ein eigenes Benutzerkonto für einen KI-Agenten, ähnlich dem eines Mitarbeiters. Darüber legt die IT fest, worauf der Agent zugreifen darf, protokolliert seine Aktionen und kann ihn bei Bedarf sperren.","added":"2026-11-20"},
     {"term":"Opt-out (Widerspruch gegen KI-Training)","def":"Eine Einstellung, mit der Nutzer festlegen, dass ihre Eingaben und Chats nicht zum Training von KI-Modellen verwendet werden. Ein Opt-out bedeutet nicht automatisch, dass die Daten sofort gelöscht werden.","added":"2026-11-19"},
     {"term":"Automatisierte Einzelentscheidung (Art. 22 DSGVO)","def":"Eine Entscheidung über einen Menschen, die ausschließlich eine Maschine trifft, etwa das automatische Aussortieren einer Bewerbung. Die DSGVO erlaubt das nur in engen Ausnahmen; Betroffene haben Anspruch auf menschliche Prüfung und Auskunft über die Logik.","added":"2026-11-18"},

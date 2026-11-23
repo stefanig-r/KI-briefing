@@ -2,6 +2,174 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-23",
+  "headline": "Ausgespähte Prompts bei KI-Anbietern, Claude bedient den Desktop – und KI bewertet Akzente ungleich",
+  "intro": "Ein Sicherheitsforscher zeigt, dass vertrauliche Daten aus Prompts über Zwischenhändler und gehackte KI-Anbieter abfließen, während Claude in Firmenkonten erstmals Desktop-Programme selbst bedienen darf. Dazu kommen eine Studie zu Akzent-Verzerrungen in KI-Interviews und neue Schutz- und Teamfunktionen bei Signal und ChatGPT.",
+  "news": [
+    {
+      "title": "Undichte KI-Lieferkette: Geheimnisse aus Prompts landen bei Angreifern",
+      "summary": "Der Sicherheitsforscher HD Moore (Dragos) hat fast zwei Millionen Prompts an KI-Anbieter geschickt, jeweils mit einem eindeutigen Köder-Geheimnis wie einem AWS-Schlüssel oder SSH-Passwort. Ergebnis: Mindestens drei Anbieter wurden gehackt und Prompts abgegriffen, Zwischenhändler im Markt für Modellzugriffe protokollierten Eingaben und gaben sie weiter, und manche Dienste ignorierten Vorgaben zur Nicht-Speicherung („Zero Data Retention“). Die gestohlenen Köder-Schlüssel wurden zehntausende Male gegen AWS eingesetzt, teils wenige Stunden nach dem Versand. Prompts sind zwar auf dem Transportweg verschlüsselt, an jeder Zwischenstation aber im Klartext lesbar.",
+      "forUs": "Alles, was in einen Prompt geht, kann bei Dritten landen – Zugangsdaten, Lebensläufe und Vertragsdetails gehören nicht in KI-Tools, die über unbekannte Zwischenhändler laufen. Bei Kunden sind Consultants gefragt, die bei KI-Projekten die gesamte Kette vom Tool bis zum Modellbetreiber prüfen.",
+      "learn": [
+        {
+          "label": "BSI: Informationen und Empfehlungen zu KI für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        },
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Sam on AI: AI Brief – November 21, 2026 (nach Ars Technica)",
+          "url": "https://samonai.substack.com/p/ai-brief-november-21-2026"
+        }
+      ]
+    },
+    {
+      "title": "Claude darf in Firmenkonten Desktop-Programme bedienen",
+      "summary": "Anthropic verteilt seit dem 20. November schrittweise eine Beta-Funktion an Team- und Enterprise-Kunden, mit der Claude den Bildschirm sieht und freigegebene Desktop-Programme selbst bedient. Die Funktion ist standardmäßig ausgeschaltet; nur Owner bzw. Primary Owner der Organisation können sie aktivieren. Parallel hat Anthropic die mobile Claude-App mit einer neuen Navigationsleiste umgestaltet.",
+      "forUs": "Agenten, die wie ein Mensch klicken und tippen, erreichen auch Programme ohne Schnittstelle – etwa ältere ATS- oder CRM-Systeme. Vor einer Freischaltung sollten IT und Datenschutz klären, welche Programme der Agent sehen darf; bei Kunden wächst der Bedarf an Leuten, die solche Freigaben sauber regeln.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen (Rechte, Werkzeuge, Kontrolle)",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Kelly Abbott: AI Frontier Daily – 21 Nov 2026",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-21"
+        }
+      ]
+    },
+    {
+      "title": "Studie: KI-Modelle bewerten Akzente in Interviews unterschiedlich",
+      "summary": "Ein Team der University of Washington hat vier Modelle mit Audio-Verständnis (u. a. Gemini 2.5 Pro und Flash sowie GPT-Audio 1.5) Antworten aus simulierten Bewerbungsgesprächen, Vorträgen und Englischtests bewerten lassen. Bei identischem Inhalt erhielten Sprecher mit chinesischem und nigerianischem Akzent meist die schlechtesten Noten, amerikanischer und britischer Akzent die besten – obwohl die Modelle die Sprache korrekt verschriftlichten. Auch menschliche Bewerter zeigten eine solche Lücke, sogar eine größere. Die Studie wurde Ende Oktober auf der Fachkonferenz EMNLP vorgestellt.",
+      "forUs": "Wer KI-Interviews oder automatische Sprachbewertungen nutzt, riskiert, internationale Freelancer systematisch schlechter einzustufen – ein Fairness- und Haftungsthema. KI-Bewertungen von Gesprächen sollten deshalb nur Hinweise sein; die Entscheidung trifft ein Mensch.",
+      "learn": [
+        {
+          "label": "EU-Kommission: Entwurf der Leitlinien zur Einstufung von Hochrisiko-KI-Systemen",
+          "url": "https://digital-strategy.ec.europa.eu/de/library/draft-commission-guidelines-classification-high-risk-ai-systems",
+          "lang": "DE"
+        },
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk zum AI Act",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "UW News: AI models are biased against certain accents",
+          "url": "https://www.washington.edu/news/2026/11/04/ai-models-are-biased-against-certain-accents/"
+        }
+      ]
+    },
+    {
+      "title": "Signal sperrt Bildschirmzugriff für KI-Assistenten",
+      "summary": "Der Messenger Signal schränkt Bildschirmaufnahmen in seiner App unter iOS 27 und Android ein, damit eingebaute Assistenten wie Siri oder Gemini Chats nicht mehr vom Bildschirm mitlesen. Nutzer können das wieder erlauben, Signal warnt aber, dass Inhalte dann bei KI-Agenten landen können. Auf dem Mac ist ein solcher Schutz laut Signal derzeit nicht möglich, und die Chefin des Dienstes nennt die Lösung selbst unvollständig, weil Agenten auch über Bedienungshilfen an Daten kommen.",
+      "forUs": "KI-Assistenten im Betriebssystem können alles mitlesen, was auf dem Bildschirm steht – auch vertrauliche Kandidaten- oder Kundendaten. Auf Diensthandys und -laptops sollte klar geregelt sein, welche Assistenten aktiv sein dürfen.",
+      "sources": [
+        {
+          "label": "Sam on AI: AI Brief – November 21, 2026 (nach The Verge)",
+          "url": "https://samonai.substack.com/p/ai-brief-november-21-2026"
+        }
+      ]
+    },
+    {
+      "title": "ChatGPT „Space“ jetzt auch für Plus-Nutzer",
+      "summary": "OpenAI verteilt seit dem 20. November seine gemeinsamen Arbeitsbereiche „Space“ weltweit an Plus-Abonnenten ab 18 Jahren – auf Web, Desktop, iOS und Android. Darin entstehen Seiten, Folien und Dokumente gemeinsam mit ChatGPT und anderen Personen; bisher war das Pro-, Business- und Enterprise-Kunden vorbehalten. Zudem hat OpenAI eine neu gestaltete Mobil-App gezeigt, in der der Agent „Dots“ einen eigenen Bereich bekommt.",
+      "forUs": "Gemeinsame KI-Arbeitsbereiche werden auch in günstigen Privat-Abos verfügbar – damit steigt das Risiko, dass Teams Kunden- oder Bewerberunterlagen in nicht freigegebene Konten legen. Intern nur freigegebene Firmenkonten für gemeinsame Dokumente nutzen.",
+      "learn": [
+        {
+          "label": "BSI: Informationen und Empfehlungen zu KI für Unternehmen",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Kelly Abbott: AI Frontier Daily – 21 Nov 2026",
+          "url": "https://kellyabbott1.substack.com/p/ai-frontier-daily-2026-11-21"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Agenten erscheinen als eigene Teammitglieder auf dem Jira-Board",
+      "text": "Atlassians Herbst-Release für Jira soll bis Ende November in allen Jira-Cloud-Umgebungen verfügbar sein. Agenten bekommen darin eine eigene Identität und tauchen auf Boards, in Listen und an Arbeitspaketen auf; sie lassen sich direkt aus einem Arbeitspaket starten, und ihre Ergebnisse bleiben dort dokumentiert. Admins können zudem pro Bereich festlegen, wo Agenten eingesetzt werden und welche Vorgaben für Felder und Status gelten.",
+      "tip": "PM-Kandidaten fragen, wie sie Arbeit zwischen Menschen und Agenten im Board planen, zuweisen und nachverfolgen. Erfahrung mit Jira-Administration und klaren Teamregeln ist ein gutes Argument im Profil.",
+      "sources": [
+        {
+          "label": "Atlassian Blog: Jira Autumn release (30.10.2026)",
+          "url": "https://www.atlassian.com/blog/development/jira-autumn-release"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: KI ordnet Anforderungen aus Ausschreibungen zu",
+      "text": "Siemens bewirbt für sein Anforderungswerkzeug Polarion einen „AI Tender Manager“: Er liest Anforderungen aus Ausschreibungen in PDF-, Word- oder Excel-Form ein, ordnet sie über Sprachverständnis statt reinem Textabgleich zu und verknüpft sie mit früheren Ausschreibungen. Weitere Funktionen sollen Anforderungen automatisch Abteilungen zuweisen und Änderungen in Dokumenten nachverfolgen. Es handelt sich um eine Herstellerseite ohne Datum und ohne Angaben zu Preisen oder Datenverarbeitung.",
+      "tip": "Bei BA-Profilen für Angebots- und Ausschreibungsprojekte nach Erfahrung mit KI-gestützter Anforderungsanalyse fragen – und danach, wie die Ergebnisse geprüft werden. Kunden erwarten zunehmend schnellere Erstanalysen, die Verantwortung bleibt beim Analysten.",
+      "sources": [
+        {
+          "label": "Siemens: Industrial AI for Polarion",
+          "url": "https://www.siemens.com/en-us/products/polarion/industrial-ai/"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: KI sucht Widersprüche entlang der Verknüpfungen",
+      "text": "Laut Siemens' Produktseite prüft „Polarion Copilot“ Anforderungstexte gegen die INCOSE-Regeln für gute Anforderungen und schlägt Korrekturen vor. Ein Ähnlichkeitsmodul markiert doppelte oder verwandte Anforderungen, und ein Konsistenzprüfer folgt den Verknüpfungen über mehrere Ebenen, um Widersprüche und Lücken zu finden. Auch hier: Herstellerangaben, keine unabhängige Bewertung.",
+      "tip": "RE-Kandidaten fragen, ob sie mit KI-Prüfungen in Polarion oder ähnlichen Tools gearbeitet haben und wie sie mit falschen Treffern umgehen. Saubere Traceability ist die Voraussetzung, damit solche Prüfungen überhaupt funktionieren – das im Profil hervorheben.",
+      "sources": [
+        {
+          "label": "Siemens: Industrial AI for Polarion",
+          "url": "https://www.siemens.com/en-us/products/polarion/industrial-ai/"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Prompts sind nicht privat: Zugangsdaten sowie Bewerber- und Kundendaten nur in freigegebene Tools mit geprüfter Anbieterkette eingeben.",
+      "KI-Bewertungen von Interviews können Akzente benachteiligen – bei der Vorauswahl internationaler Freelancer entscheidet immer ein Mensch.",
+      "Agenten bedienen Desktop und Boards wie Teammitglieder: Kunden suchen PM, BA und RE, die Rechte, Freigaben und Prüfungen solcher Agenten gestalten können."
+    ],
+    "sources": [
+      {
+        "label": "Sam on AI: AI Brief – November 21, 2026",
+        "url": "https://samonai.substack.com/p/ai-brief-november-21-2026"
+      },
+      {
+        "label": "UW News: AI models are biased against certain accents",
+        "url": "https://www.washington.edu/news/2026/11/04/ai-models-are-biased-against-certain-accents/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "ChatGPT Space (jetzt auch für Plus)",
+      "tip": "Gemeinsame Arbeitsbereiche für Seiten, Folien und Dokumente mit ChatGPT. Zum Ausprobieren nur mit unkritischen Inhalten – Kunden- und Bewerberdaten gehören nicht in private Abos.",
+      "url": "https://www.engadget.com/2323016/openai-brings-its-collaborative-space-hubs-to-plus-users/"
+    },
+    {
+      "name": "Jira Herbst-Release (Agenten im Arbeitspaket)",
+      "tip": "Für alle, die mit Jira-Kunden sprechen: Der Überblick zeigt, wie Agenten mit eigener Identität und Feldvorschläge mit Bestätigung funktionieren. Gut zur Vorbereitung auf Kundengespräche.",
+      "url": "https://www.atlassian.com/blog/development/jira-autumn-release"
+    }
+  ]
+},
+{
   "date": "2026-11-20",
   "headline": "Microsofts Dauer-Agent startet, Banken schieben die Haftung für KI-Agenten ab – und Anthropic ist an der Börse",
   "intro": "Microsoft verteilt mit „Autopilot“ einen Agenten, der rund um die Uhr im Hintergrund für einzelne Beschäftigte arbeitet, und Google bringt mit Gemini 4 Neon ein neues Mittelklasse-Modell. Gleichzeitig machen US-Banken klar, dass Kunden für Schäden durch ihre KI-Agenten selbst haften, und Anthropic hat den bisher größten Börsengang der USA hingelegt.",
