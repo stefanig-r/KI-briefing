@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,8 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Digital Omnibus","def":"Ein Gesetzespaket der EU-Kommission, das mehrere Digitalgesetze auf einmal ändern soll – etwa DSGVO, KI-Verordnung und Data Act. Der KI-Teil gilt bereits, die Änderungen am Datenschutz werden noch verhandelt.","added":"2026-11-24"},
+    {"term":"Code Review (Code-Prüfung)","def":"Die Durchsicht von Programmänderungen, bevor sie übernommen werden – klassisch durch eine zweite Entwicklerin oder einen zweiten Entwickler. Zunehmend übernehmen KI-Werkzeuge einen Teil dieser Prüfung.","added":"2026-11-24"},
     {"term": "Zero Data Retention (keine Datenspeicherung)", "def": "Zusage eines KI-Anbieters, Eingaben und Antworten nach der Verarbeitung nicht zu speichern. Ob das eingehalten wird, lässt sich von außen kaum prüfen – vertrauliche Daten bleiben deshalb trotzdem tabu.", "added": "2026-11-23"},
     {"term":"Agenten-Identität","def":"Ein eigenes Benutzerkonto für einen KI-Agenten, ähnlich dem eines Mitarbeiters. Darüber legt die IT fest, worauf der Agent zugreifen darf, protokolliert seine Aktionen und kann ihn bei Bedarf sperren.","added":"2026-11-20"},
     {"term":"Opt-out (Widerspruch gegen KI-Training)","def":"Eine Einstellung, mit der Nutzer festlegen, dass ihre Eingaben und Chats nicht zum Training von KI-Modellen verwendet werden. Ein Opt-out bedeutet nicht automatisch, dass die Daten sofort gelöscht werden.","added":"2026-11-19"},

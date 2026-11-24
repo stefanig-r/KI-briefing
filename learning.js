@@ -32,6 +32,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-24",
+        "title": "Umfrage: Neun von zehn Arbeitgebern glauben, echte Kandidaten aussortiert zu haben"
+      },
+      {
         "date": "2026-11-17",
         "title": "Südkorea kontrolliert bei Prüfungen jede Brille – wegen KI-Betrugs"
       },
@@ -111,6 +115,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-24",
+        "title": "Reform von DSGVO und KI-Regeln: Einigung bis Februar gilt als unrealistisch"
+      },
+      {
         "date": "2026-11-23",
         "title": "Studie: KI-Modelle bewerten Akzente in Interviews unterschiedlich"
       },
@@ -172,6 +180,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-24",
+        "title": "Nach dem Prompt-Leck: OpenRouter wirft drei KI-Anbieter raus"
+      },
       {
         "date": "2026-11-23",
         "title": "Undichte KI-Lieferkette: Geheimnisse aus Prompts landen bei Angreifern"
@@ -345,6 +357,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-24",
+        "title": "Claude Ship: KI-Agenten prüfen und genehmigen Code-Änderungen"
+      },
+      {
         "date": "2026-11-23",
         "title": "Claude darf in Firmenkonten Desktop-Programme bedienen"
       },
@@ -464,6 +480,14 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-24",
+        "title": "Business Analyse: KI-Agenten direkt in Confluence-Kommentaren"
+      },
+      {
+        "date": "2026-11-24",
+        "title": "Projektmanagement: KI-Assistenten lesen und pflegen jetzt Jira Align"
+      },
       {
         "date": "2026-11-23",
         "title": "Projektmanagement: Agenten erscheinen als eigene Teammitglieder auf dem Jira-Board"
@@ -708,6 +732,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-24",
+        "title": "Requirements Engineering: Confluence trennt menschliche und KI-Änderungen"
+      },
       {
         "date": "2026-11-23",
         "title": "Requirements Engineering: KI sucht Widersprüche entlang der Verknüpfungen"

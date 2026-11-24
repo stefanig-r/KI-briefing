@@ -2,6 +2,170 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-24",
+  "headline": "Arbeitgeber misstrauen KI-Bewerbungen, EU-Datenreform verzögert sich – und Claude prüft jetzt selbst Code-Änderungen",
+  "intro": "Eine große Arbeitgeber-Umfrage zeigt, wie stark KI-generierte Bewerbungen das Vertrauen in Kandidaten erschüttern, während sich die geplante Reform von DSGVO und AI Act über den Februar hinaus verschieben dürfte. Außerdem: Nach dem Prompt-Leck bei KI-Anbietern zieht ein großer Vermittler Konsequenzen, und Anthropic lässt Agenten Code-Änderungen prüfen und freigeben.",
+  "news": [
+    {
+      "title": "Umfrage: Neun von zehn Arbeitgebern glauben, echte Kandidaten aussortiert zu haben",
+      "summary": "Der Recruiting-Softwareanbieter Greenhouse hat 1.347 Recruiter und Hiring Manager in den USA, Großbritannien, Irland, Deutschland und Australien befragt (Ende September bis Mitte Oktober 2026); die veröffentlichten Kernzahlen beziehen sich auf die USA. 90 Prozent gehen davon aus, echte Bewerber abgelehnt zu haben, weil deren Unterlagen gefälscht oder KI-generiert wirkten. 86 Prozent haben deshalb ihren Prozess geändert, mehr als die Hälfte davon mit einem zusätzlichen persönlichen Gespräch. Gleichzeitig setzt gut die Hälfte bereits KI-Interviews ein – die Entscheidung, wer weiterkommt, wollen die Befragten aber am wenigsten einem KI-Agenten überlassen.",
+      "forUs": "Auch bei Freelancer-Profilen wächst das Misstrauen gegenüber glatt formulierten KI-Unterlagen. Ein früher, persönlicher Kontakt und eine glaubwürdige, geprüfte Profilbeschreibung werden zum Verkaufsargument gegenüber Kunden.",
+      "sources": [
+        {
+          "label": "Greenhouse via PR Newswire: Nine in Ten Employers Believe They've Turned Away Real Candidates (23.11.2026)",
+          "url": "https://www.prnewswire.com/news-releases/nine-in-ten-employers-believe-theyve-turned-away-real-candidates-as-ai-floods-job-applications-302947413.html"
+        }
+      ]
+    },
+    {
+      "title": "Reform von DSGVO und KI-Regeln: Einigung bis Februar gilt als unrealistisch",
+      "summary": "Ein Jahr nach dem Vorschlag der EU-Kommission für den „Digital Omnibus“ – ein Paket, das Datenschutz-, KI- und Datenregeln vereinfachen soll – zeichnet sich eine Verzögerung ab. Auf einem Fachkongress der Datenschutzorganisation IAPP hieß es aus dem EU-Parlament, das angepeilte Ziel Februar 2027 sei kaum zu halten, eher werde es Ostern 2027 oder später. Die Mitgliedstaaten haben ihre Position im Oktober festgelegt, das Parlament noch nicht. Strittig sind unter anderem, ob KI-Training auf das „berechtigte Interesse“ gestützt werden darf, und Ausnahmen beim Data Act.",
+      "forUs": "Für die Praxis gilt vorerst weiter die heutige DSGVO, auch beim Einsatz von KI mit Bewerber- und Kandidatendaten. Planungen sollten nicht auf Erleichterungen setzen, die noch nicht beschlossen sind.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service-Desk mit Fragen und Antworten zur KI-Verordnung",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        },
+        {
+          "label": "EU AI Act Service Desk: Erläuterungen und Zeitplan der KI-Verordnung",
+          "url": "https://ai-act-service-desk.ec.europa.eu/de/node/464",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "IAPP: One year on, Digital Omnibus may face delays (19.11.2026)",
+          "url": "https://iapp.org/news/a/one-year-on-digital-omnibus-may-face-delays"
+        },
+        {
+          "label": "Council of the EU: Digital rulebook – Council agrees position (21.10.2026)",
+          "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/21/digital-rulebook-council-agrees-position-to-simplify-data-protection-privacy-and-cyber-reporting-rules"
+        }
+      ]
+    },
+    {
+      "title": "Nach dem Prompt-Leck: OpenRouter wirft drei KI-Anbieter raus",
+      "summary": "Nach der gestern berichteten Untersuchung des Sicherheitsforschers von Dragos hat der Vermittlungsdienst OpenRouter am 22. November Konsequenzen gezogen: Drei Anbieter, bei denen Prompts abgegriffen wurden, sind nicht mehr angebunden, und 125 Zugänge haben ihre Kennzeichnung als „Zero Data Retention“ (keine Speicherung) verloren. Die Vorfälle reichen laut Branchenauswertungen bis Mitte Juli zurück; Ursachen waren unter anderem ein übernommener Server und ein Zugangsschlüssel, den ein Coding-Agent versehentlich veröffentlicht hatte. Fachleute raten, jeden Schlüssel zu erneuern, der je in einem Prompt stand, und Zusagen zur Nicht-Speicherung technisch belegen zu lassen.",
+      "forUs": "Wer KI-Tools für Kandidaten- oder Kundendaten auswählt, sollte fragen, über welche Anbieter und Zwischenstationen die Daten laufen. Eine vertragliche Zusage allein reicht nicht als Nachweis.",
+      "learn": [
+        {
+          "label": "BSI: Informationen und Empfehlungen zu Künstlicher Intelligenz",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "OpenRouter: Data processing incidents on inference providers",
+          "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+        },
+        {
+          "label": "Cloud Security Alliance: CISO Daily Briefing (23.11.2026)",
+          "url": "https://labs.cloudsecurityalliance.org/research/alt-ciso-briefing-2026-11-23/"
+        }
+      ]
+    },
+    {
+      "title": "Claude Ship: KI-Agenten prüfen und genehmigen Code-Änderungen",
+      "summary": "Anthropic hat am 23. November „Claude Ship“ als Beta vorgestellt. Drei Agenten übernehmen dabei Schritte, die bisher Entwickler im Team erledigen: Code-Änderungen begutachten (Code Review), Fehler darin beheben und Änderungen freigeben, sofern die Regeln des Teams das erlauben. Teams legen fest, was als fertig gilt und welche Änderungen weiterhin ein Mensch absegnen muss. Entwickler können es mit dem Befehl „/ship“ in Claude Code ausprobieren.",
+      "forUs": "Die Prüfung von Code wandert schrittweise zu KI, die Verantwortung für Freigaberegeln bleibt beim Menschen. Gefragt sind Profile, die Qualitätsregeln, Freigabeprozesse und Governance für KI-Agenten gestalten können – auch bei PMs und Scrum Mastern.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für KI-Agenten-Anwendungen",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "9to5Mac: Anthropic launches new Claude Ship feature for builders (23.11.2026)",
+          "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders"
+        },
+        {
+          "label": "Anthropic: Introducing Claude Ship",
+          "url": "https://claude.com/resources/articles/introducing-claude-ship"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: KI-Assistenten lesen und pflegen jetzt Jira Align",
+      "text": "Atlassian hat Anfang November sechs neue Werkzeuge für seine KI-Schnittstelle (MCP) freigegeben, mit denen KI-Assistenten Einträge im Portfolio-Tool Jira Align lesen, anlegen und ändern können. Gedacht ist das für Portfolio-Berichte, das Zusammenfassen von Planungsständen über mehrere Teams und das Aufräumen von Backlogs. Voraussetzung sind Jira Align Cloud, Atlassian Guard und eine Freigabe durch die Administratoren.",
+      "tip": "Bei PMs und Portfolio-Managern in SAFe-Umgebungen fragen, ob sie Berichte oder Planungsrollups schon mit KI-Unterstützung erstellt haben. Erfahrung mit Berechtigungen und Freigaben für KI-Zugriffe ist ein Pluspunkt im Profil.",
+      "learn": [
+        {
+          "label": "Atlassian AI Trust Center: Datenverarbeitung und Admin-Einstellungen",
+          "url": "https://www.atlassian.com/trust/ai",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Atlassian Developer: Rovo MCP changelog",
+          "url": "https://developer.atlassian.com/cloud/rovo-mcp/changelog/"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: KI-Agenten direkt in Confluence-Kommentaren",
+      "text": "Atlassian testet seit November bei ausgewählten Confluence-Cloud-Kunden, dass man in Inline-Kommentaren einen Rovo-Agenten per @-Erwähnung einbindet. Der Agent beantwortet Fragen zum markierten Text, fasst zusammen, analysiert oder schlägt Verbesserungen vor; die Antwort bleibt im Kommentarverlauf. Es handelt sich um ein Experiment, das sich laut Atlassian noch ändern kann (Quelle: Wochenüberblick eines Atlassian-Partners).",
+      "tip": "Bei BAs nachfragen, wie sie KI-Vorschläge in Fachkonzepten und Abstimmungsrunden kennzeichnen und prüfen. Kunden dürften erwarten, dass BAs KI-Kommentare sinnvoll in Review-Prozesse einbauen.",
+      "sources": [
+        {
+          "label": "Capable: What's new in Atlassian – week of 16 November 2026",
+          "url": "https://www.gocapable.com/blog/whats-new-atlassian-16-november-2026"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Confluence trennt menschliche und KI-Änderungen",
+      "text": "Atlassian kündigt für Confluence an, dass Änderungen durch Rovo-Agenten oder angebundene externe KI-Tools künftig sowohl dem Agenten als auch der auslösenden Person zugeordnet werden – in Versionsverlauf, Kommentaren und Mitwirkendenliste. Im Seitenverlauf sollen Markierungen zeigen, was von Menschen und was von KI stammt. Ein Termin ist noch nicht genannt (angekündigte Funktion, laut Partner-Überblick).",
+      "tip": "Für REs in regulierten Projekten ist das relevant für die Nachvollziehbarkeit von Anforderungen. Im Gespräch fragen, wie Kandidaten KI-erzeugte Anforderungstexte heute kennzeichnen und freigeben.",
+      "sources": [
+        {
+          "label": "Capable: What's new in Atlassian – week of 16 November 2026",
+          "url": "https://www.gocapable.com/blog/whats-new-atlassian-16-november-2026"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was heißt das für uns?",
+    "points": [
+      "Kunden werden bei KI-glatten Profilen skeptischer: Ein früher persönlicher Kontakt und nachprüfbare Projektangaben machen unsere Vorschläge glaubwürdiger.",
+      "Datenschutz-Erleichterungen aus Brüssel kommen später als geplant – bei Kandidatendaten in KI-Tools gelten die bisherigen Regeln, und Zusagen von Anbietern sollten belegt sein.",
+      "KI übernimmt Prüf- und Freigabeschritte in Software- und Dokumentationsprozessen; gefragt sind Consultants, die Regeln, Rollen und Nachvollziehbarkeit dafür gestalten."
+    ],
+    "sources": [
+      {
+        "label": "Greenhouse via PR Newswire (23.11.2026)",
+        "url": "https://www.prnewswire.com/news-releases/nine-in-ten-employers-believe-theyve-turned-away-real-candidates-as-ai-floods-job-applications-302947413.html"
+      },
+      {
+        "label": "IAPP: One year on, Digital Omnibus may face delays",
+        "url": "https://iapp.org/news/a/one-year-on-digital-omnibus-may-face-delays"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Claude Ship (Beta)",
+      "tip": "Für Teams mit Entwicklern: Mit „/ship“ in Claude Code lassen sich Code-Änderungen von KI prüfen und nach eigenen Regeln freigeben. Hinweis: Der Code wird dabei von Anthropic verarbeitet – nur mit interner Freigabe nutzen.",
+      "url": "https://claude.com/product/claude-ship"
+    },
+    {
+      "name": "Atlassian Guard: Externe Websites auch für KI-Zugriffe sperren",
+      "tip": "Für Admins: Die Richtlinie für externe Websites gilt jetzt auch, wenn KI-Assistenten über MCP auf Jira und Confluence zugreifen. Erfordert Atlassian Guard Standard.",
+      "url": "https://developer.atlassian.com/cloud/rovo-mcp/changelog/"
+    }
+  ]
+},
+{
   "date": "2026-11-23",
   "headline": "Ausgespähte Prompts bei KI-Anbietern, Claude bedient den Desktop – und KI bewertet Akzente ungleich",
   "intro": "Ein Sicherheitsforscher zeigt, dass vertrauliche Daten aus Prompts über Zwischenhändler und gehackte KI-Anbieter abfließen, während Claude in Firmenkonten erstmals Desktop-Programme selbst bedienen darf. Dazu kommen eine Studie zu Akzent-Verzerrungen in KI-Interviews und neue Schutz- und Teamfunktionen bei Signal und ChatGPT.",
