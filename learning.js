@@ -181,6 +181,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-25",
+        "title": "Google-Suche: KI-Modus kann persönliche Inhalte aus Google-Diensten nutzen"
+      },
+      {
         "date": "2026-11-24",
         "title": "Nach dem Prompt-Leck: OpenRouter wirft drei KI-Anbieter raus"
       },
@@ -356,6 +360,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-25",
+        "title": "OpenAI und Cisco: Notfall-Schutz für Sicherheitslücken, bevor der Patch kommt"
+      },
       {
         "date": "2026-11-24",
         "title": "Claude Ship: KI-Agenten prüfen und genehmigen Code-Änderungen"
@@ -539,6 +547,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-25",
+        "title": "Projektmanagement: Microsoft rechnet KI-Kosten gegen geschätzten Nutzen"
+      },
+      {
         "date": "2026-11-20",
         "title": "Projektmanagement: KI-Budgets scheitern an fehlender Projektsteuerung"
       },
@@ -641,6 +653,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-25",
+        "title": "Business Analyse: Bitkom sieht die Übersetzerrolle als Kernkompetenz"
+      },
+      {
         "date": "2026-11-23",
         "title": "Business Analyse: KI ordnet Anforderungen aus Ausschreibungen zu"
       },
@@ -732,6 +748,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-25",
+        "title": "Requirements Engineering: Wie viel Spezifikation brauchen KI-Agenten?"
+      },
       {
         "date": "2026-11-24",
         "title": "Requirements Engineering: Confluence trennt menschliche und KI-Änderungen"
@@ -854,6 +874,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-25",
+        "title": "Claude: Skills, Konnektoren und Plugins jetzt auf einer Seite"
+      },
       {
         "date": "2026-11-18",
         "title": "Google Gemini: Aus „Gems“ werden „Skills“ – geplante Aufgaben nicht in Deutschland"

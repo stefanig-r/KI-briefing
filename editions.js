@@ -2,6 +2,173 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-25",
+  "headline": "Claude bündelt Skills und Konnektoren, Googles Suche liest private Dateien mit – und OpenAI bezahlt KI-Berater für Kleinbetriebe",
+  "intro": "Anthropic fasst Erweiterungen für Claude auf einer Plugin-Seite zusammen, und Googles KI-Suche kann auf Wunsch persönliche Inhalte aus Google-Diensten einbeziehen. Außerdem: OpenAI baut ein Netz bezahlter KI-Berater für kleine Firmen auf und stellt mit Cisco ein Werkzeug für schnelle Notfall-Schutzmaßnahmen bei Sicherheitslücken vor.",
+  "news": [
+    {
+      "title": "Claude: Skills, Konnektoren und Plugins jetzt auf einer Seite",
+      "summary": "Anthropic ersetzt in Claude den bisherigen Bereich „Customize“ durch eine gemeinsame Seite „Plugins“, auf der Skills (beschriebene Arbeitsabläufe), Konnektoren zu anderen Programmen und fertige Plugin-Pakete gemeinsam verwaltet werden. Für Free, Pro, Max und Ultra ist das bereits verfügbar, Team-Konten folgen ab 30. November, Enterprise in den kommenden Wochen. Wichtig für Admins: Wer ein Plugin entfernt, trennt damit nicht automatisch die zugehörige Verbindung zu einem anderen Dienst. Zusätzlich können Nutzer seit dem 24. November in einer Beta Dateien direkt an verbundene Apps senden.",
+      "forUs": "Je einfacher Erweiterungen zu installieren sind, desto wichtiger ist eine klare Regel, welche Plugins und Verbindungen zu Kandidaten- oder Kundensystemen erlaubt sind. Bei Freelancern, die solche Pakete für Kunden bauen, ist das ein wachsendes Profilmerkmal.",
+      "learn": [
+        {
+          "label": "Agent Skills: Offener Standard, wie Skills für KI-Agenten aufgebaut sind",
+          "url": "https://agentskills.io/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Claude Help Center: Manage plugins, skills, and connectors from one Plugins page",
+          "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page"
+        },
+        {
+          "label": "Claude Help Center: Release notes",
+          "url": "https://support.claude.com/en/articles/12138966-release-notes"
+        }
+      ]
+    },
+    {
+      "title": "Google-Suche: KI-Modus kann persönliche Inhalte aus Google-Diensten nutzen",
+      "summary": "Googles „AI Mode“ in der Suche kann seine Antworten mit persönlichen Inhalten anreichern, wenn Nutzer das erlauben. Laut Googles Hilfeseite lassen sich bislang Gmail, Kalender und Google Fotos verbinden; Branchenberichten vom 23. November zufolge kommen nun auch Google Drive und – nur lesend – Google Wallet hinzu. Die Freigabe gilt dann für mehrere Google-Suchdienste gleichzeitig und kann jederzeit widerrufen werden. Die Gedächtnisfunktion gibt es vorerst nur in den USA auf Englisch, die Verbindung setzt ein Mindestalter von 18 Jahren voraus.",
+      "forUs": "Wer dienstliche Unterlagen wie Lebensläufe oder Angebote in privaten Google-Konten ablegt, gibt sie mit so einer Verknüpfung womöglich an die KI-Suche frei. Dienstliche Kandidaten- und Kundendaten gehören weiter nur in freigegebene Firmensysteme.",
+      "learn": [
+        {
+          "label": "BSI/Allianz für Cyber-Sicherheit: Management-Blitzlicht zu generativer KI (PDF)",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Google Search Help: Personal Intelligence – how AI Mode personalizes responses",
+          "url": "https://support.google.com/websearch/answer/17212611?hl=en"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (24.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-24-2026/"
+        }
+      ]
+    },
+    {
+      "title": "OpenWorks: OpenAI bezahlt lokale Partner für KI-Beratung in Kleinbetrieben",
+      "summary": "OpenAI hat zu Wochenbeginn das Programm „OpenWorks“ angekündigt. Lokale Partner sollen kleinen US-Firmen helfen, KI im Alltag einzusetzen, und können dafür laut Berichten bis zu 8.000 US-Dollar im Monat erhalten. Teilnehmende Betriebe bekommen kostenlose Beratung und drei Monate ChatGPT Business. Ein Start außerhalb der USA ist bisher nicht angekündigt.",
+      "forUs": "KI-Anbieter bauen eigene Beraternetze für die Einführung ihrer Produkte auf – ein Markt, auf dem auch freiberufliche PMs und BAs mit KI-Erfahrung unterwegs sind. Kunden dürften stärker unterscheiden zwischen herstellernahen Beratern und unabhängigen Experten.",
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (24.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-24-2026/"
+        },
+        {
+          "label": "AdSimple: KI-Tagesupdate 24. November 2026",
+          "url": "https://www.adsimple.at/ki-update-24-november-2026/"
+        }
+      ]
+    },
+    {
+      "title": "OpenAI und Cisco: Notfall-Schutz für Sicherheitslücken, bevor der Patch kommt",
+      "summary": "OpenAI und Cisco haben mit „Shirudo“ ein quelloffenes Werkzeug für Linux-Server vorgestellt, das vorübergehende Schutzregeln einspielt, solange ein regulärer Patch noch fehlt. In einem Test blockierte eine von OpenAIs Coding-Agent Codex erzeugte Schutzregel einen Angriff auf einen laufenden Dienst. Parallel meldet OpenAI, das Sicherheitsmodell GPT-6 Cyber habe geholfen, 948 Fehler im Linux-Kern zu bestätigen, über die Angreifer Administratorrechte erlangen könnten. Die Zahlen stammen vom Anbieter selbst.",
+      "forUs": "KI findet Sicherheitslücken schneller, als viele Unternehmen sie schließen können – Projekte rund um Patch-Management, Schwachstellenbehandlung und IT-Sicherheit dürften zunehmen. Gefragt sind auch PMs, die solche Notfallprozesse steuern.",
+      "learn": [
+        {
+          "label": "BSI: Informationen und Empfehlungen zu Künstlicher Intelligenz",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "OpenAI: Introducing Shirudo",
+          "url": "https://openai.com/index/introducing-shirudo/"
+        },
+        {
+          "label": "AdSimple: KI-Tagesupdate 24. November 2026",
+          "url": "https://www.adsimple.at/ki-update-24-november-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Microsoft rechnet KI-Kosten gegen geschätzten Nutzen",
+      "text": "Microsoft hat am 17. November „Agent 365 Business Analytics“ als Vorschau für Teilnehmer seines Frontier-Programms gestartet. Die Anwendung zeigt KI-Kosten nach Dienst, Modell, Agent und Nutzer, erlaubt Prognosen und schätzt den Nutzen über eingesparte Arbeitsstunden. Microsoft betont selbst, dass diese Stunden nur eine Richtung anzeigen und keine gemessene Zeitersparnis sind.",
+      "tip": "Bei PMs nachfragen, wie sie Nutzen und Kosten von KI-Vorhaben messen und an Auftraggeber berichten. Kunden dürften erwarten, dass PMs geschätzte Kennzahlen von echten Ergebnissen unterscheiden können.",
+      "sources": [
+        {
+          "label": "Microsoft Tech Community: Introducing Microsoft Agent 365 Business Analytics (17.11.2026)",
+          "url": "https://techcommunity.microsoft.com/blog/ai-finops-blog/introducing-microsoft-agent-365-business-analytics-turn-ai-investment-into-busin/4574149"
+        },
+        {
+          "label": "Message Center MC1557727: Agent 365 Business Analytics app experience",
+          "url": "https://mc.merill.net/message/MC1557727"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Bitkom sieht die Übersetzerrolle als Kernkompetenz",
+      "text": "In seinem Studienbericht „Softwarewelt 2036“ (qualitative Interviews mit Führungskräften, 2026, nicht repräsentativ) beschreibt Bitkom, dass KI-Agenten große Teile von der Anforderung bis zur Auslieferung übernehmen. Entscheidend werde, Branchen- und Prozesslogiken tief zu verstehen und zwischen Fachlichkeit, Regulierung und Technik zu übersetzen. Es handelt sich um einen Zukunftsausblick, nicht um eine aktuelle Messung.",
+      "tip": "In BA-Profilen Branchen- und Prozesswissen sowie Erfahrung mit regulatorischen Anforderungen deutlich herausstellen. Im Gespräch fragen, wie Kandidaten Fachziele in messbare Ergebnisse für KI-gestützte Teams übersetzen.",
+      "sources": [
+        {
+          "label": "Bitkom: Softwarewelt 2036 – Studienbericht (PDF)",
+          "url": "https://www.bitkom.org/sites/main/files/2026-06/22062026-bitkom-studienbericht-software-2036_1.pdf"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Wie viel Spezifikation brauchen KI-Agenten?",
+      "text": "Ein Fachbeitrag auf O’Reilly Radar (Juli 2026, Meinungsbeitrag) argumentiert, dass vage Aufträge an KI-Agenten die Kosten nur in endlose Korrekturschleifen verschieben. Wenn Code billig wird, liegt der Engpass darin, festzulegen und zu prüfen, was „richtig“ ist – die Spezifikation selbst sollte vor der Umsetzung auf Widerspruchsfreiheit, Vollständigkeit und Prüfbarkeit geprüft werden. Zwischen mehreren Agenten brauche es klare Schnittstellenverträge.",
+      "tip": "Bei REs fragen, wie sie Spezifikationen für KI-gestützte Entwicklung zuschneiden und prüfbar machen, etwa mit Akzeptanzkriterien oder BDD. Das ist ein gutes Argument gegenüber Kunden, die glauben, mit KI weniger RE zu brauchen.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: Warum der Mensch im KI-gestützten RE die wichtigste Instanz bleibt",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "O'Reilly Radar: The Right Amount of Spec for Agentic Development",
+          "url": "https://oreilly.com/radar/the-right-amount-of-spec-for-agentic-development"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für Personaldienstleister, Consultants und Kunden bedeutet",
+    "points": [
+      "KI-Werkzeuge lassen sich immer leichter mit anderen Diensten verbinden – klare Regeln, welche Verbindungen zu Kandidaten- und Kundendaten erlaubt sind, werden wichtiger als die Wahl des Tools.",
+      "KI-Anbieter bauen eigene Berater- und Partnernetze auf; unabhängige Freelancer punkten mit herstellerübergreifender Erfahrung und nachweisbaren Ergebnissen.",
+      "Kunden wollen den Nutzen von KI belegt sehen: PMs und BAs, die Kosten, Nutzen und Spezifikationen sauber steuern, werden stärker nachgefragt."
+    ],
+    "sources": [
+      {
+        "label": "Claude Help Center: Plugins page",
+        "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page"
+      },
+      {
+        "label": "Microsoft Tech Community: Agent 365 Business Analytics",
+        "url": "https://techcommunity.microsoft.com/blog/ai-finops-blog/introducing-microsoft-agent-365-business-analytics-turn-ai-investment-into-busin/4574149"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Claude „Plugins“-Seite",
+      "tip": "Alle Skills und Konnektoren an einem Ort prüfen und Unnötiges entfernen. Achtung: Beim Entfernen eines Plugins bleibt die Verbindung zum anderen Dienst bestehen und muss separat getrennt werden.",
+      "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page"
+    },
+    {
+      "name": "Google AI Mode: Verbindungen prüfen",
+      "tip": "Wer die KI-Suche privat nutzt, sollte in den Einstellungen kontrollieren, welche Google-Dienste verbunden sind. Dienstliche Daten gehören nicht in private Konten.",
+      "url": "https://support.google.com/websearch/answer/17212611?hl=en"
+    }
+  ]
+},
+{
   "date": "2026-11-24",
   "headline": "Arbeitgeber misstrauen KI-Bewerbungen, EU-Datenreform verzögert sich – und Claude prüft jetzt selbst Code-Änderungen",
   "intro": "Eine große Arbeitgeber-Umfrage zeigt, wie stark KI-generierte Bewerbungen das Vertrauen in Kandidaten erschüttern, während sich die geplante Reform von DSGVO und AI Act über den Februar hinaus verschieben dürfte. Außerdem: Nach dem Prompt-Leck bei KI-Anbietern zieht ein großer Vermittler Konsequenzen, und Anthropic lässt Agenten Code-Änderungen prüfen und freigeben.",

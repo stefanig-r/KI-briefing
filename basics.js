@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,7 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+    {"term":"Plugin (KI-Erweiterung)","def":"Ein fertiges Erweiterungspaket für einen KI-Assistenten, das zum Beispiel Arbeitsanleitungen (Skills) und Verbindungen zu anderen Programmen bündelt. Wer ein Plugin installiert, gibt der KI damit oft auch Zugriff auf weitere Dienste und Daten.","added":"2026-11-25"},
     {"term":"Digital Omnibus","def":"Ein Gesetzespaket der EU-Kommission, das mehrere Digitalgesetze auf einmal ändern soll – etwa DSGVO, KI-Verordnung und Data Act. Der KI-Teil gilt bereits, die Änderungen am Datenschutz werden noch verhandelt.","added":"2026-11-24"},
     {"term":"Code Review (Code-Prüfung)","def":"Die Durchsicht von Programmänderungen, bevor sie übernommen werden – klassisch durch eine zweite Entwicklerin oder einen zweiten Entwickler. Zunehmend übernehmen KI-Werkzeuge einen Teil dieser Prüfung.","added":"2026-11-24"},
     {"term": "Zero Data Retention (keine Datenspeicherung)", "def": "Zusage eines KI-Anbieters, Eingaben und Antworten nach der Verarbeitung nicht zu speichern. Ob das eingehalten wird, lässt sich von außen kaum prüfen – vertrauliche Daten bleiben deshalb trotzdem tabu.", "added": "2026-11-23"},
