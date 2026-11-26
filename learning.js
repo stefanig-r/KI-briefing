@@ -361,6 +361,14 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-26",
+        "title": "Amazon: Quelloffener KI-Agent nutzt unbekannte Sicherheitslücke weitgehend selbstständig"
+      },
+      {
+        "date": "2026-11-26",
+        "title": "Neuer Praxistest: Die Arbeitsumgebung eines Agenten entscheidet mit über das Ergebnis"
+      },
+      {
         "date": "2026-11-25",
         "title": "OpenAI und Cisco: Notfall-Schutz für Sicherheitslücken, bevor der Patch kommt"
       },
@@ -547,6 +555,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-26",
+        "title": "Projektmanagement: Branchenumfrage zu Zukunftskompetenzen im KI-Zeitalter"
+      },
+      {
         "date": "2026-11-25",
         "title": "Projektmanagement: Microsoft rechnet KI-Kosten gegen geschätzten Nutzen"
       },
@@ -653,6 +665,10 @@ window.KI_BRIEFING_LEARNING = [
     ],
     "triggers": [
       {
+        "date": "2026-11-26",
+        "title": "Business Analyse: KI-Agenten finden Anforderungen – liefern aber selten fehlerfrei"
+      },
+      {
         "date": "2026-11-25",
         "title": "Business Analyse: Bitkom sieht die Übersetzerrolle als Kernkompetenz"
       },
@@ -748,6 +764,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-26",
+        "title": "Requirements Engineering: Wie viel darf ein KI-Agent selbst entscheiden?"
+      },
       {
         "date": "2026-11-25",
         "title": "Requirements Engineering: Wie viel Spezifikation brauchen KI-Agenten?"
@@ -874,6 +894,10 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {
+        "date": "2026-11-26",
+        "title": "Zwei Jahre MCP: Claude bringt „Skills über MCP“ und Aufgaben zwischen Agenten"
+      },
       {
         "date": "2026-11-25",
         "title": "Claude: Skills, Konnektoren und Plugins jetzt auf einer Seite"

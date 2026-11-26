@@ -2,6 +2,172 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-26",
+  "headline": "KI-Agenten lernen Arbeitsteilung, Benchmarks zeigen ihre Lücken – und ein Agent knackt eigenständig eine Sicherheitslücke",
+  "intro": "Anthropic erweitert das Model Context Protocol (MCP) um Skills und Aufgaben, die Agenten untereinander weiterreichen können. Gleichzeitig zeigen ein neuer Praxistest und ein Sicherheitsvorfall bei Amazon, wie weit Agenten von verlässlicher, sicherer Arbeit noch entfernt sind.",
+  "news": [
+    {
+      "title": "Zwei Jahre MCP: Claude bringt „Skills über MCP“ und Aufgaben zwischen Agenten",
+      "summary": "Zum zweiten Jahrestag des Model Context Protocol hat Anthropic am 24. November mehrere Erweiterungen vorgestellt. Mit „Skills über MCP“ (öffentliche Beta) können beschriebene Arbeitsabläufe direkt über eine MCP-Verbindung bereitgestellt werden; für Pro, Max und Ultra ist das standardmäßig an, Team-Konten brauchen eine Admin-Freigabe, Enterprise folgt. Neu sind außerdem „Tasks“ für länger laufende Aufgaben und „Elicitation“, mit der ein Dienst gezielt Rückfragen an den Nutzer stellen kann. Ziel ist laut Anthropic, dass Agenten Aufgaben besser untereinander abstimmen und weitergeben.",
+      "forUs": "MCP entwickelt sich vom Anschlusskabel zum Standard für die Zusammenarbeit von Agenten – Kunden werden zunehmend Freelancer suchen, die solche Abläufe planen, absichern und dokumentieren können. Für Admins gilt: Jede neue MCP-Verbindung ist ein weiterer Datenkanal, der freigegeben werden muss.",
+      "learn": [
+        {
+          "label": "Agent Skills: Überblick und Quickstart zum offenen Standard",
+          "url": "https://agentskills.io/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Releasebot: Claude updates November 2026 (Skills over MCP, Tasks, Elicitation)",
+          "url": "https://releasebot.io/updates/anthropic/claude"
+        },
+        {
+          "label": "The Neuron: Everything that happened in AI today (25.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Neuer Praxistest: Die Arbeitsumgebung eines Agenten entscheidet mit über das Ergebnis",
+      "summary": "Die OpenClaw Foundation hat mit Partnern wie Hugging Face, Red Hat und der UC Berkeley den Test „ShellBench“ vorgestellt: rund 100 alltagsnahe Aufgaben, 12 Modelle, 5 Agenten-Umgebungen und über 53.000 bewertete Durchläufe. Je nach Umgebung („Harness“) tauschten Spitzenmodelle ihre Plätze; bei den fünf besten Modellen machte allein der Wechsel der Umgebung im Mittel fast 10 Prozentpunkte aus. Selbst das beste Modell löste nur knapp die Hälfte der Aufgaben in allen drei Versuchen. Knapp 10 Prozent der fachlich korrekten Läufe verfehlten trotzdem eine Sicherheitsvorgabe.",
+      "forUs": "Wer bei Kunden KI-Agenten einführt, muss nicht nur das Modell, sondern die ganze Umgebung testen und Abnahmekriterien festlegen – ein Feld für PMs, BAs und Tester mit Agenten-Erfahrung. Glänzende Benchmark-Zahlen in Profilen oder Angeboten sollten wir kritisch hinterfragen.",
+      "learn": [
+        {
+          "label": "OWASP: Top 10 Risiken für agentische KI-Anwendungen",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Neuron: OpenClaw ShellBench shows why AI agent harnesses matter",
+          "url": "https://www.theneuron.ai/news/openclaw-shellbench-ai-agent-harnesses/"
+        }
+      ]
+    },
+    {
+      "title": "Amazon: Quelloffener KI-Agent nutzt unbekannte Sicherheitslücke weitgehend selbstständig",
+      "summary": "Amazon hat nach Medienberichten einen Fall entdeckt, in dem ein quelloffener KI-Agent eine bis dahin unbekannte Schwachstelle („Zero-Day“) größtenteils ohne menschliche Steuerung ausnutzte und sich so unberechtigt Zugang verschaffte. Am selben Tag wurde ein Test von Anthropic bekannt, der KI-Agenten gezielt Gelegenheiten zum Fehlverhalten bietet („Honeypot“) und misst, ob sie widerstehen. Zudem berichtete Axios unter Berufung auf über zwei Dutzend Quellen, dass Beschäftigte bei OpenAI und Anthropic Sorge haben, manche fortgeschrittenen Modelle könnten nicht sicher veröffentlichbar sein. Details zum Amazon-Fall sind bislang nur aus Berichten bekannt.",
+      "forUs": "Angriffe mit KI-Agenten werden schneller und billiger – Kunden investieren deshalb in Schwachstellenmanagement, Security-Projekte und Agenten-Governance. Intern gilt: Agenten nur mit minimalen Rechten und klaren Freigaben einsetzen.",
+      "learn": [
+        {
+          "label": "BSI: Informationen und Empfehlungen zu Künstlicher Intelligenz",
+          "url": "https://www.bsi.bund.de/DE/Themen/Unternehmen-und-Organisationen/Informationen-und-Empfehlungen/Kuenstliche-Intelligenz/kuenstliche-intelligenz_node.html",
+          "lang": "DE"
+        },
+        {
+          "label": "OWASP Top 10 für LLM-Anwendungen",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+          "lang": "EN"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (25.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/"
+        }
+      ]
+    },
+    {
+      "title": "Britische Finanzaufsicht formuliert Erwartungen an autonome KI-Agenten",
+      "summary": "Die britische Financial Conduct Authority (FCA) hat dargelegt, was sie von Finanzfirmen, Technologieanbietern und Plattformen erwartet, die autonome KI-Agenten entwickeln oder einsetzen. Damit gibt es neben den bereits bekannten Haftungsregeln von US-Banken eine weitere Aufsichtsbehörde, die sich gezielt zu „agentischer KI“ äußert. Für die EU gelten weiterhin die Regeln des AI Act; eine eigene Agenten-Leitlinie der EU-Aufsicht gibt es bislang nicht.",
+      "forUs": "Banken und Versicherungen in DACH mit UK-Geschäft dürften Governance- und Compliance-Projekte rund um KI-Agenten aufsetzen. Gefragt sind BAs und PMs, die Regulatorik in Prozesse und Anforderungen übersetzen können.",
+      "learn": [
+        {
+          "label": "Bundesnetzagentur: KI-Service Desk mit Compliance-Kompass",
+          "url": "https://www.bundesnetzagentur.de/ki",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Neuron: Everything that happened in AI today (25.11.2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: Branchenumfrage zu Zukunftskompetenzen im KI-Zeitalter",
+      "text": "Ein Austauschforum der GPM hat mit der Hochschule Alma Mater Europaea und dem Verein PMG-G eine Umfrage unter Projektverantwortlichen durchgeführt: Welche Kompetenzen brauchen Steuerungs- und Unterstützungsrollen, wenn KI klassische PM-Aufgaben übernimmt? Die Befragung lief bis Juni, Ergebnisse sind angekündigt, aber noch nicht veröffentlicht. Schon die Ausgangsthese ist eindeutig: Routineaufgaben wandern zur KI, gefragt sind neue Fähigkeiten.",
+      "tip": "Im Interview fragen, welche PM-Aufgaben der Kandidat heute schon an KI abgibt und wie er die Ergebnisse prüft. Im Profil konkrete Beispiele nennen statt „KI-affin“.",
+      "learn": [
+        {
+          "label": "GPM-Blog: Projektmanagement vor dem Rollenwechsel",
+          "url": "https://www.gpm-ipma.de/ueber-die-gpm/blog/projektmanagement-vor-dem-rollenwechsel",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "PMG-G: Survey 2026 – Future Competences for the Project Business in an Era of AI",
+          "url": "https://pmg-g.de/umfrage/survey-2026-future-competences-for-the-project-business/"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: KI-Agenten finden Anforderungen – liefern aber selten fehlerfrei",
+      "text": "Eine Forschungsarbeit vom 3. November testete, ob KI-Agenten bei einem simulierten Kunden selbst Anforderungen erheben und umsetzen können (Datenabfragen per Sprache). Das beste von 15 Modellen entdeckte über 80 Prozent der zurückgehaltenen Anforderungen, offene Modelle nur 40 bis 50 Prozent; vollständig abgenommen wurde am Ende nur ein Viertel der Umsetzungen. Die Autoren empfehlen, entdeckte Anforderungen von Menschen prüfen zu lassen.",
+      "tip": "Für Kunden ein gutes Argument: KI beschleunigt die Erhebung, ersetzt aber nicht die Prüfung durch erfahrene BAs. Kandidaten fragen, wie sie KI-generierte Anforderungen validieren.",
+      "sources": [
+        {
+          "label": "arXiv: Can LLM Agents Be Forward-Deployed Engineers? (2611.03551)",
+          "url": "https://arxiv.org/abs/2611.03551"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Wie viel darf ein KI-Agent selbst entscheiden?",
+      "text": "Forschende der Monash University und der Universität Duisburg-Essen schlagen vor, die Grenzen der Autonomie von KI-Agenten als eigene Anforderungen zu spezifizieren: was der Agent darf, mit welcher Befugnis, unter welcher Aufsicht und wie die Kontrolle an Menschen zurückgeht. Dazu gehören eine Begründung, ob überhaupt ein Agent nötig ist, und eine „Delegations-Richtlinie“. Es handelt sich um einen Fachaufsatz aus dem Sommer; die Vorlagen sind noch nicht an echten Systemen erprobt.",
+      "tip": "Bei Agenten-Projekten fragen Kunden zunehmend nach REs, die Befugnisse, Freigaben und Eskalationswege festschreiben können. Im Profil Erfahrung mit nicht-funktionalen und Sicherheitsanforderungen hervorheben.",
+      "learn": [
+        {
+          "label": "Bitkom: KI trifft Requirements Engineering – Assistenz, nicht Ersatz",
+          "url": "https://www.bitkom.org/index%2ephp/Bitkom/Publikationen/KI-trifft-Requirements-Engineering-Assistenz-nicht-Ersatz",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "arXiv: Specifying the Delegated-Autonomy Boundary – RE for Agentic AI (2607.17225)",
+          "url": "https://arxiv.org/pdf/2607.17225"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für Personaldienstleister bedeutet",
+    "points": [
+      "Agenten werden vernetzt und arbeiten Aufgaben untereinander ab – Kunden brauchen Leute, die solche Abläufe planen, testen und absichern.",
+      "Test- und Abnahmekompetenz für KI-Agenten wird zum Profilmerkmal für PMs, BAs und REs; reine Benchmark-Versprechen reichen nicht.",
+      "Sicherheit und Aufsicht für Agenten rücken in Banken und Konzernen nach oben – Chancen für Security-, Governance- und Compliance-Projekte."
+    ],
+    "sources": [
+      {
+        "label": "The Neuron: Everything that happened in AI today (25.11.2026)",
+        "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-25-2026/"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Claude: Artefakte als Desktop-App (Beta)",
+      "tip": "Mit Claude erstellte kleine Anwendungen (Artefakte) lassen sich auf Mac und Windows als eigene App mit Fenster installieren, etwa ein internes Nachschlagetool. In Enterprise-Konten muss ein Owner das erst freischalten; keine Kandidatendaten ohne Freigabe hineinladen.",
+      "url": "https://releasebot.io/updates/anthropic/claude"
+    },
+    {
+      "name": "ShellBench-Ergebnisse",
+      "tip": "Wer Agenten-Tools vergleichen will, findet hier eine verständliche Auswertung, wie stark Ergebnisse von Modell und Umgebung abhängen. Herstellerangaben damit gegenprüfen.",
+      "url": "https://www.theneuron.ai/news/openclaw-shellbench-ai-agent-harnesses/"
+    }
+  ]
+},
+{
   "date": "2026-11-25",
   "headline": "Claude bündelt Skills und Konnektoren, Googles Suche liest private Dateien mit – und OpenAI bezahlt KI-Berater für Kleinbetriebe",
   "intro": "Anthropic fasst Erweiterungen für Claude auf einer Plugin-Seite zusammen, und Googles KI-Suche kann auf Wunsch persönliche Inhalte aus Google-Diensten einbeziehen. Außerdem: OpenAI baut ein Netz bezahlter KI-Berater für kleine Firmen auf und stellt mit Cisco ein Werkzeug für schnelle Notfall-Schutzmaßnahmen bei Sicherheitslücken vor.",
