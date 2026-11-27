@@ -1,6 +1,6 @@
 // KI-Briefing – Grundwissen (fester Tab). Wird nur bei Bedarf von Hand aktualisiert.
 window.KI_BRIEFING_BASICS = {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "rules": [
     {"title": "KI macht Fehler – immer prüfen", "text": "KI-Antworten klingen überzeugend, können aber falsch oder erfunden sein. Zahlen, Namen, Fakten und Quellen vor der Weitergabe immer kontrollieren."},
     {"title": "Keine Kunden- oder Personendaten in fremde Tools", "text": "Kundennamen, Lebensläufe, Kontaktdaten oder Vertragsdetails nur in Tools eingeben, die intern freigegeben sind. Im Zweifel vorher anonymisieren."},
@@ -147,6 +147,16 @@ window.KI_BRIEFING_BASICS = {
     }
   ],
   "glossary": [
+{
+  "term": "Orchestrierung (von KI-Agenten)",
+  "def": "Ein Mensch oder ein übergeordnetes Programm verteilt Aufgaben an mehrere KI-Agenten, gibt Ziele und Grenzen vor und prüft die Ergebnisse. Die Agenten arbeiten, die Orchestrierung sorgt für Reihenfolge und Kontrolle.",
+  "added": "2026-11-27"
+},
+{
+  "term": "Nutzungskontingent (Usage Limit)",
+  "def": "Die Menge an Anfragen oder Rechenleistung, die ein KI-Abo in einem Zeitraum erlaubt. Ist das Kontingent verbraucht, werden Funktionen eingeschränkt, bis es sich wieder auffüllt.",
+  "added": "2026-11-27"
+},
 {
   "term": "Harness (Agenten-Umgebung)",
   "def": "Die Software rund um ein KI-Modell, die ihm Werkzeuge, Dateien und Arbeitsschritte bereitstellt. Dasselbe Modell kann je nach Harness deutlich besser oder schlechter abschneiden.",

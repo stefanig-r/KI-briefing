@@ -2,6 +2,162 @@
 // Jeden Werktag fügt die geplante Aufgabe hier ein neues Objekt am Anfang ein.
 window.KI_BRIEFING_EDITIONS = [
 {
+  "date": "2026-11-27",
+  "headline": "ChatGPT bündelt seine Nutzungslimits, KI-Agenten bauen eine Kernschnittstelle um – und US-Staaten wehren sich gegen den Verkauf von Chatverläufen",
+  "intro": "Heute geht es um Kontingente und Kosten bei ChatGPT, um ein großes Umbauprojekt, das KI-Agenten unter menschlicher Aufsicht erledigt haben, und um einen EU-Fonds für Schlüsseltechnologien. Ein Insolvenzfall in den USA zeigt außerdem, warum es wichtig ist, was man in KI-Tools eingibt.",
+  "news": [
+    {
+      "title": "OpenAI: Ein gemeinsames Nutzungskontingent für Chat, Work und Codex",
+      "summary": "OpenAI legt die Nutzungsgrenzen seiner Bereiche zusammen: Chat- und Work-Funktionen von ChatGPT teilen sich künftig ein gemeinsames Kontingent, laut Berichten wird auch das Programmierwerkzeug Codex einbezogen. Die Umstellung startet bei einer kleinen Gruppe von Pro-Kunden, ab Dezember soll sie breiter ausgerollt werden. Schnelle „Instant“-Antworten bleiben außerhalb des Kontingents nutzbar. Laut OpenAI merken die meisten Nutzer keinen Unterschied, wer sehr viel nutzt, kann aber früher an Grenzen stoßen.",
+      "forUs": "Wer ChatGPT täglich für Profile, Recherchen und Angebote nutzt, sollte im Dezember beobachten, ob Limits früher greifen. Bei der Lizenzplanung lohnt es sich, Vielnutzer und Gelegenheitsnutzer getrennt zu betrachten.",
+      "sources": [
+        {
+          "label": "TechCrunch: Heavy ChatGPT users may hit limits sooner as it merges Chat and Work",
+          "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+        },
+        {
+          "label": "Sam on AI: AI Brief – November 26, 2026",
+          "url": "https://samonai.substack.com/p/ai-brief-november-26-2026"
+        }
+      ]
+    },
+    {
+      "title": "Anthropic: KI-Agenten portieren eine zentrale Schnittstelle auf eine neue Programmiersprache",
+      "summary": "Anthropic hat seine zentrale Programmierschnittstelle (API) von Python auf die Sprache Rust umgestellt und dafür KI-Agenten eingesetzt. Die Agenten verglichen alte und neue Version anhand echter Anfragen und behoben Abweichungen, Menschen prüften die Änderungen. Laut Anthropic sinkt der Rechenaufwand pro Anfrage um rund 70 Prozent, die erste Antwort kommt im Mittel etwa 20 Prozent schneller. Es handelt sich um Angaben des Unternehmens selbst.",
+      "forUs": "Modernisierungsprojekte für Altsysteme könnten mit Agenten schneller werden, verlangen aber saubere Vergleichstests und klare Abnahmekriterien. Gefragt sind PMs und BAs, die solche Projekte mit Prüfschritten und Verantwortlichkeiten steuern können.",
+      "learn": [
+        {
+          "label": "Fraunhofer IESE: Warum der Mensch bei KI-Ergebnissen die wichtigste Prüfinstanz bleibt",
+          "url": "https://www.iese.fraunhofer.de/blog/ki-im-requirements-engineering-mensch-trotz-genai-wichtigste-instanz/",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Anthropic: Migrating the Messages API to Rust",
+          "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+        },
+        {
+          "label": "The Neuron: Everything That Happened in AI Today (November 26, 2026)",
+          "url": "https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-november-26-2026/"
+        }
+      ]
+    },
+    {
+      "title": "EU plant 50-Milliarden-Fonds für Schlüsseltechnologien und ein Quantengesetz",
+      "summary": "Die EU-Kommission hat am 25. November einen Fonds für langfristige Beteiligungen an Technologieunternehmen vorgeschlagen, Zielgröße 50 Milliarden Euro, unter anderem für KI und Quantentechnologie. Pro öffentlichem Euro sollen bis zu sechs Euro privates Kapital hinzukommen. Parallel liegt der Entwurf eines Quantengesetzes vor, nach dem Behörden bei öffentlichen Aufträgen Anbieter unter EU-Kontrolle bevorzugen sollen. Mitgliedstaaten und Europäisches Parlament müssen noch zustimmen.",
+      "forUs": "Mittelfristig können mehr geförderte Technologieprojekte in Europa entstehen. „Europäische Kontrolle“ wird bei öffentlichen Ausschreibungen wichtiger – ein Punkt, auf den Projektverantwortliche bei der Anbieterauswahl achten müssen.",
+      "sources": [
+        {
+          "label": "DW: EU plans 50 billion sovereign tech equity fund",
+          "url": "https://www.dw.com/en/eu-plans-50-billion-sovereign-tech-equity-fund-to-boost-quantum-technology/a-80047569"
+        },
+        {
+          "label": "DEV Community: AI Daily Digest, November 26, 2026",
+          "url": "https://dev.to/hiroki-ii-ai/ai-daily-digest-november-26-2026-one-meter-for-chatgpt-and-codex-cognition-doubles-down-europe-2j0o"
+        }
+      ]
+    },
+    {
+      "title": "Insolventer Chatbot-Anbieter: 42 US-Generalstaatsanwälte wollen Verkauf von Chatverläufen stoppen",
+      "summary": "Der Chatbot-Anbieter Character.AI befindet sich in einem US-Insolvenzverfahren. Ein Bündnis von 42 Generalstaatsanwälten will verhindern, dass dabei die Chatverläufe von mehr als 21 Millionen US-Konten verkauft werden, darunter über zwei Millionen von Minderjährigen. Kritisiert wird, dass ein Käufer weder an die bisherigen Datenschutzregeln noch an Löschrechte gebunden wäre.",
+      "forUs": "Was in ein KI-Tool eingegeben wird, kann bei Insolvenz oder Übernahme eines Anbieters weiterwandern. Ein weiterer Grund, Kandidaten- und Kundendaten nur in freigegebene Tools mit klaren Lösch- und Vertragsregeln einzugeben.",
+      "learn": [
+        {
+          "label": "BSI: Generative KI – Risiken und Maßnahmen kompakt für die Leitungsebene",
+          "url": "https://allianz-fuer-cybersicherheit.de/SharedDocs/Downloads/DE/BSI/Publikationen/Broschueren/Management_Blitzlicht/Management_Blitzlicht_Generative-KI.pdf",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "The Verge: State AGs try to block Character.AI from selling users' chats",
+          "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+        },
+        {
+          "label": "Sam on AI: AI Brief – November 26, 2026",
+          "url": "https://samonai.substack.com/p/ai-brief-november-26-2026"
+        }
+      ]
+    }
+  ],
+  "roles": [
+    {
+      "role": "PM",
+      "title": "Projektmanagement: PMI nennt Leitlinien für menschliches Urteil bei KI-Ergebnissen",
+      "text": "Ein Beitrag im PMI-Blog vom September 2026 beschreibt fünf Leitlinien, wie Projektverantwortliche KI-Ergebnisse bewerten: KI ist nur so gut wie der Kontext, den sie bekommt, fehlendes Wissen und Verantwortung müssen Menschen liefern. Zitiert wird PMIs Studie „Pulse of the Profession 2026“, nach der 81 Prozent der Befragten Projekte als komplexer erleben. Zum Schluss stehen Governance-Fragen: Wann darf KI handeln, wann greift ein Mensch ein, wem gehört die Entscheidung?",
+      "tip": "PM-Kandidaten fragen, wie sie in Projekten festgelegt haben, wann KI-Vorschläge übernommen werden und wer final entscheidet. Erfahrung mit solchen Freigaberegeln im Profil konkret benennen.",
+      "sources": [
+        {
+          "label": "PMI Blog: AI decision-making and human judgment",
+          "url": "https://www.pmi.org/blog/ai-decision-making-human-judgment"
+        }
+      ]
+    },
+    {
+      "role": "BA",
+      "title": "Business Analyse: Vom KI-Nutzer zum Steuerer von Agenten",
+      "text": "Eine Präsentation vor der Fachgruppe Business Change der britischen BCS (Juli 2026) beschreibt, wie sich die BA-Rolle verschiebt: Business Analysts sollen KI-Agenten Ziele, Grenzen und Prüfschritte vorgeben, statt Aufgaben selbst auszuführen. Für Entscheidungen mit hohem Risiko bleibt ein Mensch fest eingebunden. Es handelt sich um einen Vortrag mit Leitbild und Beispielen, nicht um eine Studie.",
+      "tip": "BA-Kandidaten fragen, ob sie schon Abläufe für KI-Agenten beschrieben haben – mit Zielen, Freigabestufen und Abbruchregeln. Das ist im Profil ein klares Unterscheidungsmerkmal.",
+      "sources": [
+        {
+          "label": "BCS Business Change: Business Analysis in the Era of Agentic AI (slides)",
+          "url": "https://www.bcs.org/media/ilknugf2/bcs-business-change-business-analysis-in-the-era-of-agentic-ai-v11.pdf"
+        }
+      ]
+    },
+    {
+      "role": "RE",
+      "title": "Requirements Engineering: Lücken in Anforderungen füllen Agenten mit Annahmen",
+      "text": "In einem Kommentar in der Computerwoche (August 2026) argumentiert ein Software-Engineering-Professor, dass KI-Agenten unscharfe Anforderungen mit plausibel klingenden Annahmen ergänzen – Fehler sind dadurch schwerer zu erkennen als klassische Programmierfehler. Sein Vorschlag: Anforderungen als gemeinsame Aufgabe der Fachbereiche verstehen, firmenweite Standards für gute Beschreibungen setzen und Beschreibungen wie Code behandeln, also testen, versionieren und verbessern. Es ist ein Meinungsbeitrag ohne eigene Zahlen.",
+      "tip": "RE-Kandidaten fragen, mit welchen Qualitätsstandards und Versionierung sie Anforderungen für KI-gestützte Entwicklung absichern. Kunden mit Agenten-Projekten erwarten genau das zunehmend.",
+      "learn": [
+        {
+          "label": "Bitkom: KI trifft Requirements Engineering – Assistenz, nicht Ersatz",
+          "url": "https://www.bitkom.org/index%2ephp/Bitkom/Publikationen/KI-trifft-Requirements-Engineering-Assistenz-nicht-Ersatz",
+          "lang": "DE"
+        }
+      ],
+      "sources": [
+        {
+          "label": "Computerwoche: Deutsch ist keine Programmiersprache",
+          "url": "https://www.computerwoche.de/article/4205668/deutsch-ist-keine-programmiersprache.html"
+        }
+      ]
+    }
+  ],
+  "forUsBox": {
+    "title": "Was das für uns bedeutet",
+    "points": [
+      "Personaldienstleister: KI-Nutzung kostet zunehmend nach Verbrauch – Limits und Lizenzen gehören in die Planung, ebenso klare Regeln, welche Daten in welches Tool dürfen.",
+      "Consultants: Wer KI-Agenten Ziele, Prüfschritte und Freigaben vorgeben kann, ist für PM-, BA- und RE-Rollen besonders gefragt.",
+      "Kunden: Modernisierungs- und Förderprojekte mit KI nehmen zu; europäische Anbieterkontrolle und nachvollziehbare Abnahmen werden wichtiger."
+    ],
+    "sources": [
+      {
+        "label": "PMI Blog: AI decision-making and human judgment",
+        "url": "https://www.pmi.org/blog/ai-decision-making-human-judgment"
+      },
+      {
+        "label": "Computerwoche: Deutsch ist keine Programmiersprache",
+        "url": "https://www.computerwoche.de/article/4205668/deutsch-ist-keine-programmiersprache.html"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "Bundesnetzagentur: KI-Service Desk",
+      "tip": "Kostenlose Anlaufstelle mit Compliance-Kompass und Informationen zur KI-Verordnung – hilfreich, um vor Kundengesprächen den eigenen Wissensstand zu prüfen.",
+      "url": "https://www.bundesnetzagentur.de/ki"
+    },
+    {
+      "name": "Google Workspace: MCP-Server für KI-Agenten",
+      "tip": "Anleitung, wie KI-Agenten kontrolliert auf Gmail, Drive oder Kalender zugreifen. Eher für IT-affine Kolleginnen und Kollegen; Zugriffe nur nach Freigabe durch die IT und ohne personenbezogene Daten testen.",
+      "url": "https://developers.google.com/workspace/guides/configure-mcp-servers"
+    }
+  ]
+},
+{
   "date": "2026-11-26",
   "headline": "KI-Agenten lernen Arbeitsteilung, Benchmarks zeigen ihre Lücken – und ein Agent knackt eigenständig eine Sicherheitslücke",
   "intro": "Anthropic erweitert das Model Context Protocol (MCP) um Skills und Aufgaben, die Agenten untereinander weiterreichen können. Gleichzeitig zeigen ein neuer Praxistest und ein Sicherheitsvorfall bei Amazon, wie weit Agenten von verlässlicher, sicherer Arbeit noch entfernt sind.",

@@ -3,6 +3,101 @@
 window.KI_BRIEFING_RECAPS = [
 {
   "type": "week",
+  "id": "2026-W48",
+  "label": "KW 48 · 23.–27. November 2026",
+  "headline": "Die Woche, in der KI-Plattformen wuchsen – und ihre Datenwege in den Fokus rückten",
+  "summary": "Claude, ChatGPT und Google bauten ihre Assistenten weiter zu Plattformen mit Agenten, Erweiterungen und Zugriff auf persönliche Daten aus. Gleichzeitig zeigten ein Datenleck bei KI-Anbietern, ein Insolvenzfall und neue Umfragen zu KI-Bewerbungen, wie wichtig Datenhygiene und Vertrauen sind. Für PM, BA und RE stand im Mittelpunkt, wie viel Agenten selbst entscheiden dürfen und wie präzise Anforderungen sein müssen.",
+  "top": [
+    {
+      "title": "Lecks in der KI-Lieferkette",
+      "text": "Über Zwischenanbieter, die Anfragen an KI-Modelle weiterleiten, gelangten Geheimnisse aus Prompts an Unbefugte; die Plattform OpenRouter warf daraufhin drei Anbieter hinaus. Wer KI über Drittdienste nutzt, gibt Daten an mehr Stellen weiter, als oft bewusst ist.",
+      "sources": [
+        {
+          "label": "OpenRouter: Data processing incidents on inference providers",
+          "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+        }
+      ]
+    },
+    {
+      "title": "Claude wird zur Agenten-Plattform",
+      "text": "Anthropic bündelte Skills, Konnektoren und Plugins auf einer Seite, brachte mit Claude Ship Agenten zur Prüfung von Code-Änderungen und erweiterte das Zusammenspiel zwischen Agenten. Für Firmenkonten kann Claude zudem Desktop-Programme bedienen.",
+      "sources": [
+        {
+          "label": "Claude Help Center: Manage plugins, skills and connectors",
+          "url": "https://support.claude.com/en/articles/17740565-manage-plugins-skills-and-connectors-from-one-plugins-page"
+        },
+        {
+          "label": "Claude: Introducing Claude Ship",
+          "url": "https://claude.com/resources/articles/introducing-claude-ship"
+        }
+      ]
+    },
+    {
+      "title": "Misstrauen gegenüber KI-Bewerbungen",
+      "text": "Laut einer Umfrage glauben neun von zehn Arbeitgebern, wegen der Flut KI-erstellter Bewerbungen echte Kandidaten aussortiert zu haben. Eine Studie zeigte zudem, dass KI-Modelle Akzente in Interviews unterschiedlich bewerten – menschliche Prüfung bleibt zentral.",
+      "sources": [
+        {
+          "label": "PR Newswire: Nine in ten employers believe they've turned away real candidates",
+          "url": "https://www.prnewswire.com/news-releases/nine-in-ten-employers-believe-theyve-turned-away-real-candidates-as-ai-floods-job-applications-302947413.html"
+        },
+        {
+          "label": "University of Washington: AI models are biased against certain accents",
+          "url": "https://www.washington.edu/news/2026/11/04/ai-models-are-biased-against-certain-accents/"
+        }
+      ]
+    },
+    {
+      "title": "EU: Regelreform verzögert sich, Fonds geplant",
+      "text": "Die Einigung zur Vereinfachung von DSGVO und KI-Regeln („Digital Omnibus“) bis Februar gilt als unrealistisch, die bisherigen Pflichten bleiben also vorerst gültig. Zum Wochenende schlug die Kommission zudem einen 50-Milliarden-Fonds für Schlüsseltechnologien vor.",
+      "sources": [
+        {
+          "label": "IAPP: One year on, Digital Omnibus may face delays",
+          "url": "https://iapp.org/news/a/one-year-on-digital-omnibus-may-face-delays"
+        },
+        {
+          "label": "DW: EU plans 50 billion sovereign tech equity fund",
+          "url": "https://www.dw.com/en/eu-plans-50-billion-sovereign-tech-equity-fund-to-boost-quantum-technology/a-80047569"
+        }
+      ]
+    },
+    {
+      "title": "Agenten im Projektalltag: Teammitglieder mit Lücken",
+      "text": "Agenten tauchen in Jira als eigene Teammitglieder auf, Confluence trennt menschliche von KI-Änderungen. Ein Praxistest zeigte zugleich, dass die Arbeitsumgebung eines Agenten das Ergebnis stark beeinflusst und Agenten Anforderungen selten fehlerfrei umsetzen.",
+      "sources": [
+        {
+          "label": "The Neuron: ShellBench and AI agent harnesses",
+          "url": "https://www.theneuron.ai/news/openclaw-shellbench-ai-agent-harnesses/"
+        }
+      ]
+    },
+    {
+      "title": "Persönliche Daten in KI-Diensten",
+      "text": "Googles KI-Modus in der Suche kann auf Wunsch Inhalte aus anderen Google-Diensten nutzen. Ein Insolvenzfall in den USA zeigte, dass Chatverläufe sogar zum Verkaufsobjekt werden können.",
+      "sources": [
+        {
+          "label": "Google Search Help: Personal context in AI Mode",
+          "url": "https://support.google.com/websearch/answer/17212611?hl=en"
+        },
+        {
+          "label": "The Verge: State AGs try to block Character.AI from selling users' chats",
+          "url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats"
+        }
+      ]
+    }
+  ],
+  "trends": [
+    "KI-Assistenten werden zu Plattformen mit Erweiterungen, Agenten und Zugriff auf immer mehr Daten.",
+    "Die Frage, wie viel Agenten selbst entscheiden dürfen, verschiebt sich von der Technik zur Governance.",
+    "Abrechnung nach Verbrauch und gemeinsame Kontingente machen KI-Kosten planungsrelevant."
+  ],
+  "forUs": [
+    "Datenregeln für KI-Tools regelmäßig auffrischen: Drittanbieter, Löschfristen und Freigaben prüfen.",
+    "Bewerbungen mit KI-Hilfe nicht pauschal aussortieren, sondern im Gespräch fachlich prüfen.",
+    "Bei PM-, BA- und RE-Profilen Erfahrung mit Freigaberegeln, Prüfkriterien und präzisen Anforderungen für Agenten hervorheben."
+  ]
+},
+{
+  "type": "week",
   "id": "2026-W47",
   "label": "KW 47 · 16.–20. November 2026",
   "headline": "Die Woche, in der Agenten Geld, Zugänge und Verantwortung bekamen",

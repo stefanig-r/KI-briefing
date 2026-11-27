@@ -180,6 +180,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-27","title":"Insolventer Chatbot-Anbieter: 42 US-Generalstaatsanwälte wollen Verkauf von Chatverläufen stoppen"},
       {
         "date": "2026-11-25",
         "title": "Google-Suche: KI-Modus kann persönliche Inhalte aus Google-Diensten nutzen"
@@ -554,6 +555,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-27","title":"Projektmanagement: PMI nennt Leitlinien für menschliches Urteil bei KI-Ergebnissen"},
       {
         "date": "2026-11-26",
         "title": "Projektmanagement: Branchenumfrage zu Zukunftskompetenzen im KI-Zeitalter"
@@ -664,6 +666,7 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-27","title":"Business Analyse: Vom KI-Nutzer zum Steuerer von Agenten"},
       {
         "date": "2026-11-26",
         "title": "Business Analyse: KI-Agenten finden Anforderungen – liefern aber selten fehlerfrei"
@@ -764,6 +767,8 @@ window.KI_BRIEFING_LEARNING = [
       }
     ],
     "triggers": [
+      {"date":"2026-11-27","title":"Requirements Engineering: Lücken in Anforderungen füllen Agenten mit Annahmen"},
+      {"date":"2026-11-27","title":"Anthropic: KI-Agenten portieren eine zentrale Schnittstelle auf eine neue Programmiersprache"},
       {
         "date": "2026-11-26",
         "title": "Requirements Engineering: Wie viel darf ein KI-Agent selbst entscheiden?"
